@@ -1,0 +1,2 @@
+groq>=0.4.0
+openbench>=0.1.0

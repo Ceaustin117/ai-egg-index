@@ -1,0 +1,91 @@
+{
+  "last_updated": "2026-02-04",
+  "models": {
+    "groq/llama-3.1-8b-instant": {
+      "provider": "groq",
+      "tier": "free",
+      "scores": [
+        {
+          "date": "2026-01-15",
+          "practical_knowledge": 0.68,
+          "humaneval": 0.42,
+          "ifeval": 0.65,
+          "gsm8k": 0.52,
+          "creative_technical": 0.58
+        },
+        {
+          "date": "2026-02-04",
+          "practical_knowledge": 0.72,
+          "humaneval": 0.45,
+          "ifeval": 0.68,
+          "gsm8k": 0.55,
+          "creative_technical": 0.62
+        }
+      ]
+    },
+    "together/mistral-7b-instruct": {
+      "provider": "together",
+      "tier": "free",
+      "scores": [
+        {
+          "date": "2026-01-15",
+          "practical_knowledge": 0.62,
+          "humaneval": 0.35,
+          "ifeval": 0.58,
+          "gsm8k": 0.45,
+          "creative_technical": 0.52
+        },
+        {
+          "date": "2026-02-04",
+          "practical_knowledge": 0.65,
+          "humaneval": 0.38,
+          "ifeval": 0.62,
+          "gsm8k": 0.48,
+          "creative_technical": 0.55
+        }
+      ]
+    },
+    "google/gemini-1.5-flash": {
+      "provider": "google",
+      "tier": "free",
+      "scores": [
+        {
+          "date": "2026-02-04",
+          "practical_knowledge": 0.78,
+          "humaneval": 0.52,
+          "ifeval": 0.75,
+          "gsm8k": 0.68,
+          "creative_technical": 0.70
+        }
+      ]
+    },
+    "cohere/command-light": {
+      "provider": "cohere",
+      "tier": "free",
+      "scores": [
+        {
+          "date": "2026-02-04",
+          "practical_knowledge": 0.70,
+          "humaneval": 0.35,
+          "ifeval": 0.64,
+          "gsm8k": 0.42,
+          "creative_technical": 0.52
+        }
+      ]
+    },
+    "huggingface/mistral-7b-instruct": {
+      "provider": "huggingface",
+      "tier": "free",
+      "scores": [
+        {
+          "date": "2026-02-04",
+          "practical_knowledge": 0.58,
+          "humaneval": 0.32,
+          "ifeval": 0.55,
+          "gsm8k": 0.40,
+          "creative_technical": 0.48
+        }
+      ]
+    }
+  }
+}

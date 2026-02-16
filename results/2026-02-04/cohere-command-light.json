@@ -1,0 +1,44 @@
+{
+  "model": "cohere/command-light",
+  "provider": "cohere",
+  "tier": "free",
+  "date": "2026-02-04",
+  "benchmarks": {
+    "practical_knowledge": {
+      "score": 0.70,
+      "details": {
+        "taxes": 0.72,
+        "regulations": 0.68,
+        "practical_finance": 0.72,
+        "consumer_rights": 0.68
+      }
+    },
+    "humaneval": {
+      "score": 0.35,
+      "pass_at_1": 0.35
+    },
+    "ifeval": {
+      "score": 0.64,
+      "strict": 0.58,
+      "loose": 0.70
+    },
+    "gsm8k": {
+      "score": 0.42,
+      "accuracy": 0.42
+    },
+    "creative_technical": {
+      "score": 0.52,
+      "details": {
+        "budget-haiku": 0.58,
+        "recursive-story": 0.48,
+        "ascii-weather": 0.60,
+        "regex-poetry": 0.42
+      }
+    }
+  },
+  "metadata": {
+    "knowledge_cutoff": "2024-03",
+    "context_window": 4096,
+    "rate_limit": "100/min"
+  }
+}

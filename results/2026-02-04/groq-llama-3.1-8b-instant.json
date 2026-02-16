@@ -1,0 +1,44 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "provider": "groq",
+  "tier": "free",
+  "date": "2026-02-04",
+  "benchmarks": {
+    "practical_knowledge": {
+      "score": 0.72,
+      "details": {
+        "taxes": 0.78,
+        "regulations": 0.65,
+        "practical_finance": 0.75,
+        "consumer_rights": 0.70
+      }
+    },
+    "humaneval": {
+      "score": 0.45,
+      "pass_at_1": 0.45
+    },
+    "ifeval": {
+      "score": 0.68,
+      "strict": 0.62,
+      "loose": 0.74
+    },
+    "gsm8k": {
+      "score": 0.55,
+      "accuracy": 0.55
+    },
+    "creative_technical": {
+      "score": 0.62,
+      "details": {
+        "budget-haiku": 0.70,
+        "recursive-story": 0.55,
+        "ascii-weather": 0.75,
+        "regex-poetry": 0.48
+      }
+    }
+  },
+  "metadata": {
+    "knowledge_cutoff": "2024-12",
+    "context_window": 8192,
+    "rate_limit": "30/min"
+  }
+}

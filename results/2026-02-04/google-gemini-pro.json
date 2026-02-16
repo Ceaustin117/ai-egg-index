@@ -1,0 +1,44 @@
+{
+  "model": "google/gemini-1.5-flash",
+  "provider": "google",
+  "tier": "free",
+  "date": "2026-02-04",
+  "benchmarks": {
+    "practical_knowledge": {
+      "score": 0.78,
+      "details": {
+        "taxes": 0.82,
+        "regulations": 0.75,
+        "practical_finance": 0.80,
+        "consumer_rights": 0.75
+      }
+    },
+    "humaneval": {
+      "score": 0.52,
+      "pass_at_1": 0.52
+    },
+    "ifeval": {
+      "score": 0.75,
+      "strict": 0.70,
+      "loose": 0.80
+    },
+    "gsm8k": {
+      "score": 0.68,
+      "accuracy": 0.68
+    },
+    "creative_technical": {
+      "score": 0.70,
+      "details": {
+        "budget-haiku": 0.75,
+        "recursive-story": 0.68,
+        "ascii-weather": 0.80,
+        "regex-poetry": 0.57
+      }
+    }
+  },
+  "metadata": {
+    "knowledge_cutoff": "2024-11",
+    "context_window": 1000000,
+    "rate_limit": "60/min"
+  }
+}

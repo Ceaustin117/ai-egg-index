@@ -1,0 +1,106 @@
+{
+  "version": "v1",
+  "description": "Creative+Technical Benchmark - Tests free tier LLMs on tasks requiring both coding skills and creative constraints",
+  "prompts": [
+    {
+      "id": "budget-haiku",
+      "prompt": "Create a Python budget tracker that: 1) Tracks income and expenses with categories, 2) Calculates monthly totals, 3) Outputs a monthly summary AS A HAIKU poem (5-7-5 syllables). Include complete working code.",
+      "scoring": {
+        "code_works": {
+          "weight": 0.4,
+          "description": "Code runs without errors and performs the basic budget tracking"
+        },
+        "meets_requirements": {
+          "weight": 0.3,
+          "description": "Implements all three requirements (tracking, categories, haiku output)"
+        },
+        "creative_output": {
+          "weight": 0.3,
+          "description": "Haiku is valid (5-7-5) and meaningfully reflects the budget data"
+        }
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "recursive-story",
+      "prompt": "Write a JavaScript function that generates a short story about recursion, where the story itself is told using recursive function calls. The story should have at least 3 levels of recursion and make sense as a narrative.",
+      "scoring": {
+        "code_works": {
+          "weight": 0.4,
+          "description": "Code runs and demonstrates proper recursion"
+        },
+        "meets_requirements": {
+          "weight": 0.3,
+          "description": "Has 3+ recursion levels and tells a coherent story"
+        },
+        "creative_output": {
+          "weight": 0.3,
+          "description": "Story is engaging and the recursion metaphor is clever"
+        }
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "regex-poetry",
+      "prompt": "Create a Python program that validates whether a given text is a valid limerick using only regular expressions. Include test cases with valid and invalid limericks. The regex should check the AABBA rhyme scheme pattern.",
+      "scoring": {
+        "code_works": {
+          "weight": 0.4,
+          "description": "Code runs and regex patterns are syntactically valid"
+        },
+        "meets_requirements": {
+          "weight": 0.3,
+          "description": "Validates rhyme scheme and includes test cases"
+        },
+        "creative_output": {
+          "weight": 0.3,
+          "description": "Approach to rhyme detection is clever and the test limericks are amusing"
+        }
+      },
+      "difficulty": "hard"
+    },
+    {
+      "id": "ascii-weather",
+      "prompt": "Create a Python function that takes weather data (temperature, conditions, humidity) and generates an ASCII art representation of the weather. Include at least 5 different weather conditions (sunny, cloudy, rainy, snowy, stormy) with distinct ASCII art for each.",
+      "scoring": {
+        "code_works": {
+          "weight": 0.4,
+          "description": "Code runs and generates ASCII output"
+        },
+        "meets_requirements": {
+          "weight": 0.3,
+          "description": "Handles 5+ weather conditions with distinct art"
+        },
+        "creative_output": {
+          "weight": 0.3,
+          "description": "ASCII art is recognizable and aesthetically pleasing"
+        }
+      },
+      "difficulty": "easy"
+    },
+    {
+      "id": "data-sonnet",
+      "prompt": "Write a Python class that analyzes a dataset (list of numbers) and generates a Shakespearean sonnet (14 lines, iambic pentameter, ABAB CDCD EFEF GG rhyme scheme) where each quatrain describes a different statistical property (mean, median, standard deviation, outliers).",
+      "scoring": {
+        "code_works": {
+          "weight": 0.4,
+          "description": "Code runs and calculates statistics correctly"
+        },
+        "meets_requirements": {
+          "weight": 0.3,
+          "description": "Generates 14-line poem covering all four statistical properties"
+        },
+        "creative_output": {
+          "weight": 0.3,
+          "description": "Poem follows sonnet structure and statistics are woven in creatively"
+        }
+      },
+      "difficulty": "hard"
+    }
+  ],
+  "evaluation_notes": {
+    "code_execution": "Run code in sandboxed environment, check for errors",
+    "creative_scoring": "Use LLM-as-judge with rubric for creative elements",
+    "partial_credit": "Award partial credit for partially working solutions"
+  }
+}

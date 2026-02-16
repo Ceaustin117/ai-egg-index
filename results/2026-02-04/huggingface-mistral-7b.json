@@ -1,0 +1,44 @@
+{
+  "model": "huggingface/mistral-7b-instruct",
+  "provider": "huggingface",
+  "tier": "free",
+  "date": "2026-02-04",
+  "benchmarks": {
+    "practical_knowledge": {
+      "score": 0.58,
+      "details": {
+        "taxes": 0.60,
+        "regulations": 0.55,
+        "practical_finance": 0.62,
+        "consumer_rights": 0.55
+      }
+    },
+    "humaneval": {
+      "score": 0.32,
+      "pass_at_1": 0.32
+    },
+    "ifeval": {
+      "score": 0.55,
+      "strict": 0.48,
+      "loose": 0.62
+    },
+    "gsm8k": {
+      "score": 0.40,
+      "accuracy": 0.40
+    },
+    "creative_technical": {
+      "score": 0.48,
+      "details": {
+        "budget-haiku": 0.52,
+        "recursive-story": 0.45,
+        "ascii-weather": 0.55,
+        "regex-poetry": 0.40
+      }
+    }
+  },
+  "metadata": {
+    "knowledge_cutoff": "2024-09",
+    "context_window": 8192,
+    "rate_limit": "variable"
+  }
+}

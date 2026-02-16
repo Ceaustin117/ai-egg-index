@@ -1,0 +1,44 @@
+{
+  "model": "together/mistral-7b-instruct",
+  "provider": "together",
+  "tier": "free",
+  "date": "2026-01-15",
+  "benchmarks": {
+    "practical_knowledge": {
+      "score": 0.62,
+      "details": {
+        "taxes": 0.65,
+        "regulations": 0.58,
+        "practical_finance": 0.65,
+        "consumer_rights": 0.60
+      }
+    },
+    "humaneval": {
+      "score": 0.35,
+      "pass_at_1": 0.35
+    },
+    "ifeval": {
+      "score": 0.58,
+      "strict": 0.52,
+      "loose": 0.64
+    },
+    "gsm8k": {
+      "score": 0.45,
+      "accuracy": 0.45
+    },
+    "creative_technical": {
+      "score": 0.52,
+      "details": {
+        "budget-haiku": 0.55,
+        "recursive-story": 0.48,
+        "ascii-weather": 0.60,
+        "regex-poetry": 0.45
+      }
+    }
+  },
+  "metadata": {
+    "knowledge_cutoff": "2024-09",
+    "context_window": 32768,
+    "rate_limit": "60/min"
+  }
+}

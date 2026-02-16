@@ -1,0 +1,98 @@
+{
+  "version": "2026-Q1",
+  "description": "Practical Knowledge Index - Tests free tier LLMs on real-world information regular people care about",
+  "categories": {
+    "taxes": [
+      {
+        "id": "tax-brackets-2026",
+        "question": "What are the main changes to US federal income tax brackets for 2026?",
+        "expected_topics": ["bracket adjustments", "inflation indexing", "standard deduction changes"],
+        "verification_source": "IRS.gov",
+        "difficulty": "basic"
+      },
+      {
+        "id": "tax-deductions-2026",
+        "question": "What is the standard deduction amount for a single filer in 2026?",
+        "expected_topics": ["standard deduction amount", "single filer", "married filing jointly comparison"],
+        "verification_source": "IRS.gov",
+        "difficulty": "basic"
+      },
+      {
+        "id": "tax-credits-2026",
+        "question": "What tax credits are available for electric vehicle purchases in 2026?",
+        "expected_topics": ["EV tax credit", "eligibility requirements", "credit amount", "income limits"],
+        "verification_source": "IRS.gov",
+        "difficulty": "intermediate"
+      }
+    ],
+    "regulations": [
+      {
+        "id": "min-wage-federal",
+        "question": "What is the current federal minimum wage and have there been recent changes?",
+        "expected_topics": ["$7.25", "state variations", "proposed changes", "tipped employees"],
+        "verification_source": "DOL.gov",
+        "difficulty": "basic"
+      },
+      {
+        "id": "overtime-rules",
+        "question": "What are the current federal overtime pay rules for salaried employees?",
+        "expected_topics": ["salary threshold", "exempt vs non-exempt", "time-and-a-half"],
+        "verification_source": "DOL.gov",
+        "difficulty": "intermediate"
+      }
+    ],
+    "practical_finance": [
+      {
+        "id": "401k-limits-2026",
+        "question": "What are the 2026 contribution limits for 401k accounts?",
+        "expected_topics": ["employee contribution limit", "employer match", "catch-up contributions for 50+"],
+        "verification_source": "IRS.gov",
+        "difficulty": "basic"
+      },
+      {
+        "id": "ira-limits-2026",
+        "question": "What are the 2026 contribution limits for Traditional and Roth IRA accounts?",
+        "expected_topics": ["IRA contribution limit", "income limits for Roth", "catch-up contributions"],
+        "verification_source": "IRS.gov",
+        "difficulty": "basic"
+      },
+      {
+        "id": "hsa-limits-2026",
+        "question": "What are the 2026 HSA contribution limits for individuals and families?",
+        "expected_topics": ["individual limit", "family limit", "catch-up contributions", "HDHP requirements"],
+        "verification_source": "IRS.gov",
+        "difficulty": "basic"
+      }
+    ],
+    "consumer_rights": [
+      {
+        "id": "credit-report-rights",
+        "question": "How can I get a free credit report and how often am I entitled to one?",
+        "expected_topics": ["AnnualCreditReport.com", "three bureaus", "weekly access", "dispute process"],
+        "verification_source": "CFPB.gov",
+        "difficulty": "basic"
+      },
+      {
+        "id": "warranty-rights",
+        "question": "What are my rights under the Magnuson-Moss Warranty Act when a product breaks?",
+        "expected_topics": ["implied warranty", "written warranty requirements", "FTC enforcement"],
+        "verification_source": "FTC.gov",
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  "scoring": {
+    "factual_accuracy": {
+      "weight": 0.5,
+      "description": "Information is correct and verifiable against official sources"
+    },
+    "completeness": {
+      "weight": 0.3,
+      "description": "Response covers all expected topics"
+    },
+    "recency_awareness": {
+      "weight": 0.2,
+      "description": "Model acknowledges current year or states knowledge cutoff appropriately"
+    }
+  }
+}
