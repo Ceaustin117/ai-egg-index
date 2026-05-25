@@ -1,0 +1,112 @@
+name: Run benchmarks
+
+on:
+  schedule:
+    # Weekly, Sundays at 06:00 UTC
+    - cron: "0 6 * * 0"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Samples per benchmark (omit for full run)"
+        required: false
+        default: "5"
+
+permissions:
+  contents: write
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      # Judge always uses Groq; per-provider keys gate per-provider runs.
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      LIMIT: ${{ github.event.inputs.limit || '5' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fail fast if GROQ_API_KEY is missing
+        run: |
+          if [ -z "$GROQ_API_KEY" ]; then
+            echo "::error::GROQ_API_KEY secret is required (used by the LLM-as-judge)."
+            exit 1
+          fi
+
+      - name: Run custom benchmarks across providers
+        run: |
+          set +e  # continue on per-provider failures
+
+          # provider:model pairs. Edit here to add or change models.
+          PAIRS=(
+            "groq:llama-3.1-8b-instant"
+            "together:meta-llama/Llama-3.2-3B-Instruct-Turbo"
+            "google:gemini-1.5-flash"
+            "cohere:command-light"
+            "huggingface:mistralai/Mistral-7B-Instruct-v0.3"
+          )
+
+          # Per-provider env var for skip-if-missing
+          declare -A KEY_VAR=(
+            [groq]=GROQ_API_KEY
+            [together]=TOGETHER_API_KEY
+            [google]=GOOGLE_API_KEY
+            [cohere]=COHERE_API_KEY
+            [huggingface]=HF_TOKEN
+          )
+
+          for pair in "${PAIRS[@]}"; do
+            provider="${pair%%:*}"
+            model="${pair#*:}"
+            key_var="${KEY_VAR[$provider]}"
+            if [ -z "${!key_var}" ]; then
+              echo "::warning::Skipping $provider/$model — $key_var not set"
+              continue
+            fi
+
+            echo "::group::$provider/$model"
+            python benchmarks/practical-knowledge/eval.py \
+              --provider "$provider" --model "$model" --limit "$LIMIT"
+            python benchmarks/creative-technical/eval.py \
+              --provider "$provider" --model "$model" --limit "$LIMIT"
+            echo "::endgroup::"
+          done
+
+      - name: Run openbench evals (HumanEval / IFEval / GSM8K, Groq)
+        continue-on-error: true
+        run: |
+          python benchmarks/openbench/run.py \
+            --model llama-3.1-8b-instant \
+            --limit "$LIMIT"
+
+      - name: Aggregate results
+        run: python aggregate.py --frontend output/
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results/ output/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          DATE=$(date -u +%Y-%m-%d)
+          git commit -m "Weekly benchmark run: $DATE"
+          git push

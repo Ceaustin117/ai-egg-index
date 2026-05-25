@@ -13,18 +13,15 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-try:
-    from groq import Groq
-except ImportError:
-    print("Please install groq: pip install groq")
-    sys.exit(1)
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from providers import call_llm, provider_api_key, ProviderError  # noqa: E402
 
 
 class PracticalKnowledgeEvaluator:
     """Evaluates LLM responses on practical knowledge questions."""
 
-    def __init__(self, judge_model: str = "llama-3.1-8b-instant"):
-        self.client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+    def __init__(self, eval_provider: str = "groq", judge_model: str = "llama-3.1-8b-instant"):
+        self.eval_provider = eval_provider
         self.judge_model = judge_model
         self.questions = self._load_questions()
 
@@ -33,19 +30,6 @@ class PracticalKnowledgeEvaluator:
         questions_path = Path(__file__).parent / "questions.json"
         with open(questions_path) as f:
             return json.load(f)
-
-    def _call_llm(self, model: str, prompt: str, max_tokens: int = 1024) -> str:
-        """Call an LLM and return the response."""
-        try:
-            response = self.client.chat.completions.create(
-                model=model,
-                messages=[{"role": "user", "content": prompt}],
-                max_tokens=max_tokens,
-                temperature=0.1
-            )
-            return response.choices[0].message.content
-        except Exception as e:
-            return f"ERROR: {str(e)}"
 
     def _judge_response(self, question: dict, response: str) -> dict:
         """Use LLM-as-judge to score a response."""
@@ -85,7 +69,7 @@ Respond in JSON format:
   "explanation": "Brief explanation of scores"
 }}"""
 
-        judge_response = self._call_llm(self.judge_model, judge_prompt, max_tokens=512)
+        judge_response = call_llm("groq", self.judge_model, judge_prompt, max_tokens=512)
 
         try:
             # Extract JSON from response
@@ -108,7 +92,7 @@ Respond in JSON format:
     def evaluate_model(self, model: str, limit: int = None) -> dict:
         """Evaluate a model on all practical knowledge questions."""
         results = {
-            "model": model,
+            "model": f"{self.eval_provider}/{model}",
             "timestamp": datetime.now().isoformat(),
             "categories": {},
             "overall_score": 0.0
@@ -126,7 +110,7 @@ Respond in JSON format:
                 print(f"  Evaluating: {question['id']}")
 
                 # Get model response
-                response = self._call_llm(model, question["question"])
+                response = call_llm(self.eval_provider, model, question["question"])
 
                 # Judge the response
                 scores = self._judge_response(question, response)
@@ -183,6 +167,7 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(description="Evaluate LLM on practical knowledge questions")
+    parser.add_argument("--provider", default="groq", help="Provider for the model under test")
     parser.add_argument("--model", default="llama-3.1-8b-instant", help="Model to evaluate")
     parser.add_argument("--limit", type=int, help="Limit questions per category")
     parser.add_argument("--output", help="Output directory for results")
@@ -190,13 +175,16 @@ def main():
     args = parser.parse_args()
 
     if not os.environ.get("GROQ_API_KEY"):
-        print("Error: GROQ_API_KEY environment variable not set")
+        print("Error: GROQ_API_KEY required (used by the judge)")
+        sys.exit(1)
+    if not provider_api_key(args.provider):
+        print(f"Error: API key for provider '{args.provider}' is not set")
         sys.exit(1)
 
-    print(f"Evaluating model: {args.model}")
+    print(f"Evaluating: {args.provider}/{args.model}")
     print("-" * 50)
 
-    evaluator = PracticalKnowledgeEvaluator()
+    evaluator = PracticalKnowledgeEvaluator(eval_provider=args.provider)
     results = evaluator.evaluate_model(args.model, limit=args.limit)
 
     output_path = evaluator.save_results(results, args.output)

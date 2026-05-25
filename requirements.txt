@@ -1,2 +1,6 @@
 groq>=0.4.0
+together>=1.3.0
+google-generativeai>=0.7.0
+cohere>=5.0.0
+huggingface_hub>=0.20.0
 openbench>=0.1.0

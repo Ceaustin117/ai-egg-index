@@ -15,18 +15,15 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-try:
-    from groq import Groq
-except ImportError:
-    print("Please install groq: pip install groq")
-    sys.exit(1)
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from providers import call_llm, provider_api_key, ProviderError  # noqa: E402
 
 
 class CreativeTechnicalEvaluator:
     """Evaluates LLM responses on creative+technical challenges."""
 
-    def __init__(self, judge_model: str = "llama-3.1-8b-instant"):
-        self.client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+    def __init__(self, eval_provider: str = "groq", judge_model: str = "llama-3.1-8b-instant"):
+        self.eval_provider = eval_provider
         self.judge_model = judge_model
         self.prompts = self._load_prompts()
 
@@ -35,19 +32,6 @@ class CreativeTechnicalEvaluator:
         prompts_path = Path(__file__).parent / "prompts.json"
         with open(prompts_path) as f:
             return json.load(f)
-
-    def _call_llm(self, model: str, prompt: str, max_tokens: int = 2048) -> str:
-        """Call an LLM and return the response."""
-        try:
-            response = self.client.chat.completions.create(
-                model=model,
-                messages=[{"role": "user", "content": prompt}],
-                max_tokens=max_tokens,
-                temperature=0.3
-            )
-            return response.choices[0].message.content
-        except Exception as e:
-            return f"ERROR: {str(e)}"
 
     def _extract_code(self, response: str, language: str = "python") -> str:
         """Extract code block from LLM response."""
@@ -157,7 +141,7 @@ Respond in JSON format:
   "explanation": "Brief explanation of scores"
 }}"""
 
-        judge_response = self._call_llm(self.judge_model, judge_prompt, max_tokens=512)
+        judge_response = call_llm("groq", self.judge_model, judge_prompt, max_tokens=512)
 
         try:
             json_start = judge_response.find('{')
@@ -179,7 +163,7 @@ Respond in JSON format:
     def evaluate_model(self, model: str, limit: int = None) -> dict:
         """Evaluate a model on all creative+technical prompts."""
         results = {
-            "model": model,
+            "model": f"{self.eval_provider}/{model}",
             "timestamp": datetime.now().isoformat(),
             "challenges": [],
             "overall_score": 0.0
@@ -192,7 +176,7 @@ Respond in JSON format:
             print(f"  Evaluating: {prompt_data['id']}")
 
             # Get model response
-            response = self._call_llm(model, prompt_data["prompt"])
+            response = call_llm(self.eval_provider, model, prompt_data["prompt"], max_tokens=2048, temperature=0.3)
 
             # Determine language from prompt
             language = "javascript" if "JavaScript" in prompt_data["prompt"] else "python"
@@ -250,6 +234,7 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(description="Evaluate LLM on creative+technical challenges")
+    parser.add_argument("--provider", default="groq", help="Provider for the model under test")
     parser.add_argument("--model", default="llama-3.1-8b-instant", help="Model to evaluate")
     parser.add_argument("--limit", type=int, help="Limit number of prompts")
     parser.add_argument("--output", help="Output directory for results")
@@ -257,13 +242,16 @@ def main():
     args = parser.parse_args()
 
     if not os.environ.get("GROQ_API_KEY"):
-        print("Error: GROQ_API_KEY environment variable not set")
+        print("Error: GROQ_API_KEY required (used by the judge)")
+        sys.exit(1)
+    if not provider_api_key(args.provider):
+        print(f"Error: API key for provider '{args.provider}' is not set")
         sys.exit(1)
 
-    print(f"Evaluating model: {args.model}")
+    print(f"Evaluating: {args.provider}/{args.model}")
     print("-" * 50)
 
-    evaluator = CreativeTechnicalEvaluator()
+    evaluator = CreativeTechnicalEvaluator(eval_provider=args.provider)
     results = evaluator.evaluate_model(args.model, limit=args.limit)
 
     output_path = evaluator.save_results(results, args.output)

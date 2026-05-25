@@ -82,11 +82,20 @@ class BenchmarkAggregator:
         return models
 
     def _infer_provider(self, model: str) -> str:
-        """Infer provider from model name."""
+        """Infer provider from model name. Prefers explicit '<provider>/<model>' prefix
+        (e.g., 'huggingface/mistralai/Mistral-7B') over substring matching, which has
+        collisions (e.g., 'mistral' appears in both Together and HuggingFace model IDs).
+        """
         model_lower = model.lower()
+        known = ("groq", "together", "google", "cohere", "huggingface")
+        if "/" in model_lower:
+            prefix = model_lower.split("/", 1)[0]
+            if prefix in known:
+                return prefix
+        # Fallback substring matching for unprefixed legacy entries
         if "groq" in model_lower or "llama" in model_lower:
             return "groq"
-        elif "together" in model_lower or "mistral" in model_lower:
+        elif "together" in model_lower:
             return "together"
         elif "gemini" in model_lower:
             return "google"
