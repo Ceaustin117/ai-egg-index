@@ -56,10 +56,10 @@ jobs:
           # provider:model pairs. Edit here to add or change models.
           PAIRS=(
             "groq:llama-3.1-8b-instant"
-            "together:meta-llama/Llama-3.2-3B-Instruct-Turbo"
-            "google:gemini-1.5-flash"
-            "cohere:command-light"
-            "huggingface:mistralai/Mistral-7B-Instruct-v0.3"
+            "together:meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
+            "google:gemini-2.0-flash"
+            "cohere:command-r-08-2024"
+            "huggingface:meta-llama/Meta-Llama-3-8B-Instruct"
           )
 
           # Per-provider env var for skip-if-missing
