@@ -1,0 +1,49 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "timestamp": "2026-05-27T21:45:33.559149",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "**Budget Tracker Code**\n```python\nimport datetime\n\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income with category\"\"\"\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        \"\"\"Add expense with category\"\"\"\n        if category in self.expenses:\n       ...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without errors due to an EOFError in the input function. The haiku output does not meet the 5-7-5 syllable requirement and the code does not implement the monthly totals calculation correctly. The budget tracker does not track income and expenses with categories as required."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "**Recursive Story Generation**\n=====================================\n\nHere's a JavaScript function that generates a short story about recursion, where the story itself is told using recursive function calls.\n\n```javascript\nfunction tellStory(maxDepth = 3) {\n  // Base case: stop recursion when maxDepth is reached\n  if (maxDepth === 0) {\n    return \"The story has reached its end.\";\n  }\n\n  // Recursive case: generate a new story level\n  const story = `In a land far, far away, there was a wise old w...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without error and demonstrates proper recursion. However, it does not quite meet the requirement of having 3+ levels of recursion as the story is repeated multiple times with slight variations, rather than having a clear narrative progression. The recursion metaphor is somewhat clever, but the story itself is not particularly engaging or original."
+      },
+      "weighted_score": 0.82
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "**Validating Limericks with Regular Expressions**\n=====================================================\n\nBelow is a Python program that uses regular expressions to validate whether a given text is a valid limerick. The regex checks for the AABBA rhyme scheme pattern.\n\n```python\nimport re\n\ndef is_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick.\n    \n    A valid limerick has the following characteristics:\n    - It consists of 5 lines.\n    - The first, second, and last...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not work as expected. The regex pattern is overly complex and does not correctly check for the AABBA rhyme scheme. The test cases are also not correctly implemented. The code execution result shows that the test cases are not being evaluated correctly."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.273
+}

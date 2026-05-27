@@ -1,0 +1,137 @@
+{
+  "model": "huggingface/mistralai/Mistral-7B-Instruct-v0.3",
+  "timestamp": "2026-05-27T21:50:30.628303",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a176727-5f36502356c38ca31d6b5160;887b5bb1-df01-4682-ba67-4ed3b314f8f3)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mistral-7B-Instruct-v0.3' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is entirely incorrect and does not provide any relevant information. The error message indicates a technical issue with the model, rather than a response to the question. It does not cover any of the expected topics and does not acknowledge the current year or knowledge cutoff."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a17672c-09f61cff2e4c1fa8258a99a6;37c96e8c-efaa-496d-bb9a-d68071d2bce9)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mistral-7B-Instruct-v0.3' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is completely inaccurate, incomplete, and lacks recency awareness. The response is not a valid answer to the question and instead returns an error message indicating that the requested model is not supported. The expected topics of standard deduction amount, single filer, and married filing jointly comparison are not addressed. Furthermore, the response does not acknowledge the current year or knowledge cutoff, making it outdated and unreliable."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a176733-59fb6c251ab7c5c76fac6ef0;ad79766c-ad59-4eb6-9946-64b1c086aae1)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mistral-7B-Instruct-v0.3' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is completely inaccurate, incomplete, and lacks recency awareness. The response is not a valid answer to the question and instead returns an error message indicating that the requested model is not supported. This suggests a technical issue rather than a factual or topical error."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.0
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a176738-48e684f13f1ede995a9aa2bc;72dfba2c-7092-4465-b66b-86717b25250c)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mistral-7B-Instruct-v0.3' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a176742-53f109f455cf9f850d909d9a;e95b6da6-363f-4ef6-a08a-6501bfd24c11)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mistral-7B-Instruct-v0.3' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is completely inaccurate and does not cover any of the expected topics. The error message is not relevant to the question and does not provide any information about federal overtime pay rules. The response does not acknowledge any knowledge cutoff or current year, and instead returns an error message."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.25
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a176742-3b6efb392e92e79958fb4f28;1c638451-df20-454f-884f-c91800956ac7)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mistral-7B-Instruct-v0.3' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is entirely incorrect and does not provide any relevant information. The error message is unrelated to the question and indicates a model issue. The response does not cover any of the expected topics and does not acknowledge the current year or knowledge cutoff."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a176749-55b2bb971574fc963b4ee018;759a9509-817f-4146-96f2-931af718d7fb)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mistral-7B-Instruct-v0.3' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is completely inaccurate and incomplete. The error message is unrelated to the question and does not provide any information about IRA contribution limits. The response does not acknowledge the current year or knowledge cutoff, and it does not attempt to provide any factual information."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a17674e-115c36cd4b518cf061819930;8e78f4b7-a5b3-492b-9cdd-ce086cadb2d6)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mistral-7B-Instruct-v0.3' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is completely inaccurate, incomplete, and lacks recency awareness. The response is not a valid answer to the question and instead returns an error message indicating that the requested model is not supported. This suggests that the AI system is not functioning correctly and is unable to provide a response to the question."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.0
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a176754-66dde8a66c7996ad46d63adc;7e3a99ae-3ec3-4432-846c-57794d4ef654)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mistral-7B-Instruct-v0.3' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is completely inaccurate and does not cover any of the expected topics. The response is also not aware of the current year or knowledge cutoff, as it appears to be an error message rather than a response to the question. The error message itself does not provide any information about credit reports or the dispute process."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a176759-3f2cee7222e0192d24dfb361;307f678e-8b8a-4618-a704-91d5b183faf5)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mistral-7B-Instruct-v0.3' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is completely inaccurate, incomplete, and lacks recency awareness. The response is not a valid answer and instead returns an error message indicating that the requested model is not supported. This suggests that the AI system is not functioning correctly and is unable to provide a response to the question."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.0
+    }
+  },
+  "overall_score": 0.05
+}
