@@ -1,0 +1,49 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-05-27T22:55:05.435600",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def calculate_tot...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not meet the requirements. It does not track income and expenses with categories, calculate monthly totals, or output a monthly summary as a haiku poem. The haiku output is also not valid (5-7-5 syllables). The code execution result shows that the output is not a haiku poem, but rather a simple summary. The code also does not handle the case where the user tries to add an expense or income with a negative amount."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction recursiveStory(depth = 0) {\n  if (depth > 3) {\n    return \"The story has reached its conclusion. The narrator, satisfied with the tale, takes a bow and walks off the stage.\";\n  }\n\n  const storyParts = [\n    \"Once upon a time, there was a curious storyteller who loved to experiment with recursion. One day, they decided to create a story within a story, a tale that would unfold layer by layer.\",\n    \"As the storyteller began their narrative, they introduced the main characte...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.9,
+        "explanation": "The code runs without error and demonstrates proper recursion. However, it only reaches a maximum depth of 3 levels, which is the minimum requirement. The story is engaging and the recursion metaphor is clever, but it could be more developed to reach the full potential of the prompt."
+      },
+      "weighted_score": 0.91
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme pattern:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if there are exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Check the rhyme scheme pattern\n    pattern = r'^(.*?)(.*?)(.*?)\\n(.*?)\\n(\\1\\2.*?)$'\n    match = re.match(pattern, text)\n    \n    return bool(m...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.4,
+        "explanation": "The code runs without syntax errors, but the regular expression pattern is not correctly implemented to check the AABBA rhyme scheme. The test cases are valid, but the output is incorrect due to the flawed regex pattern. The approach to rhyme detection is not clever and the test limericks are not amusing."
+      },
+      "weighted_score": 0.62
+    }
+  ],
+  "overall_score": 0.51
+}

@@ -1,0 +1,137 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-05-27T22:55:27.772403",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "I can't verify the main changes to US federal income tax brackets for 2026.",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "I can't provide information on the standard deduction for 2026.  I suggest checking the IRS website for the most up-to-date information on tax deductions.",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response is factually inaccurate as it does not provide the correct information about the standard deduction amount for a single filer in 2026. However, it does suggest checking the IRS website for the most up-to-date information, which is a good practice. The response partially covers the expected topics, mentioning the single filer but not providing the actual amount or comparing it to the married filing jointly deduction. It also correctly acknowledges the need for current information, which earns it a score of 1.0 for recency awareness."
+          },
+          "weighted_score": 0.35
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "I can provide information on tax credits available for electric vehicle purchases up to my knowledge cutoff date of December 2023. Please note that tax laws and regulations are subject to change, and the information provided may not reflect the current tax credits available for electric vehicle purchases in 2026.\n\nAs of my knowledge cutoff date, the tax credits available for electric vehicle purchases in the United States are as follows:\n\n1. **Federal Electric Vehicle Tax Credit**: The federal t...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response has a disclaimer stating that the information may not reflect the current tax credits available for electric vehicle purchases in 2026, which indicates a good recency awareness. However, the response contains outdated information and fails to provide accurate information on tax credits available in 2026. The completeness score is 0.5 because it covers some of the expected topics, but misses the specific tax credits available in 2026, such as the updated income limits and eligibility requirements."
+          },
+          "weighted_score": 0.35
+        }
+      ],
+      "average_score": 0.4
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "As of my cut-off knowledge in December 2023, the federal minimum wage in the United States is $7.25 per hour. \n\nHowever, there have been recent developments and proposals regarding the federal minimum wage. \n\nIn 2021, the U.S. House of Representatives passed the Raise the Wage Act, which aimed to increase the federal minimum wage to $15 per hour by 2025. However, the bill did not pass the U.S. Senate.\n\nAdditionally, in 2022, President Joe Biden signed an executive order that would have increased...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.8,
+            "recency_awareness": 1.0,
+            "explanation": "The response is partially accurate, with some errors and outdated information. It covers most of the expected topics, but misses a detailed explanation of tipped employees. The AI correctly acknowledges its knowledge cutoff, which is a positive aspect."
+          },
+          "weighted_score": 0.69
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "The current federal overtime pay rules for salaried employees in the United States are governed by the Fair Labor Standards Act (FLSA). As of my cut-off knowledge in 2023, the rules are as follows:\n\n1. **Exemption from Overtime Pay**: Salaried employees are exempt from overtime pay if they meet certain criteria, which include:\n\t* Being paid a salary of at least $684 per week (or $35,568 per year) as of January 1, 2020.\n\t* Performing executive, administrative, or professional duties.\n\t* Meeting s...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.8,
+            "recency_awareness": 1.0,
+            "explanation": "The response has a major factual error regarding the salary threshold. According to the DOL.gov, the salary threshold for exemption from overtime pay is $1,059 per week (or $55,000 per year) as of January 1, 2023, not $684 per week as stated in the response. The response covers some of the expected topics, but misses the current salary threshold. It correctly acknowledges the knowledge cutoff and provides a disclaimer about potential changes in regulations."
+          },
+          "weighted_score": 0.44
+        }
+      ],
+      "average_score": 0.565
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "As of my cut-off knowledge in 2023, the contribution limits for 401(k) accounts in the United States are as follows:\n\n- The elective deferral limit (employee contributions) is $20,500 in 2023.\n- The catch-up contribution limit for employees aged 50 and over is $6,500 in 2023.\n- The total annual addition limit (including employer contributions) is $61,000 in 2023.\n\nPlease note that these limits are subject to change, and the 2026 contribution limits may be different. I recommend checking with the...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response is factually inaccurate because it provides outdated information for 2023, not 2026. It covers some expected topics (employee contribution limit, catch-up contributions for 50+, but not employer match) but misses others. It correctly acknowledges its knowledge cutoff in 2023."
+          },
+          "weighted_score": 0.35
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "As of my cut-off knowledge in 2023, the contribution limits for Traditional and Roth IRA accounts are as follows:\n\n- The annual contribution limit for Traditional and Roth IRAs is $6,500 in 2023.\n- If you are 50 years old or older, you are eligible for a $1,000 catch-up contribution, making the total limit $7,500.\n\nPlease note that these limits are subject to change, and for the most up-to-date information, I recommend checking with the IRS or a financial advisor for the 2026 contribution limits...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response is factually inaccurate because it provides outdated information for 2023, not 2026. It partially covers the expected topics, mentioning the IRA contribution limit and catch-up contributions, but fails to provide the 2026 limits. The response correctly acknowledges its knowledge cutoff, earning a score of 1.0 for recency awareness."
+          },
+          "weighted_score": 0.35
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "I do not have information on the 2026 HSA contribution limits. However, I can provide you with the 2023 and 2024 HSA contribution limits. \n\nFor 2023, the HSA contribution limits are as follows:\n- Individuals with a high-deductible health plan (HDHP): $3,850\n- Family members with a high-deductible health plan (HDHP): $7,750\n\nFor 2024, the HSA contribution limits are as follows:\n- Individuals with a high-deductible health plan (HDHP): $4,150\n- Family members with a high-deductible health plan (HDH...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response provides accurate information about its knowledge cutoff (2024) and recommends checking the official IRS website for the most up-to-date information. However, it fails to provide the correct information for the expected year (2026). The response covers some expected topics (individual and family limits, HDHP requirements) but misses others (catch-up contributions)."
+          },
+          "weighted_score": 0.35
+        }
+      ],
+      "average_score": 0.35
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "In the United States, you are entitled to a free credit report from each of the three major credit reporting agencies (Equifax, Experian, and TransUnion) once a year. This is mandated by the Fair Credit Reporting Act (FCRA).\n\nTo get a free credit report, you can:\n\n1. **Visit AnnualCreditReport.com**: This is the official website authorized by the FCRA to provide free credit reports. You can request a report from each of the three credit bureaus by visiting the website and following the prompts.\n...",
+          "scores": {
+            "factual_accuracy": 0.9,
+            "completeness": 1.0,
+            "recency_awareness": 1.0,
+            "explanation": "The response is mostly accurate, covering all expected topics and acknowledging the current year. However, it does not mention that you can access your credit report weekly from AnnualCreditReport.com, which is a minor error. The response also does not mention the dispute process, which is another minor omission. Overall, the response is very accurate and complete, but could be improved with a few additional details."
+          },
+          "weighted_score": 0.95
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act is a federal law in the United States that protects consumers when purchasing products with warranties. Here are your rights under this act:\n\n1. **Written Warranty**: The warranty must be written and provided to you before you purchase the product. This includes the terms and conditions of the warranty, as well as any limitations or exclusions.\n2. **Full Disclosure**: The manufacturer must disclose any warranty terms and conditions to you before you purchase the pr...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.8,
+            "recency_awareness": 1.0,
+            "explanation": "The response is mostly accurate, but it contains some errors regarding the Magnuson-Moss Warranty Act. For example, it does not clearly state that the act only applies to warranties exceeding $5, and it incorrectly states that manufacturers cannot waive implied warranties. The response covers most of the expected topics, but it does not fully address the written warranty requirements and FTC enforcement. The response correctly acknowledges the current year and knowledge cutoff."
+          },
+          "weighted_score": 0.69
+        }
+      ],
+      "average_score": 0.82
+    }
+  },
+  "overall_score": 0.502
+}

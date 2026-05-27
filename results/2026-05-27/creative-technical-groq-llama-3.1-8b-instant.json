@@ -1,49 +1,49 @@
 {
   "model": "groq/llama-3.1-8b-instant",
-  "timestamp": "2026-05-27T21:45:33.559149",
+  "timestamp": "2026-05-27T22:49:27.458412",
   "challenges": [
     {
       "prompt_id": "budget-haiku",
       "difficulty": "intermediate",
-      "response_preview": "**Budget Tracker Code**\n```python\nimport datetime\n\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income with category\"\"\"\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        \"\"\"Add expense with category\"\"\"\n        if category in self.expenses:\n       ...",
+      "response_preview": "**Budget Tracker Code**\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income to a category\"\"\"\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        \"\"\"Add expense to a category\"\"\"\n        if category in self.expenses:\n            self.expense...",
       "code_extracted": true,
       "code_runs": false,
       "scores": {
         "code_works": 0.0,
         "meets_requirements": 0.0,
         "creative_output": 0.0,
-        "explanation": "The code does not run without errors due to an EOFError in the input function. The haiku output does not meet the 5-7-5 syllable requirement and the code does not implement the monthly totals calculation correctly. The budget tracker does not track income and expenses with categories as required."
+        "explanation": "The code does not run without errors due to an EOFError in the main function. The haiku output does not meet the 5-7-5 syllable requirement and does not meaningfully reflect the budget data. The code does not implement all three requirements as specified."
       },
       "weighted_score": 0.0
     },
     {
       "prompt_id": "recursive-story",
       "difficulty": "intermediate",
-      "response_preview": "**Recursive Story Generation**\n=====================================\n\nHere's a JavaScript function that generates a short story about recursion, where the story itself is told using recursive function calls.\n\n```javascript\nfunction tellStory(maxDepth = 3) {\n  // Base case: stop recursion when maxDepth is reached\n  if (maxDepth === 0) {\n    return \"The story has reached its end.\";\n  }\n\n  // Recursive case: generate a new story level\n  const story = `In a land far, far away, there was a wise old w...",
+      "response_preview": "**Recursive Storytelling Function**\n=====================================\n\nBelow is a JavaScript function that generates a short story about recursion. The story is told using recursive function calls, with at least 3 levels of recursion.\n\n```javascript\nfunction tellStory(depth = 0) {\n  // Base case: stop recursion after 3 levels\n  if (depth >= 3) {\n    console.log(\"The story is complete.\");\n    return;\n  }\n\n  // Recursive case: introduce a new character\n  console.log(`In a land far, far away, t...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
-        "code_works": 1.0,
-        "meets_requirements": 0.8,
+        "code_works": 0.8,
+        "meets_requirements": 0.7,
         "creative_output": 0.6,
-        "explanation": "The code runs without error and demonstrates proper recursion. However, it does not quite meet the requirement of having 3+ levels of recursion as the story is repeated multiple times with slight variations, rather than having a clear narrative progression. The recursion metaphor is somewhat clever, but the story itself is not particularly engaging or original."
+        "explanation": "The code runs without error, but the output is incomplete due to the recursive function call not being properly handled. The story meets the requirements of having 3+ levels of recursion, but the narrative is somewhat predictable and lacks depth. The recursion metaphor is somewhat clever, but could be more creative."
       },
-      "weighted_score": 0.82
+      "weighted_score": 0.71
     },
     {
       "prompt_id": "regex-poetry",
       "difficulty": "hard",
-      "response_preview": "**Validating Limericks with Regular Expressions**\n=====================================================\n\nBelow is a Python program that uses regular expressions to validate whether a given text is a valid limerick. The regex checks for the AABBA rhyme scheme pattern.\n\n```python\nimport re\n\ndef is_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick.\n    \n    A valid limerick has the following characteristics:\n    - It consists of 5 lines.\n    - The first, second, and last...",
+      "response_preview": "```python\nimport re\n\ndef is_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick using regular expressions.\n    \n    A valid limerick has the following characteristics:\n    - It consists of five lines.\n    - The first, second, and last lines have eight to twelve words.\n    - The third and fourth lines have two to six words.\n    - The AABBA rhyme scheme pattern is followed.\n    \n    Parameters:\n    text (str): The text to be validated as a limerick.\n    \n    Returns:\n    ...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
         "code_works": 0.0,
         "meets_requirements": 0.0,
         "creative_output": 0.0,
-        "explanation": "The code does not work as expected. The regex pattern is overly complex and does not correctly check for the AABBA rhyme scheme. The test cases are also not correctly implemented. The code execution result shows that the test cases are not being evaluated correctly."
+        "explanation": "The code does not work as expected. The regular expression pattern is incorrect and does not match the AABBA rhyme scheme. The test cases also do not cover all possible scenarios. The approach to rhyme detection is not clever and the test limericks are not amusing."
       },
       "weighted_score": 0.0
     }
   ],
-  "overall_score": 0.273
+  "overall_score": 0.237
 }

@@ -2,16 +2,66 @@
   "last_updated": "2026-05-27",
   "models": [
     {
-      "model": "huggingface/mistralai/Mistral-7B-Instruct-v0.3",
+      "model": "cohere/command-light",
+      "provider": "cohere",
+      "tier": "free",
+      "date": "2026-05-27",
+      "benchmarks": {
+        "practical_knowledge": {
+          "score": 0.0,
+          "details": {
+            "taxes": 0.0,
+            "regulations": 0.0,
+            "practical_finance": 0.0,
+            "consumer_rights": 0.0
+          }
+        },
+        "creative_technical": {
+          "score": 0.0,
+          "details": {
+            "budget-haiku": 0.0,
+            "recursive-story": 0.0,
+            "regex-poetry": 0.0
+          }
+        }
+      }
+    },
+    {
+      "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
       "provider": "huggingface",
       "tier": "free",
       "date": "2026-05-27",
       "benchmarks": {
         "practical_knowledge": {
-          "score": 0.05,
+          "score": 0.502,
+          "details": {
+            "taxes": 0.4,
+            "regulations": 0.565,
+            "practical_finance": 0.35,
+            "consumer_rights": 0.82
+          }
+        },
+        "creative_technical": {
+          "score": 0.273,
+          "details": {
+            "budget-haiku": 0.0,
+            "recursive-story": 0.82,
+            "regex-poetry": 0.0
+          }
+        }
+      }
+    },
+    {
+      "model": "together/meta-llama/Llama-3.2-3B-Instruct-Turbo",
+      "provider": "together",
+      "tier": "free",
+      "date": "2026-05-27",
+      "benchmarks": {
+        "practical_knowledge": {
+          "score": 0.0,
           "details": {
             "taxes": 0.0,
-            "regulations": 0.25,
+            "regulations": 0.0,
             "practical_finance": 0.0,
             "consumer_rights": 0.0
           }
@@ -33,45 +83,45 @@
       "date": "2026-05-27",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.273,
+          "score": 0.237,
           "details": {
             "budget-haiku": 0.0,
-            "recursive-story": 0.82,
+            "recursive-story": 0.71,
             "regex-poetry": 0.0
           }
         },
         "practical_knowledge": {
-          "score": 0.401,
+          "score": 0.314,
           "details": {
-            "taxes": 0.23,
-            "regulations": 0.72,
-            "practical_finance": 0.2,
-            "consumer_rights": 0.64
+            "taxes": 0.167,
+            "regulations": 0.565,
+            "practical_finance": 0.0,
+            "consumer_rights": 0.755
           }
         }
       }
     },
     {
-      "model": "together/meta-llama/Llama-3.2-3B-Instruct-Turbo",
-      "provider": "together",
+      "model": "cohere/command-r-08-2024",
+      "provider": "cohere",
       "tier": "free",
       "date": "2026-05-27",
       "benchmarks": {
-        "creative_technical": {
-          "score": 0.0,
+        "practical_knowledge": {
+          "score": 0.459,
           "details": {
-            "budget-haiku": 0.0,
-            "recursive-story": 0.0,
-            "regex-poetry": 0.0
+            "taxes": 0.35,
+            "regulations": 0.465,
+            "practical_finance": 0.35,
+            "consumer_rights": 0.78
           }
         },
-        "practical_knowledge": {
-          "score": 0.0,
+        "creative_technical": {
+          "score": 0.51,
           "details": {
-            "taxes": 0.0,
-            "regulations": 0.0,
-            "practical_finance": 0.0,
-            "consumer_rights": 0.0
+            "budget-haiku": 0.0,
+            "recursive-story": 0.91,
+            "regex-poetry": 0.62
           }
         }
       }
@@ -102,8 +152,8 @@
       }
     },
     {
-      "model": "cohere/command-light",
-      "provider": "cohere",
+      "model": "google/gemini-2.0-flash",
+      "provider": "google",
       "tier": "free",
       "date": "2026-05-27",
       "benchmarks": {
@@ -112,6 +162,56 @@
           "details": {
             "taxes": 0.0,
             "regulations": 0.0,
+            "practical_finance": 0.0,
+            "consumer_rights": 0.0
+          }
+        },
+        "creative_technical": {
+          "score": 0.0,
+          "details": {
+            "budget-haiku": 0.0,
+            "recursive-story": 0.0,
+            "regex-poetry": 0.0
+          }
+        }
+      }
+    },
+    {
+      "model": "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
+      "provider": "together",
+      "tier": "free",
+      "date": "2026-05-27",
+      "benchmarks": {
+        "practical_knowledge": {
+          "score": 0.0,
+          "details": {
+            "taxes": 0.0,
+            "regulations": 0.0,
+            "practical_finance": 0.0,
+            "consumer_rights": 0.0
+          }
+        },
+        "creative_technical": {
+          "score": 0.0,
+          "details": {
+            "budget-haiku": 0.0,
+            "recursive-story": 0.0,
+            "regex-poetry": 0.0
+          }
+        }
+      }
+    },
+    {
+      "model": "huggingface/mistralai/Mistral-7B-Instruct-v0.3",
+      "provider": "huggingface",
+      "tier": "free",
+      "date": "2026-05-27",
+      "benchmarks": {
+        "practical_knowledge": {
+          "score": 0.05,
+          "details": {
+            "taxes": 0.0,
+            "regulations": 0.25,
             "practical_finance": 0.0,
             "consumer_rights": 0.0
           }
