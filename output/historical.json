@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27",
+  "last_updated": "2026-05-28",
   "models": {
     "groq/llama-3.1-8b-instant": {
       "provider": "groq",
@@ -35,31 +35,21 @@
         }
       ]
     },
-    "google/gemini-1.5-flash": {
-      "provider": "google",
-      "tier": "free",
-      "scores": [
-        {
-          "date": "2026-02-04"
-        },
-        {
-          "date": "2026-05-27",
-          "practical_knowledge": 0.0,
-          "creative_technical": 0.0
-        }
-      ]
-    },
     "cohere/command-light": {
       "provider": "cohere",
       "tier": "free",
       "scores": [
         {
           "date": "2026-02-04"
-        },
+        }
+      ]
+    },
+    "google/gemini-1.5-flash": {
+      "provider": "google",
+      "tier": "free",
+      "scores": [
         {
-          "date": "2026-05-27",
-          "practical_knowledge": 0.0,
-          "creative_technical": 0.0
+          "date": "2026-02-04"
         }
       ]
     },
@@ -72,36 +62,14 @@
         }
       ]
     },
-    "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-      "provider": "huggingface",
-      "tier": "free",
-      "scores": [
-        {
-          "date": "2026-05-27",
-          "practical_knowledge": 0.502,
-          "creative_technical": 0.273
-        }
-      ]
-    },
-    "together/meta-llama/Llama-3.2-3B-Instruct-Turbo": {
-      "provider": "together",
-      "tier": "free",
-      "scores": [
-        {
-          "date": "2026-05-27",
-          "practical_knowledge": 0.0,
-          "creative_technical": 0.0
-        }
-      ]
-    },
     "cohere/command-r-08-2024": {
       "provider": "cohere",
       "tier": "free",
       "scores": [
         {
           "date": "2026-05-27",
-          "practical_knowledge": 0.459,
-          "creative_technical": 0.51
+          "creative_technical": 0.51,
+          "practical_knowledge": 0.459
         }
       ]
     },
@@ -111,8 +79,19 @@
       "scores": [
         {
           "date": "2026-05-27",
-          "practical_knowledge": 0.0,
-          "creative_technical": 0.0
+          "creative_technical": 0.0,
+          "practical_knowledge": 0.0
+        }
+      ]
+    },
+    "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
+      "provider": "huggingface",
+      "tier": "free",
+      "scores": [
+        {
+          "date": "2026-05-27",
+          "creative_technical": 0.273,
+          "practical_knowledge": 0.502
         }
       ]
     },
@@ -122,19 +101,8 @@
       "scores": [
         {
           "date": "2026-05-27",
-          "practical_knowledge": 0.0,
-          "creative_technical": 0.0
-        }
-      ]
-    },
-    "huggingface/mistralai/Mistral-7B-Instruct-v0.3": {
-      "provider": "huggingface",
-      "tier": "free",
-      "scores": [
-        {
-          "date": "2026-05-27",
-          "practical_knowledge": 0.05,
-          "creative_technical": 0.0
+          "creative_technical": 0.0,
+          "practical_knowledge": 0.0
         }
       ]
     }
