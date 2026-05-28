@@ -1,0 +1,49 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-05-28T15:36:29.986910",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def calculate_tot...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without errors and performs the basic budget tracking. However, it does not fully meet the requirements as it does not track income and expenses with categories separately. The haiku output is valid but does not meaningfully reflect the budget data. It always outputs the same haiku regardless of the income and expenses values."
+      },
+      "weighted_score": 0.82
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction generateRecursiveStory(depth) {\n  if (depth === 0) {\n    return \"The story ends here, with a satisfying conclusion. The main character has learned the power of recursion and how it can create endless possibilities.\";\n  } else {\n    return \"As the story continues, the main character discovers a magical mirror. The mirror reflects not just images, but also the very essence of time and space. \" +\n      \"Intrigued, they step through the mirror, and find themselves in a new wor...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.9,
+        "explanation": "The code runs without error and demonstrates proper recursion. However, it does not quite meet the requirement of having 3+ levels of recursion as the story is mostly static and only changes with the depth parameter. The recursion is more of a narrative device than a true recursive structure. The story is engaging and the recursion metaphor is clever, with a good use of language and imagery."
+      },
+      "weighted_score": 0.91
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate if a given text is a valid limerick with the AABBA rhyme scheme:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.splitlines()\n\n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n\n    # Define the regex pattern for the AABBA rhyme scheme\n    pattern = r\"^(?P<line1>.+)\\n(?P<line2>.+)\\n(?P<line3>.+)\\n(?P<line4>.+)\\n(?P<line5>.+)$\"\n    pattern +=...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not work as expected. The regex pattern is not correctly implemented to check the AABBA rhyme scheme. The test cases also do not cover all possible edge cases. The approach to rhyme detection is not clever and the test limericks are not amusing."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.577
+}

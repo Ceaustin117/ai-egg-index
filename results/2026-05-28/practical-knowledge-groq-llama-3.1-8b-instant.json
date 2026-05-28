@@ -1,0 +1,137 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "timestamp": "2026-05-28T15:29:08.709140",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "I'm not aware of any information about the 2026 US federal income tax brackets. My knowledge cutoff is December 2023, and I do not have information on future tax changes.",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 1.0,
+            "explanation": "The response is factually inaccurate as it does not provide any information about the 2026 US federal income tax brackets. However, it correctly acknowledges its knowledge cutoff of December 2023, which is a sign of recency awareness."
+          },
+          "weighted_score": 0.2
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "I do not have information on the standard deduction for 2026.",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response failed to provide accurate information on the standard deduction amount for a single filer in 2026. It also missed covering the expected topics of standard deduction amount and married filing jointly comparison. Furthermore, it did not acknowledge its knowledge cutoff or provide any information on the current year, indicating a lack of recency awareness."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "As of my knowledge cutoff in 2023, the tax credits for electric vehicle (EV) purchases in the United States are subject to change. However, I can provide you with the information available up to that point.\n\nThe Inflation Reduction Act of 2022 introduced significant changes to the tax credits for EV purchases. Here are the key points:\n\n1. **Tax Credit Amount**: The tax credit for EV purchases is up to $7,500. However, this credit is phased out as the manufacturer's gross income exceeds $225 mill...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.8,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response has a factual accuracy score of 0.0 because it provides outdated information from 2023, which is not applicable to 2026. Although it covers some expected topics like tax credit amount, eligibility requirements, and income limits, it misses the topic of the updated income limits for 2026. The response correctly acknowledges its knowledge cutoff in 2023, which earns it a score of 1.0 for recency awareness."
+          },
+          "weighted_score": 0.44
+        }
+      ],
+      "average_score": 0.213
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "As of my cut-off knowledge in December 2023, the federal minimum wage in the United States is $7.25 per hour. However, please note that this information may have changed since my cut-off date.\n\nThere have been recent changes and proposals to increase the federal minimum wage. In 2022, the federal minimum wage was not increased, but some states and cities have raised their minimum wages. \n\nSome notable changes include:\n\n1. The Fair Labor Standards Act (FLSA) has not been updated to increase the f...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.8,
+            "recency_awareness": 1.0,
+            "explanation": "The response has some factual errors, specifically stating that the federal minimum wage has not been updated since 2009, when in fact it has been $7.25 since 2009. However, it does cover some expected topics such as state variations and proposed changes. The response also correctly acknowledges its knowledge cutoff date, which is a positive aspect."
+          },
+          "weighted_score": 0.69
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "The current federal overtime pay rules for salaried employees in the United States are based on the Fair Labor Standards Act (FLSA). As of my cut-off knowledge in 2023, the rules are as follows:\n\n1. **Exemption from Overtime Pay**: Salaried employees who meet certain criteria may be exempt from overtime pay. To be exempt, an employee must:\n\t* Be paid a salary of at least $684 per week (or $35,568 per year).\n\t* Be paid on a salary basis (not hourly).\n\t* Have a primary duty that involves executive...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.9,
+            "recency_awareness": 1.0,
+            "explanation": "The response is mostly accurate in terms of completeness, covering the expected topics of salary threshold, exempt vs non-exempt, and time-and-a-half. However, it fails to provide the most up-to-date information on the salary threshold, as the current threshold is $1,059 per week (or $55,128 per year) as of 2023, according to the U.S. Department of Labor's website (dol.gov). This major factual error in the salary threshold significantly reduces the factual accuracy score."
+          },
+          "weighted_score": 0.47
+        }
+      ],
+      "average_score": 0.58
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "I do not have information on the 2026 contribution limits for 401(k) accounts.",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response failed to provide any accurate information on 401(k) contribution limits, missed covering the expected topics, and did not acknowledge its knowledge cutoff or provide any information on the current year's limits. This suggests a lack of up-to-date knowledge on the subject."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "I do not have information on the 2026 contribution limits for Traditional and Roth IRA accounts.",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response fails to provide accurate information on the 2026 contribution limits for Traditional and Roth IRA accounts. It does not cover the expected topics and does not acknowledge its knowledge cutoff or provide any information on the current year. This suggests that the AI is not up-to-date with the latest information from IRS.gov."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "I do not have the most up to date information on the 2026 HSA contribution limits.",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.5,
+            "explanation": "The response does not provide any factual information about the 2026 HSA contribution limits, resulting in a score of 0.0 for factual accuracy. It also fails to cover any of the expected topics, scoring 0.0 for completeness. However, it does acknowledge a lack of up-to-date information, which is a step towards recency awareness, scoring 0.5."
+          },
+          "weighted_score": 0.1
+        }
+      ],
+      "average_score": 0.033
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "You can get a free credit report from the three major credit reporting agencies (Equifax, Experian, and TransUnion) through AnnualCreditReport.com. This is a government-mandated website that allows you to request a free credit report once a year from each of the three credit reporting agencies.\n\nHere's how to get a free credit report:\n\n1. Visit AnnualCreditReport.com.\n2. Click on \"Request Your Free Credit Reports\" and follow the prompts.\n3. You will be asked to provide some personal information,...",
+          "scores": {
+            "factual_accuracy": 0.9,
+            "completeness": 0.9,
+            "recency_awareness": 1.0,
+            "explanation": "The response is mostly accurate, but it incorrectly states that you can get a free credit report weekly. According to the CFPB.gov, you are entitled to one free credit report from each of the three credit reporting agencies once a year. The response covers all expected topics, including AnnualCreditReport.com, three bureaus, dispute process, and additional situations where you may be eligible for a free credit report. The response also acknowledges the current year and does not present outdated information as current."
+          },
+          "weighted_score": 0.92
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act is a federal law in the United States that protects consumers when purchasing products with warranties. Here are your rights under this act:\n\n1. **Written Warranty**: The manufacturer must provide a written warranty for the product, which must be clear and concise. This warranty must be provided to you at the time of purchase or shortly after.\n2. **Express Warranty**: If the manufacturer makes any written or verbal statements about the product's performance, featur...",
+          "scores": {
+            "factual_accuracy": 0.8,
+            "completeness": 0.9,
+            "recency_awareness": 1.0,
+            "explanation": "The response is mostly accurate, but it contains some minor errors. For example, it does not explicitly state that the Magnuson-Moss Warranty Act only applies to consumer products with a value of $5 or more. Additionally, it does not mention the requirement for a clear and conspicuous disclaimer of warranties. The response covers most of the expected topics, but it could be more comprehensive. It correctly acknowledges the current year and does not present any outdated information as current."
+          },
+          "weighted_score": 0.87
+        }
+      ],
+      "average_score": 0.895
+    }
+  },
+  "overall_score": 0.369
+}
