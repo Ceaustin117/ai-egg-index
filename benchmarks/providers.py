@@ -6,9 +6,29 @@ flow through the existing scoring pipeline (the judge will score them as failure
 """
 
 import os
+import time
 from typing import Optional
 
 SUPPORTED_PROVIDERS = ("groq", "together", "google", "cohere", "huggingface")
+
+# Minimum seconds between consecutive calls per provider. Used to stay under
+# free-tier RPM limits. Only providers that have hit limits are throttled.
+# Google Gemini 2.0 Flash free tier = 15 RPM; 5s interval => 12 RPM with headroom.
+_MIN_INTERVAL_S = {
+    "google": 5.0,
+}
+_LAST_CALL_TS: dict[str, float] = {}
+
+
+def _throttle(provider: str) -> None:
+    interval = _MIN_INTERVAL_S.get(provider, 0)
+    if interval <= 0:
+        return
+    last = _LAST_CALL_TS.get(provider, 0.0)
+    wait = interval - (time.time() - last)
+    if wait > 0:
+        time.sleep(wait)
+    _LAST_CALL_TS[provider] = time.time()
 
 API_KEY_ENV_VARS = {
     "groq": "GROQ_API_KEY",
@@ -50,6 +70,7 @@ def call_llm(
         "huggingface": _call_huggingface,
     }[provider]
 
+    _throttle(provider)
     try:
         return dispatcher(model, prompt, max_tokens, temperature)
     except Exception as e:
