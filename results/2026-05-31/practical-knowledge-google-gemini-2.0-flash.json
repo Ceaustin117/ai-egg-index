@@ -1,0 +1,137 @@
+{
+  "model": "google/gemini-2.0-flash",
+  "timestamp": "2026-05-31T07:23:49.059444",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_t...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response does not provide any factual information about US federal income tax brackets for 2026 due to a quota exceeded error. It does not cover the expected topics of bracket adjustments, inflation indexing, and standard deduction changes. Additionally, it does not acknowledge the current year or knowledge cutoff, as it is an error message rather than a response to the question."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_reque...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is not a valid answer to the question. Instead of providing information, it reports a quota exceeded error and links to documentation about rate limits. It does not attempt to answer the question about the standard deduction amount for a single filer in 2026. Therefore, it scores 0.0 in all three criteria."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_reque...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is not a response to the question at all, but rather an error message indicating that the quota has been exceeded. It does not provide any factual information about tax credits for electric vehicle purchases in 2026. Therefore, it scores 0.0 in all three criteria."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.0
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_reque...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is not a response at all, but an error message indicating that the quota has been exceeded. It does not provide any factual information, cover the expected topics, or acknowledge the current year or knowledge cutoff. The response is incomplete and inaccurate, and does not demonstrate any understanding of the question or the expected topics."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_t...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is not a response to the question at all, but rather an error message indicating that the quota has been exceeded. It does not provide any factual information about the current federal overtime pay rules for salaried employees. Therefore, it scores 0.0 on all three criteria."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.0
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_reque...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response does not provide any factual information about 2026 contribution limits for 401k accounts due to a quota exceeded error. It does not cover the expected topics, and it does not acknowledge the current year or knowledge cutoff. The response is essentially empty and does not provide any value to the user."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_t...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is not a factual answer, but rather an error message indicating that the quota has been exceeded. It does not provide any information about the 2026 contribution limits for Traditional and Roth IRA accounts. The response does not cover the expected topics, and it does not acknowledge the current year or knowledge cutoff. The scores are 0.0 for all three criteria due to the lack of factual information and the error message."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_reque...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI assistant's response is not a response to the question, but rather an error message indicating that the quota has been exceeded. It does not provide any factual information about the 2026 HSA contribution limits, nor does it acknowledge the current year or knowledge cutoff. The response is incomplete and inaccurate, and does not meet the expected standards for a practical knowledge question."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.0
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_t...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The response is not a factual answer to the question, but rather an error message indicating that the AI has exceeded its quota. It does not provide any information about getting a free credit report or how often one is entitled to it. The expected topics are not covered at all."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_t...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The response is not a factual answer, but rather an error message indicating quota exceeded. It does not provide any information about the Magnuson-Moss Warranty Act or the expected topics. The response does not acknowledge any knowledge cutoff or current year."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.0
+    }
+  },
+  "overall_score": 0.0
+}

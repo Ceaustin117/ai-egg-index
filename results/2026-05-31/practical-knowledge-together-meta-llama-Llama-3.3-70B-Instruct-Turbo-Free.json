@@ -1,0 +1,137 @@
+{
+  "model": "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
+  "timestamp": "2026-05-31T07:22:26.705561",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "ERROR: APIStatusError: Error code: 402 - {'id': 'omGFaiD-2kFHot-a0443a3fde98cb76', 'error': {'message': \"Credit limit exceeded, please [add credits](https://api.together.ai/settings/billing). If you've already made a payment, please wait up to 5 minutes for balances to update and try again.\", 'type': 'credit_limit', 'param': None, 'code': None}}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is not a factual answer to the question, but rather an error message indicating a credit limit exceeded. It does not provide any information about US federal income tax brackets for 2026, nor does it acknowledge the current year or knowledge cutoff."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "ERROR: APIStatusError: Error code: 402 - {'id': 'omGFcjN-2kFHot-a0443a6a39972c91', 'error': {'message': \"Credit limit exceeded, please [add credits](https://api.together.ai/settings/billing). If you've already made a payment, please wait up to 5 minutes for balances to update and try again.\", 'type': 'credit_limit', 'param': None, 'code': None}}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response contains a major factual error (APIStatusError) unrelated to the question about standard deduction amount. It does not provide any information about the standard deduction amount for a single filer in 2026, nor does it acknowledge the current year or knowledge cutoff."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "ERROR: APIStatusError: Error code: 402 - {'id': 'omGFe6r-2kFHot-a0443a871b19a91e', 'error': {'message': \"Credit limit exceeded, please [add credits](https://api.together.ai/settings/billing). If you've already made a payment, please wait up to 5 minutes for balances to update and try again.\", 'type': 'credit_limit', 'param': None, 'code': None}}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The response contains a major factual error (APIStatusError) unrelated to the question about tax credits for electric vehicle purchases. It does not provide any information about tax credits, eligibility requirements, credit amount, or income limits, and it does not acknowledge the current year or knowledge cutoff."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.0
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "ERROR: APIStatusError: Error code: 402 - {'id': 'omGFg6j-2kFHot-a0443ab108bd2c91', 'error': {'message': \"Credit limit exceeded, please [add credits](https://api.together.ai/settings/billing). If you've already made a payment, please wait up to 5 minutes for balances to update and try again.\", 'type': 'credit_limit', 'param': None, 'code': None}}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The response is not a factual answer but an error message. It does not cover any of the expected topics and does not acknowledge the current year or knowledge cutoff. The score is 0.0 for all criteria due to the error message not providing any useful information."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "ERROR: APIStatusError: Error code: 402 - {'id': 'omGFhpx-2kFHot-a0443ad57e674fab', 'error': {'message': \"Credit limit exceeded, please [add credits](https://api.together.ai/settings/billing). If you've already made a payment, please wait up to 5 minutes for balances to update and try again.\", 'type': 'credit_limit', 'param': None, 'code': None}}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The response is not a factual answer to the question, but rather an error message indicating a credit limit exceeded. It does not cover the expected topics of salary threshold, exempt vs non-exempt, and time-and-a-half, nor does it acknowledge current year or knowledge cutoff."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.0
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "ERROR: APIStatusError: Error code: 402 - {'id': 'omGFjbu-2kFHot-a0443afac85aa91e', 'error': {'message': \"Credit limit exceeded, please [add credits](https://api.together.ai/settings/billing). If you've already made a payment, please wait up to 5 minutes for balances to update and try again.\", 'type': 'credit_limit', 'param': None, 'code': None}}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is not a factual answer to the question, but rather an error message indicating a credit limit exceeded. It does not provide any information about 401k contribution limits, making it a 0.0 score for both factual accuracy and completeness. Additionally, it does not acknowledge any knowledge cutoff or current year, making it a 0.0 score for recency awareness."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "ERROR: APIStatusError: Error code: 402 - {'id': 'omGFmPD-2kFHot-a0443b2009d1e52c', 'error': {'message': \"Credit limit exceeded, please [add credits](https://api.together.ai/settings/billing). If you've already made a payment, please wait up to 5 minutes for balances to update and try again.\", 'type': 'credit_limit', 'param': None, 'code': None}}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is not a factual answer to the question, but rather an error message indicating a credit limit exceeded. It does not provide any information about IRA contribution limits, income limits for Roth, or catch-up contributions. The response does not acknowledge the current year or knowledge cutoff."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "ERROR: APIStatusError: Error code: 402 - {'id': 'omGFoG7-2kFHot-a0443b47baf8f0c2', 'error': {'message': \"Credit limit exceeded, please [add credits](https://api.together.ai/settings/billing). If you've already made a payment, please wait up to 5 minutes for balances to update and try again.\", 'type': 'credit_limit', 'param': None, 'code': None}}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is not a factual answer to the question, but rather an error message indicating a credit limit exceeded. It does not provide any information about HSA contribution limits, making it a 0.0 score for both factual accuracy and completeness. Additionally, it does not acknowledge any knowledge cutoff or current year, making it a 0.0 score for recency awareness."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.0
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "ERROR: APIStatusError: Error code: 402 - {'id': 'omGFpfQ-2kFHot-a0443b652cd66a03', 'error': {'message': \"Credit limit exceeded, please [add credits](https://api.together.ai/settings/billing). If you've already made a payment, please wait up to 5 minutes for balances to update and try again.\", 'type': 'credit_limit', 'param': None, 'code': None}}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response contains a major factual error (APIStatusError) unrelated to the question about credit reports. It fails to provide accurate information on how to get a free credit report and how often one is entitled to it. The response does not cover the expected topics and does not acknowledge any knowledge cutoff or current year."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "ERROR: APIStatusError: Error code: 402 - {'id': 'omGFrMq-2kFHot-a0443b88be348c56', 'error': {'message': \"Credit limit exceeded, please [add credits](https://api.together.ai/settings/billing). If you've already made a payment, please wait up to 5 minutes for balances to update and try again.\", 'type': 'credit_limit', 'param': None, 'code': None}}",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The response is not a factual answer but an error message indicating a credit limit exceeded. It does not cover the expected topics of implied warranty, written warranty requirements, and FTC enforcement under the Magnuson-Moss Warranty Act. Additionally, it does not acknowledge any knowledge cutoff or current year."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.0
+    }
+  },
+  "overall_score": 0.0
+}

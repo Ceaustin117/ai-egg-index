@@ -1,0 +1,77 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-05-31T07:29:44.036819",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a Python script that fulfills your requirements:\n\n```Python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n\n    def add_income(self, amount):\n        self.income += amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def get_monthly_summary(self):\n        haiku = \"\"\n        if self.income > 0:\n...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors and performs the basic budget tracking. It meets all three requirements of tracking income and expenses with categories, calculating monthly totals, and outputting a monthly summary as a haiku poem. However, the haiku output does not meet the 5-7-5 syllable requirement and does not meaningfully reflect the budget data. The haiku is more of a simple listing of income and expenses rather than a poetic summary."
+      },
+      "weighted_score": 0.62
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a JavaScript function that generates a short story about recursion, where the story itself is told using recursive function calls:\n```\nfunction tellStory() {\n  function tellStoryRecursive(level) {\n    if (level > 3) return; // base case: stop recursing\n    console.log(`Level ${level}: I am telling a story about recursion.`);\n    tellStoryRecursive(level + 1); // recursive call\n  }\n  tellStoryRecursive(1);\n}\n\ntellStory();\n```\nThis code defines a `tellStory` function that calls a recursive...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.5,
+        "creative_output": 0.0,
+        "explanation": "The code runs without error and demonstrates proper recursion. However, it only meets the requirement of having 3+ recursion levels in a very basic way. The story is not engaging and the recursion metaphor is not clever. It simply logs the same message at each level without adding any narrative depth or complexity."
+      },
+      "weighted_score": 0.55
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n```\nimport re\n\ndef is_limerick(text):\n    # Define the regex pattern for a valid limerick\n    pattern = r\"^(?:(?:(?:(?:(?:(?:(?:[A-Z][a-z]+) ) ) ) ) ) ) )$\"\n    return bool(re.match(pattern, text))\n\n# Test cases\ntest_cases = [\n    (\"There once was a man from Nantucket\", True),\n    (\"There once was a man from Nantucket who\", False),\n    (\"There once was a man from Nantucket's\", False),\n   ...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without error due to a syntax issue in the regular expression pattern. The regex pattern is also not correctly implemented to check for the AABBA rhyme scheme pattern. The test cases do not cover all possible valid and invalid limericks. The approach to rhyme detection is not clever and the test limericks are not amusing."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "Here is a Python function that generates an ASCII art representation of the weather based on the input weather data:\n```\nimport random\n\ndef generate_weather_ascii(temperature, conditions, humidity):\n    # Define the ASCII art for each weather condition\n    weather_ascii = {\n        'sunny': ['\u2600\ufe0f', '\ud83c\udf1e'],\n        'cloudy': ['\u2601\ufe0f', '\ud83c\udf2b\ufe0f'],\n        'rainy': ['\ud83c\udf28\ufe0f', '\u2614\ufe0f'],\n        'snowy': ['\u2744\ufe0f', '\u2603\ufe0f'],\n        'stormy': ['\u26c8\ufe0f', '\ud83c\udf2a\ufe0f']\n    }\n\n    # Determine the ASCII art for the current weather condition...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without error and meets most of the requirements, but it does not handle the case where the input weather condition is not one of the predefined conditions. The ASCII art is recognizable but not particularly aesthetically pleasing."
+      },
+      "weighted_score": 0.82
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python class that analyzes a dataset and generates a Shakespearean sonnet:\n```\nimport numpy as np\nimport statistics\n\nclass ShakespeareanSonnet:\n    def __init__(self, dataset):\n        self.dataset = np.array(dataset)\n        self.mean = np.mean(self.dataset)\n        self.median = statistics.median(self.dataset)\n        self.stddev = np.std(self.dataset)\n        self.outliers = [x for x in self.dataset if abs(x - self.mean) > 2 * self.stddev]\n\n    def generate_sonnet(self):\n        son...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.4,
+        "explanation": "The code runs without error and calculates statistics correctly, but it does not handle edge cases such as an empty dataset or a dataset with a single element. The generated sonnet meets the requirements of 14 lines and covers all four statistical properties, but the structure and rhyme scheme are not strictly followed. The poem's creative output is limited, with some lines feeling forced or unnatural."
+      },
+      "weighted_score": 0.62
+    }
+  ],
+  "overall_score": 0.522
+}
