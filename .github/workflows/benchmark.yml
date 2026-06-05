@@ -54,10 +54,12 @@ jobs:
           set +e  # continue on per-provider failures
 
           # provider:model pairs. Edit here to add or change models.
+          # NOTE: Together AI dropped its standalone free tier — the "-Free" model
+          # now requires a credit balance and returns 402 when empty, so it's been
+          # removed to keep the index free-tier only.
           PAIRS=(
             "groq:llama-3.1-8b-instant"
-            "together:meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
-            "google:gemini-2.0-flash"
+            "google:gemini-2.5-flash"
             "cohere:command-r-08-2024"
             "huggingface:meta-llama/Meta-Llama-3-8B-Instruct"
           )

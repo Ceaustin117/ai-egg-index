@@ -2,29 +2,47 @@
   "last_updated": "2026-05-31",
   "models": [
     {
-      "model": "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
-      "provider": "together",
+      "model": "cohere/command-r-08-2024",
+      "provider": "cohere",
       "tier": "free",
       "date": "2026-05-31",
       "benchmarks": {
-        "practical_knowledge": {
-          "score": 0.0,
-          "details": {
-            "taxes": 0.0,
-            "regulations": 0.0,
-            "practical_finance": 0.0,
-            "consumer_rights": 0.0
-          }
-        },
         "creative_technical": {
-          "score": 0.0,
+          "score": 0.276,
           "details": {
-            "budget-haiku": 0.0,
-            "recursive-story": 0.0,
+            "budget-haiku": 0.56,
+            "recursive-story": 0.82,
             "regex-poetry": 0.0,
             "ascii-weather": 0.0,
             "data-sonnet": 0.0
           }
+        },
+        "practical_knowledge": {
+          "score": 0.411,
+          "details": {
+            "taxes": 0.38,
+            "regulations": 0.59,
+            "practical_finance": 0.35,
+            "consumer_rights": 0.37
+          }
+        }
+      }
+    },
+    {
+      "model": "google/gemini-2.0-flash",
+      "provider": "google",
+      "tier": "free",
+      "date": "2026-05-31",
+      "benchmarks": {
+        "creative_technical": {
+          "score": null,
+          "status": "error",
+          "error": "Free-tier quota/rate limit exceeded"
+        },
+        "practical_knowledge": {
+          "score": null,
+          "status": "error",
+          "error": "Free-tier quota/rate limit exceeded"
         }
       }
     },
@@ -51,33 +69,6 @@
             "regulations": 0.72,
             "practical_finance": 0.317,
             "consumer_rights": 0.59
-          }
-        }
-      }
-    },
-    {
-      "model": "google/gemini-2.0-flash",
-      "provider": "google",
-      "tier": "free",
-      "date": "2026-05-31",
-      "benchmarks": {
-        "creative_technical": {
-          "score": 0.0,
-          "details": {
-            "budget-haiku": 0.0,
-            "recursive-story": 0.0,
-            "regex-poetry": 0.0,
-            "ascii-weather": 0.0,
-            "data-sonnet": 0.0
-          }
-        },
-        "practical_knowledge": {
-          "score": 0.0,
-          "details": {
-            "taxes": 0.0,
-            "regulations": 0.0,
-            "practical_finance": 0.0,
-            "consumer_rights": 0.0
           }
         }
       }
@@ -110,29 +101,20 @@
       }
     },
     {
-      "model": "cohere/command-r-08-2024",
-      "provider": "cohere",
+      "model": "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
+      "provider": "together",
       "tier": "free",
       "date": "2026-05-31",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.276,
-          "details": {
-            "budget-haiku": 0.56,
-            "recursive-story": 0.82,
-            "regex-poetry": 0.0,
-            "ascii-weather": 0.0,
-            "data-sonnet": 0.0
-          }
+          "score": null,
+          "status": "error",
+          "error": "Credit/billing limit exceeded"
         },
         "practical_knowledge": {
-          "score": 0.411,
-          "details": {
-            "taxes": 0.38,
-            "regulations": 0.59,
-            "practical_finance": 0.35,
-            "consumer_rights": 0.37
-          }
+          "score": null,
+          "status": "error",
+          "error": "Credit/billing limit exceeded"
         }
       }
     }

@@ -13,9 +13,9 @@ SUPPORTED_PROVIDERS = ("groq", "together", "google", "cohere", "huggingface")
 
 # Minimum seconds between consecutive calls per provider. Used to stay under
 # free-tier RPM limits. Only providers that have hit limits are throttled.
-# Google Gemini 2.0 Flash free tier = 15 RPM; 5s interval => 12 RPM with headroom.
+# Google Gemini 2.5 Flash free tier = 10 RPM; 7s interval => ~8.5 RPM with headroom.
 _MIN_INTERVAL_S = {
-    "google": 5.0,
+    "google": 7.0,
 }
 _LAST_CALL_TS: dict[str, float] = {}
 

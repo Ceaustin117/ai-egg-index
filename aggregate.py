@@ -13,6 +13,41 @@ from pathlib import Path
 from typing import Any
 
 
+def _summarize_error(msg: str) -> str:
+    """Map a raw provider error string to a short, human-readable reason for the UI tooltip."""
+    low = msg.lower()
+    # Check quota/rate before credit: some quota errors (e.g. Google 429) also mention
+    # "billing" in their help URL, but a 402 credit error never mentions quota/429.
+    if "429" in low or "quota" in low or "resourceexhausted" in low or "rate limit" in low:
+        return "Free-tier quota/rate limit exceeded"
+    if "credit" in low or "402" in low or "billing" in low:
+        return "Credit/billing limit exceeded"
+    if "401" in low or "403" in low or "permission" in low or "api key" in low or "unauthorized" in low:
+        return "Authentication/permission error"
+    if "404" in low or "not found" in low or "does not exist" in low or "decommission" in low:
+        return "Model unavailable / not found"
+    return "Provider API error"
+
+
+def _api_error_status(responses: list) -> tuple:
+    """Decide whether a whole benchmark failed due to provider/API errors rather than
+    genuine low performance.
+
+    providers.py returns API failures as strings starting with 'ERROR:'. A benchmark is
+    considered failed only if EVERY response errored — a single real response means the
+    model answered (possibly poorly), which is a legitimate score, not an outage.
+
+    Returns (failed: bool, reason: str | None).
+    """
+    texts = [r for r in responses if isinstance(r, str)]
+    if not texts:
+        return False, None
+    errors = [t for t in texts if t.startswith("ERROR:")]
+    if len(errors) < len(texts):
+        return False, None
+    return True, _summarize_error(errors[0])
+
+
 class BenchmarkAggregator:
     """Aggregates benchmark results from multiple sources."""
 
@@ -43,21 +78,39 @@ class BenchmarkAggregator:
 
                 # Determine benchmark type from filename or content
                 if "practical-knowledge" in result_file.name:
-                    models[model]["benchmarks"]["practical_knowledge"] = {
-                        "score": data.get("overall_score", 0),
-                        "details": {
-                            cat: info.get("average_score", 0)
-                            for cat, info in data.get("categories", {}).items()
+                    responses = [
+                        q.get("response", "")
+                        for cat in data.get("categories", {}).values()
+                        for q in cat.get("questions", [])
+                    ]
+                    failed, reason = _api_error_status(responses)
+                    if failed:
+                        models[model]["benchmarks"]["practical_knowledge"] = {
+                            "score": None, "status": "error", "error": reason
                         }
-                    }
+                    else:
+                        models[model]["benchmarks"]["practical_knowledge"] = {
+                            "score": data.get("overall_score", 0),
+                            "details": {
+                                cat: info.get("average_score", 0)
+                                for cat, info in data.get("categories", {}).items()
+                            }
+                        }
                 elif "creative-technical" in result_file.name:
-                    models[model]["benchmarks"]["creative_technical"] = {
-                        "score": data.get("overall_score", 0),
-                        "details": {
-                            c["prompt_id"]: c.get("weighted_score", 0)
-                            for c in data.get("challenges", [])
+                    responses = [c.get("response_preview", "") for c in data.get("challenges", [])]
+                    failed, reason = _api_error_status(responses)
+                    if failed:
+                        models[model]["benchmarks"]["creative_technical"] = {
+                            "score": None, "status": "error", "error": reason
                         }
-                    }
+                    else:
+                        models[model]["benchmarks"]["creative_technical"] = {
+                            "score": data.get("overall_score", 0),
+                            "details": {
+                                c["prompt_id"]: c.get("weighted_score", 0)
+                                for c in data.get("challenges", [])
+                            }
+                        }
                 elif "humaneval" in result_file.name.lower():
                     models[model]["benchmarks"]["humaneval"] = {
                         "score": data.get("score", data.get("pass_at_1", 0)),

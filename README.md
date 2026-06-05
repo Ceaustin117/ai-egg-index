@@ -17,6 +17,8 @@ Can free AI help with your taxes? Can it handle a complex reasoning task that so
 
 **We only test what you can actually use without paying** — including rate limits and context constraints.
 
+The full benchmark suite runs automatically **once a week** (every Sunday at 06:00 UTC via GitHub Actions), and the leaderboard is updated with each run.
+
 ---
 
 ## Quick Start

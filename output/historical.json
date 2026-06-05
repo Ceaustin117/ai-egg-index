@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31",
+  "last_updated": "2026-06-04",
   "models": {
     "groq/llama-3.1-8b-instant": {
       "provider": "groq",
@@ -45,6 +45,15 @@
         }
       ]
     },
+    "cohere/command-light": {
+      "provider": "cohere",
+      "tier": "free",
+      "scores": [
+        {
+          "date": "2026-02-04"
+        }
+      ]
+    },
     "google/gemini-1.5-flash": {
       "provider": "google",
       "tier": "free",
@@ -63,33 +72,24 @@
         }
       ]
     },
-    "cohere/command-light": {
+    "cohere/command-r-08-2024": {
       "provider": "cohere",
       "tier": "free",
       "scores": [
         {
-          "date": "2026-02-04"
-        }
-      ]
-    },
-    "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free": {
-      "provider": "together",
-      "tier": "free",
-      "scores": [
-        {
           "date": "2026-05-27",
-          "practical_knowledge": 0.0,
-          "creative_technical": 0.0
+          "creative_technical": 0.51,
+          "practical_knowledge": 0.459
         },
         {
           "date": "2026-05-28",
-          "practical_knowledge": 0.0,
-          "creative_technical": 0.0
+          "creative_technical": 0.577,
+          "practical_knowledge": 0.536
         },
         {
           "date": "2026-05-31",
-          "practical_knowledge": 0.0,
-          "creative_technical": 0.0
+          "creative_technical": 0.276,
+          "practical_knowledge": 0.411
         }
       ]
     },
@@ -99,18 +99,18 @@
       "scores": [
         {
           "date": "2026-05-27",
-          "creative_technical": 0.0,
-          "practical_knowledge": 0.0
+          "creative_technical": null,
+          "practical_knowledge": null
         },
         {
           "date": "2026-05-28",
-          "creative_technical": 0.0,
-          "practical_knowledge": 0.0
+          "creative_technical": null,
+          "practical_knowledge": null
         },
         {
           "date": "2026-05-31",
-          "creative_technical": 0.0,
-          "practical_knowledge": 0.0
+          "creative_technical": null,
+          "practical_knowledge": null
         }
       ]
     },
@@ -135,24 +135,24 @@
         }
       ]
     },
-    "cohere/command-r-08-2024": {
-      "provider": "cohere",
+    "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free": {
+      "provider": "together",
       "tier": "free",
       "scores": [
         {
           "date": "2026-05-27",
-          "creative_technical": 0.51,
-          "practical_knowledge": 0.459
+          "creative_technical": null,
+          "practical_knowledge": null
         },
         {
           "date": "2026-05-28",
-          "creative_technical": 0.577,
-          "practical_knowledge": 0.536
+          "creative_technical": null,
+          "practical_knowledge": null
         },
         {
           "date": "2026-05-31",
-          "creative_technical": 0.276,
-          "practical_knowledge": 0.411
+          "creative_technical": null,
+          "practical_knowledge": null
         }
       ]
     }
