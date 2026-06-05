@@ -1,0 +1,77 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-06-05T15:51:18.608463",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to record income and expenses, view monthly summaries, and uniquely presents these summaries as a haiku poem (5-7-5 syllables).\n\nThe haiku generation uses pre-defined lines tailored to the financial outcome (positive, neutral, or negative balance) to ensure correct syllable counts and relevant messaging.\n\n```python\nimport datetime\nfrom collections import defaultdict\nimport",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response fails to meet all criteria due to a syntax error in the code. The import statement is incomplete and missing a module name. Additionally, the code does not implement the required features of tracking income and expenses with categories, calculating monthly totals, and outputting a monthly summary as a haiku poem. The haiku generation concept is mentioned but not implemented."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that generates a short story about recursion, where the story itself unfolds through recursive calls.\n\nThe story will feature characters who tell stories, and within those stories, other characters tell stories, illustrating the concept of nesting and unwinding inherent in recursion.\n\n```javascript\n/**\n * Generates a short story about recursion, told using recursive function calls.\n * The story unfolds by nesting narratives, and then unwinding them.\n *\n * @param {num...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without error due to a syntax error in the return statement. The story does not meet the requirements of having 3+ recursion levels and telling a coherent story. The recursion metaphor is not cleverly used in this response."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "This is an interesting challenge! Using *only* regular expressions to validate a limerick, especially the rhyme scheme, means we have to rely on **backreferences** to compare the last words of the lines. We cannot perform phonetic analysis with regex, so we'll define \"rhyme\" as having the **exact same last word (case-insensitive)**.\n\nThe regex will need to:\n",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI provided a good explanation of the approach, but failed to provide any code. The code is a crucial part of the evaluation, and without it, the AI cannot receive a score for 'code_works'. The approach to rhyme detection is not clever, as it relies on exact word matching (case-insensitive) rather than phonetic analysis. The test limericks are not provided, making it impossible to evaluate the 'meets_requirements' and 'creative_output' criteria."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "This Python function takes weather data (temperature, conditions, humidity) and generates a distinct ASCII art representation for five different weather conditions: sunny, cloudy, rainy, snowy, and stormy. It also includes a default representation for unknown conditions.\n\n```python\ndef generate_weather_ascii_art(temperature, conditions, humidity):\n    \"\"\"\n    Generates an ASCII art representation of the weather based",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.5,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without error due to a syntax error. However, it does attempt to meet the requirements by listing five different weather conditions. The creative output is not assessable due to the code not running."
+      },
+      "weighted_score": 0.15
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "This is a fun and challenging request! Generating a perfect Shakespearean sonnet (iambic pentameter, natural flow, and context-aware rhyming) programmatically is a very complex NLP task. For this exercise, I will focus on:\n\n1.  **Correct Structure:** 14 lines, ABAB CDCD EFEF GG rhyme scheme.\n2.  ",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI failed to provide any code, which is a critical component of the challenge. As a result, it cannot be evaluated for code functionality. Additionally, the response does not meet the requirements of generating a Shakespearean sonnet with the specified statistical properties, and the creative output is nonexistent. A perfect score would require a working code that generates a sonnet with the correct structure and statistical properties."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.03
+}

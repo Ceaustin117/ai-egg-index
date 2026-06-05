@@ -1,0 +1,77 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "timestamp": "2026-06-05T15:48:37.390442",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "**Budget Tracker Haiku Poem Generator**\n======================================\n\nBelow is a Python program that fulfills your requirements. It includes classes for `Income` and `Expense`, as well as a `BudgetTracker` class that handles the data and generates a haiku poem summary.\n\n```python\nimport datetime\n\nclass Income:\n    def __init__(self, amount, category):\n        self.amount = amount\n        self.category = category\n\nclass Expense:\n    def __init__(self, amount, category):\n        self.amo...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without errors and performs the basic budget tracking. It meets all three requirements: tracking income and expenses with categories, calculating monthly totals, and outputting a monthly summary as a haiku poem. However, the haiku output does not always follow the traditional 5-7-5 syllable structure, and the meaning of the haiku could be more nuanced and reflective of the budget data."
+      },
+      "weighted_score": 0.74
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "**Recursive Story Generation Function**\n=====================================\n\nBelow is a JavaScript function that generates a short story about recursion, using recursive function calls to tell the story. The story has three levels of recursion and makes sense as a narrative.\n\n```javascript\nfunction tellStory(depth = 0) {\n  // Base case: stop recursion after 3 levels\n  if (depth > 3) return;\n\n  // Start of the story\n  console.log(\"Once upon a time, in a land far, far away...\");\n\n  // Recursive ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without error and demonstrates proper recursion. However, the story does not quite meet the requirements as it only has 3 levels of recursion, whereas the prompt specified 3+ levels. The story is somewhat coherent but lacks a clear narrative thread. The recursion metaphor is somewhat clever but could be more creative."
+      },
+      "weighted_score": 0.82
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "```python\nimport re\n\ndef validate_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick using regular expressions.\n\n    A valid limerick must have the following characteristics:\n    - It must have 5 lines.\n    - The first, second, and last lines must have 8-13 characters.\n    - The third and fourth lines must have 5-8 characters.\n    - The rhyme scheme must be AABBA.\n\n    Args:\n        text (str): The text to be validated.\n\n    Returns:\n        bool: True if the text is a...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.2,
+        "explanation": "The code runs without error, but the regex pattern is overly complex and does not accurately check for the AABBA rhyme scheme. The test cases are valid, but the invalid limerick test case is not actually invalid. The approach to rhyme detection is not clever and the test limericks are not amusing."
+      },
+      "weighted_score": 0.56
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "```python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    \"\"\"\n    Generate an ASCII art representation of the weather.\n\n    Args:\n        temperature (float): The current temperature in Celsius.\n        conditions (str): The current weather conditions (sunny, cloudy, rainy, snowy, stormy).\n        humidity (float): The current humidity level (0-100%).\n\n    Returns:\n        str: An ASCII art representation of the weather.\n    \"\"\"\n\n    # Define the ASCII art for each weather con...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without error and meets most of the requirements. However, it does not handle the 'stormy' condition correctly, displaying only 'SNO' instead of 'STORM'. The ASCII art is recognizable but lacks creativity and variety."
+      },
+      "weighted_score": 0.82
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "```python\nimport numpy as np\nimport random\n\nclass SonnetGenerator:\n    def __init__(self, dataset):\n        self.dataset = dataset\n\n    def calculate_mean(self):\n        mean = np.mean(self.dataset)\n        return mean\n\n    def calculate_median(self):\n        median = np.median(self.dataset)\n        return median\n\n    def calculate_std(self):\n        std = np.std(self.dataset)\n        return std\n\n    def find_outliers(self):\n        q1 = np.percentile(self.dataset, 25)\n        q3 = np.percentile...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs correctly and calculates statistics correctly, but it does not handle edge cases such as an empty dataset. The poem meets the requirements of 14 lines and covers all four statistical properties, but the sonnet structure is not strictly followed. The creative output is good, but the poem could be more polished and the statistics could be woven in more creatively."
+      },
+      "weighted_score": 0.74
+    }
+  ],
+  "overall_score": 0.736
+}
