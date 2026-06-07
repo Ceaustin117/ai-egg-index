@@ -1,0 +1,137 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-06-07T07:31:41.627713",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "I'm happy to help! However, I must correct you that the information you're seeking is not yet available, as the 2026 tax brackets have not been officially announced or implemented.\n\nThe US federal income tax brackets are typically adjusted annually for inflation, and the changes are usually announced in the fall of each year for the upcoming tax year. The 2026 tax brackets will likely be announced in the fall of 2025, and it's too early to provide accurate information on the changes.\n\nI recommen...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response is partially accurate, as it correctly states that the 2026 tax brackets have not been officially announced. However, it fails to provide any information on the expected changes, which is a major part of the expected topics. The response also correctly acknowledges the current year and knowledge cutoff, which is a good practice."
+          },
+          "weighted_score": 0.6
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "I'm happy to help! However, I must correct you that 2026 is in the future, and the standard deduction amounts for the 2026 tax year have not been officially announced by the Internal Revenue Service (IRS) yet.\n\nThe IRS typically announces the standard deduction amounts for the upcoming tax year in the fall of the previous year. For example, the standard deduction amounts for the 2022 tax year were announced in October 2021.\n\nTo stay up-to-date with the latest tax information, I recommend checkin...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response correctly acknowledges that the standard deduction amount for 2026 has not been officially announced by the IRS. However, it fails to provide any information on the expected standard deduction amount for a single filer in 2026, which is the primary question. The response is partially accurate in stating that the IRS typically announces the standard deduction amounts in the fall of the previous year. The AI also correctly states that it's best to check the IRS website or consult with a tax professional for the most accurate and current information, which demonstrates recency awareness."
+          },
+          "weighted_score": 0.6
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "As of 2023, the tax credits available for electric vehicle (EV) purchases in the United States are as follows:\n\n1. **Federal Tax Credit**: The federal government offers a tax credit of up to $7,500 for the purchase of an eligible electric vehicle. This credit is available to individual taxpayers and can be claimed on their federal income tax return.\n2. **State and Local Incentives**: Many states and local governments offer additional incentives, such as rebates, tax credits, or exemptions from c...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "The response has major factual errors regarding the tax credits available for electric vehicle purchases in 2026. Although it covers some expected topics, it misses others, such as income limits and eligibility requirements for the federal tax credit. Additionally, it does not acknowledge the current year (2026) or provide a clear knowledge cutoff, instead providing outdated information as if it were current."
+          },
+          "weighted_score": 0.25
+        }
+      ],
+      "average_score": 0.483
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "The current federal minimum wage in the United States is $7.25 per hour, which has been in effect since July 2009. However, there have been ongoing debates and efforts to increase the federal minimum wage, and some states and cities have taken action to raise their own minimum wages.\n\nIn 2021, the federal minimum wage was set to increase to $15 per hour, but this increase was blocked by a federal court ruling. The ruling was based on a 1996 law that requires a congressional review of the minimum...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.9,
+            "recency_awareness": 0.5,
+            "explanation": "The response has some factual errors, specifically regarding the 2021 federal minimum wage increase. The response also fails to acknowledge the current federal minimum wage, which is still $7.25 per hour. However, it covers most of the expected topics, including state variations, proposed changes, and tipped employees. The recency awareness score is low because the response does not explicitly state the current year or acknowledge a knowledge cutoff."
+          },
+          "weighted_score": 0.37
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "The current federal overtime pay rules for salaried employees in the United States are governed by the Fair Labor Standards Act (FLSA). Under the FLSA, salaried employees are generally exempt from overtime pay requirements if they meet certain tests, which are as follows:\n\n1. **Executive, Administrative, Professional, Outside Sales, and Computer Employee Exemptions**: To be exempt, salaried employees must:\n\t* Be paid a salary of at least $684 per week (as of January 1, 2020).\n\t* Be paid on a sal...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 1.0,
+            "recency_awareness": 0.5,
+            "explanation": "The response is mostly accurate, but it fails to mention that the salary threshold has been updated to $935 per week (effective January 1, 2023) and $1,059 per week (effective January 1, 2024) as per the DOL.gov website. It also correctly covers the expected topics and acknowledges the current year's knowledge cutoff, but does not explicitly state it."
+          },
+          "weighted_score": 0.65
+        }
+      ],
+      "average_score": 0.51
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "The 2026 contribution limits for 401(k) accounts have not been officially announced by the Internal Revenue Service (IRS) yet, as the 2026 limits are typically announced in October or November of the previous year.\n\nHowever, based on the historical trend of the IRS increasing the contribution limits by the cost-of-living adjustment (COLA), here are the projected 2026 contribution limits for 401(k) accounts:\n\n* Elective deferrals (employee contributions): $20,500 (up from $19,500 in 2025)\n* Catch...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response has a major factual error regarding the 2026 contribution limits. Although it acknowledges the lack of official announcement, the projected limits are not accurate. The response partially covers the expected topics, mentioning employee contribution limit, catch-up contributions for 50+, but misses employer match. It correctly acknowledges the current year and knowledge cutoff."
+          },
+          "weighted_score": 0.35
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "The 2026 contribution limits for Traditional and Roth IRA accounts are as follows:\n\n* Traditional IRA: The annual contribution limit is $6,000 in 2026, or $7,000 if you are 50 or older (due to the additional $1,000 \"catch-up\" contribution).\n* Roth IRA: The annual contribution limit is $6,000 in 2026, or $7,000 if you are 50 or older (due to the additional $1,000 \"catch-up\" contribution).\n\nIt's worth noting that these limits apply to the total amount you can contribute to all of your IRAs in a gi...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "The response contains major factual errors regarding the 2026 contribution limits for Traditional and Roth IRA accounts. Although it covers some expected topics, it misses the income limits for Roth IRA. The response also acknowledges the possibility of changing limits over time, but does not correctly state the current year or acknowledge a knowledge cutoff."
+          },
+          "weighted_score": 0.25
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "The 2026 HSA (Health Savings Account) contribution limits for individuals and families are as follows:\n\n* **Individuals:** $3,650 (annual contribution limit) + $1,000 (catch-up contribution limit for those 55 or older) = $4,650\n* **Families:** $7,300 (annual contribution limit) + $1,000 (catch-up contribution limit for those 55 or older) = $8,300\n\nPlease note that these limits are subject to change, and it's always a good idea to verify the limits with your employer or a qualified tax profession...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response contains major factual errors regarding the HSA contribution limits for individuals and families. Although it mentions the catch-up contribution limit, the annual contribution limits provided are incorrect. The response partially covers the expected topics, mentioning individual and family limits, but fails to provide accurate information. It correctly acknowledges the current year (2026) and provides a disclaimer about verifying the limits, which earns it a score of 1.0 for recency awareness."
+          },
+          "weighted_score": 0.35
+        }
+      ],
+      "average_score": 0.317
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "You can obtain a free credit report from each of the three major credit reporting agencies (Equifax, Experian, and TransUnion) once every 12 months. This is a federal law, known as the Fair Credit Reporting Act (FCRA), which requires credit reporting agencies to provide consumers with a free copy of their credit report once a year.\n\nHere's how you can get your free credit report:\n\n1. Visit AnnualCreditReport.com, which is the official website for ordering free credit reports.\n2. Fill out the onl...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.8,
+            "recency_awareness": 1.0,
+            "explanation": "The response is mostly accurate, but it fails to mention that consumers can access their credit reports weekly from the credit reporting agencies' websites, not just once a year. It also does not provide information on the dispute process. However, it correctly states the information about AnnualCreditReport.com and the three major credit reporting agencies. The response is up-to-date and acknowledges no knowledge cutoff."
+          },
+          "weighted_score": 0.69
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act is a federal law that regulates warranties and guarantees on consumer products. If a product breaks, you may have certain rights under this act. Here are some key provisions:\n\n1. **Written Warranty**: The manufacturer must provide a written warranty that is clear, concise, and easy to understand. The warranty must specify the duration of the warranty, the products covered, and the procedures for making claims.\n2. **Full Disclosure**: The manufacturer must provide f...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.8,
+            "recency_awareness": 0.5,
+            "explanation": "The response is mostly accurate, but it contains some minor errors. For example, it does not specify that the Magnuson-Moss Warranty Act only applies to warranties on consumer products with a value of $5 or more. Additionally, it does not mention that the FTC enforces the act. The response covers most of the expected topics, but it does not thoroughly discuss implied warranty. The response does not acknowledge a specific knowledge cutoff, but it does not present any outdated information as current."
+          },
+          "weighted_score": 0.59
+        }
+      ],
+      "average_score": 0.64
+    }
+  },
+  "overall_score": 0.47
+}

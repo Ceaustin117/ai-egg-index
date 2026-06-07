@@ -1,0 +1,77 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-06-07T07:33:00.332095",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a Python budget tracker that meets your requirements:\n```\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n        self.monthly_totals = {}\n\n    def add_income(self, amount):\n        self.income += amount\n\n    def add_expense(self, category, amount):\n        if category not in self.expenses:\n            self.expenses[category] = 0\n        self.expenses[category] += amount\n\n    def calculate_monthly_totals(self):\n        self.monthly_totals['...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without errors due to an EOF error when trying to input a choice. It partially meets the requirements by tracking income and expenses with categories and calculating monthly totals, but it does not output a monthly summary as a haiku poem. The haiku output is also invalid as it does not follow the 5-7-5 syllable structure."
+      },
+      "weighted_score": 0.24
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a JavaScript function that generates a short story about recursion, where the story itself is told using recursive function calls:\n```\nfunction tellStory() {\n  const story = [];\n  function tellStoryRecursive(level) {\n    if (level > 3) return; // base case: stop recursing\n    const sentence = `In the depths of the forest, a brave adventurer named ${level} ventured forth to find the legendary ${level}th treasure.`;\n    story.push(sentence);\n    tellStoryRecursive(level + 1); // recursive ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.4,
+        "explanation": "The code runs without error, but it does not demonstrate proper recursion as it only has 3 levels of recursion and does not handle the case where the level is greater than 3 correctly. The story is somewhat coherent, but the recursion metaphor is not particularly clever. The output is incomplete and does not match the expected story."
+      },
+      "weighted_score": 0.62
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n```\nimport re\n\ndef is_valid_limerick(text):\n    \"\"\"\n    Returns True if the given text is a valid limerick, False otherwise.\n    \"\"\"\n    # Define the regex pattern for a valid limerick\n    pattern = r\"^(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI's response is a failed attempt at solving the problem. The code does not run due to a syntax error, and the regex pattern is not valid. The test cases are also missing. The approach to rhyme detection is not clever, and the test limericks are not provided. The score is 0.0 for all criteria due to the complete failure to meet the requirements."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "Here is a Python function that generates an ASCII art representation of the weather based on the input data:\n\n```Python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    weather_ascii = \"\"\n\n    if conditions == \"sunny\":\n        weather_ascii += \"\u2600\ufe0f\"\n    elif conditions == \"cloudy\":\n        weather_ascii += \"\u2601\ufe0f\"\n    elif conditions == \"rainy\":\n        weather_ascii += \"\u2614\ufe0f\"\n    elif conditions == \"snowy\":\n        weather_ascii += \"\u2744\ufe0f\"\n    elif conditions == \"stormy\":\n        weath...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without error and meets the basic requirements of handling 5 different weather conditions. However, the creative output is limited to a single symbol for each condition, which may not be aesthetically pleasing. The code could be improved by adding more detailed ASCII art or using a library like `art` to generate more complex art."
+      },
+      "weighted_score": 0.82
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python class that analyzes a dataset and generates a Shakespearean sonnet:\n```\nimport numpy as np\nimport statistics as stats\n\nclass ShakespeareanSonnet:\n    def __init__(self, dataset):\n        self.dataset = np.array(dataset)\n        self.mean = np.mean(self.dataset)\n        self.median = np.median(self.dataset)\n        self.stddev = np.std(self.dataset)\n        self.outliers = [x for x in self.dataset if np.abs(x - self.mean) > 2 * self.stddev]\n\n    def generate_sonnet(self):\n       ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.7,
+        "creative_output": 0.4,
+        "explanation": "The code runs without error and calculates statistics correctly, but it does not handle edge cases such as an empty dataset. The sonnet meets the requirements of 14 lines and covers all four statistical properties, but the output is not a perfect Shakespearean sonnet. The poem follows the ABAB CDCD EFEF GG rhyme scheme, but the meter is not consistently iambic pentameter. The statistics are woven in creatively, but the output could be more sophisticated."
+      },
+      "weighted_score": 0.65
+    }
+  ],
+  "overall_score": 0.466
+}

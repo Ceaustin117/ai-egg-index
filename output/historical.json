@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-05",
+  "last_updated": "2026-06-07",
   "models": {
     "groq/llama-3.1-8b-instant": {
       "provider": "groq",
@@ -35,6 +35,11 @@
           "date": "2026-06-05",
           "creative_technical": 0.736,
           "practical_knowledge": 0.427
+        },
+        {
+          "date": "2026-06-07",
+          "creative_technical": 0.38,
+          "practical_knowledge": 0.484
         }
       ]
     },
@@ -142,6 +147,11 @@
           "date": "2026-06-05",
           "creative_technical": 0.4,
           "practical_knowledge": 0.406
+        },
+        {
+          "date": "2026-06-07",
+          "creative_technical": 0.466,
+          "practical_knowledge": 0.47
         }
       ]
     },
@@ -168,6 +178,11 @@
           "date": "2026-06-05",
           "creative_technical": 0.578,
           "practical_knowledge": 0.516
+        },
+        {
+          "date": "2026-06-07",
+          "creative_technical": 0.428,
+          "practical_knowledge": 0.534
         }
       ]
     },
@@ -179,6 +194,11 @@
           "date": "2026-06-05",
           "practical_knowledge": 0.325,
           "creative_technical": 0.03
+        },
+        {
+          "date": "2026-06-07",
+          "practical_knowledge": 0.225,
+          "creative_technical": 0.0
         }
       ]
     }
