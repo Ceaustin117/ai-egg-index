@@ -1,0 +1,77 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-06-14T07:43:53.767836",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a simple Python budget tracker program that meets your requirements:\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n    ...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without errors due to an EOFError when trying to read input. It partially meets the requirements by implementing income and expense tracking, but fails to output a haiku poem as requested. The haiku output is also invalid as it does not follow the 5-7-5 syllable structure."
+      },
+      "weighted_score": 0.24
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction generateRecursiveStory(depth) {\n  if (depth <= 0) {\n    return \"The story ends here. The narrator has reached the final chapter.\";\n  } else {\n    const chapter = `Chapter ${depth}: In this chapter, the narrator discovers a mysterious portal. As they step through, they find themselves in a new world, a world of infinite possibilities. The narrator realizes that their journey is not over, and so they continue, delving deeper into the unknown.`;\n    if (depth === 3) {\n      r...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "The code runs without error, so it gets a perfect score for code_works. However, it only has 2 levels of recursion (depth 1 and depth 2) and then a special case for depth 3, which doesn't quite meet the 3+ levels of recursion requirement. The story is somewhat engaging, but the recursion metaphor is not particularly clever or original. The code could be improved to demonstrate more recursion levels and a more creative approach to the story."
+      },
+      "weighted_score": 0.7
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Remove punctuation and convert to lowercase for consistent matching\n    text = re.sub(r'[^\\w\\s]', '', text).lower()\n    \n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Check the rhyme scheme pattern\n    rhyme_pattern...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.4,
+        "explanation": "The code runs without syntax errors, but it does not handle cases where the input text contains multiple consecutive newline characters. The rhyme scheme validation is mostly correct, but it does not account for cases where the first and second lines rhyme, but the third line does not rhyme with either of them. The test cases are valid, but they could be more comprehensive. The approach to rhyme detection is straightforward, but not particularly clever. The test limericks are not particularly amusing."
+      },
+      "weighted_score": 0.62
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "```python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    weather_dict = {\n        \"sunny\": \"\"\"\n _____        _     _____  _____ \n|_   _|      | |   |  __ \\|  __ \\ \n  | |  _ __  | |__ | |  | | |__) |\n  | | | '_ \\| '_ \\ | |  | |  _  / \n  | | | |_) | | | | |__| | | \\ \\ \n _| |_| .__/|_| |_|_____/|_|  \\_\\\n|_____|\"\"\",\n        \"cloudy\": \"\"\"\n _____  _____  _____  _____ \n|  __ \\|  __ \\|  __ \\|  __ \\\n| |__) | |__) | |__) | |__) |\n|  ___/|  _  /|  ___/|  _  /\n| |    | | \\ \\ |      | | \\...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.2,
+        "explanation": "The code runs without error and meets the requirements of handling 5+ weather conditions with distinct art. However, the creative output is lacking as all the ASCII art for different weather conditions are identical, which is not aesthetically pleasing. The code could be improved by customizing the ASCII art for each condition or adding more conditions with unique art."
+      },
+      "weighted_score": 0.7
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python class that attempts to generate a Shakespearean sonnet based on the given dataset. Please note that generating poetry with specific meter and rhyme schemes is a complex task, and this class provides a simplified approach. The statistical analysis is also kept basic for the purpose of this example.\n\n```python\nimport random\nimport string\n\nclass ShakespeareanSonnet:\n    def __init__(self, dataset):\n        self.dataset = dataset\n        self.mean = self.calculate_mean()\n        self...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not run correctly and does not meet the requirements of the prompt. The generate_sonnet method is incomplete and does not generate a 14-line poem. The generate_line method does not incorporate the statistical properties correctly and the poem does not follow the Shakespearean sonnet structure."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.452
+}

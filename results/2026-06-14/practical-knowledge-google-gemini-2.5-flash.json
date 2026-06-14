@@ -1,0 +1,137 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-06-14T07:40:04.060210",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "As of today, **there are no finalized changes to US federal income tax brackets for 2026.**\n\nHowever, the most significant \"change\" that is *currently scheduled* to occur",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The response contains major factual errors. It claims there are no finalized changes to US federal income tax brackets for 2026, which is incorrect. The response also fails to cover the expected topics of bracket adjustments, inflation indexing, and standard deduction changes. Furthermore, it does not acknowledge a knowledge cutoff or current year, presenting outdated information as current without a disclaimer."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "The official standard deduction amount for a single filer in **2026** has not been released yet by the IRS.\n\nThe IRS typically announces these figures in the fall of the preceding year",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response is partially accurate in stating that the standard deduction amount for a single filer in 2026 has not been released yet by the IRS. However, it fails to provide the current standard deduction amount for a single filer in 2023 or 2025, which would be a more accurate comparison. The response also correctly acknowledges the IRS's typical announcement timeframe for these figures. Therefore, the factual accuracy score is 0.5. The completeness score is 0.5 because it covers some expected topics but misses others. The recency awareness score is 1.0 because it correctly states that the information is not yet available for 2026."
+          },
+          "weighted_score": 0.6
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "The federal Clean Vehicle Credit (Section 30D) for new electric vehicles, established by the Inflation Reduction Act (IRA), **does not have an expiration date** and is expected to be available in",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 0.0,
+            "explanation": "The response contains major factual errors regarding the expiration date of the federal Clean Vehicle Credit. It also fails to acknowledge the current year or knowledge cutoff. Although it covers some expected topics like the EV tax credit and its establishment, it misses others like eligibility requirements, credit amount, and income limits."
+          },
+          "weighted_score": 0.15
+        }
+      ],
+      "average_score": 0.25
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "The current federal minimum wage in the United States is **$7.25 per hour**.\n\nRegarding recent changes:\n**No, there have not been any recent changes to the federal minimum wage.** It has remained at $7.25 per hour since **July 24, 2009**.\n\nIt's important to note:\n\n1.  **State and Local Minimum Wages:** Many states, cities, and counties have minimum wage laws that set their rates higher than the federal minimum wage. In these cases, employees are entitled to the higher of the two rates.\n2.  **Tip...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 1.0,
+            "recency_awareness": 0.0,
+            "explanation": "The response is mostly accurate, but it incorrectly states that there have been no recent changes to the federal minimum wage. According to the DOL.gov, the Fair Labor Standards Act (FLSA) has been amended several times since 2009, including the increase in the minimum wage for federal contractors in 2022. The response also fails to acknowledge its knowledge cutoff, which is a major issue in terms of recency awareness."
+          },
+          "weighted_score": 0.55
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "Federal overtime pay rules for salaried employees are governed by the **Fair Labor Standards Act (FLSA)**. The FLSA generally requires employers to pay employees at least the federal minimum wage for all",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 0.0,
+            "explanation": "The response starts to address the topic but fails to provide accurate information about the current federal overtime pay rules for salaried employees. It mentions the Fair Labor Standards Act (FLSA) but does not specify the current salary threshold, exempt vs non-exempt status, or the time-and-a-half rule. The response does not acknowledge a knowledge cutoff or provide current information. A major factual error is present, as the response does not provide any specific details about the current rules."
+          },
+          "weighted_score": 0.15
+        }
+      ],
+      "average_score": 0.35
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "As of today (mid-2024), the **2026 401(k) contribution limits have not yet been announced by the IRS.**\n\nThe IRS typically announces the contribution limits for the upcoming year in **late fall** of the preceding year. So, the 2026 limits will likely be announced in **late 2025**.\n\n**What we know for now:**\n\n*   **2024 Limits (Current):**\n    *   **Employee Elective Deferral:** \\$23,000\n    *   **Catch-Up Contribution (Age 50 and over):** \\$7,500 (for a total of \\$30,500)\n\n**What to expect for 2...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response is partially accurate, as it correctly states that the 2026 limits have not been announced and provides the 2024 limits. However, it does not provide any information about the expected employer match or the catch-up contributions for 50+ in 2026. The response also acknowledges the current year (mid-2024) and the knowledge cutoff, which is a good practice."
+          },
+          "weighted_score": 0.6
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 13.620578282s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  u...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is not a factual answer but an error message indicating quota exceeded. It does not provide any information about IRA contribution limits, income limits for Roth, or catch-up contributions. The response does not acknowledge the current year or knowledge cutoff, and it is not possible to verify the accuracy of the information due to the error."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 5.480346578s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ur...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response does not provide any factual information about the 2026 HSA contribution limits, instead, it returns an error message due to quota exhaustion. This means it fails to meet the expected criteria of factual accuracy, completeness, and recency awareness."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.2
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 59.627358854s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  u...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The response is not a factual answer but an error message. It does not provide any information about getting a free credit report or how often one is entitled to it. The expected topics are not covered, and there is no acknowledgment of current year or knowledge cutoff."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act (MMWA) is a federal law that governs written warranties on consumer products. It doesn't *require* manufacturers or sellers to provide a written warranty, but if",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "The response contains major factual errors regarding the Magnuson-Moss Warranty Act. It states that the law doesn't require manufacturers or sellers to provide a written warranty, which is incorrect. The law actually requires clear and conspicuous disclosure of warranty terms. The response also fails to cover implied warranty and FTC enforcement as expected. While it mentions the law's purpose, it lacks clarity on the current year or knowledge cutoff."
+          },
+          "weighted_score": 0.25
+        }
+      ],
+      "average_score": 0.125
+    }
+  },
+  "overall_score": 0.23
+}

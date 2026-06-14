@@ -1,48 +1,6 @@
 {
-  "last_updated": "2026-06-07",
+  "last_updated": "2026-06-14",
   "models": {
-    "groq/llama-3.1-8b-instant": {
-      "provider": "groq",
-      "tier": "free",
-      "scores": [
-        {
-          "date": "2026-01-15"
-        },
-        {
-          "date": "2026-02-04"
-        },
-        {
-          "date": "2026-05-25",
-          "creative_technical": 0.413,
-          "practical_knowledge": 0.555
-        },
-        {
-          "date": "2026-05-27",
-          "creative_technical": 0.237,
-          "practical_knowledge": 0.314
-        },
-        {
-          "date": "2026-05-28",
-          "creative_technical": 0.393,
-          "practical_knowledge": 0.369
-        },
-        {
-          "date": "2026-05-31",
-          "creative_technical": 0.624,
-          "practical_knowledge": 0.421
-        },
-        {
-          "date": "2026-06-05",
-          "creative_technical": 0.736,
-          "practical_knowledge": 0.427
-        },
-        {
-          "date": "2026-06-07",
-          "creative_technical": 0.38,
-          "practical_knowledge": 0.484
-        }
-      ]
-    },
     "together/mistral-7b-instruct": {
       "provider": "together",
       "tier": "free",
@@ -55,8 +13,55 @@
         }
       ]
     },
-    "google/gemini-1.5-flash": {
-      "provider": "google",
+    "groq/llama-3.1-8b-instant": {
+      "provider": "groq",
+      "tier": "free",
+      "scores": [
+        {
+          "date": "2026-01-15"
+        },
+        {
+          "date": "2026-02-04"
+        },
+        {
+          "date": "2026-05-25",
+          "practical_knowledge": 0.555,
+          "creative_technical": 0.413
+        },
+        {
+          "date": "2026-05-27",
+          "practical_knowledge": 0.314,
+          "creative_technical": 0.237
+        },
+        {
+          "date": "2026-05-28",
+          "practical_knowledge": 0.369,
+          "creative_technical": 0.393
+        },
+        {
+          "date": "2026-05-31",
+          "practical_knowledge": 0.421,
+          "creative_technical": 0.624
+        },
+        {
+          "date": "2026-06-05",
+          "practical_knowledge": 0.427,
+          "creative_technical": 0.736
+        },
+        {
+          "date": "2026-06-07",
+          "practical_knowledge": 0.484,
+          "creative_technical": 0.38
+        },
+        {
+          "date": "2026-06-14",
+          "practical_knowledge": 0.397,
+          "creative_technical": 0.5
+        }
+      ]
+    },
+    "cohere/command-light": {
+      "provider": "cohere",
       "tier": "free",
       "scores": [
         {
@@ -73,8 +78,8 @@
         }
       ]
     },
-    "cohere/command-light": {
-      "provider": "cohere",
+    "google/gemini-1.5-flash": {
+      "provider": "google",
       "tier": "free",
       "scores": [
         {
@@ -100,27 +105,6 @@
           "date": "2026-05-31",
           "practical_knowledge": null,
           "creative_technical": null
-        }
-      ]
-    },
-    "google/gemini-2.0-flash": {
-      "provider": "google",
-      "tier": "free",
-      "scores": [
-        {
-          "date": "2026-05-27",
-          "creative_technical": null,
-          "practical_knowledge": null
-        },
-        {
-          "date": "2026-05-28",
-          "creative_technical": null,
-          "practical_knowledge": null
-        },
-        {
-          "date": "2026-05-31",
-          "creative_technical": null,
-          "practical_knowledge": null
         }
       ]
     },
@@ -152,6 +136,11 @@
           "date": "2026-06-07",
           "creative_technical": 0.466,
           "practical_knowledge": 0.47
+        },
+        {
+          "date": "2026-06-14",
+          "creative_technical": 0.378,
+          "practical_knowledge": 0.487
         }
       ]
     },
@@ -183,6 +172,32 @@
           "date": "2026-06-07",
           "creative_technical": 0.428,
           "practical_knowledge": 0.534
+        },
+        {
+          "date": "2026-06-14",
+          "creative_technical": 0.452,
+          "practical_knowledge": 0.562
+        }
+      ]
+    },
+    "google/gemini-2.0-flash": {
+      "provider": "google",
+      "tier": "free",
+      "scores": [
+        {
+          "date": "2026-05-27",
+          "creative_technical": null,
+          "practical_knowledge": null
+        },
+        {
+          "date": "2026-05-28",
+          "creative_technical": null,
+          "practical_knowledge": null
+        },
+        {
+          "date": "2026-05-31",
+          "creative_technical": null,
+          "practical_knowledge": null
         }
       ]
     },
@@ -192,13 +207,18 @@
       "scores": [
         {
           "date": "2026-06-05",
-          "practical_knowledge": 0.325,
-          "creative_technical": 0.03
+          "creative_technical": 0.03,
+          "practical_knowledge": 0.325
         },
         {
           "date": "2026-06-07",
-          "practical_knowledge": 0.225,
-          "creative_technical": 0.0
+          "creative_technical": 0.0,
+          "practical_knowledge": 0.225
+        },
+        {
+          "date": "2026-06-14",
+          "creative_technical": 0.112,
+          "practical_knowledge": 0.23
         }
       ]
     }

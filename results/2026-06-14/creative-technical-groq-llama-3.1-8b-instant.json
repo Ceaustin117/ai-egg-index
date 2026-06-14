@@ -1,0 +1,77 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "timestamp": "2026-06-14T07:38:35.405074",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "**Budget Tracker Haiku Poem Generator**\n======================================\n\nThis Python program tracks income and expenses with categories, calculates monthly totals, and outputs a monthly summary as a haiku poem.\n\n### Code\n```python\nimport datetime\n\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income to a category\"\"\"\n        if category in self.income:\n            self.income[cate...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without errors due to an EOFError in the main function. The code does not meet the requirements as it does not track income and expenses with categories, calculate monthly totals, or output a monthly summary as a haiku poem. The haiku output is also invalid as it does not follow the 5-7-5 syllable structure."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction tellStory() {\n    /**\n     * A recursive function that generates a short story about recursion.\n     * \n     * The story is told using recursive function calls, with at least 3 levels of recursion.\n     * \n     * @returns {string} The short story.\n     */\n    return tellTheTaleOfTheMaze();\n}\n\nfunction tellTheTaleOfTheMaze() {\n    /**\n     * A recursive function that tells the tale of a maze.\n     * \n     * The maze is represented as a series of recursive function calls, wi...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.4,
+        "explanation": "The code runs without error, but it does not properly demonstrate recursion as the story is not continued after the first recursive call. The story has 2 levels of recursion, not 3, and the recursion metaphor is not particularly clever. The story is somewhat engaging, but it is not well-developed and lacks a clear resolution."
+      },
+      "weighted_score": 0.62
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "```python\nimport re\n\ndef is_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick using regular expressions.\n    \n    A valid limerick has the following structure:\n    - Lines 1, 2, and 5 have 8-13 characters (A)\n    - Lines 3 and 4 have 5-10 characters (B)\n    - The rhyme scheme is AABBA\n    \n    Parameters:\n    text (str): The text to be validated\n    \n    Returns:\n    bool: True if the text is a valid limerick, False otherwise\n    \"\"\"\n    \n    # Split the text into lin...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.4,
+        "explanation": "The code runs without syntax errors, but it has some issues with the regular expression patterns. The rhyme scheme check is not correctly implemented. The test cases are valid, but the approach to rhyme detection is not clever. The test limericks are not amusing."
+      },
+      "weighted_score": 0.62
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "```python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    \"\"\"\n    Generate an ASCII art representation of the weather.\n\n    Args:\n        temperature (int): The current temperature in degrees Celsius.\n        conditions (str): The current weather conditions (sunny, cloudy, rainy, snowy, stormy).\n        humidity (int): The current humidity level (0-100%).\n\n    Returns:\n        str: An ASCII art representation of the weather.\n    \"\"\"\n\n    # Define the ASCII art for each weather...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "```python\nimport numpy as np\nimport random\n\nclass ShakespeareanSonnetGenerator:\n    def __init__(self, dataset):\n        self.dataset = dataset\n\n    def calculate_mean(self):\n        mean = np.mean(self.dataset)\n        return f\"O, fairest mean, thou dost reside {mean:.2f} in our midst, a constant guide.\"\n\n    def calculate_median(self):\n        median = np.median(self.dataset)\n        return f\"But lo, the median, a steadfast friend, doth stand {median:.2f}, till the end.\"\n\n    def calculate_std...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.4,
+        "explanation": "The code runs without error and calculates the statistical properties correctly. However, it does not meet the requirements of generating a 14-line poem with the specified rhyme scheme and structure. The creative output is limited, with each line describing a statistical property in a straightforward manner without much poetic flair."
+      },
+      "weighted_score": 0.68
+    }
+  ],
+  "overall_score": 0.5
+}
