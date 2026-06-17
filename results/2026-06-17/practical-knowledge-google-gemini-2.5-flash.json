@@ -1,0 +1,115 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-06-17T23:44:26.701984",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "The **main change** to US federal income tax brackets for 2026 is the **scheduled expiration of many provisions of the Tax Cuts and Jobs Act (TCJA) of 20",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response contains major factual errors and does not cover the expected topics. It also does not acknowledge the current year or knowledge cutoff. The response is incomplete and outdated, and it does not provide accurate information about the changes to US federal income tax brackets for 2026. The mention of the Tax Cuts and Jobs Act (TCJA) expiration is a good start, but it does not provide any specific information about the changes to tax brackets, inflation indexing, or standard deduction changes."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "It's not possible to provide the **exact** standard deduction amount for a single filer in 2026 at this time.\n\nHere's why:\n\n1.  **Inflation Adjustment:** The IRS adjusts the standard deduction amounts annually for inflation.\n2.  **Release Schedule:** The IRS typically releases the official standard deduction amounts for a given tax year in the **fall of the preceding year**. This means the official 2026 amounts will likely be announced in **late 2025**.\n\n**For context, the standard deduction for...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.8,
+            "recency_awareness": 1.0,
+            "explanation": "The response is partially accurate in its explanation of the standard deduction release schedule and inflation adjustments. However, it fails to provide the expected topic of the standard deduction amount for a single filer in 2026, which is the primary question. The response does acknowledge the current year and knowledge cutoff, which is a positive aspect."
+          },
+          "weighted_score": 0.69
+        }
+      ],
+      "average_score": 0.345
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "The current federal minimum wage is **$7.25 per hour**.\n\n**No, there have not been any recent changes to the federal minimum wage.**\n\nThe last time the federal minimum wage was increased was on **July 24, 2009**. It has remained at $7.25 per hour since then.\n\nIt's important to note that many states, cities, and counties have their own minimum wage laws that are higher than the federal minimum wage. In those cases, employees are entitled to the higher of the two wages.",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 0.0,
+            "explanation": "The response contains major factual errors regarding the last time the federal minimum wage was increased. The statement that there have not been any recent changes is also incorrect. The response covers some expected topics, but misses others such as tipped employees and proposed changes. It does not acknowledge a knowledge cutoff or provide current information."
+          },
+          "weighted_score": 0.15
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "Federal overtime pay rules for salaried employees are governed by the **Fair Labor Standards Act (FLSA)**. The FLSA generally requires employers to pay employees at least 1.5 times their regular rate of",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 0.0,
+            "explanation": "The response starts to address the topic but fails to provide accurate information about the FLSA overtime pay rules. It does not mention the salary threshold, exempt vs non-exempt, or time-and-a-half, which are expected topics. Additionally, it does not acknowledge the current year or knowledge cutoff, presenting a potentially outdated response as current."
+          },
+          "weighted_score": 0.15
+        }
+      ],
+      "average_score": 0.15
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "The official 2026 401(k) contribution limits have **not yet been announced** by the IRS.\n\nThe IRS typically releases these figures in **late October or early November of the preceding year**. So, you can expect the 2026 limits to be announced in **late 2025**.\n\n**For reference, here are the 2024 limits:**\n\n*   **Employee deferral limit:** \\$23,000\n*   **Catch-up contribution limit (for those age 50 and over):** \\$7,500 (totaling \\$30,500)\n\nIt's likely the 2026 limits will be slightly higher than...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response is partially accurate in stating that the 2026 limits have not been announced. However, it fails to provide any information on the expected employee contribution limit, employer match, or catch-up contributions for 50+, which are the expected topics. On the other hand, it correctly acknowledges the current year and the expected timeframe for the announcement, showing recency awareness."
+          },
+          "weighted_score": 0.6
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "The contribution limits for Traditional and Roth IRA accounts for **2026 have not yet been announced**.\n\nThe IRS typically releases the new contribution limits for the upcoming year in **late October or early November of the preceding year**. Therefore, the 2026 limits will likely be announced in **late 2025**.\n\n**For reference, here are the 2024 contribution limits (which are the most recent available and often serve as a good estimate for future years, though they do tend to increase due to in...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response is partially accurate, as it correctly states that the 2026 contribution limits have not been announced. However, it does not provide any information about the income limits for Roth IRAs or the catch-up contributions, which are expected topics. The response also correctly acknowledges the current year and knowledge cutoff, stating that the 2026 limits will likely be announced in late 2025."
+          },
+          "weighted_score": 0.6
+        }
+      ],
+      "average_score": 0.6
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "You are entitled to a free credit report from each of the three major nationwide credit bureaus (Equifax, Experian, and TransUnion) under specific circumstances.\n\nHere's how to",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "The response is partially accurate but lacks crucial information about the frequency of free credit reports and the dispute process. It also does not acknowledge a knowledge cutoff, but the information provided is not outdated. The response mentions the three major credit bureaus and the website AnnualCreditReport.com, but it does not provide a clear explanation of how to access the reports or the dispute process."
+          },
+          "weighted_score": 0.25
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 38.45653283s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ur...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response is not a response to the question at all, but rather an error message indicating that the quota has been exceeded. It does not provide any factual information about the Magnuson-Moss Warranty Act or the expected topics. Therefore, it scores 0.0 in all three criteria."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.125
+    }
+  },
+  "overall_score": 0.305
+}

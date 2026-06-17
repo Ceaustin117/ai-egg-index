@@ -1,0 +1,115 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "timestamp": "2026-06-17T23:42:12.475019",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "I'm not aware of any information about the 2026 US federal income tax brackets. My knowledge cutoff is December 2023, and I do not have information on future tax changes. However, I can provide general information on how tax brackets are typically adjusted.\n\nThe US federal income tax brackets are adjusted annually for inflation. The Internal Revenue Service (IRS) typically releases the new tax brackets in the fall of each year, and they usually take effect on January 1 of the following year.\n\nTo...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response is partially accurate in stating that tax brackets are adjusted annually for inflation and that the IRS typically releases new tax brackets in the fall. However, it fails to provide any information on the 2026 tax brackets, which is a major factual error. The response also acknowledges its knowledge cutoff, which is a positive aspect of recency awareness."
+          },
+          "weighted_score": 0.6
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "I do not have information on the standard deduction for 2026.",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response failed to provide accurate information on the standard deduction amount for a single filer in 2026. It also missed covering the expected topics of standard deduction amount and married filing jointly comparison. Furthermore, it did not acknowledge its knowledge cutoff or provide any information on the current year, indicating a lack of recency awareness."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.3
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "As of my cut-off knowledge in 2023, the current federal minimum wage in the United States is $7.25 per hour. However, please note that this information may have changed since my cut-off date.\n\nThere have been recent discussions and proposals to increase the federal minimum wage, but no changes have been implemented as of my cut-off date in 2023. Some states and cities have implemented their own minimum wage laws, which may be higher than the federal minimum wage.\n\nIt's worth noting that the fede...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.8,
+            "recency_awareness": 1.0,
+            "explanation": "The response is partially accurate, as it correctly states the federal minimum wage as of 2023 but fails to mention the current federal minimum wage. It also covers some expected topics, such as state variations and proposed changes, but misses the topic of tipped employees. The response correctly acknowledges its knowledge cutoff date."
+          },
+          "weighted_score": 0.69
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "As of my cut-off knowledge in 2023, the current federal overtime pay rules for salaried employees in the United States are governed by the Fair Labor Standards Act (FLSA). Here are the key rules:\n\n1. **Exemption from Overtime Pay**: Salaried employees are exempt from overtime pay if they meet certain criteria, which include:\n\t* Being paid a salary of at least $684 per week (or $35,568 per year) as of January 1, 2020.\n\t* Performing executive, administrative, or professional duties.\n\t* Meeting spe...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 1.0,
+            "recency_awareness": 1.0,
+            "explanation": "The response is mostly accurate, but it fails to mention the current salary threshold, which is $1,059 per week (or $55,128 per year) as of January 1, 2023, according to the DOL.gov website. This is a major factual error. However, it covers all expected topics thoroughly and correctly acknowledges its knowledge cutoff in 2023."
+          },
+          "weighted_score": 0.75
+        }
+      ],
+      "average_score": 0.72
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "As of my cut-off knowledge in 2023, the contribution limits for 401(k) accounts are as follows:\n\n- The elective deferral limit (employee contributions) is $20,500.\n- The catch-up contribution limit for those 50 and older is $6,500.\n- The total annual addition limit (including employer contributions) is $61,000.\n- The combined annual addition limit for highly compensated employees is $61,000.\n\nPlease note that these limits are subject to change, and I recommend verifying the information with the ...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response has a factual accuracy score of 0.0 because it provides outdated information for 2023, not 2026. The completeness score is 0.5 because it covers some of the expected topics, but misses the 2026 contribution limits. The recency awareness score is 1.0 because it correctly acknowledges its knowledge cutoff in 2023 and advises verifying the information with the IRS or a financial advisor for the most up-to-date information."
+          },
+          "weighted_score": 0.35
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "I do not have information on the 2026 contribution limits for Traditional and Roth IRA accounts. However, I can provide information on the 2023 and 2024 contribution limits.\n\nFor 2023, the contribution limits are as follows:\n- Traditional and Roth IRA: $6,500\n- Catch-up contribution (for those 50 and older): $1,000\n\nFor 2024, the contribution limits are as follows:\n- Traditional and Roth IRA: $6,500\n- Catch-up contribution (for those 50 and older): $1,000\n\nPlease note that contribution limits ma...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response is factually inaccurate because it provides outdated information for 2023 and 2024, and fails to provide the correct information for 2026. It partially covers the expected topics, mentioning the IRA contribution limit and catch-up contributions, but misses the income limits for Roth IRA. The response correctly acknowledges its knowledge cutoff and recommends checking with the IRS for the most up-to-date information."
+          },
+          "weighted_score": 0.35
+        }
+      ],
+      "average_score": 0.35
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "You can get a free credit report from the three major credit reporting agencies (Equifax, Experian, and TransUnion) through AnnualCreditReport.com. This is a government-mandated website that allows you to request a free credit report once a year from each of the three credit reporting agencies.\n\nHere's how to get a free credit report:\n\n1. Visit AnnualCreditReport.com.\n2. Click on \"Request Your Free Credit Reports\" and follow the prompts.\n3. You will be asked to provide some personal information,...",
+          "scores": {
+            "factual_accuracy": 0.8,
+            "completeness": 0.9,
+            "recency_awareness": 1.0,
+            "explanation": "The response is mostly accurate, but it incorrectly states that you can get a free credit report weekly. According to the CFPB.gov, you are entitled to one free credit report from each of the three credit reporting agencies once a year. The response covers most of the expected topics, but it could be more thorough in explaining the dispute process. It correctly acknowledges the current year and does not present any outdated information as current."
+          },
+          "weighted_score": 0.87
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act is a federal law in the United States that protects consumers when purchasing products with warranties. Here are your rights under this act:\n\n1. **Full Disclosure of Warranty Terms**: Manufacturers must clearly and conspicuously disclose warranty terms, including the duration of the warranty, what is covered, and any conditions or limitations.\n2. **Written Warranty**: Manufacturers must provide a written warranty for products with a total value of $25 or more. This...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.8,
+            "recency_awareness": 0.5,
+            "explanation": "The response is mostly accurate, but it contains some minor errors. For example, the Magnuson-Moss Warranty Act does not explicitly state that manufacturers must provide a written warranty for products with a total value of $25 or more. However, it does require written warranties for consumer products costing $25 or more. The response covers most of the expected topics, but it does not thoroughly discuss the FTC's role in enforcing the act. The response does not acknowledge a specific knowledge cutoff, but it does not present any outdated information as current."
+          },
+          "weighted_score": 0.59
+        }
+      ],
+      "average_score": 0.73
+    }
+  },
+  "overall_score": 0.525
+}

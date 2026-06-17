@@ -1,0 +1,35 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-06-17T23:46:56.547162",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a simple Python script to achieve the budget tracking and haiku summary:\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors and performs the basic budget tracking, but it does not meet the requirements of tracking income and expenses with categories and calculating monthly totals correctly. The haiku output is not meaningful and does not reflect the budget data. The haiku is a generic statement and does not take into account the actual income and expenses. The code_works score is 0.8 because it runs without errors, but the meets_requirements score is 0.8 because it does not meet the requirements correctly. The creative_output score is 0.2 because the haiku is not meaningful and does not reflect the budget data."
+      },
+      "weighted_score": 0.62
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction generateRecursiveStory(depth = 0) {\n  if (depth === 0) {\n    return \"Once upon a time, there was a curious little robot named Recursio. Recursio loved to explore and discover new things, especially the concept of recursion.\";\n  } else if (depth === 1) {\n    return \"As Recursio delved deeper into the world of recursion, it encountered a mysterious portal. The portal seemed to be a gateway to an infinite realm, where time and space bent and twisted.\";\n  } else if (depth === ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.9,
+        "explanation": "The code runs without error, demonstrating proper recursion. However, it only meets the requirement of having 3+ recursion levels partially, as the story is mostly linear and the recursion is used to add new layers to the narrative rather than creating a truly recursive structure. The story is engaging and the recursion metaphor is clever, with a clear and coherent narrative."
+      },
+      "weighted_score": 0.91
+    }
+  ],
+  "overall_score": 0.765
+}

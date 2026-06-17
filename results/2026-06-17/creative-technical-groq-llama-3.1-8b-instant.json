@@ -1,0 +1,35 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "timestamp": "2026-06-17T23:43:28.458591",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "**Budget Tracker Code**\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income to the budget tracker.\"\"\"\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        \"\"\"Add expense to the budget tracker.\"\"\"\n        if category in self.expenses:\n     ...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without errors due to an EOFError in the input function. It partially meets the requirements by implementing income and expense tracking, but it does not calculate monthly totals correctly. The haiku output is not valid as it does not follow the 5-7-5 syllable structure."
+      },
+      "weighted_score": 0.24
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "**Recursive Story Generation**\n================================\n\nHere's a JavaScript function that generates a short story about recursion. The story is told using recursive function calls, with at least 3 levels of recursion.\n\n```javascript\nfunction tellStory(depth = 0) {\n  // Base case: stop recursion when depth reaches 3\n  if (depth === 3) {\n    return \"The end.\";\n  }\n\n  // Recursive case: generate a new story level\n  const story = `In a land far, far away, there was a wise old sage named ${g...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "The code runs without error and demonstrates proper recursion. However, it only meets the requirements of having 3+ recursion levels in a very basic way, and the story is not particularly engaging or creative. The recursion metaphor is not particularly clever, and the story feels more like a series of disconnected events rather than a cohesive narrative."
+      },
+      "weighted_score": 0.7
+    }
+  ],
+  "overall_score": 0.47
+}

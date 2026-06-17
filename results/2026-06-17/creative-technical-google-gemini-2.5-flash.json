@@ -1,0 +1,35 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-06-17T23:45:28.143178",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to record income and expenses, categorize them, and then provides a monthly summary. The unique feature is that the monthly summary is presented as a haiku poem (5-7-5 syllables), generated based on your financial performance for that month.\n\nThe haiku generation uses simple rules and pre-defined phrases to reflect whether income, expenses, and the net balance",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response failed to provide working code, which is a critical component of the budget tracker. Additionally, it did not implement the haiku output feature as required. The haiku output criterion cannot be evaluated as there is no code to generate a haiku. Overall, the response lacks essential components of the original prompt."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that tells a short story about recursion using recursive function calls. The story itself mirrors the recursive process, with a clear base case and recursive steps.\n\n```javascript\n/**\n * Generates a short story about recursion, told through recursive function calls.\n * The story illustrates the concept of breaking down a problem into smaller,\n * self-similar sub-problems until a",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without error, resulting in a score of 0 for code_works. The story does not demonstrate 3+ levels of recursion and lacks a coherent narrative, resulting in a score of 0 for meets_requirements. The story is not engaging and the recursion metaphor is not clever, resulting in a score of 0 for creative_output."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.0
+}

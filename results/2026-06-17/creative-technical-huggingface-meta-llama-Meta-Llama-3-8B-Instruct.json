@@ -1,0 +1,35 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-06-17T23:48:05.703009",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a Python budget tracker that meets your requirements:\n```\n# Budget Tracker\n\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n\n    def add_income(self, amount):\n        self.income += amount\n\n    def add_expense(self, category, amount):\n        if category not in self.expenses:\n            self.expenses[category] = 0\n        self.expenses[category] += amount\n\n    def get_monthly_totals(self):\n        return {\n            'income': self.income...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.0,
+        "explanation": "The code runs without errors and performs the basic budget tracking, but it does not meet the requirements for a haiku poem output. The generated output is not a valid haiku (5-7-5 syllables) and does not meaningfully reflect the budget data. The code also lacks proper formatting and structure for a haiku poem."
+      },
+      "weighted_score": 0.56
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a JavaScript function that generates a short story about recursion, where the story itself is told using recursive function calls:\n```\nfunction tellStory() {\n  function recursiveStory(level) {\n    if (level > 3) return; // base case: stop recursing\n    console.log(`Level ${level}: I was on a quest to find the legendary Sword of Recursion.`);\n    recursiveStory(level + 1); // recursive call\n  }\n  recursiveStory(1);\n  console.log(\"And so, I found the Sword of Recursion, and with it, I coul...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.5,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without error due to a syntax error in the last line. The story has 3 levels of recursion, but the narrative is not coherent and the recursion metaphor is not clever. The story is repetitive and lacks a clear structure."
+      },
+      "weighted_score": 0.15
+    }
+  ],
+  "overall_score": 0.355
+}

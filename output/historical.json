@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14",
+  "last_updated": "2026-06-17",
   "models": {
     "together/mistral-7b-instruct": {
       "provider": "together",
@@ -57,6 +57,11 @@
           "date": "2026-06-14",
           "practical_knowledge": 0.397,
           "creative_technical": 0.5
+        },
+        {
+          "date": "2026-06-17",
+          "practical_knowledge": 0.525,
+          "creative_technical": 0.47
         }
       ]
     },
@@ -141,6 +146,11 @@
           "date": "2026-06-14",
           "creative_technical": 0.378,
           "practical_knowledge": 0.487
+        },
+        {
+          "date": "2026-06-17",
+          "creative_technical": 0.355,
+          "practical_knowledge": 0.56
         }
       ]
     },
@@ -177,6 +187,11 @@
           "date": "2026-06-14",
           "creative_technical": 0.452,
           "practical_knowledge": 0.562
+        },
+        {
+          "date": "2026-06-17",
+          "creative_technical": 0.765,
+          "practical_knowledge": 0.59
         }
       ]
     },
@@ -219,6 +234,11 @@
           "date": "2026-06-14",
           "creative_technical": 0.112,
           "practical_knowledge": 0.23
+        },
+        {
+          "date": "2026-06-17",
+          "creative_technical": 0.0,
+          "practical_knowledge": 0.305
         }
       ]
     }
