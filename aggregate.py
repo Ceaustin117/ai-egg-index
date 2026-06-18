@@ -111,11 +111,8 @@ class BenchmarkAggregator:
                                 for c in data.get("challenges", [])
                             }
                         }
-                elif "humaneval" in result_file.name.lower():
-                    models[model]["benchmarks"]["humaneval"] = {
-                        "score": data.get("score", data.get("pass_at_1", 0)),
-                        "pass_at_1": data.get("pass_at_1", 0)
-                    }
+                # HumanEval intentionally dropped from the index (see README/run.py);
+                # any legacy humaneval result files are ignored, not aggregated.
                 elif "ifeval" in result_file.name.lower():
                     models[model]["benchmarks"]["ifeval"] = {
                         "score": data.get("score", 0),

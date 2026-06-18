@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Openbench wrapper.
 
-Invokes `bench eval <name>` for each requested benchmark (HumanEval / IFEval / GSM8K)
-and writes a JSON file into `results/<today>/` matching the schema that `aggregate.py`
-expects (filenames containing 'humaneval', 'ifeval', or 'gsm8k' with a top-level `model`
-and `score` field).
+Invokes `bench eval <name>` for each requested benchmark (IFEval / GSM8K) and writes a
+JSON file into `results/<today>/` matching the schema that `aggregate.py` expects
+(filenames containing 'ifeval' or 'gsm8k' with a top-level `model` and `score` field).
 
 openbench is built on Inspect AI, which reports scores in a rich-formatted table — NOT
 as a plain `accuracy: 0.8` line — so scraping stdout with simple regexes silently fails.
@@ -24,8 +23,10 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
+# HumanEval is intentionally omitted: grading it means executing model-generated code
+# against unit tests in a Docker sandbox — an abstract academic benchmark that doesn't
+# fit this index's "tasks regular people care about" mission. See README.
 BENCHMARKS = {
-    "humaneval": {"extra_field": "pass_at_1"},
     "ifeval": {"extra_field": "strict"},
     "gsm8k": {"extra_field": "accuracy"},
 }
