@@ -59,10 +59,15 @@
           "creative_technical": 0.5
         },
         {
-          "date": "2026-06-18",
+          "date": "2026-06-17",
           "practical_knowledge": 0.525,
-          "creative_technical": 0.287,
-          "gsm8k": 0.667,
+          "creative_technical": 0.47
+        },
+        {
+          "date": "2026-06-18",
+          "practical_knowledge": 0.477,
+          "creative_technical": 0.312,
+          "gsm8k": 0.8,
           "ifeval": 1.0
         }
       ]
@@ -150,9 +155,14 @@
           "practical_knowledge": 0.487
         },
         {
+          "date": "2026-06-17",
+          "creative_technical": 0.355,
+          "practical_knowledge": 0.56
+        },
+        {
           "date": "2026-06-18",
-          "creative_technical": 0.373,
-          "practical_knowledge": 0.338
+          "creative_technical": 0.428,
+          "practical_knowledge": 0.475
         }
       ]
     },
@@ -191,9 +201,14 @@
           "practical_knowledge": 0.562
         },
         {
+          "date": "2026-06-17",
+          "creative_technical": 0.765,
+          "practical_knowledge": 0.59
+        },
+        {
           "date": "2026-06-18",
-          "creative_technical": 0.497,
-          "practical_knowledge": 0.496
+          "creative_technical": 0.452,
+          "practical_knowledge": 0.5
         }
       ]
     },
@@ -238,9 +253,14 @@
           "practical_knowledge": 0.23
         },
         {
-          "date": "2026-06-18",
+          "date": "2026-06-17",
           "creative_technical": 0.0,
-          "practical_knowledge": 0.185
+          "practical_knowledge": 0.305
+        },
+        {
+          "date": "2026-06-18",
+          "creative_technical": null,
+          "practical_knowledge": null
         }
       ]
     }

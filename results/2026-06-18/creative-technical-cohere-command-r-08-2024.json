@@ -1,49 +1,77 @@
 {
   "model": "cohere/command-r-08-2024",
-  "timestamp": "2026-06-18T17:03:51.386142",
+  "timestamp": "2026-06-18T17:24:58.753043",
   "challenges": [
     {
       "prompt_id": "budget-haiku",
       "difficulty": "intermediate",
-      "response_preview": "```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def calculate_tot...",
+      "response_preview": "Here's a Python script with a self-contained function that solves the problem and passes corresponding tests:\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self....",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
-        "code_works": 0.7,
-        "meets_requirements": 0.5,
-        "creative_output": 0.5,
-        "explanation": "Could not parse judge response"
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors and performs the basic budget tracking. It meets all three requirements (tracking, categories, haiku output). However, the haiku output does not meet the 5-7-5 syllable requirement and does not meaningfully reflect the budget data. The haiku is more of a generic statement rather than a reflection of the actual income and expenses."
       },
-      "weighted_score": 0.58
+      "weighted_score": 0.62
     },
     {
       "prompt_id": "recursive-story",
       "difficulty": "intermediate",
-      "response_preview": "```javascript\nfunction recursiveStory(depth = 0) {\n  if (depth === 0) {\n    return \"Once upon a time, there was a curious storyteller who loved to explore the concept of recursion. They decided to embark on a journey, a journey that would unfold layer by layer, much like a Russian nesting doll.\";\n  } else if (depth === 1) {\n    return \"As the storyteller delved deeper into the story, they discovered a magical portal. Stepping through, they found themselves in a land of infinite possibilities. Th...",
+      "response_preview": "```javascript\nfunction recursiveStory(depth) {\n  if (depth <= 0) {\n    return \"The story ends here, with a satisfying conclusion. The narrator takes a bow and the audience applauds.\";\n  } else {\n    return \"As the tale unfolds, a new chapter begins. The narrator, with a twist of their voice, introduces a story within the story. \" +\n      \"It is a tale of \" + recursiveStory(depth - 1) + \". The audience is captivated, eager to hear more.\";\n  }\n}\n\nconsole.log(recursiveStory(3));\n```\n\nThe output of ...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
         "code_works": 1.0,
         "meets_requirements": 0.8,
-        "creative_output": 0.9,
-        "explanation": "The code runs without error and demonstrates proper recursion. However, it does not meet the requirement of having 3+ levels of recursion in the story itself, but rather in the function calls. The story is engaging and the recursion metaphor is clever, but it could be more developed."
+        "creative_output": 0.6,
+        "explanation": "The code runs without error, demonstrating proper recursion. However, the story only has 2 levels of recursion, not 3+ as required. The recursion metaphor is clever, but the story could be more engaging and detailed to score higher in creative output."
       },
-      "weighted_score": 0.91
+      "weighted_score": 0.82
     },
     {
       "prompt_id": "regex-poetry",
       "difficulty": "hard",
-      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Define the regex pattern for the AABBA rhyme scheme\n    pattern = r'^(.+?)(?:\\s+\\1)?(?:\\s+\\1)?\\s+(.+?)(?:\\s+\\2)?(?:\\s+\\2)?\\s+(.+?)(?:\\s+\\3)?(?:\\s+\\...",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n\n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n\n    # Define the regex pattern for the AABBA rhyme scheme\n    pattern = r'^(.+?)(?:\\1)(?:\\1)$'\n\n    # Check each line for the rhyme scheme\n    for i in range(5):...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
         "code_works": 0.0,
         "meets_requirements": 0.0,
         "creative_output": 0.0,
-        "explanation": "The code does not work as expected. The regex pattern is overly complex and does not correctly validate the AABBA rhyme scheme. The test cases also do not cover all possible edge cases. The approach to rhyme detection is not clever and the test limericks are not amusing."
+        "explanation": "The code does not work as expected. The regular expression pattern used to check the AABBA rhyme scheme is incorrect. It checks if each line ends with the same word or phrase, which is not the correct approach to validate the rhyme scheme. The test cases also do not cover all possible scenarios, such as limericks with different rhyme schemes or limericks with the correct rhyme scheme but incorrect length. The test limericks are also not amusing and do not demonstrate a creative approach to rhyme detection."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "```python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    weather_dict = {\n        \"sunny\": \"\"\"\n _______  _______  _______  _______  _______  _______  _______ \n|       ||       ||       ||       ||       ||       ||       |\n|   ___ | |   _  ||  _____||   _   ||   _   ||   _   ||  _____|\n|  |___|| |  |_| || |_____ |  |_|  ||  |_|  ||  |_|  || |_____ \n|       ||       ||       ||       ||       ||       ||       |\n|       ||       ||       ||       ||   _   ||   _   ||  _____|\n|...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without error and generates ASCII output. However, it only meets 4 out of 5 weather conditions (sunny, cloudy, rainy, snowy) with distinct art. The stormy condition is missing. The ASCII art is recognizable but lacks aesthetic appeal."
+      },
+      "weighted_score": 0.82
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python class that attempts to generate a Shakespearean sonnet based on the provided dataset. Please note that generating poetry is a complex task, and this is a simplified attempt to demonstrate the concept. The output may not be perfect Shakespearean sonnets, but it tries to follow the structure and rhyme scheme you requested.\n\n```python\nimport random\nimport statistics\n\nclass SonnetGenerator:\n    def __init__(self, dataset):\n        self.dataset = dataset\n        self.mean = statistics...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without error due to a syntax error in the generate_sonnet method. The sonnet generation does not cover all four statistical properties, and the poem does not follow the iambic pentameter structure. The statistics are not woven in creatively, and the output is not a perfect Shakespearean sonnet."
       },
       "weighted_score": 0.0
     }
   ],
-  "overall_score": 0.497
+  "overall_score": 0.452
 }

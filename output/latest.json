@@ -8,20 +8,22 @@
       "date": "2026-06-18",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.373,
+          "score": 0.428,
           "details": {
-            "budget-haiku": 0.56,
-            "recursive-story": 0.56,
-            "regex-poetry": 0.0
+            "budget-haiku": 0.58,
+            "recursive-story": 0.0,
+            "regex-poetry": 0.0,
+            "ascii-weather": 0.82,
+            "data-sonnet": 0.74
           }
         },
         "practical_knowledge": {
-          "score": 0.338,
+          "score": 0.475,
           "details": {
-            "taxes": 0.367,
-            "regulations": 0.245,
-            "practical_finance": 0.35,
-            "consumer_rights": 0.37
+            "taxes": 0.43,
+            "regulations": 0.59,
+            "practical_finance": 0.4,
+            "consumer_rights": 0.54
           }
         }
       }
@@ -33,25 +35,27 @@
       "date": "2026-06-18",
       "benchmarks": {
         "practical_knowledge": {
-          "score": 0.525,
+          "score": 0.477,
           "details": {
-            "taxes": 0.43,
-            "regulations": 0.625,
+            "taxes": 0.317,
+            "regulations": 0.565,
             "practical_finance": 0.35,
-            "consumer_rights": 0.83
+            "consumer_rights": 0.82
           }
         },
         "creative_technical": {
-          "score": 0.287,
+          "score": 0.312,
           "details": {
             "budget-haiku": 0.0,
-            "recursive-story": 0.3,
-            "regex-poetry": 0.56
+            "recursive-story": 0.0,
+            "regex-poetry": 0.0,
+            "ascii-weather": 0.82,
+            "data-sonnet": 0.74
           }
         },
         "gsm8k": {
-          "score": 0.667,
-          "accuracy": 0.667
+          "score": 0.8,
+          "accuracy": 0.8
         },
         "ifeval": {
           "score": 1.0,
@@ -67,20 +71,22 @@
       "date": "2026-06-18",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.497,
+          "score": 0.452,
           "details": {
-            "budget-haiku": 0.58,
-            "recursive-story": 0.91,
-            "regex-poetry": 0.0
+            "budget-haiku": 0.62,
+            "recursive-story": 0.82,
+            "regex-poetry": 0.0,
+            "ascii-weather": 0.82,
+            "data-sonnet": 0.0
           }
         },
         "practical_knowledge": {
-          "score": 0.496,
+          "score": 0.5,
           "details": {
-            "taxes": 0.347,
-            "regulations": 0.59,
-            "practical_finance": 0.4,
-            "consumer_rights": 0.77
+            "taxes": 0.317,
+            "regulations": 0.64,
+            "practical_finance": 0.317,
+            "consumer_rights": 0.91
           }
         }
       }
@@ -92,21 +98,14 @@
       "date": "2026-06-18",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.0,
-          "details": {
-            "budget-haiku": 0.0,
-            "recursive-story": 0.0,
-            "regex-poetry": 0.0
-          }
+          "score": null,
+          "status": "error",
+          "error": "Free-tier quota/rate limit exceeded"
         },
         "practical_knowledge": {
-          "score": 0.185,
-          "details": {
-            "taxes": 0.217,
-            "regulations": 0.0,
-            "practical_finance": 0.2,
-            "consumer_rights": 0.3
-          }
+          "score": null,
+          "status": "error",
+          "error": "Free-tier quota/rate limit exceeded"
         }
       }
     }

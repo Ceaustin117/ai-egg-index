@@ -1,49 +1,77 @@
 {
   "model": "groq/llama-3.1-8b-instant",
-  "timestamp": "2026-06-18T16:59:28.197135",
+  "timestamp": "2026-06-18T17:19:56.813865",
   "challenges": [
     {
       "prompt_id": "budget-haiku",
       "difficulty": "intermediate",
-      "response_preview": "**Budget Tracker in Python**\n================================\n\n### Code\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income to a category\"\"\"\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        \"\"\"Add expense to a category\"\"\"\n        if ca...",
+      "response_preview": "**Budget Tracker Code**\n```python\nimport datetime\n\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income to a category\"\"\"\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        \"\"\"Add expense to a category\"\"\"\n        if category in self.expenses:\n       ...",
       "code_extracted": true,
       "code_runs": false,
       "scores": {
         "code_works": 0.0,
         "meets_requirements": 0.0,
         "creative_output": 0.0,
-        "explanation": "The code does not run without errors due to an EOFError in the main function. It does not meet the requirements as it does not track income and expenses with categories correctly, and the haiku output is not valid. The haiku output is also not meaningful as it does not reflect the budget data correctly."
+        "explanation": "The code does not run without errors due to an EOFError when trying to read input. It does not meet the requirements as it does not track income and expenses with categories correctly, and the haiku output is not valid. The haiku output is also not meaningful as it simply outputs the income and expense totals without any poetic interpretation."
       },
       "weighted_score": 0.0
     },
     {
       "prompt_id": "recursive-story",
       "difficulty": "intermediate",
-      "response_preview": "**Recursive Story Generation**\n================================\n\nBelow is a JavaScript function that generates a short story about recursion. The story is told using recursive function calls, with at least 3 levels of recursion.\n\n```javascript\nfunction tellStory() {\n  console.log(\"Once upon a time, in a land far, far away...\");\n  recursiveBranch(\"There was a brave knight named Sir Reginald.\");\n  recursiveBranch(\"He set out on a quest to find the legendary Golden Sword.\");\n  recursiveBranch(\"As h...",
+      "response_preview": "**Recursive Story Generation Function**\n=====================================\n\nHere's a JavaScript function that generates a short story about recursion using recursive function calls. The story has three levels of recursion and follows a coherent narrative.\n\n```javascript\nfunction tellStory() {\n  // Base case: start with a simple sentence\n  let story = \"Once upon a time, in a land far, far away, there was a wise old wizard named Max.\";\n  \n  // Recursive case: add a new sentence with a recursive...",
       "code_extracted": true,
       "code_runs": false,
       "scores": {
         "code_works": 0.0,
-        "meets_requirements": 0.6,
-        "creative_output": 0.4,
-        "explanation": "The code does not run without error due to a maximum call stack size exceeded error. However, it attempts to meet the requirements by having multiple recursive function calls. The story is somewhat coherent but lacks a clear narrative thread. The recursion metaphor is somewhat clever but not particularly original."
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without error due to a syntax error in the last line of the addOil function. The story does not meet the requirements of having 3+ levels of recursion and telling a coherent story. The recursion metaphor is not cleverly used."
       },
-      "weighted_score": 0.3
+      "weighted_score": 0.0
     },
     {
       "prompt_id": "regex-poetry",
       "difficulty": "hard",
-      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick.\n\n```python\nimport re\n\ndef is_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick using regular expressions.\n    \n    A valid limerick should have 5 lines with the following pattern:\n    - Lines 1, 2, and 5 should have 8-13 characters and end with a word that rhymes\n    - Lines 3 and 4 should have 5-8 characters and end with a word that rhymes with each other\n    -...",
+      "response_preview": "**Validating Limericks with Regular Expressions**\n=====================================================\n\nHere's a Python program that uses regular expressions to validate whether a given text is a valid limerick. A limerick is a type of poem with a specific rhyme scheme: AABBA.\n\n```python\nimport re\n\ndef is_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick using regular expressions.\n\n    Args:\n        text (str): The text to be validated.\n\n    Returns:\n        bool: Tr...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without error due to a syntax error in the regular expression pattern. The pattern is overly complex and does not accurately represent the AABBA rhyme scheme. The test cases are not provided, and the approach to rhyme detection is not clever."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "```python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    \"\"\"\n    Generate an ASCII art representation of the weather.\n\n    Args:\n        temperature (float): The current temperature in degrees Celsius.\n        conditions (str): The current weather conditions (sunny, cloudy, rainy, snowy, stormy).\n        humidity (float): The current humidity level as a percentage.\n\n    Returns:\n        str: An ASCII art representation of the weather.\n    \"\"\"\n\n    # Define ASCII art for each ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without error and meets most of the requirements. However, it does not handle all edge cases (e.g., invalid input types) and the ASCII art is not particularly creative or aesthetically pleasing."
+      },
+      "weighted_score": 0.82
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "```python\nimport statistics\nimport math\n\nclass SonnetGenerator:\n    def __init__(self, dataset):\n        \"\"\"\n        Initialize the SonnetGenerator class.\n\n        Args:\n            dataset (list): A list of numbers.\n        \"\"\"\n        self.dataset = dataset\n\n    def calculate_mean(self):\n        \"\"\"\n        Calculate the mean of the dataset.\n\n        Returns:\n            float: The mean of the dataset.\n        \"\"\"\n        return statistics.mean(self.dataset)\n\n    def calculate_median(self):\n  ...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
         "code_works": 0.8,
-        "meets_requirements": 0.6,
-        "creative_output": 0.2,
-        "explanation": "The code runs without error, but the regex patterns are not perfectly valid. The code does not fully meet the requirements as it does not correctly validate the AABBA rhyme scheme pattern. The test limericks are not provided, and the approach to rhyme detection is not clever."
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs correctly and calculates statistics correctly, but it lacks error handling for edge cases. The poem meets the requirements of 14 lines and covers all four statistical properties, but it does not follow the traditional sonnet structure and rhyme scheme perfectly. The statistics are woven in creatively, but the poem could benefit from more poetic language and a more cohesive narrative."
       },
-      "weighted_score": 0.56
+      "weighted_score": 0.74
     }
   ],
-  "overall_score": 0.287
+  "overall_score": 0.312
 }
