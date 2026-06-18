@@ -83,11 +83,11 @@ Tasks live in `benchmarks/creative-technical/prompts.json`.
 
 **4.** Update the "Free-Tier Providers Tested" table in `README.md`.
 
-For standard benchmarks (HumanEval, IFEval, GSM8K), openbench already supports 30+ providers — just set the API key and use the appropriate model string:
+For standard benchmarks (IFEval, GSM8K), openbench already supports 30+ providers — just set the API key and use the appropriate model string:
 
 ```bash
 export TOGETHER_API_KEY=your_key
-bench eval humaneval --model together/mistral-7b --limit 10
+bench eval ifeval --model together/mistral-7b --limit 10
 ```
 
 ---
@@ -119,7 +119,6 @@ python benchmarks/practical-knowledge/eval.py --model llama-3.1-8b-instant --lim
 
 ```bash
 pip install openbench
-bench eval humaneval --model groq/llama-3.1-8b-instant --limit 10
 bench eval ifeval --model groq/llama-3.1-8b-instant --limit 10
 bench eval gsm8k --model groq/llama-3.1-8b-instant --limit 10
 ```

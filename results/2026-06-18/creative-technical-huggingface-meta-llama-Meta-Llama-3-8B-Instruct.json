@@ -1,0 +1,49 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-06-18T17:05:19.100288",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a Python budget tracker that meets your requirements:\n```\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n           ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.0,
+        "explanation": "The code runs without errors and performs the basic budget tracking, but it does not meet the requirements for the haiku output. The haiku is not in the 5-7-5 syllable format and does not meaningfully reflect the budget data. The haiku is simply a list of numbers, which does not meet the creative output requirement."
+      },
+      "weighted_score": 0.56
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a JavaScript function that generates a short story about recursion:\n```\nfunction recursiveStory() {\n  const story = [];\n  const characters = [\"Alice\", \"Bob\", \"Charlie\", \"David\", \"Eve\"];\n\n  function tellStory(character) {\n    story.push(`${character} was trying to solve a puzzle...`);\n    if (character === \"Alice\") {\n      tellStory(\"Bob\");\n    } else if (character === \"Bob\") {\n      tellStory(\"Charlie\");\n    } else if (character === \"Charlie\") {\n      tellStory(\"David\");\n    } else if (c...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.2,
+        "explanation": "The code runs without error, but the output does not match the expected output. The story has only 2 levels of recursion, not 3. The recursion metaphor is not particularly clever or engaging."
+      },
+      "weighted_score": 0.56
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n```\nimport re\n\ndef is_limerick(text):\n    # Regular expression to match the AABBA rhyme scheme pattern\n    pattern = r\"^(?:(?:(?:\\b\\w+\\b)(?=\\w{3,}\\b))\\s*\\n\\s*){5}$\n    if re.match(pattern, text, re.MULTILINE):\n        return True\n    return False\n\n# Test cases\ntest_cases = [\n    (\"There once was a man from Nantucket\", True),\n    (\"There once was a man from Nantucket\\nWho kept pugs in his ...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not run due to a syntax error in the regular expression pattern. The approach to rhyme detection is not clever and the test limericks are not amusing. The code does not validate the AABBA rhyme scheme pattern correctly."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.373
+}

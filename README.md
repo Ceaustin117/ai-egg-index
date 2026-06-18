@@ -44,23 +44,25 @@ python benchmarks/creative-technical/eval.py --model llama-3.1-8b-instant --limi
 python aggregate.py
 ```
 
-For the standard benchmarks (HumanEval, IFEval, GSM8K), install [openbench](https://github.com/groq/openbench):
+For the standard benchmarks (IFEval, GSM8K), install [openbench](https://github.com/groq/openbench):
 
 ```bash
 pip install openbench
-bench eval humaneval --model groq/llama-3.1-8b-instant --limit 10
 bench eval ifeval --model groq/llama-3.1-8b-instant --limit 10
 bench eval gsm8k --model groq/llama-3.1-8b-instant --limit 10
 ```
 
+> HumanEval is intentionally excluded: grading code by executing it against unit tests
+> (in a Docker sandbox) is the kind of abstract academic benchmark this index is built
+> to avoid — it doesn't reflect "what regular people actually care about."
+
 ---
 
-## The 5 Benchmarks
+## The 4 Benchmarks
 
 | Benchmark | Type | What It Tests |
 |-----------|------|---------------|
 | **Practical Knowledge** | Custom | Real-world info people actually search for: tax brackets, retirement limits, minimum wage, consumer rights |
-| **HumanEval** | [openbench](https://github.com/groq/openbench) | Simple coding help — "Write a function that..." |
 | **IFEval** | [openbench](https://github.com/groq/openbench) | Instruction following — "Format as a table," "respond in exactly 3 bullet points" |
 | **GSM8K** | [openbench](https://github.com/groq/openbench) | Grade school math word problems — if it can't help your kid with homework, is it useful? |
 | **Creative+Technical** | Custom | Combining creativity with code — "Write a budget tracker that outputs summaries as haiku" |
@@ -115,7 +117,7 @@ ai-egg-index/
 - **LLM-as-judge** for custom benchmarks, with rubrics for factual accuracy, completeness, and recency awareness.
 - **Code execution** for creative+technical tasks — code is extracted and run in a sandbox.
 - **Historical tracking.** Benchmarks run regularly, scores tracked over time.
-- **Overall score** is the average across all 5 benchmarks (only counting benchmarks with data).
+- **Overall score** is the average across all 4 benchmarks (only counting benchmarks with data).
 
 ---
 

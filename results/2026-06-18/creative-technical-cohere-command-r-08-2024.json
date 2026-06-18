@@ -1,0 +1,49 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-06-18T17:03:51.386142",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def calculate_tot...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction recursiveStory(depth = 0) {\n  if (depth === 0) {\n    return \"Once upon a time, there was a curious storyteller who loved to explore the concept of recursion. They decided to embark on a journey, a journey that would unfold layer by layer, much like a Russian nesting doll.\";\n  } else if (depth === 1) {\n    return \"As the storyteller delved deeper into the story, they discovered a magical portal. Stepping through, they found themselves in a land of infinite possibilities. Th...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.9,
+        "explanation": "The code runs without error and demonstrates proper recursion. However, it does not meet the requirement of having 3+ levels of recursion in the story itself, but rather in the function calls. The story is engaging and the recursion metaphor is clever, but it could be more developed."
+      },
+      "weighted_score": 0.91
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Define the regex pattern for the AABBA rhyme scheme\n    pattern = r'^(.+?)(?:\\s+\\1)?(?:\\s+\\1)?\\s+(.+?)(?:\\s+\\2)?(?:\\s+\\2)?\\s+(.+?)(?:\\s+\\3)?(?:\\s+\\...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not work as expected. The regex pattern is overly complex and does not correctly validate the AABBA rhyme scheme. The test cases also do not cover all possible edge cases. The approach to rhyme detection is not clever and the test limericks are not amusing."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.497
+}
