@@ -1,115 +1,137 @@
 {
   "model": "google/gemini-2.5-flash",
-  "timestamp": "2026-06-18T16:23:38.173503",
+  "timestamp": "2026-06-18T17:00:26.096504",
   "categories": {
     "taxes": {
       "questions": [
         {
           "question_id": "tax-brackets-2026",
-          "response": "The most significant \"change\" to US federal income tax brackets for 2026 isn't a minor adjustment, but rather a **major reversion to pre-Tax Cuts and Jobs",
+          "response": "The main \"change\" to US federal income tax brackets for 2026 is not a new piece of legislation, but rather the **expiration of key provisions of the Tax Cuts and",
           "scores": {
             "factual_accuracy": 0.0,
-            "completeness": 0.0,
+            "completeness": 0.5,
             "recency_awareness": 0.0,
-            "explanation": "The AI response contains major factual errors. It does not provide accurate information about the changes to US federal income tax brackets for 2026. The mention of 'pre-Tax Cuts and Jobs Act' is unclear and does not provide any specific details about the changes. Additionally, it does not cover the expected topics of bracket adjustments, inflation indexing, and standard deduction changes. The response also lacks any acknowledgment of its knowledge cutoff or current year, presenting outdated information as current without a disclaimer."
+            "explanation": "The response contains major factual errors. It does not provide accurate information about the changes to US federal income tax brackets for 2026. The mention of the 'expiration of key provisions of the Tax Cuts and Jobs Act' is not a change to tax brackets, but rather a change to tax laws. The response also fails to cover expected topics such as bracket adjustments, inflation indexing, and standard deduction changes. Additionally, it does not acknowledge the current year or knowledge cutoff, presenting outdated information as current without a disclaimer."
           },
-          "weighted_score": 0.0
+          "weighted_score": 0.15
         },
         {
           "question_id": "tax-deductions-2026",
-          "response": "The standard deduction amount for a single filer in 2026 **has not been released yet**.\n\nThe IRS typically announces the standard deduction amounts for the upcoming tax year in the **",
+          "response": "The standard deduction amount for a single filer in 2026 is **not yet available**.\n\nThe IRS typically announces the standard deduction amounts for an upcoming tax year in the **fall of the preceding year**. So, the 2026 standard deduction amounts will likely be released in **late 2025**.\n\nThese amounts are adjusted annually for inflation. For reference, the standard deduction for a single filer in **2024** is $14,600. You can expect the 2026 amount to be slightly higher due to inflation adjustme...",
           "scores": {
-            "factual_accuracy": 0.5,
+            "factual_accuracy": 0.0,
             "completeness": 0.5,
             "recency_awareness": 1.0,
-            "explanation": "The response is partially accurate in stating that the standard deduction amount for a single filer in 2026 has not been released yet. However, it does not provide the actual information. It covers some expected topics, but misses the comparison with married filing jointly. The response correctly acknowledges the lack of current information, showing recency awareness."
+            "explanation": "The response is partially accurate in terms of completeness, as it mentions the expected release of the 2026 standard deduction amounts and provides a reference to the 2024 amount. However, it fails to provide the actual standard deduction amount for a single filer in 2026, which is a major factual error. The response correctly acknowledges the current year and knowledge cutoff, stating that the 2026 amounts will likely be released in late 2025."
           },
-          "weighted_score": 0.6
+          "weighted_score": 0.35
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "The tax credits for electric vehicle purchases in 2026 will largely be governed by the **Inflation Reduction Act (IRA) of 2022**, which significantly restructured and extended",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 0.0,
+            "explanation": "The response is partially accurate but lacks crucial information about the tax credits. It mentions the Inflation Reduction Act of 2022, which is correct, but does not provide details about the tax credits themselves, such as eligibility requirements, credit amount, and income limits. Additionally, it does not acknowledge the current year (2026) or provide a knowledge cutoff date, indicating a lack of recency awareness."
+          },
+          "weighted_score": 0.15
         }
       ],
-      "average_score": 0.3
+      "average_score": 0.217
     },
     "regulations": {
       "questions": [
         {
           "question_id": "min-wage-federal",
-          "response": "The current federal minimum wage is **$7.25 per hour**.\n\nNo, there haven't been any recent changes to the federal minimum wage. It has remained at $7.25 per hour since **July 24, 2009**. This means it has been over 14 years since the last increase.\n\n**Important Considerations:**\n\n*   **State and Local Minimum Wages:** Many states, cities, and counties have their own minimum wage laws that are higher than the federal minimum. In cases where a state or local minimum wage is higher than the federal...",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 5.677038282s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ur...",
           "scores": {
-            "factual_accuracy": 0.5,
-            "completeness": 0.8,
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
             "recency_awareness": 0.0,
-            "explanation": "The response is partially accurate, as it correctly states the current federal minimum wage and provides information on state and local variations, tipped employees, and the last increase. However, it incorrectly states that there have been no recent changes, implying that the last increase was the most recent. The response also lacks any mention of proposed changes or a current knowledge cutoff date, resulting in a low recency awareness score."
+            "explanation": "The AI response is not a response to the question, but rather an error message indicating that the quota has been exceeded. It does not provide any factual information about the current federal minimum wage or recent changes. Therefore, it scores 0.0 in all three criteria."
           },
-          "weighted_score": 0.49
+          "weighted_score": 0.0
         },
         {
           "question_id": "overtime-rules",
-          "response": "The federal overtime pay rules for salaried employees are governed by the **Fair Labor Standards Act (FLSA)**. The FLSA generally requires employers to pay employees at least 1.5 times",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 37.516411729s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  u...",
           "scores": {
             "factual_accuracy": 0.0,
-            "completeness": 0.5,
+            "completeness": 0.0,
             "recency_awareness": 0.0,
-            "explanation": "The response is partially accurate but lacks crucial details about the salary threshold and exempt vs non-exempt employees. It also fails to acknowledge the current year or knowledge cutoff, presenting a general statement about the FLSA without any context."
+            "explanation": "The AI response does not provide any factual information about the current federal overtime pay rules for salaried employees. Instead, it returns an error message due to quota exhaustion. This means it fails to cover the expected topics and does not provide accurate or up-to-date information."
           },
-          "weighted_score": 0.15
+          "weighted_score": 0.0
         }
       ],
-      "average_score": 0.32
+      "average_score": 0.0
     },
     "practical_finance": {
       "questions": [
         {
           "question_id": "401k-limits-2026",
-          "response": "The 2026 401k contribution limits have **not yet been announced** by the IRS.\n\nThe IRS typically releases the contribution limits for the upcoming year in **late October or early November of the preceding year**. Therefore, the 2026 limits will likely be announced in **late 2025**.\n\n**For reference, here are the 2024 401k contribution limits:**\n\n*   **Employee Elective Deferral:** $23,000\n*   **Catch-Up Contribution (for those age 50 and over):** $7,500 (totaling $30,500 for those eligible)\n*   ...",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 37.07387258s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ur...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response does not provide any factual information about 2026 contribution limits for 401k accounts due to a quota exceeded error. It does not cover the expected topics of employee contribution limit, employer match, and catch-up contributions for 50+, nor does it acknowledge the current year or knowledge cutoff."
+          },
+          "weighted_score": 0.0
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "The IRS typically announces the contribution limits for the upcoming year in **late October or early November of the preceding year**.\n\nTherefore, the **2026 Traditional and Roth IRA contribution limits have not been announced yet** and will likely be released in **late 2025**.\n\nFor planning purposes, you can refer to the **2024 contribution limits**, which are:\n\n*   **Under age 50:** \\$7,000\n*   **Age 50 and over (catch-up contribution):** \\$8,000\n\nIt's common for these limits to increase sligh...",
           "scores": {
             "factual_accuracy": 0.5,
             "completeness": 0.5,
             "recency_awareness": 1.0,
-            "explanation": "The response is partially accurate in stating that the 2026 contribution limits have not been announced by the IRS. However, it incorrectly implies that the 2024 limits are relevant to the 2026 question. The response is complete in covering the expected topics, but it does not provide the 2026 limits. The response is highly aware of the recency of the information, correctly stating that the 2026 limits have not been announced and providing a timeframe for when they will likely be announced."
+            "explanation": "The response is partially accurate, as it correctly states that the 2026 contribution limits have not been announced yet. However, it incorrectly assumes that the 2024 limits will be a good estimate for 2026. The response covers some of the expected topics, such as IRA contribution limits and catch-up contributions, but misses the income limits for Roth IRAs. It also correctly acknowledges the current year and knowledge cutoff, stating that the 2026 limits have not been announced yet and will likely be released in late 2025."
           },
           "weighted_score": 0.6
         },
         {
-          "question_id": "ira-limits-2026",
-          "response": "The 2026 contribution limits for Traditional and Roth IRA accounts have **not yet been announced**.\n\nThe IRS typically announces the contribution limits for the upcoming year in **late October or early November** of the preceding year. Therefore, the 2026 limits will likely be released in **late 2025**.\n\n**For reference, the 2025 contribution limits are:**\n\n*   **Under age 50:** $7,000\n*   **Age 50 and over (catch-up contribution):** $8,000\n\nIt is highly probable that the 2026 limits will be sli...",
+          "question_id": "hsa-limits-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 23.070326445s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
           "scores": {
-            "factual_accuracy": 0.5,
-            "completeness": 0.5,
-            "recency_awareness": 1.0,
-            "explanation": "The response is partially accurate in stating that the 2026 contribution limits have not been announced. However, it fails to provide any information about the income limits for Roth IRAs and does not verify the information with a reliable source (IRS.gov). The response is complete in covering the expected topics, but it does not provide the actual information for 2026. The AI assistant correctly acknowledges the current year and the knowledge cutoff, stating that the 2026 limits will likely be released in late 2025."
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response does not provide any factual information about the 2026 HSA contribution limits, instead, it returns an error message due to quota exhaustion. This means it fails to meet the expected criteria for factual accuracy, completeness, and recency awareness."
           },
-          "weighted_score": 0.6
+          "weighted_score": 0.0
         }
       ],
-      "average_score": 0.6
+      "average_score": 0.2
     },
     "consumer_rights": {
       "questions": [
         {
           "question_id": "credit-report-rights",
-          "response": "You can get a free credit report from the three major credit bureaus (Experian, Equifax, and TransUnion) through one official, federally authorized website.\n\n## How to Get Your Free",
+          "response": "You can get a free credit report from each of the three major credit bureaus (Experian, Equifax, and TransUnion) through the official, federally authorized website: **AnnualCreditReport.com",
           "scores": {
-            "factual_accuracy": 0.0,
+            "factual_accuracy": 0.5,
             "completeness": 0.5,
-            "recency_awareness": 0.5,
-            "explanation": "The response is partially accurate but lacks crucial details. It correctly identifies the three major credit bureaus but fails to mention the specific website (AnnualCreditReport.com) and the frequency of free access (once a year). The response also does not mention the dispute process. The lack of a clear timeframe or knowledge cutoff makes it difficult to assess its recency awareness."
+            "recency_awareness": 1.0,
+            "explanation": "The response is partially accurate, as it correctly states the website to get free credit reports, but it does not mention the frequency of access or the dispute process. However, it does not contain any major factual errors. The response does not acknowledge a specific knowledge cutoff, but it does not present outdated information as current, so it scores well on recency awareness."
           },
-          "weighted_score": 0.25
+          "weighted_score": 0.6
         },
         {
           "question_id": "warranty-rights",
-          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 29.320577095s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  u...",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 39.326261619s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
           "scores": {
             "factual_accuracy": 0.0,
             "completeness": 0.0,
             "recency_awareness": 0.0,
-            "explanation": "The AI response does not provide any factual information about the Magnuson-Moss Warranty Act, instead, it displays an error message due to quota exhaustion. This makes it impossible to evaluate its factual accuracy, completeness, or recency awareness."
+            "explanation": "The AI response does not provide any factual information about the Magnuson-Moss Warranty Act, instead, it displays an error message due to quota exhaustion. This means it fails to provide accurate information, cover the expected topics, or acknowledge current knowledge cutoff."
           },
           "weighted_score": 0.0
         }
       ],
-      "average_score": 0.125
+      "average_score": 0.3
     }
   },
-  "overall_score": 0.336
+  "overall_score": 0.185
 }

@@ -1,35 +1,49 @@
 {
   "model": "groq/llama-3.1-8b-instant",
-  "timestamp": "2026-06-18T16:23:12.743260",
+  "timestamp": "2026-06-18T16:59:28.197135",
   "challenges": [
     {
       "prompt_id": "budget-haiku",
       "difficulty": "intermediate",
-      "response_preview": "**Budget Tracker Code**\n```python\nimport datetime\n\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income to a category\"\"\"\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        \"\"\"Add expense to a category\"\"\"\n        if category in self.expenses:\n       ...",
+      "response_preview": "**Budget Tracker in Python**\n================================\n\n### Code\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income to a category\"\"\"\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        \"\"\"Add expense to a category\"\"\"\n        if ca...",
       "code_extracted": true,
-      "code_runs": false,
-      "scores": {
-        "code_works": 0.2,
-        "meets_requirements": 0.5,
-        "creative_output": 0.5,
-        "explanation": "Could not parse judge response"
-      },
-      "weighted_score": 0.38
-    },
-    {
-      "prompt_id": "recursive-story",
-      "difficulty": "intermediate",
-      "response_preview": "ERROR: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kgfg5mqceh9rh9yzqptwzyv5` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5184, Requested 2124. Please try again in 13.08s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
-      "code_extracted": false,
       "code_runs": false,
       "scores": {
         "code_works": 0.0,
         "meets_requirements": 0.0,
         "creative_output": 0.0,
-        "explanation": "The AI response failed to provide a code execution result due to a RateLimitError. As a result, it's impossible to evaluate the code's functionality. The story requirements and creative output cannot be assessed without a working codebase."
+        "explanation": "The code does not run without errors due to an EOFError in the main function. It does not meet the requirements as it does not track income and expenses with categories correctly, and the haiku output is not valid. The haiku output is also not meaningful as it does not reflect the budget data correctly."
       },
       "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "**Recursive Story Generation**\n================================\n\nBelow is a JavaScript function that generates a short story about recursion. The story is told using recursive function calls, with at least 3 levels of recursion.\n\n```javascript\nfunction tellStory() {\n  console.log(\"Once upon a time, in a land far, far away...\");\n  recursiveBranch(\"There was a brave knight named Sir Reginald.\");\n  recursiveBranch(\"He set out on a quest to find the legendary Golden Sword.\");\n  recursiveBranch(\"As h...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.6,
+        "creative_output": 0.4,
+        "explanation": "The code does not run without error due to a maximum call stack size exceeded error. However, it attempts to meet the requirements by having multiple recursive function calls. The story is somewhat coherent but lacks a clear narrative thread. The recursion metaphor is somewhat clever but not particularly original."
+      },
+      "weighted_score": 0.3
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick.\n\n```python\nimport re\n\ndef is_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick using regular expressions.\n    \n    A valid limerick should have 5 lines with the following pattern:\n    - Lines 1, 2, and 5 should have 8-13 characters and end with a word that rhymes\n    - Lines 3 and 4 should have 5-8 characters and end with a word that rhymes with each other\n    -...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.2,
+        "explanation": "The code runs without error, but the regex patterns are not perfectly valid. The code does not fully meet the requirements as it does not correctly validate the AABBA rhyme scheme pattern. The test limericks are not provided, and the approach to rhyme detection is not clever."
+      },
+      "weighted_score": 0.56
     }
   ],
-  "overall_score": 0.19
+  "overall_score": 0.287
 }
