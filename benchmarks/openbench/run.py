@@ -19,6 +19,7 @@ import json
 import re
 import subprocess
 import sys
+import tempfile
 from datetime import datetime
 from pathlib import Path
 from typing import Optional
@@ -111,37 +112,44 @@ def _score_from_log_dir(log_dir: Path) -> Optional[float]:
 
 def run_benchmark(name: str, model: str, limit: int, results_dir: Path) -> bool:
     print(f"\n=== openbench: {name} (model=groq/{model}, limit={limit}) ===", flush=True)
-    cmd = [
-        "bench", "eval", name,
-        "--model", f"groq/{model}",
-        "--limit", str(limit),
-        "--json",
-        "--display", "none",
-    ]
 
-    try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=900)
-    except FileNotFoundError:
-        print("ERROR: `bench` CLI not found. Install openbench: pip install openbench", flush=True)
-        return False
-    except subprocess.TimeoutExpired:
-        print(f"ERROR: {name} timed out after 15 min", flush=True)
-        return False
+    # openbench (>=0.5) dropped the `--json` stdout flag; the score now only lives in
+    # the Inspect eval log. We write JSON logs to a throwaway dir (one per benchmark so
+    # we never pick up a sibling benchmark's log) and read the metric back out of it.
+    with tempfile.TemporaryDirectory(prefix=f"openbench_{name}_") as log_dir:
+        cmd = [
+            "bench", "eval", name,
+            "--model", f"groq/{model}",
+            "--limit", str(limit),
+            "--log-format", "json",
+            "--log-dir", log_dir,
+            "--display", "none",
+        ]
 
-    combined = (result.stdout or "") + "\n" + (result.stderr or "")
-    print(combined[-3000:], flush=True)
+        try:
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=900)
+        except FileNotFoundError:
+            print("ERROR: `bench` CLI not found. Install openbench: pip install openbench", flush=True)
+            return False
+        except subprocess.TimeoutExpired:
+            print(f"ERROR: {name} timed out after 15 min", flush=True)
+            return False
 
-    if result.returncode != 0:
-        print(f"ERROR: openbench exited {result.returncode} for {name}", flush=True)
-        return False
+        combined = (result.stdout or "") + "\n" + (result.stderr or "")
+        print(combined[-3000:], flush=True)
 
-    # Prefer structured stdout; fall back to scanning Inspect's ./logs/*.json.
-    score = extract_score_from_text(result.stdout or "")
-    if score is None:
-        score = _score_from_log_dir(Path("logs"))
+        if result.returncode != 0:
+            print(f"ERROR: openbench exited {result.returncode} for {name}", flush=True)
+            return False
+
+        # Read the score from the JSON eval log; fall back to scraping stdout just in case.
+        score = _score_from_log_dir(Path(log_dir))
+        if score is None:
+            score = extract_score_from_text(result.stdout or "")
+
     if score is None:
         print(
-            f"WARNING: ran {name} but could not find a score in --json output or ./logs. "
+            f"WARNING: ran {name} but could not find a score in the JSON eval log. "
             f"Inspect the raw output above; openbench's output shape may have changed.",
             flush=True,
         )
