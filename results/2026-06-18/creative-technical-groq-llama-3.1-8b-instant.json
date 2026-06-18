@@ -1,0 +1,35 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "timestamp": "2026-06-18T16:23:12.743260",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "**Budget Tracker Code**\n```python\nimport datetime\n\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income to a category\"\"\"\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        \"\"\"Add expense to a category\"\"\"\n        if category in self.expenses:\n       ...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "ERROR: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kgfg5mqceh9rh9yzqptwzyv5` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5184, Requested 2124. Please try again in 13.08s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response failed to provide a code execution result due to a RateLimitError. As a result, it's impossible to evaluate the code's functionality. The story requirements and creative output cannot be assessed without a working codebase."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.19
+}

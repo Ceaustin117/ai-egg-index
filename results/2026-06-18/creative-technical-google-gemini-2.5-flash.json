@@ -1,0 +1,35 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-06-18T16:24:33.300474",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker helps you manage your income and expenses, categorize them, and provides a unique monthly summary in the form of a haiku poem (5-7-5 syllables).\n\nThe haiku generation logic attempts to reflect the financial health of the month based on total income, expenses, and net balance.\n\n```python\nimport json\nimport os\nfrom datetime import datetime\n\nDATA_FILE =",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without errors due to a syntax error in the DATA_FILE variable declaration. The code does not meet the requirements as it does not implement the basic budget tracking, categorization, or haiku output. The haiku generation logic is also not implemented."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that generates a short story about recursion, using recursion itself to tell the story. The story aims for at least 3 levels of recursion and includes narrative elements for both the \"descent\" into recursion and the \"unwinding\" back out.\n\n```javascript\n/**\n * Generates a short story about recursion, where the story itself is told using recursive function calls.\n",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not run due to a syntax error, preventing it from demonstrating proper recursion. The story does not meet the requirements of having 3+ recursion levels and lacks a coherent narrative. The recursion metaphor is not cleverly executed."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.0
+}
