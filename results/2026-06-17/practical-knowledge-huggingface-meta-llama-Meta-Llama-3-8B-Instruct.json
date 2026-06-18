@@ -1,0 +1,115 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-06-17T23:47:12.799749",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "I'm happy to help! However, I must correct you that the information you're seeking is not yet available, as the 2026 tax brackets have not been officially announced or implemented.\n\nThe US federal income tax brackets are typically adjusted annually for inflation, and the changes are usually announced in the fall of each year for the upcoming tax year. The 2026 tax brackets will likely be announced in the fall of 2025, and it's too early to provide accurate information on the changes.\n\nIf you're ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response is partially accurate, as it correctly states that the 2026 tax brackets have not been officially announced. However, it fails to provide any information on the expected changes or adjustments, which is a major part of the expected topics. The response also correctly acknowledges the current year and knowledge cutoff, which is a good practice."
+          },
+          "weighted_score": 0.6
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "I'm happy to help! However, I must correct you that 2026 is in the future, and the standard deduction amounts for the 2026 tax year have not been officially announced by the Internal Revenue Service (IRS) yet.\n\nBut, to give you an idea, the standard deduction amounts for the 2022 tax year are as follows:\n\n* Single filers: $13,850\n\nPlease note that these amounts are subject to change, and the IRS may announce new standard deduction amounts for the 2026 tax year. I recommend checking the IRS websi...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The response is partially accurate in stating that the 2026 standard deduction amounts have not been officially announced. However, it incorrectly implies that the 2022 amounts are relevant to the question. The response does cover the expected topics, but only partially. It also correctly acknowledges the current year and knowledge cutoff, which is a positive aspect."
+          },
+          "weighted_score": 0.6
+        }
+      ],
+      "average_score": 0.6
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "The current federal minimum wage in the United States is $7.25 per hour. This rate has been in place since July 2009, when it was increased from $6.55 per hour.\n\nThere have been several attempts to increase the federal minimum wage in recent years, but none have been successful. In 2019, the House of Representatives passed the Raise the Wage Act, which would have increased the federal minimum wage to $15 per hour by 2025. However, the bill did not pass the Senate.\n\nIn 2020, the COVID-19 pandemic...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.8,
+            "recency_awareness": 0.5,
+            "explanation": "The response has some factual errors, specifically regarding the temporary COVID-19-related increases. According to DOL.gov, the federal minimum wage has not changed since 2009, and there were no temporary increases to $10.10 per hour for tipped employees or $12.15 per hour for youth workers. The response also covers most expected topics, but misses some details about proposed changes and state variations. The response is vague about the timeframe, but does not present outdated information as current without a disclaimer."
+          },
+          "weighted_score": 0.59
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "The current federal overtime pay rules for salaried employees in the United States are governed by the Fair Labor Standards Act (FLSA). As of January 1, 2020, the FLSA requires that:\n\n1. Salaried employees who are exempt from overtime pay must meet certain tests, including:\n\t* The employee must be paid a salary of at least $684 per week (or $35,568 per year).\n\t* The employee must be paid on a salary basis, meaning they are paid a fixed amount for their work, regardless of the number of hours the...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 1.0,
+            "recency_awareness": 1.0,
+            "explanation": "The response is mostly accurate, but it fails to mention that the salary threshold has been increased to $1,059 per week (or $55,128 per year) as of January 1, 2023, according to the DOL.gov website. This is a major factual error. However, it covers all expected topics thoroughly and correctly acknowledges the current year."
+          },
+          "weighted_score": 0.75
+        }
+      ],
+      "average_score": 0.67
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "The 2026 contribution limits for 401(k) accounts have not been officially announced by the IRS, as the 2026 limits are not yet known. However, the 2025 contribution limits are as follows:\n\n* Elective deferrals (employee contributions): $19,500\n* Catch-up contributions (for participants 50 and older): $6,500\n* Total contributions (employer and employee): $26,000\n\nPlease note that these limits are subject to change and may be adjusted by the IRS for 2026. It's always a good idea to check with your...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response is factually inaccurate because it provides the 2025 contribution limits instead of the 2026 limits. It covers some of the expected topics, such as employee contribution limit, catch-up contributions for 50+, but misses the employer match limit. The response correctly acknowledges the lack of official 2026 limits and advises checking with the employer or a financial advisor for up-to-date information, showing recency awareness."
+          },
+          "weighted_score": 0.35
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "The 2026 contribution limits for Traditional and Roth IRA accounts are as follows:\n\n* Traditional IRA: The annual contribution limit is $6,000 in 2026, or $7,000 if you are 50 or older (due to the additional $1,000 \"catch-up\" contribution).\n* Roth IRA: The annual contribution limit is $6,000 in 2026, or $7,000 if you are 50 or older (due to the additional $1,000 \"catch-up\" contribution).\n\nIt's worth noting that these limits apply to the total amount you can contribute to all of your IRAs in a gi...",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "The AI response contains major factual errors regarding the 2026 contribution limits for Traditional and Roth IRA accounts. Although it covers some expected topics, it misses the income limits for Roth IRA. Additionally, it vaguely mentions that the limits may change over time, but does not acknowledge a specific knowledge cutoff or provide current information."
+          },
+          "weighted_score": 0.25
+        }
+      ],
+      "average_score": 0.3
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "You can get a free credit report from each of the three major credit reporting agencies (Equifax, Experian, and TransUnion) once every 12 months. This is a federal law, known as the Fair Credit Reporting Act (FCRA), which requires credit reporting agencies to provide consumers with a free copy of their credit report once a year.\n\nHere's how to get your free credit report:\n\n1. Visit AnnualCreditReport.com, which is the official website for ordering free credit reports.\n2. Fill out the online form...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 1.0,
+            "recency_awareness": 1.0,
+            "explanation": "The response is mostly accurate, but it incorrectly states that you can only get one free credit report from each agency every 12 months. According to the CFPB.gov, you can get a free credit report from each of the three major credit reporting agencies every week for 12 months, not just once a year. Additionally, the response correctly covers all expected topics and acknowledges the current year without any knowledge cutoff."
+          },
+          "weighted_score": 0.75
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act is a federal law that regulates warranties and guarantees on consumer products. If a product breaks, you may have certain rights under this act. Here are some key provisions:\n\n1. **Written Warranty**: The manufacturer must provide a written warranty that is clear, concise, and easy to understand. This warranty must be written in a language that is understandable to the average consumer.\n2. **Duration of Warranty**: The warranty must specify the duration of the warr...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.8,
+            "recency_awareness": 0.5,
+            "explanation": "The response is mostly accurate, but it contains some minor errors and outdated information. It covers most of the expected topics, but misses some details. The response does not explicitly acknowledge a knowledge cutoff, but it does not present any information that is obviously outdated. The score for factual accuracy is reduced because the response does not specify that the Magnuson-Moss Warranty Act only applies to warranties on consumer products with a value of more than $5, and it does not mention the FTC's role in enforcing the act. The score for completeness is reduced because the response does not cover the topic of implied warranty in detail. The score for recency awareness is reduced because the response does not explicitly acknowledge a knowledge cutoff, but it does not present any information that is obviously outdated."
+          },
+          "weighted_score": 0.59
+        }
+      ],
+      "average_score": 0.67
+    }
+  },
+  "overall_score": 0.56
+}
