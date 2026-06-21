@@ -1,0 +1,77 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-06-21T07:47:02.976316",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a Python program that meets your requirements:\n\n```Python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n        self.monthly_totals = {'income': 0, 'expenses': 0}\n\n    def add_income(self, amount):\n        self.income += amount\n        self.monthly_totals['income'] += amount\n\n    def add_expense(self, category, amount):\n        if category not in self.expenses:\n            self.expenses[category] = 0\n        self.expenses[category] += amou...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors and performs the basic budget tracking. However, it does not meet the requirements of calculating monthly totals and outputting a haiku poem. The haiku output is not valid (5-7-5 syllables) and does not meaningfully reflect the budget data. The code only prints the income and expenses, but does not calculate the monthly totals. The haiku output is also not formatted correctly and does not follow the traditional 5-7-5 syllable structure."
+      },
+      "weighted_score": 0.62
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a JavaScript function that generates a short story about recursion, where the story itself is told using recursive function calls. The story has at least 3 levels of recursion and makes sense as a narrative.\n\n```javascript\nfunction recursiveStory() {\n  let story = '';\n\n  function tellStory() {\n    story += 'Once upon a time, in a land far, far away, there was a brave knight named Sir Reginald.\\n';\n    tellStoryDetails();\n  }\n\n  function tellStoryDetails() {\n    story += 'He was on a ques...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without error, demonstrating proper recursion. However, it only has 3 levels of recursion, which is below the required 3+ levels. The story is coherent, but the recursion metaphor is not particularly clever or engaging."
+      },
+      "weighted_score": 0.82
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick. The regex checks the AABBA rhyme scheme pattern.\n\n```Python\nimport re\n\ndef is_limerick(text):\n    pattern = r'^(\\w+)(\\w+)(\\w+)(\\w+)(\\w+)$'\n    if re.match(pattern, text):\n        return True\n    return False\n\n# Test cases\nprint(is_limerick(\"There once was a man from Nantucket\"))  # Valid limerick\nprint(is_limerick(\"There once was a man from Nantucket who\"))  # Invalid limerick (extra word)...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not work as expected. The regular expression used does not check for the AABBA rhyme scheme pattern, but rather checks if the input string consists of exactly five words. The test cases also do not cover the rhyme scheme requirement. The approach to rhyme detection is not clever and the test limericks are not amusing."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "Here's a Python function that generates an ASCII art representation of the weather based on the input data:\n\n```Python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    weather_ascii = \"\"\n\n    # Clear the screen\n    print(\"\\033[2J\\033[1;1H\", end='')\n\n    # Generate ASCII art based on the weather conditions\n    if conditions == \"sunny\":\n        weather_ascii += \"\"\"\n        _______\n       /       \\\n      /         \\\n     /           \\\n    /             \\\n   /_______________\\\n  |  ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code runs without error, but it does not meet the requirements of handling 5+ distinct weather conditions with unique ASCII art. The ASCII art for all conditions is identical, and the output is not aesthetically pleasing. The code also clears the screen, which may not be desirable in all use cases."
+      },
+      "weighted_score": 0.32
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python class that generates a Shakespearean sonnet based on a dataset and describes different statistical properties:\n```\nimport numpy as np\nimport statistics\n\nclass ShakespeareanSonnet:\n    def __init__(self, dataset):\n        self.dataset = dataset\n        self.mean = np.mean(dataset)\n        self.median = statistics.median(dataset)\n        self.stddev = np.std(dataset)\n        self.outliers = [x for x in dataset if abs(x - self.mean) > 2 * self.stddev]\n\n    def generate_sonnet(self)...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.2,
+        "explanation": "The code runs without error and calculates statistics correctly, but it does not handle edge cases such as an empty dataset. The generated sonnet does not follow the ABAB CDCD EFEF GG rhyme scheme and does not describe the statistical properties in a creative way. The code also uses string concatenation to build the sonnet, which is not the most efficient way to generate a poem."
+      },
+      "weighted_score": 0.56
+    }
+  ],
+  "overall_score": 0.464
+}

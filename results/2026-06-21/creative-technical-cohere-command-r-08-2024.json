@@ -1,0 +1,77 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-06-21T07:45:14.432601",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a Python script with a self-contained function that solves the problem and passes corresponding tests:\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self....",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors and performs basic budget tracking. It meets all three requirements of tracking income and expenses with categories, calculating monthly totals, and outputting a haiku poem. However, the haiku output does not meaningfully reflect the budget data, as it is a generic haiku and does not take into account the actual income and expenses. The haiku should be generated based on the actual totals, e.g., 'Income flows strong, Expenses a gentle stream, Balance, a sweet dream'."
+      },
+      "weighted_score": 0.62
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction recursiveStory(depth) {\n  if (depth <= 0) {\n    return \"The story ends here, a satisfying conclusion.\";\n  } else {\n    return \"As the tale unfolds, a new chapter begins. \" +\n           recursiveStory(depth - 1);\n  }\n}\n\nconsole.log(recursiveStory(3));\n```\n\nThe output of the above code will be:\n\n```\nAs the tale unfolds, a new chapter begins. As the tale unfolds, a new chapter begins. The story ends here, a satisfying conclusion.\n```\n\nThis function generates a story with a re...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.2,
+        "explanation": "The code runs without error, but the output does not match the expected result. The function does not demonstrate 3+ levels of recursion as required. The recursion metaphor is simple and not particularly creative."
+      },
+      "weighted_score": 0.56
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Define the rhyme scheme pattern\n    rhyme_pattern = r'([a-zA-Z]+)\\1([a-zA-Z]+)\\2([a-zA-Z]+)\\3'\n    \n    # Check each line for the rhyme scheme\n    for i in range(5):\n        i...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not work as expected. The regular expression pattern used to check the rhyme scheme is incorrect. It does not match the AABBA pattern but rather a repeated character pattern. The test cases also do not cover all possible edge cases. The approach to rhyme detection is not clever and the test limericks are not amusing."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "```python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    weather_dict = {\n        \"sunny\": \"\"\"\n ______  ______  ______  ______  ______  ______  ______  ______ \n/\\__  _\\/\\__  _\\/\\__  _\\/\\__  _\\/\\__  _\\/\\__  _\\/\\__  _\\/\\__  _/\n\\/_/\\  \\/_/\\  \\/_/\\  \\/_/\\  \\/_/\\  \\/_/\\  \\/_/\\  \\/_/\\  \\/_/\\  \\/\n\\/\\ \\  \\ \\ \\ \\ \\ \\  \\ \\ \\ \\ \\ \\  \\ \\ \\ \\ \\ \\  \\ \\ \\ \\ \\ \\  \\ \\ \\\n \\ \\ \\  \\ \\ \\ \\ \\ \\  \\ \\ \\ \\ \\ \\  \\ \\ \\ \\ \\ \\  \\ \\ \\ \\ \\ \\  \\ \\ \\\n  \\ \\ \\  \\ \\ \\ \\ \\ \\  \\ \\ \\ \\ \\ \\  \\ \\ \\ \\ \\ \\  \\ \\ \\ \\ \\ ...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without error due to a syntax error in the 'snowy' weather condition. However, it meets the requirement of handling 5+ weather conditions with distinct art, except for the 'snowy' condition. The ASCII art for the other conditions is identical, which affects the creative output score."
+      },
+      "weighted_score": 0.24
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python class that attempts to generate a Shakespearean sonnet based on the given dataset. Please note that generating a perfect iambic pentameter and a meaningful sonnet is a complex task, and this code provides a basic structure and attempt at it. Further refinement and improvements can be made to enhance the quality of the generated sonnet.\n\n```python\nimport random\nimport statistics\n\nclass SonnetGenerator:\n    def __init__(self, dataset):\n        self.dataset = dataset\n        self.me...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.2,
+        "explanation": "The code runs without error and calculates statistics correctly, but it does not handle edge cases such as an empty dataset. The generated sonnet meets the requirements of 14 lines and covers all four statistical properties, but it does not follow the iambic pentameter structure and the statistics are not woven in creatively. The poem is mostly a list of phrases with the statistical terms inserted, rather than a cohesive and meaningful sonnet."
+      },
+      "weighted_score": 0.56
+    }
+  ],
+  "overall_score": 0.396
+}

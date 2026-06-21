@@ -1,0 +1,77 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-06-21T07:43:13.132155",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to record income and expenses, categorize them, and view a monthly summary. The unique feature is its monthly summary, which is presented as a haiku poem (5-7-5 syllables) based on your financial performance for that month.\n\nThe haiku generation uses pre-defined lines with verified syllable counts for different financial scenarios (e.g., strong savings, moderate spending",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response failed to provide working code, which is a critical component of the budget tracker. Additionally, it did not implement the haiku output feature as required. The haiku generation concept is mentioned, but it is not implemented in the code. Therefore, the scores for all three criteria are 0.0."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Okay, here's a JavaScript function that generates a story about recursion, where the story itself is structured recursively. It will have at least 3 levels of recursion.\n\nThe narrative structure will be:\n*   **Level 1:** A wise elder tells a story to their apprentice.\n*   **Level 2:** In that story, a scholar explains a concept to a student.\n*",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI's response does not meet any of the criteria. The code does not run without error, indicating a failure in the 'code_works' criterion. The narrative structure described does not match the actual code, and the code does not demonstrate the described recursion levels, failing the 'meets_requirements' criterion. The 'creative_output' criterion is also not met as the code does not generate a story, and the recursion metaphor is not implemented."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Okay, this is a fun challenge! Using *only* regular expressions to validate a limerick, especially its rhyme scheme, requires a specific interpretation. Since regular expressions cannot understand phonetic sounds, the \"rhyme scheme pattern\" will be interpreted as **matching the exact same ending word** for the rhyming lines.\n\nThis means:\n*   Line 1 ends with `WordA`\n*",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI failed to provide a Python program that validates whether a given text is a valid limerick using regular expressions. The code was not extracted, and the response focused on explaining the limitations of using regular expressions for rhyme scheme detection. However, it did not meet the requirements of providing a working code and test cases."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "This Python function takes weather data (temperature, conditions, humidity) and generates a distinct ASCII art representation for each of five different weather conditions: sunny, cloudy, rainy, snowy, and stormy. It also includes a default representation for unknown conditions.\n\n```python\ndef generate_weather_ascii_art(temperature, conditions, humidity):\n    \"\"\"\n    Generates an ASCII art representation",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.5,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without error due to a syntax error. However, it does attempt to meet the requirements by handling 5 different weather conditions. The creative output is not assessable due to the code not running."
+      },
+      "weighted_score": 0.15
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "This is a fun and challenging request! Generating a Shakespearean sonnet with perfect iambic pentameter and thematic rhyming words programmatically is a complex NLP task. For this solution, I will:\n\n1.  **Calculate the statistical properties** (mean, median, standard deviation, outliers).\n2.  **Use pre-defined poetic templates** for each quatrain and",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response failed to provide any code, which is a critical component of the challenge. As a result, it cannot be evaluated for code functionality or creative output. However, it does acknowledge the complexity of the task and proposes a general approach, which is a good start."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.03
+}
