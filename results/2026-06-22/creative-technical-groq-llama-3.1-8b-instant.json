@@ -1,0 +1,49 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "timestamp": "2026-06-22T18:12:15.152600",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "ERROR: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kgfg5mqceh9rh9yzqptwzyv5` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5383, Requested 628. Please try again in 110ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI's response failed to provide working code, thus scoring 0.0 in code_works. Additionally, the code execution result indicates that no code was extracted, which means the AI did not meet the requirements of the prompt, scoring 0.0 in meets_requirements. Since no code was provided, it is impossible to evaluate the haiku output, resulting in a score of 0.0 in creative_output."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "**Recursive Storytelling Function**\n=====================================\n\nBelow is a JavaScript function that generates a short story about recursion. The function uses recursive function calls to tell the story, with at least 3 levels of recursion.\n\n```javascript\nfunction tellStory() {\n  // Base case: start the story\n  return tellChapter1();\n}\n\nfunction tellChapter1() {\n  console.log(\"Once upon a time, in a far-off land, there was a brave knight named Sir Reginald.\");\n  return tellChapter2();\n...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without error, demonstrating proper recursion. However, it falls short of the 3+ recursion levels requirement as the story only has 2 levels of recursion. The story is engaging, but the recursion metaphor could be more clever and creative."
+      },
+      "weighted_score": 0.82
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "```python\nimport re\n\ndef is_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick using regular expressions.\n    \n    A valid limerick has the following structure:\n    - Lines 1, 2, and 5 have 8-13 characters\n    - Lines 3 and 4 have 5-7 characters\n    - The rhyme scheme is AABBA\n    \n    :param text: The text to validate\n    :return: True if the text is a valid limerick, False otherwise\n    \"\"\"\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.4,
+        "explanation": "The code runs without syntax errors, but the regex pattern for the rhyme scheme is overly complex and does not accurately check for the AABBA pattern. The test cases are valid, but the invalid limericks do not provide enough variety to thoroughly test the function. The approach to rhyme detection is not particularly clever, and the test limericks are not amusing."
+      },
+      "weighted_score": 0.62
+    }
+  ],
+  "overall_score": 0.48
+}

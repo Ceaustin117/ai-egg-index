@@ -1,0 +1,49 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-06-22T18:14:30.135790",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to record income and expenses, categorize them, and then view a monthly summary. The unique feature is its ability to present the monthly financial overview as a haiku poem (5-7-5 syllables), adapting the poem's tone based on your financial balance for the month.\n\n```python\nimport datetime\nfrom collections import defaultdict\n\n# --- Global Data Storage ---\n",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors and performs basic budget tracking. However, it does not calculate monthly totals and does not output a haiku poem. The haiku output is also not valid (5-7-5 syllables)."
+      },
+      "weighted_score": 0.62
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that generates a short story about recursion, told through recursive function calls. The story itself demonstrates the concept by having characters pass down a problem, which gets simpler at each level until a base case is reached.\n\n```javascript\nfunction generateRecursiveStory(level = 1, maxLevels = 3) {\n    let storyPart = \"\";\n\n    // Base Case: The simplest problem, no more recursion needed.\n    if (level > maxLevels) {\n        return \"And that's when little 'Base...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "The code does not run without error due to a syntax error in the recursive step. However, it attempts to meet the requirements by telling a story with recursive function calls. The story is somewhat coherent, but it lacks a clear narrative and the recursion metaphor is not particularly clever."
+      },
+      "weighted_score": 0.3
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Okay, this is a fun and challenging problem because defining \"rhyme\" purely with regular expressions is inherently limited. Regular expressions work on *text patterns*, not phonetic sounds.\n\nThe best we can do with *only* regex is to check if the *ending characters* (e.g., the last word or a suffix of the last word, after stripping punctuation) are *identical* for the rh",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response does not provide any code, which makes it impossible to evaluate its correctness. The response also acknowledges the limitations of using regular expressions for rhyme detection, which is a valid point. However, it does not provide a solution to the problem. The test cases and creative output are also missing."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.307
+}
