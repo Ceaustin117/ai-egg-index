@@ -6,10 +6,21 @@ flow through the existing scoring pipeline (the judge will score them as failure
 """
 
 import os
+import random
+import re
 import time
 from typing import Optional
 
 SUPPORTED_PROVIDERS = ("groq", "together", "google", "cohere", "huggingface")
+
+# Max retries on transient rate-limit / quota (HTTP 429) errors, per provider.
+# Google's free tier hits short-window quota easily; without retries a single 429
+# turns every answer into an "ERROR: ..." string that the judge scores as 0, zeroing
+# the model's whole scorecard for that run. Other providers haven't needed it (0).
+_MAX_RETRIES = {
+    "google": 5,
+}
+_MAX_BACKOFF_S = 60.0
 
 # Minimum seconds between consecutive calls per provider. Used to stay under
 # free-tier RPM limits. Only providers that have hit limits are throttled.
@@ -43,6 +54,28 @@ class ProviderError(Exception):
     """Raised for missing API keys or unknown providers (config issues, not API failures)."""
 
 
+def _is_rate_limit(exc: Exception) -> bool:
+    """True if an exception looks like a transient rate-limit / quota (HTTP 429)."""
+    name = type(exc).__name__.lower()
+    text = str(exc).lower()
+    return (
+        "resourceexhausted" in name
+        or "ratelimit" in name
+        or "429" in text
+        or "quota" in text
+        or "rate limit" in text
+    )
+
+
+def _retry_delay_seconds(exc: Exception, attempt: int) -> float:
+    """Honor the server's suggested retry delay (e.g. 'Please retry in 4.7s') when
+    present; otherwise exponential backoff with jitter, capped at _MAX_BACKOFF_S."""
+    match = re.search(r"retry in ([\d.]+)\s*s", str(exc), re.IGNORECASE)
+    if match:
+        return min(float(match.group(1)) + random.uniform(0, 1), _MAX_BACKOFF_S)
+    return min(2.0 ** attempt + random.uniform(0, 1), _MAX_BACKOFF_S)
+
+
 def provider_api_key(provider: str) -> Optional[str]:
     env_var = API_KEY_ENV_VARS.get(provider)
     return os.environ.get(env_var) if env_var else None
@@ -70,11 +103,22 @@ def call_llm(
         "huggingface": _call_huggingface,
     }[provider]
 
-    _throttle(provider)
-    try:
-        return dispatcher(model, prompt, max_tokens, temperature)
-    except Exception as e:
-        return f"ERROR: {type(e).__name__}: {e}"
+    max_retries = _MAX_RETRIES.get(provider, 0)
+    for attempt in range(max_retries + 1):
+        _throttle(provider)
+        try:
+            return dispatcher(model, prompt, max_tokens, temperature)
+        except Exception as e:
+            if _is_rate_limit(e) and attempt < max_retries:
+                delay = _retry_delay_seconds(e, attempt)
+                print(
+                    f"  [{provider}] rate-limited (attempt {attempt + 1}/{max_retries + 1}); "
+                    f"retrying in {delay:.1f}s",
+                    flush=True,
+                )
+                time.sleep(delay)
+                continue
+            return f"ERROR: {type(e).__name__}: {e}"
 
 
 def _call_groq(model, prompt, max_tokens, temperature):

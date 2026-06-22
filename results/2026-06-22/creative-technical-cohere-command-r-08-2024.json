@@ -1,0 +1,49 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-06-22T18:16:01.732211",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a simple Python budget tracker program that meets your requirements:\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n    ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors and performs the basic budget tracking. However, it does not fully meet the requirements as the haiku output does not accurately reflect the budget data. The haiku is a generic poem and does not take into account the actual income and expenses. It also does not meet the 5-7-5 syllable requirement as the first line has 5 syllables, the second line has 6 syllables, and the third line has 5 syllables, but the syllable count is inconsistent and not strictly adhered to."
+      },
+      "weighted_score": 0.7
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction recursiveStory(depth) {\n  if (depth <= 0) {\n    return \"The story ends here. The narrator has reached the final chapter, a satisfying conclusion.\";\n  } else {\n    return \"Once upon a time, a curious narrator began telling a story. As the tale unfolded, it revealed a deeper layer. \" +\n      recursiveStory(depth - 1) + \". And so, the narrator continued, delving further into the recursive narrative.\";\n  }\n}\n\nconsole.log(recursiveStory(3));\n```\n\nThis function generates a short...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.9,
+        "explanation": "The code runs without error, demonstrating proper recursion. However, it only meets the requirement of having 3+ recursion levels partially, as the story is mostly repetitive and lacks a clear narrative progression. The recursion metaphor is clever and engaging, making the story enjoyable to read."
+      },
+      "weighted_score": 0.91
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Define the regex pattern for the AABBA rhyme scheme\n    pattern = r'^(.+) (.+) (.+)$\\n^(\\2) (.+) (.+)$\\n^(\\1) (.+) (.+)$\\n^(\\3) (.+) (.+)$\\n^(\\4) (...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not work as expected. The regex pattern is overly complex and does not correctly validate the AABBA rhyme scheme. The test cases also do not cover all possible edge cases. The approach to rhyme detection is not clever and the test limericks are not amusing."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.537
+}
