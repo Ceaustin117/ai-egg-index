@@ -1,0 +1,77 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-06-25T00:48:54.239043",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a Python budget tracker program that meets your requirements:\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        els...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors and performs basic budget tracking. It meets all three requirements: tracking income and expenses with categories, calculating monthly totals, and outputting a monthly summary as a haiku poem. However, the haiku output does not meet the 5-7-5 syllable requirement and does not meaningfully reflect the budget data. The haiku is more of a generic statement rather than a reflection of the actual income and expenses."
+      },
+      "weighted_score": 0.62
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction recursiveStory(depth) {\n  if (depth <= 0) {\n    return \"The story ends here. It was a tale of infinite loops and recursive wonders.\";\n  } else {\n    return `Chapter ${depth}: As the narrator delved deeper into the tale, the story took an unexpected turn. It seemed the more they spoke, the more the story unfolded, revealing a never-ending journey. ${recursiveStory(depth - 1)}`;\n  }\n}\n\nconsole.log(recursiveStory(3));\n```\n\nThe output of the above code will be:\n\n```\nChapter 3:...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.9,
+        "explanation": "The code runs without error, demonstrating proper recursion. However, it only meets the requirement of having 3+ recursion levels partially, as the story is mostly repetitive and lacks significant narrative progression. The recursion metaphor is clever and engaging, making the story enjoyable to read."
+      },
+      "weighted_score": 0.91
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Define the regex pattern for the AABBA rhyme scheme\n    pattern = r'^(.+?)(?:\\1)(?:\\1)$'\n    \n    # Check each line for the rhyme scheme\n    for i in range(0, 5):\n        if n...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not work as expected. The regular expression pattern used is incorrect and does not match the AABBA rhyme scheme. The test cases also do not cover all possible scenarios. The approach to rhyme detection is not clever and the test limericks are not amusing."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "```python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    weather_dict = {\n        \"sunny\": \"\"\"\n _____       _____       _____       _____       _____       _____       _____       _____       _____       _____       _____      \n|\\     |     |\\  __ \\     |\\  __ \\     |\\  __ \\     |\\  __ \\     |\\  __ \\     |\\  __ \\     |\\  __ \\     |\\  __ \\     |\\  __ \\     |\n| +--+ |     | + /  \\ +    | + /  \\ +    | + /  \\ +    | + /  \\ +    | + /  \\ +    | + /  \\ +    | + /  \\ +    | + /  \\ ...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.5,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without error due to a syntax error in the 'snowy' weather condition. However, it attempts to handle 5 different weather conditions with distinct art. The ASCII art is not recognizable or aesthetically pleasing."
+      },
+      "weighted_score": 0.15
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python class that attempts to generate a Shakespearean sonnet based on the given dataset:\n\n```python\nimport random\nimport statistics\n\nclass SonnetGenerator:\n    def __init__(self, dataset):\n        self.dataset = dataset\n        self.mean = statistics.mean(dataset)\n        self.median = statistics.median(dataset)\n        self.std_dev = statistics.stdev(dataset)\n        self.outliers = self.find_outliers()\n\n    def find_outliers(self):\n        # Using IQR method to find outliers\n       ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without error and calculates statistics correctly, but it does not handle the case where the dataset is empty or contains only one element. The generated sonnet meets the requirements of 14 lines and covers all four statistical properties, but the last line of the fourth quatrain is incomplete. The poem attempts to follow the sonnet structure, but the language and meter are not consistently iambic pentameter. The statistics are woven in creatively, but the poem could benefit from more nuanced and poetic language."
+      },
+      "weighted_score": 0.74
+    }
+  ],
+  "overall_score": 0.484
+}
