@@ -84,8 +84,9 @@ def _score_from_log_dir(log_dir: Path, metric_keys) -> Optional[float]:
     return None
 
 
-def run_benchmark(name: str, model: str, limit: int, results_dir: Path) -> bool:
-    print(f"\n=== openbench: {name} (model=groq/{model}, limit={limit}) ===", flush=True)
+def run_benchmark(name: str, provider: str, model: str, limit: int, results_dir: Path) -> bool:
+    spec = f"{provider}/{model}"
+    print(f"\n=== openbench: {name} (model={spec}, limit={limit}) ===", flush=True)
 
     # openbench (>=0.5) dropped the `--json` stdout flag; the score now only lives in
     # the Inspect eval log. We write JSON logs to a throwaway dir (one per benchmark so
@@ -93,7 +94,7 @@ def run_benchmark(name: str, model: str, limit: int, results_dir: Path) -> bool:
     with tempfile.TemporaryDirectory(prefix=f"openbench_{name}_") as log_dir:
         cmd = [
             "bench", "eval", name,
-            "--model", f"groq/{model}",
+            "--model", spec,
             "--limit", str(limit),
             "--log-format", "json",
             "--log-dir", log_dir,
@@ -128,14 +129,14 @@ def run_benchmark(name: str, model: str, limit: int, results_dir: Path) -> bool:
         return False
 
     output = {
-        "model": f"groq/{model}",
+        "model": spec,
         "score": round(score, 3),
         BENCHMARKS[name]["extra_field"]: round(score, 3),
         "timestamp": datetime.now().isoformat(),
     }
 
     sanitized = model.replace("/", "-").replace(":", "-")
-    output_path = results_dir / f"{name}-groq-{sanitized}.json"
+    output_path = results_dir / f"{name}-{provider}-{sanitized}.json"
     output_path.write_text(json.dumps(output, indent=2))
     print(f"Saved: {output_path}", flush=True)
     return True
@@ -143,7 +144,8 @@ def run_benchmark(name: str, model: str, limit: int, results_dir: Path) -> bool:
 
 def main():
     parser = argparse.ArgumentParser(description="Run openbench evals and write our schema")
-    parser.add_argument("--model", default="llama-3.1-8b-instant", help="Groq model to evaluate")
+    parser.add_argument("--provider", default="groq", help="Inspect provider prefix (e.g. groq, cohere)")
+    parser.add_argument("--model", default="llama-3.1-8b-instant", help="Model id (without provider prefix)")
     parser.add_argument("--limit", type=int, default=10, help="Samples per benchmark")
     parser.add_argument(
         "--benchmarks",
@@ -165,7 +167,8 @@ def main():
     results_dir.mkdir(parents=True, exist_ok=True)
 
     successes = sum(
-        run_benchmark(name, args.model, args.limit, results_dir) for name in args.benchmarks
+        run_benchmark(name, args.provider, args.model, args.limit, results_dir)
+        for name in args.benchmarks
     )
     print(f"\n=== openbench: {successes}/{len(args.benchmarks)} benchmarks succeeded ===")
     # Fail unless EVERY requested benchmark produced a score. The workflow's openbench

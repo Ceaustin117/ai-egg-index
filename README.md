@@ -77,7 +77,6 @@ bench eval gsm8k --model groq/llama-3.1-8b-instant --limit 10
 | Provider | Rate Limit |
 |----------|------------|
 | Groq | 30 req/min |
-| Together | 60 req/min |
 | Google | 60 req/min |
 | Cohere | 100 req/min |
 | HuggingFace | Variable |

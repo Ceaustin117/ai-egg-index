@@ -21,7 +21,6 @@ jobs:
     env:
       # Judge always uses Groq; per-provider keys gate per-provider runs.
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-      TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
       GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
       COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
@@ -54,9 +53,9 @@ jobs:
           set +e  # continue on per-provider failures
 
           # provider:model pairs. Edit here to add or change models.
-          # NOTE: Together AI dropped its standalone free tier — the "-Free" model
-          # now requires a credit balance and returns 402 when empty, so it's been
-          # removed to keep the index free-tier only.
+          # NOTE: Together AI was removed — it dropped its standalone free tier (the
+          # "-Free" model now needs a credit balance and 402s when empty), and the index
+          # is free-tier only.
           PAIRS=(
             "groq:llama-3.1-8b-instant"
             "google:gemini-2.5-flash"
@@ -67,7 +66,6 @@ jobs:
           # Per-provider env var for skip-if-missing
           declare -A KEY_VAR=(
             [groq]=GROQ_API_KEY
-            [together]=TOGETHER_API_KEY
             [google]=GOOGLE_API_KEY
             [cohere]=COHERE_API_KEY
             [huggingface]=HF_TOKEN
@@ -90,16 +88,33 @@ jobs:
             echo "::endgroup::"
           done
 
-      - name: Run openbench evals (IFEval / GSM8K, Groq)
+      - name: Run openbench evals (IFEval / GSM8K — Groq + Cohere)
         id: openbench
         # Don't abort the pipeline — the custom benchmarks above have already produced
         # results we still want to aggregate and publish. Failure is surfaced loudly in
         # the "Flag openbench failures" step below so a broken eval can't pass silently.
+        #
+        # Only providers Inspect can run on a free tier in CI: Google's free-tier 429s
+        # trigger Inspect's exponential retry-storm (minutes per sample → job timeout),
+        # and Inspect's HuggingFace provider runs the model locally (no remote inference),
+        # so both are excluded. They keep their two custom benchmarks.
         continue-on-error: true
         run: |
-          python benchmarks/openbench/run.py \
-            --model llama-3.1-8b-instant \
-            --limit "$LIMIT"
+          set +e
+          OPENBENCH_PAIRS=(
+            "groq:llama-3.1-8b-instant"
+            "cohere:command-r-08-2024"
+          )
+          rc=0
+          for pair in "${OPENBENCH_PAIRS[@]}"; do
+            provider="${pair%%:*}"
+            model="${pair#*:}"
+            echo "::group::openbench $provider/$model"
+            python benchmarks/openbench/run.py \
+              --provider "$provider" --model "$model" --limit "$LIMIT" || rc=1
+            echo "::endgroup::"
+          done
+          exit $rc
 
       - name: Aggregate results
         run: python aggregate.py --frontend output/
