@@ -1,77 +1,49 @@
 {
   "model": "cohere/command-r-08-2024",
-  "timestamp": "2026-06-28T21:26:48.986029",
+  "timestamp": "2026-06-28T22:22:03.242099",
   "challenges": [
     {
       "prompt_id": "budget-haiku",
       "difficulty": "intermediate",
-      "response_preview": "Here's a simple Python budget tracker program that meets your requirements:\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n    ...",
+      "response_preview": "```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def calculate_tot...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
-        "code_works": 0.8,
+        "code_works": 1.0,
         "meets_requirements": 0.8,
-        "creative_output": 0.2,
-        "explanation": "The code runs without errors and performs the basic budget tracking. It meets all three requirements: tracking income and expenses with categories, calculating monthly totals, and outputting a monthly summary as a haiku poem. However, the haiku output does not strictly follow the 5-7-5 syllable structure, and the meaning of the haiku is not directly related to the budget data. The haiku is more of a generic statement rather than a meaningful reflection of the budget."
+        "creative_output": 0.6,
+        "explanation": "The code runs without errors and performs the basic budget tracking. However, it does not meet the requirement of calculating monthly totals as it only sums up all income and expenses. The haiku output is valid but does not meaningfully reflect the budget data, as it does not incorporate any specific numbers from the budget."
       },
-      "weighted_score": 0.62
+      "weighted_score": 0.82
     },
     {
       "prompt_id": "recursive-story",
       "difficulty": "intermediate",
-      "response_preview": "```javascript\nfunction recursiveStory(depth) {\n  if (depth <= 0) {\n    return \"The story ends here, a tale within a tale, a recursive dream.\";\n  } else {\n    return `Once upon a time, there was a storyteller who loved recursion. They began a tale, and as they spoke, another storyteller appeared, continuing the story. This new storyteller, with a twinkle in their eye, said, \"${recursiveStory(depth - 1)}\".`;\n  }\n}\n\nconsole.log(recursiveStory(3));\n```\n\nThe output of the above code will be:\n\n```\nOnc...",
+      "response_preview": "```javascript\nfunction recursiveStory(depth) {\n  if (depth === 0) {\n    return \"The story ends here, a satisfying conclusion.\";\n  } else {\n    return `Chapter ${depth}: A new twist! The protagonist discovers a hidden door, leading to a mysterious room. As they step inside, they find themselves in a mirror world, where everything is a reflection of their own journey. The story continues, and so it goes... ${recursiveStory(depth - 1)}`;\n  }\n}\n\nconsole.log(recursiveStory(3));\n```\n\nThe output of the...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
         "code_works": 1.0,
         "meets_requirements": 0.8,
         "creative_output": 0.9,
-        "explanation": "The code runs without error, demonstrating proper recursion. However, it only meets the requirement of having 3+ recursion levels partially, as the story is mostly a repetition of the same phrase. The recursion levels are indeed 3, but the story could be more engaging and varied. The recursion metaphor is clever and well-executed, making the story engaging and fun to read."
+        "explanation": "The code runs without error and demonstrates proper recursion. However, it only meets the requirement of having 3+ recursion levels partially, as the story is mostly repetitive and lacks depth. The recursion metaphor is clever and engaging, making the story enjoyable to read."
       },
       "weighted_score": 0.91
     },
     {
       "prompt_id": "regex-poetry",
       "difficulty": "hard",
-      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme pattern:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n\n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n\n    # Define the regex pattern for the AABBA rhyme scheme\n    pattern = r'^[A-Z]\\s.*[A-Z]\\s.*[A-Z]\\s.*\\n[A-Z]\\s.*[A-Z]\\s.*\\n[A-Z]\\s.*[A-Z]\\s.*$'\n\n    # C...",
-      "code_extracted": true,
-      "code_runs": true,
-      "scores": {
-        "code_works": 0.0,
-        "meets_requirements": 0.0,
-        "creative_output": 0.0,
-        "explanation": "The code does not work as expected. The regex pattern is overly restrictive and does not correctly validate the AABBA rhyme scheme. It checks for the presence of uppercase letters at the start of each line, which is not a requirement for a limerick. The test cases also do not cover all possible edge cases. The approach to rhyme detection is not clever and the test limericks are not amusing."
-      },
-      "weighted_score": 0.0
-    },
-    {
-      "prompt_id": "ascii-weather",
-      "difficulty": "easy",
-      "response_preview": "Here's a Python function that generates ASCII art for different weather conditions:\n\n```python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    weather_dict = {\n        \"sunny\": \"\"\"\n ______________\n|             |\n|  ____  ____  |\n| |    | |    | |\n| |    | |    | |\n| |    | |    | |\n| |____| |____| |\n|____________|\n\"\"\",\n        \"cloudy\": \"\"\"\n ______________\n|             |\n|  ____  ____  |\n| |    | |    | |\n| |    | |    | |\n| |    | |    | |\n| |____| |____| |\n|____________|\n|...",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Remove punctuation and convert to lowercase for case-insensitive matching\n    text = re.sub(r'[^\\w\\s]', '', text).lower()\n    \n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Check the rhyme scheme pattern AABBA\n    r...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
         "code_works": 0.8,
         "meets_requirements": 0.6,
         "creative_output": 0.4,
-        "explanation": "The code runs without error and generates ASCII output. However, it does not meet the requirement of handling 5+ distinct weather conditions with unique ASCII art. The 'sunny' condition has the same ASCII art as the other conditions, and the 'stormy' condition has a very similar ASCII art. The ASCII art is not aesthetically pleasing and lacks creativity."
+        "explanation": "The code runs without error, but the regex pattern used to check the rhyme scheme is not entirely accurate. It assumes that the first and second lines rhyme, and the third and fifth lines rhyme, which is not the case for all limericks. The test cases are valid and demonstrate the program's ability to identify valid and invalid limericks, but they could be more diverse and creative. The approach to rhyme detection is straightforward but not particularly clever."
       },
       "weighted_score": 0.62
-    },
-    {
-      "prompt_id": "data-sonnet",
-      "difficulty": "hard",
-      "response_preview": "Here's a Python class that attempts to generate a Shakespearean sonnet based on the provided dataset:\n\n```python\nimport random\nimport statistics\n\nclass SonnetGenerator:\n    def __init__(self, dataset):\n        self.dataset = dataset\n        self.mean = statistics.mean(dataset)\n        self.median = statistics.median(dataset)\n        self.std_dev = statistics.stdev(dataset)\n        self.outliers = self.detect_outliers()\n\n    def detect_outliers(self):\n        # Simple outlier detection using IQR ...",
-      "code_extracted": true,
-      "code_runs": true,
-      "scores": {
-        "code_works": 0.0,
-        "meets_requirements": 0.0,
-        "creative_output": 0.0,
-        "explanation": "The code does not work as expected. It does not calculate the statistics correctly and does not generate a Shakespearean sonnet. The output is a list of numbers, not a poem. The code also has a syntax error in the `generate_sonnet` method where it calls `self.generat` instead of `self.generate_line`. Additionally, the code does not follow the ABAB CDCD EFEF GG rhyme scheme and does not describe the statistical properties in a creative way."
-      },
-      "weighted_score": 0.0
     }
   ],
-  "overall_score": 0.43
+  "overall_score": 0.783
 }
