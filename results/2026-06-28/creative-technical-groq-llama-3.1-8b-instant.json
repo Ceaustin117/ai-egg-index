@@ -1,49 +1,49 @@
 {
   "model": "groq/llama-3.1-8b-instant",
-  "timestamp": "2026-06-28T22:12:17.548114",
+  "timestamp": "2026-06-28T23:07:17.080148",
   "challenges": [
     {
       "prompt_id": "budget-haiku",
       "difficulty": "intermediate",
-      "response_preview": "**Budget Tracker Code**\n```python\nimport datetime\n\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income to a specific category\"\"\"\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        \"\"\"Add expense to a specific category\"\"\"\n        if category in self...",
+      "response_preview": "**Budget Tracker Haiku Generator**\n=====================================\n\nBelow is a Python program that tracks income and expenses with categories, calculates monthly totals, and outputs a monthly summary as a haiku poem.\n\n```python\nimport datetime\n\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income for a specific category\"\"\"\n        if category in self.income:\n            self.incom...",
       "code_extracted": true,
       "code_runs": false,
       "scores": {
         "code_works": 0.0,
-        "meets_requirements": 0.0,
-        "creative_output": 0.0,
-        "explanation": "The code does not run without errors due to an EOFError in the main function. It does not meet the requirements as it does not track income and expenses with categories correctly, and the haiku output is not meaningful. The haiku output is also not a valid 5-7-5 syllable poem."
+        "meets_requirements": 0.6,
+        "creative_output": 0.8,
+        "explanation": "The code does not run without errors due to the incomplete main function, resulting in a score of 0.0 for 'code_works'. The program meets some requirements, such as tracking income and expenses with categories and calculating monthly totals, but it does not fully meet the requirements due to the incomplete main function, resulting in a score of 0.6 for 'meets_requirements'. The haiku output is valid and meaningfully reflects the budget data, resulting in a score of 0.8 for 'creative_output'."
       },
-      "weighted_score": 0.0
+      "weighted_score": 0.42
     },
     {
       "prompt_id": "recursive-story",
       "difficulty": "intermediate",
-      "response_preview": "**Recursive Storytelling Function**\n=====================================\n\nHere's a JavaScript function that generates a short story about recursion. The story is told using recursive function calls, with at least 3 levels of recursion.\n\n```javascript\nfunction tellStory() {\n  console.log(\"Once upon a time, in a land far, far away...\");\n  recursiveSentence(\"there was a brave knight named Sir Reginald.\");\n  recursiveSentence(\"He set out on a quest to slay a fearsome dragon.\");\n  recursiveSentence(...",
+      "response_preview": "```javascript\nfunction tellStory() {\n  // Base case: the story starts with a character named Alice\n  console.log(\"Once upon a time, there was a curious girl named Alice.\");\n\n  // Recursive case: Alice meets a mysterious stranger who tells her a story\n  tellStrangerStory(Alice);\n}\n\nfunction tellStrangerStory(character) {\n  // Base case: the stranger's story ends with a riddle\n  console.log(`${character} asked the stranger, \"What's the meaning of life?\"`);\n\n  // Recursive case: the stranger tells ...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.5,
+        "creative_output": 0.8,
+        "explanation": "The code does not work due to an undefined variable 'Alice' in the tellStory function. However, the story itself is coherent and has multiple levels of recursion, meeting some of the requirements. The creative output is engaging, with a narrative that explores the meaning of life through various characters, making it a clever recursion metaphor."
+      },
+      "weighted_score": 0.39
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "**Validating Limericks with Regular Expressions**\n=====================================================\n\nBelow is a Python program that uses regular expressions to validate whether a given text is a valid limerick. A limerick is a type of humorous poem that has a specific rhyme scheme and meter. The regex pattern checks for the AABBA rhyme scheme pattern.\n\n```python\nimport re\n\ndef is_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick.\n\n    A limerick is a type of humor...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
         "code_works": 0.8,
         "meets_requirements": 0.6,
         "creative_output": 0.4,
-        "explanation": "The code runs without error, but it does not demonstrate proper recursion. The recursive function calls are not nested, and the function does not call itself. Instead, it uses if-else statements to determine which sentence to print next. This does not meet the requirements of the prompt. The story is coherent, but it does not have 3+ levels of recursion. The recursion metaphor is not particularly clever, as it is not used to create a sense of depth or complexity in the story."
+        "explanation": "The code runs without errors and the regex patterns are syntactically valid, but it does not accurately validate the AABBA rhyme scheme pattern. The test cases are provided, but they are not comprehensive and the approach to rhyme detection is not clever. The code only checks if the text has 5 lines and if the first, second, and last lines rhyme, but it does not check the actual rhyme scheme. The test limericks are not particularly amusing."
       },
       "weighted_score": 0.62
-    },
-    {
-      "prompt_id": "regex-poetry",
-      "difficulty": "hard",
-      "response_preview": "**Validating Limericks with Regular Expressions**\n=====================================================\n\nBelow is a Python program that uses regular expressions to validate whether a given text is a valid limerick. A limerick is a type of poem that has a specific rhyme scheme pattern: AABBA.\n\n```python\nimport re\n\ndef is_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick using regular expressions.\n    \n    The regex pattern checks for the AABBA rhyme scheme pattern, whe...",
-      "code_extracted": true,
-      "code_runs": false,
-      "scores": {
-        "code_works": 0.0,
-        "meets_requirements": 0.0,
-        "creative_output": 0.0,
-        "explanation": "The code does not run without error due to an execution timeout. The approach to rhyme detection is not clever and the test limericks are not amusing. The code does not validate the rhyme scheme correctly."
-      },
-      "weighted_score": 0.0
     }
   ],
-  "overall_score": 0.207
+  "overall_score": 0.477
 }

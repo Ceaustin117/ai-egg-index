@@ -8,20 +8,20 @@
       "date": "2026-06-28",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.687,
+          "score": 0.293,
           "details": {
-            "budget-haiku": 0.74,
-            "recursive-story": 0.7,
-            "regex-poetry": 0.62
+            "budget-haiku": 0.0,
+            "recursive-story": 0.88,
+            "regex-poetry": 0.0
           }
         },
         "practical_knowledge": {
-          "score": 0.407,
+          "score": 0.648,
           "details": {
-            "taxes": 0.283,
-            "regulations": 0.47,
-            "practical_finance": 0.4,
-            "consumer_rights": 0.54
+            "taxes": 0.633,
+            "regulations": 0.845,
+            "practical_finance": 0.6,
+            "consumer_rights": 0.545
           }
         }
       }
@@ -33,20 +33,20 @@
       "date": "2026-06-28",
       "benchmarks": {
         "practical_knowledge": {
-          "score": 0.393,
+          "score": 0.56,
           "details": {
-            "taxes": 0.167,
-            "regulations": 0.72,
-            "practical_finance": 0.15,
-            "consumer_rights": 0.77
+            "taxes": 0.367,
+            "regulations": 0.8,
+            "practical_finance": 0.45,
+            "consumer_rights": 0.775
           }
         },
         "creative_technical": {
-          "score": 0.207,
+          "score": 0.477,
           "details": {
-            "budget-haiku": 0.0,
-            "recursive-story": 0.62,
-            "regex-poetry": 0.0
+            "budget-haiku": 0.42,
+            "recursive-story": 0.39,
+            "regex-poetry": 0.62
           }
         },
         "gsm8k": {
@@ -67,11 +67,11 @@
       "date": "2026-06-28",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.783,
+          "score": 0.63,
           "details": {
-            "budget-haiku": 0.82,
-            "recursive-story": 0.91,
-            "regex-poetry": 0.62
+            "budget-haiku": 0.73,
+            "recursive-story": 0.88,
+            "regex-poetry": 0.28
           }
         },
         "ifeval": {
@@ -84,12 +84,12 @@
           "accuracy": 1.0
         },
         "practical_knowledge": {
-          "score": 0.505,
+          "score": 0.635,
           "details": {
-            "taxes": 0.3,
-            "regulations": 0.64,
-            "practical_finance": 0.35,
-            "consumer_rights": 0.91
+            "taxes": 0.5,
+            "regulations": 0.875,
+            "practical_finance": 0.6,
+            "consumer_rights": 0.65
           }
         }
       }
@@ -106,13 +106,9 @@
           "error": "Free-tier quota/rate limit exceeded"
         },
         "practical_knowledge": {
-          "score": 0.05,
-          "details": {
-            "taxes": 0.167,
-            "regulations": 0.0,
-            "practical_finance": 0.0,
-            "consumer_rights": 0.0
-          }
+          "score": null,
+          "status": "error",
+          "error": "Free-tier quota/rate limit exceeded"
         }
       }
     }

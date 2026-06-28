@@ -90,8 +90,8 @@
         },
         {
           "date": "2026-06-28",
-          "practical_knowledge": 0.393,
-          "creative_technical": 0.207,
+          "practical_knowledge": 0.56,
+          "creative_technical": 0.477,
           "gsm8k": 0.667,
           "ifeval": 0.667
         }
@@ -206,8 +206,8 @@
         },
         {
           "date": "2026-06-28",
-          "creative_technical": 0.687,
-          "practical_knowledge": 0.407
+          "creative_technical": 0.293,
+          "practical_knowledge": 0.648
         }
       ]
     },
@@ -272,10 +272,10 @@
         },
         {
           "date": "2026-06-28",
-          "creative_technical": 0.783,
+          "creative_technical": 0.63,
           "ifeval": 0.333,
           "gsm8k": 1.0,
-          "practical_knowledge": 0.505
+          "practical_knowledge": 0.635
         }
       ]
     },
@@ -347,7 +347,7 @@
         {
           "date": "2026-06-28",
           "creative_technical": null,
-          "practical_knowledge": 0.05
+          "practical_knowledge": null
         }
       ]
     }

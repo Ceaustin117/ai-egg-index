@@ -1,6 +1,6 @@
 {
   "model": "cohere/command-r-08-2024",
-  "timestamp": "2026-06-28T22:22:03.242099",
+  "timestamp": "2026-06-28T23:15:29.485143",
   "challenges": [
     {
       "prompt_id": "budget-haiku",
@@ -10,40 +10,40 @@
       "code_runs": true,
       "scores": {
         "code_works": 1.0,
-        "meets_requirements": 0.8,
-        "creative_output": 0.6,
-        "explanation": "The code runs without errors and performs the basic budget tracking. However, it does not meet the requirement of calculating monthly totals as it only sums up all income and expenses. The haiku output is valid but does not meaningfully reflect the budget data, as it does not incorporate any specific numbers from the budget."
+        "meets_requirements": 0.7,
+        "creative_output": 0.4,
+        "explanation": "The code runs without errors and performs basic budget tracking, so 'code_works' scores 1.0. It meets most requirements but the haiku output does not meaningfully reflect the budget data, as it always generates the same haiku regardless of the input, so 'meets_requirements' scores 0.7. The haiku is valid in terms of syllable count but lacks creativity and does not reflect the budget data, so 'creative_output' scores 0.4."
       },
-      "weighted_score": 0.82
+      "weighted_score": 0.73
     },
     {
       "prompt_id": "recursive-story",
       "difficulty": "intermediate",
-      "response_preview": "```javascript\nfunction recursiveStory(depth) {\n  if (depth === 0) {\n    return \"The story ends here, a satisfying conclusion.\";\n  } else {\n    return `Chapter ${depth}: A new twist! The protagonist discovers a hidden door, leading to a mysterious room. As they step inside, they find themselves in a mirror world, where everything is a reflection of their own journey. The story continues, and so it goes... ${recursiveStory(depth - 1)}`;\n  }\n}\n\nconsole.log(recursiveStory(3));\n```\n\nThe output of the...",
+      "response_preview": "```javascript\nfunction recursiveStory(depth) {\n  if (depth <= 0) {\n    return \"The story ends here, a tale within a tale, a recursive dream.\";\n  } else {\n    return \"Once upon a time, a storyteller embarked on a journey to uncover the mysteries of recursion. As they delved deeper, they found themselves in a world of infinite possibilities. \" +\n      recursiveStory(depth - 1);\n  }\n}\n\nconsole.log(recursiveStory(3));\n```\n\nThe output of the above code will be:\n\n```\nOnce upon a time, a storyteller em...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
         "code_works": 1.0,
-        "meets_requirements": 0.8,
-        "creative_output": 0.9,
-        "explanation": "The code runs without error and demonstrates proper recursion. However, it only meets the requirement of having 3+ recursion levels partially, as the story is mostly repetitive and lacks depth. The recursion metaphor is clever and engaging, making the story enjoyable to read."
+        "meets_requirements": 1.0,
+        "creative_output": 0.6,
+        "explanation": "The code runs without errors and demonstrates proper recursion, meeting the 'code_works' and 'meets_requirements' criteria. The story is coherent and has 3+ levels of recursion. However, the creative output score is 0.6 because while the recursion metaphor is clever, the story itself is somewhat repetitive and lacks depth and variety in its narrative. The story could be more engaging with more diverse and intricate plot developments within each recursive layer."
       },
-      "weighted_score": 0.91
+      "weighted_score": 0.88
     },
     {
       "prompt_id": "regex-poetry",
       "difficulty": "hard",
-      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Remove punctuation and convert to lowercase for case-insensitive matching\n    text = re.sub(r'[^\\w\\s]', '', text).lower()\n    \n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Check the rhyme scheme pattern AABBA\n    r...",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Check the rhyme scheme using regular expressions\n    rhyme_pattern = r'([a-zA-Z]+)\\1([a-zA-Z]+)\\2([a-zA-Z]+)\\3'\n    for i in range(0, 5):\n        i...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
-        "code_works": 0.8,
-        "meets_requirements": 0.6,
-        "creative_output": 0.4,
-        "explanation": "The code runs without error, but the regex pattern used to check the rhyme scheme is not entirely accurate. It assumes that the first and second lines rhyme, and the third and fifth lines rhyme, which is not the case for all limericks. The test cases are valid and demonstrate the program's ability to identify valid and invalid limericks, but they could be more diverse and creative. The approach to rhyme detection is straightforward but not particularly clever."
+        "code_works": 0.4,
+        "meets_requirements": 0.2,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors, but the regular expression pattern is not correctly implemented to check the AABBA rhyme scheme. The test cases are provided, but the function does not correctly identify valid limericks. The approach to rhyme detection is not clever, and the test limericks, although amusing, do not demonstrate the function's ability to correctly validate limericks."
       },
-      "weighted_score": 0.62
+      "weighted_score": 0.28
     }
   ],
-  "overall_score": 0.783
+  "overall_score": 0.63
 }
