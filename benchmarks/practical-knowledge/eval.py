@@ -20,7 +20,10 @@ from providers import call_llm, provider_api_key, ProviderError  # noqa: E402
 class PracticalKnowledgeEvaluator:
     """Evaluates LLM responses on practical knowledge questions."""
 
-    def __init__(self, eval_provider: str = "groq", judge_model: str = "llama-3.1-8b-instant"):
+    # Judge uses a strong free-tier Groq model (70B) rather than the 8B used for the
+    # models-under-test: the grader is infrastructure, not a contestant, and a stronger
+    # judge has far better discrimination on the rubric. Keep it free-tier.
+    def __init__(self, eval_provider: str = "groq", judge_model: str = "llama-3.3-70b-versatile"):
         self.eval_provider = eval_provider
         self.judge_model = judge_model
         self.questions = self._load_questions()
