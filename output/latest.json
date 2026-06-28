@@ -1,28 +1,28 @@
 {
-  "last_updated": "2026-06-25",
+  "last_updated": "2026-06-28",
   "models": [
     {
       "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
       "provider": "huggingface",
       "tier": "free",
-      "date": "2026-06-25",
+      "date": "2026-06-28",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.412,
+          "score": 0.588,
           "details": {
-            "budget-haiku": 0.5,
-            "recursive-story": 0.0,
+            "budget-haiku": 0.56,
+            "recursive-story": 0.82,
             "regex-poetry": 0.0,
             "ascii-weather": 0.82,
             "data-sonnet": 0.74
           }
         },
         "practical_knowledge": {
-          "score": 0.395,
+          "score": 0.431,
           "details": {
-            "taxes": 0.45,
-            "regulations": 0.29,
-            "practical_finance": 0.313,
+            "taxes": 0.367,
+            "regulations": 0.515,
+            "practical_finance": 0.367,
             "consumer_rights": 0.54
           }
         }
@@ -32,30 +32,35 @@
       "model": "groq/llama-3.1-8b-instant",
       "provider": "groq",
       "tier": "free",
-      "date": "2026-06-25",
+      "date": "2026-06-28",
       "benchmarks": {
         "practical_knowledge": {
-          "score": 0.413,
+          "score": 0.448,
           "details": {
-            "taxes": 0.317,
-            "regulations": 0.675,
-            "practical_finance": 0.117,
-            "consumer_rights": 0.74
+            "taxes": 0.233,
+            "regulations": 0.645,
+            "practical_finance": 0.233,
+            "consumer_rights": 0.895
           }
         },
         "creative_technical": {
-          "score": 0.428,
+          "score": 0.524,
           "details": {
-            "budget-haiku": 0.0,
-            "recursive-story": 0.62,
-            "regex-poetry": 0.62,
-            "ascii-weather": 0.58,
-            "data-sonnet": 0.32
+            "budget-haiku": 0.24,
+            "recursive-story": 0.82,
+            "regex-poetry": 0.0,
+            "ascii-weather": 0.82,
+            "data-sonnet": 0.74
           }
         },
         "gsm8k": {
+          "score": 0.8,
+          "accuracy": 0.8
+        },
+        "ifeval": {
           "score": 0.6,
-          "accuracy": 0.6
+          "strict": 0.6,
+          "loose": 0
         }
       }
     },
@@ -63,25 +68,25 @@
       "model": "cohere/command-r-08-2024",
       "provider": "cohere",
       "tier": "free",
-      "date": "2026-06-25",
+      "date": "2026-06-28",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.484,
+          "score": 0.43,
           "details": {
             "budget-haiku": 0.62,
             "recursive-story": 0.91,
             "regex-poetry": 0.0,
-            "ascii-weather": 0.15,
-            "data-sonnet": 0.74
+            "ascii-weather": 0.62,
+            "data-sonnet": 0.0
           }
         },
         "practical_knowledge": {
-          "score": 0.55,
+          "score": 0.527,
           "details": {
-            "taxes": 0.397,
-            "regulations": 0.77,
-            "practical_finance": 0.35,
-            "consumer_rights": 0.86
+            "taxes": 0.317,
+            "regulations": 0.59,
+            "practical_finance": 0.433,
+            "consumer_rights": 0.92
           }
         }
       }
@@ -90,7 +95,7 @@
       "model": "google/gemini-2.5-flash",
       "provider": "google",
       "tier": "free",
-      "date": "2026-06-25",
+      "date": "2026-06-28",
       "benchmarks": {
         "creative_technical": {
           "score": 0.0,
@@ -103,12 +108,12 @@
           }
         },
         "practical_knowledge": {
-          "score": 0.419,
+          "score": 0.289,
           "details": {
-            "taxes": 0.25,
-            "regulations": 0.445,
-            "practical_finance": 0.6,
-            "consumer_rights": 0.375
+            "taxes": 0.15,
+            "regulations": 0.15,
+            "practical_finance": 0.63,
+            "consumer_rights": 0.125
           }
         }
       }

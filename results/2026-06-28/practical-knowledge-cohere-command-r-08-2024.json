@@ -1,137 +1,137 @@
 {
   "model": "cohere/command-r-08-2024",
-  "timestamp": "2026-06-28T07:28:15.079838",
+  "timestamp": "2026-06-28T21:25:14.402891",
   "categories": {
     "taxes": {
       "questions": [
         {
           "question_id": "tax-brackets-2026",
-          "response": "As an AI chatbot, I cannot provide real-time or predictive information about future tax laws and regulations. Tax policies and brackets are subject to change and are influenced by various factors, including legislative decisions and economic conditions.\n\nIt is best to consult official government sources, such as the Internal Revenue Service (IRS) or relevant tax authorities, for the most accurate and up-to-date information regarding US federal income tax brackets for any given year, including 20...",
+          "response": "As an AI chatbot, I cannot provide real-time or future predictions about tax brackets, as tax laws and regulations are subject to change and are influenced by various factors. It is best to refer to official government sources or consult with tax professionals for the most accurate and up-to-date information regarding US federal income tax brackets for a specific year, such as 2026.\n\nHowever, I can provide some general information about how tax brackets typically work in the US:\n\nThe US federal ...",
           "scores": {
             "factual_accuracy": 0.0,
             "completeness": 0.5,
             "recency_awareness": 1.0,
-            "explanation": "The response is factually inaccurate because it does not provide any information about the actual changes to US federal income tax brackets for 2026. However, it does acknowledge the need to consult official government sources for accurate information, which is a good practice. The response partially covers the expected topics, mentioning the importance of consulting official sources, but does not provide any details about bracket adjustments, inflation indexing, or standard deduction changes. The response correctly acknowledges the current year and knowledge cutoff, which is why it scores 1.0 for recency awareness."
+            "explanation": "The response is factually inaccurate because it fails to provide any specific information about the tax brackets for 2026, despite acknowledging that it cannot provide real-time or future predictions. However, it does provide some general information about how tax brackets typically work in the US. It also correctly acknowledges its knowledge cutoff and recommends referring to official government sources for accurate information. The completeness score is 0.5 because it covers some topics, but misses the specific topic of bracket adjustments, inflation indexing, and standard deduction changes for 2026."
           },
           "weighted_score": 0.35
         },
         {
           "question_id": "tax-deductions-2026",
-          "response": "I'm sorry, as an AI chatbot, I cannot provide you with real-time or future tax information as tax laws and deductions are subject to change and may vary depending on your location and specific circumstances. It is best to consult official government websites, tax professionals, or reliable tax resources for the most accurate and up-to-date information regarding tax deductions for a given year.",
+          "response": "I cannot provide you with the standard deduction amount for a single filer in 2026 as the tax laws and deductions are subject to change annually and may not be available yet for the year 2026. The standard deduction amounts are typically announced by tax authorities closer to the tax filing season for each respective year.\n\nIt's best to consult official tax resources or seek professional advice closer to the 2026 tax season to obtain the most accurate and up-to-date information regarding standar...",
           "scores": {
             "factual_accuracy": 0.0,
             "completeness": 0.5,
             "recency_awareness": 1.0,
-            "explanation": "The response is factually inaccurate as it does not provide the correct information about the standard deduction amount for a single filer in 2026. However, it does cover some expected topics (single filer, married filing jointly comparison) and correctly acknowledges its knowledge cutoff (tax laws and deductions are subject to change)."
+            "explanation": "The response is factually inaccurate as it does not provide the correct information about the standard deduction amount for a single filer in 2026. However, it does acknowledge the uncertainty of tax laws and the need to consult official tax resources. It covers some of the expected topics, such as the standard deduction amount and the comparison to married filing jointly, but does not provide the actual amount. The response also correctly acknowledges the current year and knowledge cutoff."
           },
           "weighted_score": 0.35
         },
         {
           "question_id": "tax-credits-2026",
-          "response": "As of my knowledge cutoff in January 2023, the tax credits available for electric vehicle (EV) purchases may change over time, including in 2026. It's best to consult official government sources or tax professionals for the most up-to-date and accurate information regarding tax credits and incentives for EV purchases in your specific region and for the year 2026. \n\nHowever, I can provide you with an overview of the tax credits available as of my knowledge cutoff:\n\nIn the United States, the feder...",
+          "response": "As of my last update in January 2023, here is an overview of the tax credits available for electric vehicle (EV) purchases in the United States, which may change by 2026:\n\nThe U.S. federal government offers an electric vehicle tax credit to encourage the adoption of electric and plug-in hybrid vehicles. The credit amount can vary depending on several factors, including the type of vehicle, its battery capacity, and the manufacturer's production volume. Here's a general overview:\n\n1. **Electric V...",
           "scores": {
             "factual_accuracy": 0.0,
             "completeness": 0.5,
-            "recency_awareness": 1.0,
-            "explanation": "The response has a factual accuracy score of 0.0 because it provides outdated information as of January 2023, which is not applicable to the year 2026. The completeness score is 0.5 because it covers some of the expected topics, such as the EV tax credit, eligibility requirements, and credit amount, but misses the income limits. The recency awareness score is 1.0 because it correctly acknowledges the knowledge cutoff date and advises users to consult official sources for up-to-date information."
+            "recency_awareness": 0.5,
+            "explanation": "The response has major factual errors regarding the tax credits available for electric vehicle purchases in 2026. Although it covers some expected topics, it misses others, such as the current income limits for the EV tax credit. Additionally, it acknowledges its knowledge cutoff in 2023 but does not provide a clear disclaimer about the potential changes in tax laws by 2026."
           },
-          "weighted_score": 0.35
+          "weighted_score": 0.25
         }
       ],
-      "average_score": 0.35
+      "average_score": 0.317
     },
     "regulations": {
       "questions": [
         {
           "question_id": "min-wage-federal",
-          "response": "The current federal minimum wage in the United States is $7.25 per hour, which has been in effect since July 24, 2009. This rate applies to most workers covered by the Fair Labor Standards Act (FLSA).\n\nWhile the federal minimum wage has remained unchanged since 2009, many states and localities have implemented their own minimum wage laws, often setting higher rates than the federal level. These state and local minimum wages can vary significantly, with some states regularly adjusting their rates...",
-          "scores": {
-            "factual_accuracy": 0.5,
-            "completeness": 0.8,
-            "recency_awareness": 1.0,
-            "explanation": "The response is mostly accurate, but it incorrectly states that the federal minimum wage has remained unchanged since 2009. According to the DOL.gov, the federal minimum wage was last increased to $7.25 in 2009, but there have been proposals and discussions to increase it since then. The response also covers the expected topics of state variations, proposed changes, and tipped employees, but does not thoroughly discuss the tipped employees' topic. The response correctly acknowledges the knowledge cutoff in January 2023."
-          },
-          "weighted_score": 0.69
-        },
-        {
-          "question_id": "overtime-rules",
-          "response": "The Fair Labor Standards Act (FLSA) sets the federal overtime pay rules for salaried employees, as well as for hourly workers. According to the FLSA, salaried employees who are considered \"nonexempt\" are entitled to overtime pay if they work more than 40 hours in a workweek. \n\nFor nonexempt salaried employees, overtime pay is calculated as one and one-half times the employee's regular rate of pay for each hour worked over 40 hours in a workweek. The regular rate of pay is calculated by dividing ...",
+          "response": "The current federal minimum wage in the United States is $7.25 per hour, which has been in effect since July 24, 2009. This rate applies to most workers covered by the Fair Labor Standards Act (FLSA).\n\nWhile the federal minimum wage has remained unchanged since 2009, many states and localities have implemented their own minimum wage laws, often setting higher rates than the federal minimum. These state and local laws can vary significantly, with some states regularly adjusting their minimum wage...",
           "scores": {
             "factual_accuracy": 0.5,
             "completeness": 0.8,
             "recency_awareness": 0.5,
-            "explanation": "The response is mostly accurate, but it fails to mention the current salary threshold for exempt vs non-exempt employees, which is a crucial piece of information. It also covers most of the expected topics, but misses the specific details about the salary threshold. The response does not explicitly acknowledge a knowledge cutoff, but it does not provide information that is clearly outdated, so it receives a score of 0.5 for recency awareness."
+            "explanation": "The response is mostly accurate, but it fails to mention the specific date of the last update, which is crucial for determining its recency. It covers most expected topics, but misses the specific details about tipped employees. The accuracy is compromised because it does not mention that the federal minimum wage has been $7.25 since July 24, 2009, is outdated information, and does not provide the correct date of the last update."
+          },
+          "weighted_score": 0.59
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "The Fair Labor Standards Act (FLSA) sets the federal overtime pay rules for salaried employees, as well as for hourly workers. According to the FLSA, salaried employees who are considered \"nonexempt\" are entitled to overtime pay if they work more than 40 hours in a workweek. \n\nNonexempt salaried employees must receive overtime pay at a rate of at least one and one-half times their regular rate of pay for each hour worked over 40 hours in a workweek. This means that if a nonexempt salaried employ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.8,
+            "recency_awareness": 0.5,
+            "explanation": "The response is mostly accurate, but it fails to mention the current salary threshold for exempt employees, which is a crucial aspect of the FLSA's overtime pay rules. It also does not provide a specific source or date to verify the information, which affects its recency awareness score. However, it covers the expected topics of exempt vs non-exempt employees and time-and-a-half pay, making it partially complete."
           },
           "weighted_score": 0.59
         }
       ],
-      "average_score": 0.64
+      "average_score": 0.59
     },
     "practical_finance": {
       "questions": [
         {
           "question_id": "401k-limits-2026",
-          "response": "The contribution limits for 401k accounts can vary depending on several factors, including the specific plan and any changes in legislation. As of my last update in January 2024, the contribution limits for 2026 were not yet determined.\n\nHowever, I can provide you with the contribution limits for the previous years to give you an idea of the potential range:\n\n- 2023: The contribution limit for 401k plans in 2023 was $20,500 for employees under the age of 50. For those aged 50 and above, an addit...",
+          "response": "The contribution limits for 401k accounts can vary and are subject to change each year. As of my last update in January 2023, the contribution limits for 2026 were not yet determined. \n\nHowever, I can provide you with the contribution limits for the previous years to give you an idea of the potential range: \n\n- 2022: $20,500 (or $27,000 for those aged 50 and over)\n- 2023: $20,500 (or $28,000 for those aged 50 and over)\n- 2024: $21,000 (or $29,000 for those aged 50 and over)\n- 2025: (projected) $...",
           "scores": {
             "factual_accuracy": 0.0,
             "completeness": 0.5,
             "recency_awareness": 1.0,
-            "explanation": "The AI response has a factual accuracy score of 0.0 because it incorrectly states that the 2026 contribution limits were not yet determined, when in fact, the IRS typically announces contribution limits for the upcoming year in October of the previous year. The response also fails to provide accurate information about the 2026 contribution limits. The completeness score is 0.5 because it covers some of the expected topics, such as employee contribution limit and catch-up contributions for 50+, but misses the employer match topic. The recency awareness score is 1.0 because the AI correctly acknowledges its knowledge cutoff in January 2024 and notes that the information may be outdated."
+            "explanation": "The response has a major factual error regarding the 2026 contribution limits. Although it acknowledges the potential for change and provides a disclaimer, it fails to provide accurate information for the current year. It covers some expected topics, such as employee contribution limit and catch-up contributions for 50+, but misses the employer match topic. The response correctly acknowledges its knowledge cutoff and provides a clear disclaimer about the potential for change."
           },
           "weighted_score": 0.35
         },
         {
           "question_id": "ira-limits-2026",
-          "response": "The contribution limits for Individual Retirement Accounts (IRAs) can change annually and are subject to adjustments by the Internal Revenue Service (IRS). As of my last update in January 2024, the contribution limits for 2026 are not yet available.\n\nHowever, I can provide you with the contribution limits for 2024 as a reference:\n\n**2024 IRA Contribution Limits:**\n- Traditional IRA: $6,000 for individuals under the age of 50, and $7,000 for those aged 50 and above (catch-up contribution).\n- Roth...",
+          "response": "The contribution limits for Traditional and Roth Individual Retirement Accounts (IRAs) for the year 2026 are not yet available as they are typically announced by the Internal Revenue Service (IRS) in the fall of the preceding year. The IRS adjusts these limits annually to account for cost-of-living increases.\n\nFor reference, the contribution limits for 2023 are as follows:\n\n- Traditional IRA: $6,000 for individuals under the age of 50, and $7,000 for those aged 50 and above (catch-up contributio...",
           "scores": {
-            "factual_accuracy": 0.0,
+            "factual_accuracy": 0.5,
             "completeness": 0.5,
             "recency_awareness": 1.0,
-            "explanation": "The AI response is factually inaccurate because it provides outdated information for 2024 instead of 2026. It partially covers the expected topics, mentioning IRA contribution limits, income limits for Roth, and catch-up contributions, but fails to provide the correct information for 2026. The response correctly acknowledges its knowledge cutoff in January 2024, showing recency awareness."
+            "explanation": "The response is partially accurate, as it correctly states that the 2026 contribution limits are not yet available. However, it fails to provide any information about the income limits for Roth IRAs and does not mention the possibility of income limits affecting the contribution amount. The response also correctly acknowledges the current year and the need to check the IRS website for up-to-date information, earning it a full score for recency awareness."
           },
-          "weighted_score": 0.35
+          "weighted_score": 0.6
         },
         {
           "question_id": "hsa-limits-2026",
-          "response": "The Health Savings Account (HSA) contribution limits for 2026 are not yet available as they are typically announced by the IRS (Internal Revenue Service) in the fall of the preceding year. The contribution limits can change annually and are influenced by factors such as inflation and healthcare cost trends.\n\nFor reference, the HSA contribution limits for 2023 are as follows:\n\n- Individual coverage: $3,650\n- Family coverage: $7,300\n\nThese limits include an additional catch-up contribution for ind...",
+          "response": "The contribution limits for Health Savings Accounts (HSAs) are adjusted annually and are subject to change based on various factors. As of my last update in January 2024, the projected contribution limits for 2026 are as follows:\n\n- For individuals with self-only HDHP (High Deductible Health Plan) coverage, the projected contribution limit is $3,850.\n- For individuals with family HDHP coverage, the projected contribution limit is $7,750.\n\nIt's important to note that these are preliminary estimat...",
           "scores": {
             "factual_accuracy": 0.0,
             "completeness": 0.5,
             "recency_awareness": 1.0,
-            "explanation": "The response is factually inaccurate because it provides outdated HSA contribution limits for 2023 instead of the expected information for 2026. However, it covers some expected topics like individual and family limits, catch-up contributions, and HDHP requirements. The response also correctly acknowledges the lack of current information for 2026 and the need to check the IRS website for the most up-to-date information."
+            "explanation": "The AI response has a major factual error regarding the 2026 HSA contribution limits. Although it acknowledges the possibility of changes and the need to consult the IRS for accurate information, it provides incorrect limits. The response partially covers the expected topics, mentioning individual and family limits, but fails to discuss catch-up contributions and HDHP requirements. It correctly acknowledges its knowledge cutoff in January 2024, showing recency awareness."
           },
           "weighted_score": 0.35
         }
       ],
-      "average_score": 0.35
+      "average_score": 0.433
     },
     "consumer_rights": {
       "questions": [
         {
           "question_id": "credit-report-rights",
-          "response": "You can obtain a free credit report by taking advantage of your entitlement to one every 12 months from each of the three major credit bureaus: Equifax, Experian, and TransUnion. This is made possible through the Fair Credit Reporting Act (FCRA), which grants consumers the right to access their credit information without charge.\n\nTo request your free credit report, you can visit AnnualCreditReport.com, which is the official site authorized by the FCRA to provide these reports. You'll need to pro...",
+          "response": "You can get a free credit report by taking advantage of your entitlement to one every 12 months from each of the three major credit reporting agencies: Equifax, Experian, and TransUnion. This is made possible by the Fair Credit Reporting Act (FCRA), which grants consumers the right to obtain their credit reports annually.\n\nTo request your free credit report, you can visit AnnualCreditReport.com, which is the official site authorized by the Federal Trade Commission (FTC) to provide these reports....",
           "scores": {
-            "factual_accuracy": 0.5,
-            "completeness": 0.8,
+            "factual_accuracy": 0.9,
+            "completeness": 0.9,
             "recency_awareness": 1.0,
-            "explanation": "The response is mostly accurate, but it fails to mention that consumers are entitled to a free credit report from each of the three major credit bureaus every 12 months, as stated in the Fair Credit Reporting Act (FCRA). The response also does not explicitly state that consumers can access their credit reports weekly, which is a common misconception. However, it does cover the expected topics, including AnnualCreditReport.com, the three bureaus, and the dispute process. The response also acknowledges the current year without a disclaimer, indicating a high level of recency awareness."
+            "explanation": "The response is mostly accurate, but it incorrectly states that you can space out your requests throughout the year to monitor your credit more frequently. According to the CFPB, you are entitled to one free report from each agency every year. The response also covers all expected topics and acknowledges the current year without a knowledge cutoff."
           },
-          "weighted_score": 0.69
+          "weighted_score": 0.92
         },
         {
           "question_id": "warranty-rights",
-          "response": "The Magnuson-Moss Warranty Act is a federal law in the United States that aims to protect consumers by ensuring that warranties on consumer products are clear and followed. Here are some of your rights under this act when a product breaks:\n\n1. **Clear and Conspicuous Warranty Information:** Manufacturers and sellers must provide clear and easily understandable warranty terms. This includes disclosing the duration of the warranty, what it covers, any exclusions, and the steps required to obtain w...",
+          "response": "The Magnuson-Moss Warranty Act is a federal law in the United States that aims to protect consumers by ensuring that warranties on consumer products are clear, easy to understand, and fairly administered. Here are some of your rights under this act when a product breaks:\n\n1. **Clear and Conspicuous Warranty Terms:** Manufacturers and sellers must provide clear and easily understandable warranty terms. The warranty should be written in plain language, and any exclusions or limitations should be c...",
           "scores": {
-            "factual_accuracy": 0.8,
+            "factual_accuracy": 0.9,
             "completeness": 0.9,
             "recency_awareness": 1.0,
-            "explanation": "The response is mostly accurate, but it lacks specific details about FTC enforcement under the Magnuson-Moss Warranty Act. It correctly covers implied warranty, written warranty requirements, and other expected topics. The response also acknowledges the current year and knowledge cutoff, which is a strong point."
+            "explanation": "The response is generally accurate, but it fails to mention that the Magnuson-Moss Warranty Act does not apply to warranties on services (e.g., warranties on repairs or maintenance). The response covers all expected topics thoroughly and correctly acknowledges the current year without a knowledge cutoff disclaimer."
           },
-          "weighted_score": 0.87
+          "weighted_score": 0.92
         }
       ],
-      "average_score": 0.78
+      "average_score": 0.92
     }
   },
-  "overall_score": 0.494
+  "overall_score": 0.527
 }
