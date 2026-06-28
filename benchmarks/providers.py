@@ -16,11 +16,14 @@ SUPPORTED_PROVIDERS = ("groq", "google", "cohere", "huggingface")
 # Max retries on transient rate-limit / quota (HTTP 429) errors, per provider.
 # Google's free tier hits short-window quota easily; without retries a single 429
 # turns every answer into an "ERROR: ..." string that the judge scores as 0, zeroing
-# the model's whole scorecard for that run. Other providers haven't needed it (0).
+# the model's whole scorecard for that run. Groq is here too because the LLM-as-judge
+# runs on Groq: a transient TPM limit on a judge call would otherwise produce a bogus
+# zero score (seen as "Could not parse judge response" in older results).
 # Keep these bounded: retries × backoff happens per failing question, so generous
 # values can blow the CI job's time budget (a 5×60s version hit the 60-min cap).
 _MAX_RETRIES = {
     "google": 3,
+    "groq": 3,
 }
 _MAX_BACKOFF_S = 20.0
 

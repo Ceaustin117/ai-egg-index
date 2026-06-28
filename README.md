@@ -113,7 +113,7 @@ ai-egg-index/
 ## Methodology
 
 - **Free tier only.** If you have to pay, it's not included.
-- **LLM-as-judge** for custom benchmarks, with rubrics for factual accuracy, completeness, and recency awareness.
+- **LLM-as-judge** for custom benchmarks, with rubrics for factual accuracy, completeness, and recency awareness. The judge is a strong free-tier model (Groq `llama-3.3-70b-versatile`) — deliberately larger than the 8B models under test, since the grader is infrastructure, not a contestant. A stronger judge discriminates better on the rubric and returns reliable JSON.
 - **Code execution** for creative+technical tasks — code is extracted and run in a sandbox.
 - **Historical tracking.** Benchmarks run regularly, scores tracked over time.
 - **Overall score** is the average across all 4 benchmarks (only counting benchmarks with data).
