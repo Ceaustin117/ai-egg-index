@@ -5,17 +5,18 @@ Invokes `bench eval <name>` for each requested benchmark (IFEval / GSM8K) and wr
 JSON file into `results/<today>/` matching the schema that `aggregate.py` expects
 (filenames containing 'ifeval' or 'gsm8k' with a top-level `model` and `score` field).
 
-openbench is built on Inspect AI, which reports scores in a rich-formatted table — NOT
-as a plain `accuracy: 0.8` line — so scraping stdout with simple regexes silently fails.
-We instead run with `--json` and pull the metric out of the structured output, scanning
-the result recursively so we don't depend on openbench's exact JSON shape (which can
-change between versions). Strategies are tried in order; if all fail the raw output is
-logged and the benchmark returns False so a human notices.
+openbench is built on Inspect AI, which writes a structured JSON eval log (via
+`--log-format json --log-dir`). We read the aggregate metric straight out of that log's
+`results.scores[].metrics.<name>.value`, using a per-benchmark list of metric names
+(see BENCHMARKS). The lookup is targeted on purpose: a generic "find any score-ish
+number" walk grabs the wrong value — e.g. ifeval exposes strict/loose prompt- and
+instruction-level accuracies and no plain "accuracy", so a generic walk silently
+returned 0.0. If the metric isn't found (or the eval errored), the benchmark returns
+False so a human notices.
 """
 
 import argparse
 import json
-import re
 import subprocess
 import sys
 import tempfile
@@ -26,20 +27,21 @@ from typing import Optional
 # HumanEval is intentionally omitted: grading it means executing model-generated code
 # against unit tests in a Docker sandbox — an abstract academic benchmark that doesn't
 # fit this index's "tasks regular people care about" mission. See README.
+#
+# Per benchmark: `metric_keys` is the priority-ordered list of Inspect metric names to
+# read; `extra_field` is the extra key we mirror the score into for aggregate.py. ifeval
+# reports four accuracies — we use prompt-level strict (did the model satisfy ALL
+# instructions in a prompt), the standard strict headline number.
 BENCHMARKS = {
-    "ifeval": {"extra_field": "strict"},
-    "gsm8k": {"extra_field": "accuracy"},
+    "ifeval": {
+        "extra_field": "strict",
+        "metric_keys": ("strict_prompt_accuracy", "strict_instruction_accuracy"),
+    },
+    "gsm8k": {
+        "extra_field": "accuracy",
+        "metric_keys": ("accuracy",),
+    },
 }
-
-# Metric names to look for, in order of preference, when walking structured output.
-PREFERRED_METRICS = ("accuracy", "pass_at_1", "pass@1", "mean", "score")
-
-SCORE_PATTERNS = [
-    r"pass@1[^\d]{0,12}(\d+\.?\d*)",
-    r"accuracy[^\d]{0,12}(\d+\.?\d*)",
-    r"\bscore[^\d]{0,12}(\d+\.?\d*)",
-    r"\bmean[^\d]{0,12}(\d+\.?\d*)",
-]
 
 
 def _normalize(value: float) -> float:
@@ -47,66 +49,37 @@ def _normalize(value: float) -> float:
     return value / 100 if value > 1 else value
 
 
-def extract_score_from_obj(obj) -> Optional[float]:
-    """Recursively search a parsed-JSON object for a benchmark metric value.
+def _metric_from_results(log_obj: dict, metric_keys) -> Optional[float]:
+    """Pull a benchmark's aggregate score from an Inspect eval log.
 
-    Inspect's eval log nests metrics under results.scores[].metrics.<name>.value, but
-    different openbench versions / --json shapes vary, so we collect every
-    '<preferred-metric>': number (or {'value': number}) we can find and pick the most
-    preferred one. Returns a 0-1 score or None.
+    Inspect stores aggregate metrics at results.scores[].metrics.<name>.value. We read
+    the first of `metric_keys` that's present — and only from a successful eval, since a
+    log with status != 'success' (e.g. ifeval erroring on a missing nltk dependency) has
+    no real results to read.
     """
-    found: dict = {}
-
-    def walk(node, key_hint: Optional[str] = None):
-        if isinstance(node, dict):
-            # {"value": 0.8} under a metric-named key
-            if key_hint and "value" in node and isinstance(node["value"], (int, float)):
-                found.setdefault(key_hint.lower(), float(node["value"]))
-            for k, v in node.items():
-                if isinstance(v, (int, float)) and k.lower() in PREFERRED_METRICS:
-                    found.setdefault(k.lower(), float(v))
-                walk(v, k)
-        elif isinstance(node, list):
-            for item in node:
-                walk(item, key_hint)
-
-    walk(obj)
-    for metric in PREFERRED_METRICS:
-        if metric in found:
-            return _normalize(found[metric])
+    if log_obj.get("status") != "success":
+        return None
+    for score in (log_obj.get("results") or {}).get("scores", []):
+        metrics = score.get("metrics", {})
+        for key in metric_keys:
+            entry = metrics.get(key)
+            if isinstance(entry, dict) and isinstance(entry.get("value"), (int, float)):
+                return _normalize(float(entry["value"]))
     return None
 
 
-def extract_score_from_text(output: str) -> Optional[float]:
-    """Last-resort: try to parse a JSON blob out of stdout, then fall back to regex."""
-    # A JSON document may be embedded among log lines; try the largest {...} span.
-    start, end = output.find("{"), output.rfind("}")
-    if 0 <= start < end:
-        try:
-            score = extract_score_from_obj(json.loads(output[start:end + 1]))
-            if score is not None:
-                return score
-        except json.JSONDecodeError:
-            pass
-    for pattern in SCORE_PATTERNS:
-        match = re.search(pattern, output, re.IGNORECASE)
-        if match:
-            return _normalize(float(match.group(1)))
-    return None
-
-
-def _score_from_log_dir(log_dir: Path) -> Optional[float]:
-    """Fallback: read the most recent Inspect JSON log and extract its score."""
+def _score_from_log_dir(log_dir: Path, metric_keys) -> Optional[float]:
+    """Read the most recent Inspect JSON log in log_dir and extract its metric."""
     if not log_dir.is_dir():
         return None
     json_logs = sorted(log_dir.glob("*.json"), key=lambda p: p.stat().st_mtime, reverse=True)
     for log in json_logs:
         try:
-            score = extract_score_from_obj(json.loads(log.read_text()))
+            score = _metric_from_results(json.loads(log.read_text()), metric_keys)
         except (json.JSONDecodeError, OSError):
             continue
         if score is not None:
-            print(f"  (recovered score from log {log.name})", flush=True)
+            print(f"  (read score from log {log.name})", flush=True)
             return score
     return None
 
@@ -143,10 +116,8 @@ def run_benchmark(name: str, model: str, limit: int, results_dir: Path) -> bool:
             print(f"ERROR: openbench exited {result.returncode} for {name}", flush=True)
             return False
 
-        # Read the score from the JSON eval log; fall back to scraping stdout just in case.
-        score = _score_from_log_dir(Path(log_dir))
-        if score is None:
-            score = extract_score_from_text(result.stdout or "")
+        # Read the score straight from the JSON eval log's aggregate metrics.
+        score = _score_from_log_dir(Path(log_dir), BENCHMARKS[name]["metric_keys"])
 
     if score is None:
         print(
@@ -197,7 +168,10 @@ def main():
         run_benchmark(name, args.model, args.limit, results_dir) for name in args.benchmarks
     )
     print(f"\n=== openbench: {successes}/{len(args.benchmarks)} benchmarks succeeded ===")
-    sys.exit(0 if successes > 0 else 1)
+    # Fail unless EVERY requested benchmark produced a score. The workflow's openbench
+    # step is continue-on-error and a later step surfaces a non-success as a red job, so
+    # a single silently-missing benchmark (e.g. ifeval) can't hide behind another's pass.
+    sys.exit(0 if successes == len(args.benchmarks) else 1)
 
 
 if __name__ == "__main__":

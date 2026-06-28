@@ -10,3 +10,9 @@ openbench==0.5.3
 # compatible majors. openbench is pinned exactly because an unbounded ">=0.1.0" is
 # what let it drift to 0.5.3 (which dropped the --json flag the runner relied on).
 datasets>=3.6.0,<4.0
+# ifeval's scorer needs these (openbench's optional "ifeval" dependency group, which
+# `pip install openbench` does NOT pull). Without nltk the eval errors out with no
+# results, so ifeval silently produced no score. Required for instruction-following grading.
+nltk>=3.8
+langdetect>=1.0.9
+immutabledict>=2.2.0
