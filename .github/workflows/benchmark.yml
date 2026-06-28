@@ -98,6 +98,12 @@ jobs:
         # trigger Inspect's exponential retry-storm (minutes per sample → job timeout),
         # and Inspect's HuggingFace provider runs the model locally (no remote inference),
         # so both are excluded. They keep their two custom benchmarks.
+        #
+        # DECISION RULE: openbench depends on a fast-moving external stack (openbench /
+        # inspect-ai / datasets / huggingface_hub) that has broken this step repeatedly on
+        # version drift. It's pinned, but pins rot. The next time this step breaks on a
+        # dependency issue, CUT openbench entirely rather than debugging it again — the two
+        # custom benchmarks are the index's real value and have ~no external surface to rot.
         continue-on-error: true
         run: |
           set +e
