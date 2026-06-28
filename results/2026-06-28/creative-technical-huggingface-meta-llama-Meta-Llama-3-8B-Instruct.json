@@ -1,49 +1,49 @@
 {
   "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
-  "timestamp": "2026-06-28T23:16:18.483712",
+  "timestamp": "2026-06-28T23:33:08.422775",
   "challenges": [
     {
       "prompt_id": "budget-haiku",
       "difficulty": "intermediate",
-      "response_preview": "Here is a Python budget tracker that meets your requirements:\n\n```Python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n\n    def add_income(self, amount):\n        self.income += amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def calculate_monthly_totals(self):\n        total_expenses = sum(self.ex...",
+      "response_preview": "Here is a Python script that meets your requirements:\n\n```Python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n\n    def add_income(self, amount):\n        self.income += amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def get_monthly_totals(self):\n        return self.income, self.expenses\n\n    def...",
       "code_extracted": true,
-      "code_runs": false,
+      "code_runs": true,
       "scores": {
-        "code_works": 0.0,
-        "meets_requirements": 0.0,
+        "code_works": 1.0,
+        "meets_requirements": 0.7,
         "creative_output": 0.0,
-        "explanation": "The code does not run without errors, and the haiku output is not in the traditional 5-7-5 format. The program also does not calculate monthly totals correctly and does not provide a meaningful haiku summary. The error occurs because the input() function is used in a non-interactive environment, causing an EOFError. To fix this, the program should be run in an interactive environment or the input should be simulated. Additionally, the haiku generation should be revised to produce a valid haiku that reflects the budget data."
+        "explanation": "The code runs without errors and performs basic budget tracking, so 'code_works' scores 1.0. However, it does not fully meet the requirements since the output is not a haiku poem in 5-7-5 format, resulting in a 'meets_requirements' score of 0.7. The 'creative_output' score is 0.0 because the output does not resemble a haiku poem, failing to reflect the budget data in a meaningful and poetic way."
       },
-      "weighted_score": 0.0
+      "weighted_score": 0.61
     },
     {
       "prompt_id": "recursive-story",
       "difficulty": "intermediate",
-      "response_preview": "Here is a JavaScript function that generates a short story about recursion, where the story itself is told using recursive function calls:\n```\nfunction tellStory() {\n  const story = [];\n  function recursiveStory(level) {\n    if (level > 3) return; // base case: stop recursing\n    const sentence = `In the depths of the forest, a wise old wizard named ${getRandomName()} sat upon a moss-covered stone, contemplating the mysteries of the universe.`;\n    story.push(sentence);\n    recursiveStory(level ...",
+      "response_preview": "Here is a JavaScript function that generates a short story about recursion, told using recursive function calls:\n```\nfunction tellStory() {\n  const story = [];\n  const narrator = \"I\";\n\n  function tellStoryRecursive(level) {\n    if (level > 3) return; // base case: stop recursing at level 3\n\n    const sentence = `${narrator} was trying to tell a story about recursion, but it was getting too complicated...`;\n    story.push(sentence);\n\n    if (level < 3) {\n      // recursive call: tell the next lev...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
         "code_works": 1.0,
         "meets_requirements": 1.0,
         "creative_output": 0.6,
-        "explanation": "The code works perfectly, demonstrating proper recursion and meeting the requirements of having at least 3 levels of recursion. The story is coherent and makes sense as a narrative. However, the creative output score is not perfect because the story itself is quite repetitive and doesn't fully leverage the potential of recursion to create a more complex and engaging narrative. The use of a random name is a nice touch, but the sentence structure and content remain the same throughout the story."
+        "explanation": "The code runs without error and demonstrates proper recursion, meeting the 'code_works' and 'meets_requirements' criteria. The story has 3 levels of recursion and makes sense as a narrative. However, the story itself is somewhat simplistic and the recursion metaphor, while present, is not particularly clever or engaging, resulting in a lower 'creative_output' score."
       },
       "weighted_score": 0.88
     },
     {
       "prompt_id": "regex-poetry",
       "difficulty": "hard",
-      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n\n```Python\nimport re\n\ndef is_limerick(text):\n    # Regular expression pattern for limerick\n    pattern = r\"^(?!.*[A-Z].*[A-Z].*[A-Z].*[A-Z]).*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z].*[A-Z]...",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n\n```Python\nimport re\n\ndef is_limerick(text):\n    pattern = r'^((?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?:(?...",
       "code_extracted": true,
       "code_runs": false,
       "scores": {
         "code_works": 0.0,
         "meets_requirements": 0.0,
         "creative_output": 0.0,
-        "explanation": "The provided code does not run without errors due to a syntax error in the regular expression pattern. The pattern is also not designed to check the AABBA rhyme scheme of a limerick. The code does not include any test cases, and the approach to rhyme detection is not clever or creative. Overall, the code does not meet any of the requirements or show any creativity in its approach."
+        "explanation": "The provided code does not run without error, and the regex pattern is not syntactically valid. The code does not meet the requirements of validating the rhyme scheme or including test cases. The approach to rhyme detection is not clever, and there are no test limericks provided. Overall, the code is incomplete and does not fulfill the task."
       },
       "weighted_score": 0.0
     }
   ],
-  "overall_score": 0.293
+  "overall_score": 0.497
 }
