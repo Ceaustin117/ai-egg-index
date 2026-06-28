@@ -17,10 +17,19 @@ SUPPORTED_PROVIDERS = ("groq", "together", "google", "cohere", "huggingface")
 # Google's free tier hits short-window quota easily; without retries a single 429
 # turns every answer into an "ERROR: ..." string that the judge scores as 0, zeroing
 # the model's whole scorecard for that run. Other providers haven't needed it (0).
+# Keep these bounded: retries × backoff happens per failing question, so generous
+# values can blow the CI job's time budget (a 5×60s version hit the 60-min cap).
 _MAX_RETRIES = {
-    "google": 5,
+    "google": 3,
 }
-_MAX_BACKOFF_S = 60.0
+_MAX_BACKOFF_S = 20.0
+
+# Circuit breaker: after this many consecutive rate-limit failures, a provider is
+# treated as down for the rest of the run (sustained quota exhaustion) and further
+# calls skip the retry budget — so one throttled provider can't run out the clock.
+# Any success resets the counter. Per-process state (resets each run).
+_CIRCUIT_THRESHOLD = 3
+_consecutive_rate_limits: dict[str, int] = {}
 
 # Minimum seconds between consecutive calls per provider. Used to stay under
 # free-tier RPM limits. Only providers that have hit limits are throttled.
@@ -103,21 +112,32 @@ def call_llm(
         "huggingface": _call_huggingface,
     }[provider]
 
-    max_retries = _MAX_RETRIES.get(provider, 0)
+    # If the provider has already rate-limited repeatedly this run, the breaker is open:
+    # don't spend retry budget (assume sustained quota exhaustion). One success closes it.
+    breaker_open = _consecutive_rate_limits.get(provider, 0) >= _CIRCUIT_THRESHOLD
+    max_retries = 0 if breaker_open else _MAX_RETRIES.get(provider, 0)
+    if breaker_open:
+        print(f"  [{provider}] circuit open (sustained rate limits); not retrying", flush=True)
+
+    # Throttle once for normal call spacing; retry backoff handles spacing thereafter.
+    _throttle(provider)
     for attempt in range(max_retries + 1):
-        _throttle(provider)
         try:
-            return dispatcher(model, prompt, max_tokens, temperature)
+            result = dispatcher(model, prompt, max_tokens, temperature)
+            _consecutive_rate_limits[provider] = 0
+            return result
         except Exception as e:
-            if _is_rate_limit(e) and attempt < max_retries:
-                delay = _retry_delay_seconds(e, attempt)
-                print(
-                    f"  [{provider}] rate-limited (attempt {attempt + 1}/{max_retries + 1}); "
-                    f"retrying in {delay:.1f}s",
-                    flush=True,
-                )
-                time.sleep(delay)
-                continue
+            if _is_rate_limit(e):
+                if attempt < max_retries:
+                    delay = _retry_delay_seconds(e, attempt)
+                    print(
+                        f"  [{provider}] rate-limited (attempt {attempt + 1}/{max_retries + 1}); "
+                        f"retrying in {delay:.1f}s",
+                        flush=True,
+                    )
+                    time.sleep(delay)
+                    continue
+                _consecutive_rate_limits[provider] = _consecutive_rate_limits.get(provider, 0) + 1
             return f"ERROR: {type(e).__name__}: {e}"
 
 

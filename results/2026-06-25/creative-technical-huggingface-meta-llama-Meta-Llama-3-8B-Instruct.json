@@ -1,0 +1,77 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-06-25T00:51:49.255748",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a Python script that fulfills your requirements:\n\n```Python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n\n    def add_income(self, amount):\n        self.income += amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def get_monthly_totals(self):\n        return self.income, sum(self.expenses.va...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.0,
+        "explanation": "The code runs without errors and performs basic budget tracking, but it does not meet the requirements for a haiku output. The haiku is not in 5-7-5 syllable format and does not meaningfully reflect the budget data. The code also does not handle categories correctly, as it simply adds expenses to a dictionary without considering the category structure."
+      },
+      "weighted_score": 0.5
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a JavaScript function that generates a short story about recursion, where the story itself is told using recursive function calls:\n```\nfunction tellStory() {\n  function recursiveStory(level) {\n    if (level > 3) return; // base case: stop recursing\n    console.log(`Level ${level}: The adventurer, ${getCharacter()}, found a mysterious door with a sign that read: \"Abandon all hope, ye who enter here.\"`);\n    recursiveStory(level + 1); // recursive call\n  }\n\n  function getCharacter() {\n    ...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not work as expected due to a maximum call stack size exceeded error. The story does not meet the requirements of having 3+ recursion levels and telling a coherent story. The recursion metaphor is not clever and the story is not engaging."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n```\nimport re\n\ndef is_limerick(text):\n    # Regular expression to match the AABBA rhyme scheme pattern\n    pattern = r\"^(?:\\w+\\s\\w+,\\s\\w+\\s\\w+.\\s\\w+\\s\\w+.\\s\\w+\\s\\w+.\\s\\w+\\s\\w+.\\s\\w+\\s\\w+)(?:$|(?=\\n))\"\n    if re.match(pattern, text):\n        return True\n    else:\n        return False\n\n# Test cases\ntest_cases = [\n    (\"There once was a man from Nantucket\", True),\n    (\"There once was a man ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The code does not work as expected, the regular expression pattern is incorrect, and the test cases do not cover all possible scenarios. The approach to rhyme detection is not clever and the test limericks are not amusing."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "Here is a Python function that generates an ASCII art representation of the weather based on the input weather data:\n```\nimport random\n\ndef generate_weather_ascii(temperature, conditions, humidity):\n    # Define the ASCII art for each weather condition\n    weather_ascii = {\n        'sunny': \"\"\"\n___________\n|         |\n|  \u2600\ufe0f  |\n|_________|\n\"\"\",\n        'cloudy': \"\"\"\n___________\n|         |\n| \u26c5\ufe0f  |\n|_________|\n\"\"\",\n        'rainy': \"\"\"\n___________\n|         |\n|  \u2614\ufe0f  |\n|_________|\n\"\"\",\n        'sno...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without error and generates ASCII output. However, it does not meet the requirement of handling 5+ weather conditions with distinct art, as it only includes 5 conditions. The ASCII art is recognizable but not particularly aesthetically pleasing."
+      },
+      "weighted_score": 0.82
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python class that analyzes a dataset and generates a Shakespearean sonnet:\n```\nimport numpy as np\nimport statistics\n\nclass ShakespeareanSonnet:\n    def __init__(self, dataset):\n        self.dataset = np.array(dataset)\n        self.mean = np.mean(self.dataset)\n        self.median = statistics.median(self.dataset)\n        self.stddev = np.std(self.dataset)\n        self.outliers = [x for x in self.dataset if abs(x - self.mean) > 2 * self.stddev]\n\n    def generate_sonnet(self):\n        son...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without error, but it does not correctly calculate the standard deviation and outliers. The sonnet structure is mostly followed, but the statistics are not woven in creatively. The code meets the requirements of generating a 14-line poem covering all four statistical properties, but the output is not perfect."
+      },
+      "weighted_score": 0.74
+    }
+  ],
+  "overall_score": 0.412
+}
