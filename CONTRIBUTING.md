@@ -86,8 +86,8 @@ Tasks live in `benchmarks/creative-technical/prompts.json`.
 For standard benchmarks (IFEval, GSM8K), openbench already supports 30+ providers — just set the API key and use the appropriate model string:
 
 ```bash
-export TOGETHER_API_KEY=your_key
-bench eval ifeval --model together/mistral-7b --limit 10
+export COHERE_API_KEY=your_key
+bench eval ifeval --model cohere/command-r-08-2024 --limit 10
 ```
 
 ---

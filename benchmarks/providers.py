@@ -11,7 +11,7 @@ import re
 import time
 from typing import Optional
 
-SUPPORTED_PROVIDERS = ("groq", "together", "google", "cohere", "huggingface")
+SUPPORTED_PROVIDERS = ("groq", "google", "cohere", "huggingface")
 
 # Max retries on transient rate-limit / quota (HTTP 429) errors, per provider.
 # Google's free tier hits short-window quota easily; without retries a single 429
@@ -52,7 +52,6 @@ def _throttle(provider: str) -> None:
 
 API_KEY_ENV_VARS = {
     "groq": "GROQ_API_KEY",
-    "together": "TOGETHER_API_KEY",
     "google": "GOOGLE_API_KEY",
     "cohere": "COHERE_API_KEY",
     "huggingface": "HF_TOKEN",
@@ -106,7 +105,6 @@ def call_llm(
 
     dispatcher = {
         "groq": _call_groq,
-        "together": _call_together,
         "google": _call_google,
         "cohere": _call_cohere,
         "huggingface": _call_huggingface,
@@ -145,19 +143,6 @@ def _call_groq(model, prompt, max_tokens, temperature):
     from groq import Groq
 
     client = Groq(api_key=os.environ["GROQ_API_KEY"])
-    resp = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=max_tokens,
-        temperature=temperature,
-    )
-    return resp.choices[0].message.content
-
-
-def _call_together(model, prompt, max_tokens, temperature):
-    from together import Together
-
-    client = Together(api_key=os.environ["TOGETHER_API_KEY"])
     resp = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],

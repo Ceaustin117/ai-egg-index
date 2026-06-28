@@ -1,39 +1,39 @@
 {
   "model": "google/gemini-2.5-flash",
-  "timestamp": "2026-06-28T21:21:02.651311",
+  "timestamp": "2026-06-28T22:18:05.614198",
   "challenges": [
     {
       "prompt_id": "budget-haiku",
       "difficulty": "intermediate",
-      "response_preview": "This Python budget tracker allows you to add income and expense transactions, categorize them, and then view a monthly summary. The unique feature is its ability to generate a haiku poem (5-7-5 syllables) summarizing your financial situation for the chosen month.\n\nThe tracker stores your transactions in a `transactions.json` file, so your data persists between sessions.\n\n```python\nimport",
-      "code_extracted": true,
+      "response_preview": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 59.002229406s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
+      "code_extracted": false,
       "code_runs": false,
       "scores": {
         "code_works": 0.0,
         "meets_requirements": 0.0,
         "creative_output": 0.0,
-        "explanation": "The AI response contains a syntax error in the import statement, preventing the code from running. The code does not meet any of the requirements as it does not execute correctly. The haiku output is not even attempted, so it cannot be evaluated for creativity or adherence to the 5-7-5 syllable structure."
+        "explanation": "The AI response does not meet any of the criteria due to a quota exceeded error. The code execution result indicates that the code did not run without error, and no code was extracted. Therefore, the AI did not implement the budget tracker or output a haiku poem."
       },
       "weighted_score": 0.0
     },
     {
       "prompt_id": "recursive-story",
       "difficulty": "intermediate",
-      "response_preview": "Okay, here's a JavaScript function that generates a story about recursion, where the story itself is structured using recursive function calls. It aims for at least 3 levels of recursion in the narrative.\n\n```javascript\nfunction generateRecursionStory() {\n    const storyParts = []; // Array to collect story segments\n    const maxStoryLevels = 3; // Defines the depth of our",
-      "code_extracted": true,
+      "response_preview": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 59.832786089s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
+      "code_extracted": false,
       "code_runs": false,
       "scores": {
         "code_works": 0.0,
         "meets_requirements": 0.0,
         "creative_output": 0.0,
-        "explanation": "The code does not run without error due to a syntax error. It does not meet the requirements of having at least 3 levels of recursion and telling a coherent story. The creative output is also not present as the code does not execute."
+        "explanation": "The AI response failed to provide a code execution result, indicating that the code was not generated. As a result, it cannot meet the requirements of the prompt, and its creative output is also not evaluable. The score for 'code_works' is 0.0 because the code did not run without error, and the output was not provided. The scores for 'meets_requirements' and 'creative_output' are also 0.0 due to the lack of a generated code and story."
       },
       "weighted_score": 0.0
     },
     {
       "prompt_id": "regex-poetry",
       "difficulty": "hard",
-      "response_preview": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 59.224429956s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
+      "response_preview": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 59.635282699s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
       "code_extracted": false,
       "code_runs": false,
       "scores": {
@@ -41,34 +41,6 @@
         "meets_requirements": 0.0,
         "creative_output": 0.0,
         "explanation": "The AI's response is not a valid code execution result. The error message indicates a quota exceeded error from the AI's API, not a code execution error. However, since no code was provided, it's impossible to evaluate the code's correctness. Therefore, all criteria are scored 0.0."
-      },
-      "weighted_score": 0.0
-    },
-    {
-      "prompt_id": "ascii-weather",
-      "difficulty": "easy",
-      "response_preview": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 58.849418446s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
-      "code_extracted": false,
-      "code_runs": false,
-      "scores": {
-        "code_works": 0.0,
-        "meets_requirements": 0.0,
-        "creative_output": 0.0,
-        "explanation": "The AI's response is not a code execution result, but rather an error message indicating a quota exceeded. Therefore, it does not meet any of the scoring criteria. The code execution result is also 'No code extracted', which further supports this assessment."
-      },
-      "weighted_score": 0.0
-    },
-    {
-      "prompt_id": "data-sonnet",
-      "difficulty": "hard",
-      "response_preview": "This is a fun and challenging request! Generating perfect iambic pentameter and ensuring natural-sounding rhymes dynamically is a task typically requiring advanced NLP and phonetic analysis. For this exercise, I will implement a class that *simulates* these aspects by using pre-defined line structures and rhyming word sets, allowing for some variability while injecting the calculated statistics.\n\nThe sonnet will follow the",
-      "code_extracted": true,
-      "code_runs": false,
-      "scores": {
-        "code_works": 0.0,
-        "meets_requirements": 0.0,
-        "creative_output": 0.0,
-        "explanation": "The AI response does not meet any of the criteria. The code does not run without error, the sonnet structure is not implemented, and the statistics are not woven into the poem creatively. The response starts with a comment that is not Python code, which causes a syntax error."
       },
       "weighted_score": 0.0
     }
