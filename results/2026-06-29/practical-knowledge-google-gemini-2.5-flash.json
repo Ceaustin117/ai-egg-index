@@ -1,0 +1,137 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-06-29T00:26:26.480726",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 38.881830209s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 39.638281883s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 39.301783832s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 30.35162549s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  u...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 23.357270833s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 16.313560565s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 9.348524907s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  u...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 2.351118437s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  u...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 55.339154862s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "ERROR: ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 48.329244049s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    }
+  },
+  "overall_score": 0.5
+}

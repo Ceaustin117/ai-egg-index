@@ -1,0 +1,137 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "timestamp": "2026-06-29T00:24:31.239375",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "I'm not aware of any information about the 2026 US federal income tax brackets. My knowledge cutoff is December 2023, and I do not have information on future tax changes.",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response does not provide any factual information about the 2026 US federal income tax brackets, resulting in a 0.0 for factual accuracy. It also fails to cover any of the expected topics, leading to a 0.0 for completeness. However, it correctly acknowledges its knowledge cutoff and lack of information on future tax changes, earning a 1.0 for recency awareness."
+          },
+          "weighted_score": 0.2
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "I do not have information on the standard deduction for 2026.",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "As of my knowledge cutoff in 2023, the tax credits for electric vehicle (EV) purchases in the United States are as follows:\n\n1. **Federal Tax Credit**: The federal tax credit for EV purchases is up to $7,500. However, this credit is subject to phase-out as the manufacturer reaches 200,000 eligible vehicles sold. As of my knowledge cutoff, some manufacturers, such as Tesla and General Motors, have already reached this limit.\n\n2. **Alternative Fuel Vehicle Refueling Property Credit**: This credit ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.4
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "As of my cut-off knowledge in December 2023, the federal minimum wage in the United States is $7.25 per hour. However, please note that this information may have changed since my cut-off date.\n\nThere have been recent discussions and proposals to increase the federal minimum wage, but no changes have been implemented since my cut-off date. In 2021, the federal minimum wage was set to increase to $15 per hour as part of the Build Back Better Act, but the bill did not pass.\n\nSome states and cities ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "As of my cut-off knowledge in 2023, the current federal overtime pay rules for salaried employees in the United States are governed by the Fair Labor Standards Act (FLSA). \n\nHere are the key rules:\n\n1. **Exemption from Overtime Pay**: Salaried employees are exempt from overtime pay if they meet certain criteria, which include:\n   - Being paid a salary of at least $684 per week (or $35,568 per year) as of January 1, 2020.\n   - Performing specific job duties that are considered executive, administ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "As of my cut-off knowledge in 2023, the contribution limits for 401(k) accounts are as follows:\n\n- The elective deferral limit (employee contributions) is $20,500.\n- The catch-up contribution limit for those 50 and older is $6,500.\n- The total annual addition limit (including employer contributions) is $61,000.\n- The annual compensation limit for 401(k) plans is $305,000.\n\nPlease note that these limits are subject to change, and you should verify the current limits with the IRS or a qualified fi...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "I do not have information on the 2026 contribution limits for Traditional and Roth IRA accounts.",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "I'm not aware of the 2026 HSA contribution limits. However, I can provide you with the 2022 and 2023 HSA contribution limits. \n\nFor 2022, the HSA contribution limits are as follows:\n- Individuals: $3,650\n- Families: $7,300\n- Catch-up contributions (for those 55 and older): $1,000\n\nFor 2023, the HSA contribution limits are as follows:\n- Individuals: $3,850\n- Families: $7,750\n- Catch-up contributions (for those 55 and older): $1,000\n\nTo find the 2026 HSA contribution limits, I recommend checking t...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "In the United States, you are entitled to a free credit report from each of the three major credit reporting agencies (Equifax, Experian, and TransUnion) once a year. This is mandated by the Fair Credit Reporting Act (FCRA). You can request your free credit report from each agency through the following methods:\n\n1. **AnnualCreditReport.com**: This is the official website authorized by the FCRA to provide free credit reports. You can request a report from each of the three credit reporting agenci...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act is a federal law that protects consumers when they purchase products with warranties. Here are your rights under this act:\n\n1. **Written Warranty**: The manufacturer must provide a written warranty for the product, which must be clear and concise. This warranty must be provided to you at the time of purchase or within a reasonable time after purchase.\n2. **Express Warranty**: If the manufacturer makes any written or verbal statements about the product's performance...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    }
+  },
+  "overall_score": 0.47
+}

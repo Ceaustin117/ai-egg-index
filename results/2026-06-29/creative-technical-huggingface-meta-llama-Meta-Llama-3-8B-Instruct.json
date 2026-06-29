@@ -1,11 +1,11 @@
 {
   "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
-  "timestamp": "2026-06-29T00:13:01.811735",
+  "timestamp": "2026-06-29T00:38:42.932099",
   "challenges": [
     {
       "prompt_id": "budget-haiku",
       "difficulty": "intermediate",
-      "response_preview": "Here's a Python program that meets your requirements:\n\n```Python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n        self.expense_categories = []\n\n    def add_income(self, amount):\n        self.income += amount\n\n    def add_expense(self, category, amount):\n        if category not in self.expense_categories:\n            self.expense_categories.append(category)\n        if category not in self.expenses:\n            self.expenses[category] = 0\n    ...",
+      "response_preview": "Here is a Python budget tracker that meets your requirements:\n```\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n        self.monthly_totals = {}\n\n    def add_income(self, amount):\n        self.income += amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def calculate_monthly_totals(self):\n        se...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
@@ -19,7 +19,7 @@
     {
       "prompt_id": "recursive-story",
       "difficulty": "intermediate",
-      "response_preview": "Here is a JavaScript function that generates a short story about recursion, told using recursive function calls:\n```\nfunction tellStory() {\n  const story = [];\n  function recursiveTellStory(level) {\n    if (level > 3) return; // base case: stop recursing\n    const chapter = `Chapter ${level}: The Quest for the Golden Acorn`;\n    story.push(chapter);\n    console.log(`Level ${level}: ${chapter}`);\n    recursiveTellStory(level + 1); // recursive call\n  }\n  recursiveTellStory(1);\n  return story.join...",
+      "response_preview": "Here is a JavaScript function that generates a short story about recursion, where the story itself is told using recursive function calls. The story has at least 3 levels of recursion and makes sense as a narrative.\n\n```javascript\nfunction recursiveStory() {\n  let story = \"In a land far, far away, there was a wise old wizard named Zorvath.\\n\";\n  story += \"He lived in a tower of ancient knowledge, surrounded by shelves of dusty tomes and flickering candles.\\n\";\n  story += \"One day, Zorvath receiv...",
       "code_extracted": true,
       "code_runs": true,
       "scores": {
@@ -33,7 +33,7 @@
     {
       "prompt_id": "regex-poetry",
       "difficulty": "hard",
-      "response_preview": "Here is a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n```\nimport re\n\ndef is_valid_limerick(text):\n    # Define the regex pattern for a valid limerick\n    pattern = r\"^(?:(?:(?:(?:[A-Z][a-z]+){5} )\\n)?(?:[A-Z][a-z]+) )\\n(?:(?:(?:[A-Z][a-z]+){5} )\\n)?(?:[A-Z][a-z]+) )\\n(?:(?:(?:[A-Z][a-z]+){5} )\\n)?(?:[A-Z][a-z]+) )\\n$\"\n    # Use the regex to match the text\n    if re.match(pattern, text, re.MULTILINE):\n        return True\n    else:\n        ret...",
+      "response_preview": "Here is a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n\n```Python\nimport re\n\ndef is_limerick(text):\n    # Regular expression pattern to match the AABBA rhyme scheme\n    pattern = r\"^(?!.*[a-z]{8,})(?!.*[A-Z]{8,})(?!.*[0-9]{8,})([A-Z]{3,})(.*\\1.*\\2.*\\2.*\\1)[A-z]{3,}$\"\n    return bool(re.match(pattern, text, re.IGNORECASE))\n\n# Test cases\ntest_cases = [\n    (\"There once was a man from Nantucket\", True),\n    (\"There once was a man from Nantucket ...",
       "code_extracted": true,
       "code_runs": false,
       "scores": {
@@ -43,35 +43,7 @@
         "explanation": "Could not parse judge response"
       },
       "weighted_score": 0.38
-    },
-    {
-      "prompt_id": "ascii-weather",
-      "difficulty": "easy",
-      "response_preview": "Here is a Python function that generates an ASCII art representation of the weather based on the input data:\n\n```Python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    weather_ascii = \"\"\n\n    if conditions == \"sunny\":\n        weather_ascii += \"\"\"\n        /_/\\\n       ( o.o )\n        > ^ <\n        Sunny day!\n        \"\"\"\n    elif conditions == \"cloudy\":\n        weather_ascii += \"\"\"\n        /_/\\\n       ( ^ - ^ )\n        >___<\n        Cloudy day!\n        \"\"\"\n    elif conditions == ...",
-      "code_extracted": true,
-      "code_runs": true,
-      "scores": {
-        "code_works": 0.7,
-        "meets_requirements": 0.5,
-        "creative_output": 0.5,
-        "explanation": "Could not parse judge response"
-      },
-      "weighted_score": 0.58
-    },
-    {
-      "prompt_id": "data-sonnet",
-      "difficulty": "hard",
-      "response_preview": "Here is a Python class that generates a Shakespearean sonnet based on a dataset:\n```\nimport numpy as np\nimport statistics\n\nclass ShakespeareanSonnet:\n    def __init__(self, dataset):\n        self.dataset = dataset\n        self.mean = np.mean(dataset)\n        self.median = statistics.median(dataset)\n        self.stddev = np.std(dataset)\n        self.outliers = [x for x in dataset if abs(x - self.mean) > 2 * self.stddev]\n\n    def generate_sonnet(self):\n        sonnet = []\n        sonnet.append(sel...",
-      "code_extracted": true,
-      "code_runs": true,
-      "scores": {
-        "code_works": 0.7,
-        "meets_requirements": 0.5,
-        "creative_output": 0.5,
-        "explanation": "Could not parse judge response"
-      },
-      "weighted_score": 0.58
     }
   ],
-  "overall_score": 0.54
+  "overall_score": 0.513
 }
