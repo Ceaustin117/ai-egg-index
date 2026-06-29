@@ -210,7 +210,79 @@ class BenchmarkAggregator:
 
                 historical["models"][model_name]["scores"].append(score_entry)
 
+        # Add a trailing-window rolling average per model/benchmark. Single-run scores are
+        # noisy (small samples), so the smoothed series is the more meaningful trend.
+        for model_data in historical["models"].values():
+            model_data["rolling"] = self._rolling_averages(model_data["scores"])
+
         return historical
+
+    @staticmethod
+    def _rolling_averages(scores: list, window: int = 3) -> list:
+        """Trailing-`window` mean per benchmark, computed run-over-run. Null/missing
+        scores are skipped (not treated as 0), so an errored run doesn't drag the trend."""
+        rolling = []
+        for i, entry in enumerate(scores):
+            window_slice = scores[max(0, i - window + 1): i + 1]
+            smoothed = {"date": entry["date"]}
+            for key in entry:
+                if key == "date":
+                    continue
+                vals = [w[key] for w in window_slice if isinstance(w.get(key), (int, float))]
+                if vals:
+                    smoothed[key] = round(sum(vals) / len(vals), 3)
+            rolling.append(smoothed)
+        return rolling
+
+    @staticmethod
+    def _cell_status(bench_data: dict) -> str:
+        """ok if a benchmark produced a real score; error if it failed (API/quota error
+        or a null score)."""
+        if bench_data.get("status") == "error" or bench_data.get("score") is None:
+            return "error"
+        return "ok"
+
+    def build_run_health(self) -> dict:
+        """Per-run health derived from the result files: for each run, which
+        (model, benchmark) cells scored ok vs errored, plus summary counts. Lets us track
+        pipeline degradation over time (e.g. Groq getting rate-limited, Google dropping
+        out) without digging through CI logs. A model absent from a run's `models` list
+        produced no results at all that run."""
+        health = {"last_updated": datetime.now().strftime("%Y-%m-%d"), "runs": []}
+        if not self.results_dir.exists():
+            return health
+
+        date_dirs = sorted(
+            [d for d in self.results_dir.iterdir() if d.is_dir() and d.name[0].isdigit()]
+        )
+        for date_dir in date_dirs:
+            models = self._parse_model_results(date_dir)
+            cells, ok, err = {}, 0, 0
+            for model_name, model_data in models.items():
+                statuses = {}
+                for bench_name, bench_data in model_data.get("benchmarks", {}).items():
+                    status = self._cell_status(bench_data)
+                    statuses[bench_name] = status
+                    if status == "ok":
+                        ok += 1
+                    else:
+                        err += 1
+                cells[model_name] = statuses
+            health["runs"].append({
+                "date": date_dir.name,
+                "models": sorted(cells.keys()),
+                "cells": cells,
+                "summary": {"ok": ok, "error": err, "total": ok + err},
+            })
+        return health
+
+    def save_run_health(self, output_path: str = None) -> str:
+        """Save run-health history."""
+        if output_path is None:
+            output_path = self.results_dir / "run-health.json"
+        with open(output_path, "w") as f:
+            json.dump(self.build_run_health(), f, indent=2)
+        return str(output_path)
 
     def save_latest(self, output_path: str = None) -> str:
         """Save aggregated latest results."""
@@ -244,10 +316,12 @@ class BenchmarkAggregator:
 
         latest_path = self.save_latest(output_dir / "latest.json")
         historical_path = self.save_historical(output_dir / "historical.json")
+        health_path = self.save_run_health(output_dir / "run-health.json")
 
         return {
             "latest": latest_path,
-            "historical": historical_path
+            "historical": historical_path,
+            "run_health": health_path,
         }
 
 
@@ -269,11 +343,14 @@ def main():
         print(f"Exported to frontend:")
         print(f"  Latest: {paths['latest']}")
         print(f"  Historical: {paths['historical']}")
+        print(f"  Run health: {paths['run_health']}")
     else:
         latest_path = aggregator.save_latest()
         historical_path = aggregator.save_historical()
+        health_path = aggregator.save_run_health()
         print(f"Saved latest results: {latest_path}")
         print(f"Saved historical summary: {historical_path}")
+        print(f"Saved run health: {health_path}")
 
     # Print summary
     latest = aggregator.aggregate_latest()
