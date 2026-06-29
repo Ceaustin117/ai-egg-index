@@ -7,9 +7,13 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "Samples per benchmark (omit for full run)"
+        description: "Samples per benchmark"
         required: false
-        default: "5"
+        # 3, not 5: the LLM-as-judge (Llama 3.3 70B on Groq) is token-heavy, and at 5
+        # samples × 4 providers it blew Groq's free-tier tokens-per-minute ceiling — the
+        # circuit breaker opened ~35× and blanked Groq's own scores. 3 keeps the stronger
+        # judge under budget. Scores are framed as small-sample / directional anyway.
+        default: "3"
 
 permissions:
   contents: write
@@ -24,7 +28,7 @@ jobs:
       GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
       COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
-      LIMIT: ${{ github.event.inputs.limit || '5' }}
+      LIMIT: ${{ github.event.inputs.limit || '3' }}
 
     steps:
       - name: Checkout

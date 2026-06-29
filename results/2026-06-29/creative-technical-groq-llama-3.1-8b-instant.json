@@ -1,0 +1,49 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "timestamp": "2026-06-29T00:25:54.728372",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "**Budget Tracker in Python**\n================================\n\n### Code\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income to a category\"\"\"\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        \"\"\"Add expense to a category\"\"\"\n        if ca...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "**Recursive Story Generation**\n================================\n\nHere's a JavaScript function that generates a short story about recursion using recursive function calls. The story has at least 3 levels of recursion and makes sense as a narrative.\n\n```javascript\nfunction generateStory(depth = 3) {\n  if (depth === 0) {\n    return \"The end.\";\n  }\n\n  const story = `In a land far, far away, there was a wise old sage named ${getRandomName()}. The sage had a mysterious box with a label that read: \"Do ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick. This program checks for the AABBA rhyme scheme pattern.\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick using regular expressions.\n    \n    A valid limerick has 5 lines with the AABBA rhyme scheme pattern.\n    The first, second, and last lines have 8-13 characters, and the third and fourth lines have 5-10 characters.\n    \n   ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    }
+  ],
+  "overall_score": 0.513
+}
