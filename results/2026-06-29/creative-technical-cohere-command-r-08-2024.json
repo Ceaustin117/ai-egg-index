@@ -1,0 +1,77 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-06-29T00:01:38.057189",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a Python script with a self-contained function that solves the problem and passes corresponding tests:\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self....",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction recursiveStory(depth) {\n  if (depth <= 0) {\n    return \"The story ends here, a tale within a tale, a recursive dream.\";\n  } else {\n    return \"Once upon a time, a storyteller began a tale. It was a story about \" + \n      recursiveStory(depth - 1) + \". As the storyteller spoke, the audience was drawn deeper into the narrative.\";\n  }\n}\n\nconsole.log(recursiveStory(3));\n```\n\nThe above JavaScript function generates a short story with a recursive narrative structure. Each call t...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate if a given text is a valid limerick with the AABBA rhyme scheme:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n\n    # Check if there are exactly 5 lines\n    if len(lines) != 5:\n        return False\n\n    # Check the rhyme scheme pattern\n    rhyme_pattern = r'([a-zA-Z]+)\\1([a-zA-Z]+)\\2([a-zA-Z]+)\\3'\n    for i in range(0, 5):\n        match = re.search(rhyme_pattern, li...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "```python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    weather_dict = {\n        \"sunny\": \"\"\"\n ______ \n|      |\n|  o o |\n|  ___ |\n| |  | |\n|_|__|_|\n\"\"\",\n        \"cloudy\": \"\"\"\n ______ \n|      |\n|  o o |\n|  _  |\n| | | |\n|_|___|\n\"\"\",\n        \"rainy\": \"\"\"\n ______ \n|      |\n|  o o |\n|  _  |\n| |_| |\n|_|___|\n\"\"\",\n        \"snowy\": \"\"\"\n ______ \n|      |\n|  o o |\n|  _  |\n| |_|_|\n|_|___|\n\"\"\",\n        \"stormy\": \"\"\"\n ______ \n|      |\n|  o o |\n|  _  |\n| |_|_|\n|_|_|_|\n\"\"\",\n    }\n\n    ascii...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 1.0,
+        "creative_output": 0.8,
+        "explanation": "The code runs without errors and meets all requirements by handling 5 different weather conditions with distinct ASCII art. The ASCII art is recognizable but could be more aesthetically pleasing and detailed, which is why the creative output score is 0.8 instead of 1.0."
+      },
+      "weighted_score": 0.94
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "ERROR: ReadTimeout: The read operation timed out",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    }
+  ],
+  "overall_score": 0.612
+}

@@ -1,0 +1,137 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-06-29T00:11:55.579584",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "I'm happy to help! However, I must correct you that the information you're seeking is not yet available, as the 2026 tax brackets have not been officially announced or implemented.\n\nThe US federal income tax brackets are typically adjusted annually for inflation, and the changes are usually announced in the fall of each year for the upcoming tax year. The 2026 tax brackets will likely be announced in the fall of 2025, and it's too early to provide accurate information on the changes.\n\nIf you're ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "I'm happy to help! However, I must correct you that 2026 is in the future, and the standard deduction amounts for the 2026 tax year have not been officially announced by the Internal Revenue Service (IRS) yet.\n\nBut, to give you an idea, the standard deduction amounts for the 2022 tax year are as follows:\n\n* Single filers: $13,850\n\nPlease note that these amounts are subject to change, and the IRS may announce new standard deduction amounts for the 2026 tax year in the future. I recommend checking...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "As of 2023, the tax credits available for electric vehicle (EV) purchases in the United States are as follows:\n\n1. **Federal Tax Credit**: The federal government offers a tax credit of up to $7,500 for the purchase of an eligible electric vehicle. This credit is available to individuals and businesses, and it can be claimed on their federal tax return.\n2. **State and Local Incentives**: Many states and local governments offer additional incentives, such as rebates, tax credits, or exemptions fro...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "The current federal minimum wage in the United States is $7.25 per hour, which has been in effect since July 2009. However, there have been ongoing debates and discussions about increasing the minimum wage to a higher level to reflect changes in the cost of living and to help ensure a living wage for many workers.\n\nIn 2021, the federal minimum wage was set to increase to $15 per hour, but this increase was blocked by a court ruling. The ruling was based on a 2020 law that suspended the minimum w...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "The current federal overtime pay rules for salaried employees in the United States are governed by the Fair Labor Standards Act (FLSA). Here are the key rules:\n\n**Exempt vs. Non-Exempt**: The FLSA distinguishes between exempt and non-exempt employees. Exempt employees are not entitled to overtime pay, while non-exempt employees are entitled to overtime pay.\n\n**Exempt Categories**: The FLSA specifies certain categories of employees who are exempt from overtime pay, including:\n\n1. Executive, Admin...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "The 2026 contribution limits for 401(k) accounts have not been officially announced by the IRS, as the 2026 limits are not yet set. However, the IRS typically announces the new limits in October or November of the previous year.\n\nFor 2025, the contribution limits for 401(k) accounts are:\n\n* Elective deferrals (employee contributions): $19,500\n* Catch-up contributions (for participants 50 and older): $6,500\n\nIt's important to note that these limits are subject to change, and the 2026 limits may b...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "The 2026 contribution limits for Traditional and Roth IRA accounts are as follows:\n\n* Traditional IRA: The annual contribution limit is $6,000 in 2026, or $7,000 if you are 50 or older (due to the additional $1,000 \"catch-up\" contribution).\n* Roth IRA: The annual contribution limit is $6,000 in 2026, or $7,000 if you are 50 or older (due to the additional $1,000 \"catch-up\" contribution).\n\nIt's worth noting that these limits apply to the total amount you can contribute to all of your IRAs in a gi...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "The 2026 HSA (Health Savings Account) contribution limits for individuals and families are as follows:\n\n* **Individuals:** $3,650 (annual contribution limit) + $1,000 (catch-up contribution limit for those 55 and older) = $4,650\n* **Families:** $7,300 (annual contribution limit) + $1,000 (catch-up contribution limit for those 55 and older) = $8,300\n\nThese limits apply to contributions made to an HSA by an individual or family, and are subject to change by the IRS. It's always a good idea to chec...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "You can obtain a free credit report from each of the three major credit reporting agencies (Equifax, Experian, and TransUnion) once every 12 months. This is a federal law, known as the Fair Credit Reporting Act (FCRA), which requires credit reporting agencies to provide consumers with a free copy of their credit report once a year.\n\nHere's how to get your free credit report:\n\n1. Visit the website of each credit reporting agency:\n\t* Equifax: [www.equifax.com](http://www.equifax.com)\n\t* Experian: ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act is a federal law that regulates warranties and guarantees on consumer products. It provides certain rights and protections to consumers when a product breaks or fails to perform as expected. Here are some of the key rights you may have under the Magnuson-Moss Warranty Act:\n\n1. **Written Warranty**: The manufacturer must provide a written warranty that is clear, concise, and easy to understand. The warranty must specify the duration of the warranty, the terms and co...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    }
+  },
+  "overall_score": 0.5
+}

@@ -1,27 +1,65 @@
 {
-  "last_updated": "2026-06-28",
+  "last_updated": "2026-06-29",
   "models": [
     {
       "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
       "provider": "huggingface",
       "tier": "free",
-      "date": "2026-06-28",
+      "date": "2026-06-29",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.497,
+          "score": 0.54,
           "details": {
-            "budget-haiku": 0.61,
-            "recursive-story": 0.88,
-            "regex-poetry": 0.0
+            "budget-haiku": 0.58,
+            "recursive-story": 0.58,
+            "regex-poetry": 0.38,
+            "ascii-weather": 0.58,
+            "data-sonnet": 0.58
           }
         },
         "practical_knowledge": {
-          "score": 0.629,
+          "score": 0.5,
           "details": {
-            "taxes": 0.567,
-            "regulations": 0.845,
-            "practical_finance": 0.567,
-            "consumer_rights": 0.6
+            "taxes": 0.5,
+            "regulations": 0.5,
+            "practical_finance": 0.5,
+            "consumer_rights": 0.5
+          }
+        }
+      }
+    },
+    {
+      "model": "cohere/command-r-08-2024",
+      "provider": "cohere",
+      "tier": "free",
+      "date": "2026-06-29",
+      "benchmarks": {
+        "creative_technical": {
+          "score": 0.612,
+          "details": {
+            "budget-haiku": 0.58,
+            "recursive-story": 0.58,
+            "regex-poetry": 0.58,
+            "ascii-weather": 0.94,
+            "data-sonnet": 0.38
+          }
+        },
+        "ifeval": {
+          "score": 0.4,
+          "strict": 0.4,
+          "loose": 0
+        },
+        "gsm8k": {
+          "score": 1.0,
+          "accuracy": 1.0
+        },
+        "practical_knowledge": {
+          "score": 0.5,
+          "details": {
+            "taxes": 0.5,
+            "regulations": 0.5,
+            "practical_finance": 0.5,
+            "consumer_rights": 0.5
           }
         }
       }
@@ -30,89 +68,11 @@
       "model": "groq/llama-3.1-8b-instant",
       "provider": "groq",
       "tier": "free",
-      "date": "2026-06-28",
+      "date": "2026-06-29",
       "benchmarks": {
-        "practical_knowledge": {
-          "score": 0.483,
-          "details": {
-            "taxes": 0.38,
-            "regulations": 0.8,
-            "practical_finance": 0.25,
-            "consumer_rights": 0.67
-          }
-        },
-        "creative_technical": {
-          "score": 0.513,
-          "details": {
-            "budget-haiku": 0.3,
-            "recursive-story": 0.62,
-            "regex-poetry": 0.62
-          }
-        },
         "gsm8k": {
-          "score": 0.667,
-          "accuracy": 0.667
-        },
-        "ifeval": {
-          "score": 0.667,
-          "strict": 0.667,
-          "loose": 0
-        }
-      }
-    },
-    {
-      "model": "cohere/command-r-08-2024",
-      "provider": "cohere",
-      "tier": "free",
-      "date": "2026-06-28",
-      "benchmarks": {
-        "creative_technical": {
-          "score": 0.65,
-          "details": {
-            "budget-haiku": 0.73,
-            "recursive-story": 0.94,
-            "regex-poetry": 0.28
-          }
-        },
-        "ifeval": {
-          "score": 0.333,
-          "strict": 0.333,
-          "loose": 0
-        },
-        "gsm8k": {
-          "score": 1.0,
-          "accuracy": 1.0
-        },
-        "practical_knowledge": {
-          "score": 0.593,
-          "details": {
-            "taxes": 0.497,
-            "regulations": 0.625,
-            "practical_finance": 0.6,
-            "consumer_rights": 0.695
-          }
-        }
-      }
-    },
-    {
-      "model": "google/gemini-2.5-flash",
-      "provider": "google",
-      "tier": "free",
-      "date": "2026-06-28",
-      "benchmarks": {
-        "creative_technical": {
-          "score": null,
-          "status": "error",
-          "error": "Free-tier quota/rate limit exceeded"
-        },
-        "practical_knowledge": {
-          "score": 0.085,
-          "details": {
-            "taxes": 0.283,
-            "regulations": 0.0,
-            "practical_finance": 0.0,
-            "consumer_rights": 0.0
-          }
+          "score": 0.8,
+          "accuracy": 0.8
         }
       }
     }

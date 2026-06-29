@@ -1,0 +1,77 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-06-29T00:13:01.811735",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a Python program that meets your requirements:\n\n```Python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n        self.expense_categories = []\n\n    def add_income(self, amount):\n        self.income += amount\n\n    def add_expense(self, category, amount):\n        if category not in self.expense_categories:\n            self.expense_categories.append(category)\n        if category not in self.expenses:\n            self.expenses[category] = 0\n    ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a JavaScript function that generates a short story about recursion, told using recursive function calls:\n```\nfunction tellStory() {\n  const story = [];\n  function recursiveTellStory(level) {\n    if (level > 3) return; // base case: stop recursing\n    const chapter = `Chapter ${level}: The Quest for the Golden Acorn`;\n    story.push(chapter);\n    console.log(`Level ${level}: ${chapter}`);\n    recursiveTellStory(level + 1); // recursive call\n  }\n  recursiveTellStory(1);\n  return story.join...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n```\nimport re\n\ndef is_valid_limerick(text):\n    # Define the regex pattern for a valid limerick\n    pattern = r\"^(?:(?:(?:(?:[A-Z][a-z]+){5} )\\n)?(?:[A-Z][a-z]+) )\\n(?:(?:(?:[A-Z][a-z]+){5} )\\n)?(?:[A-Z][a-z]+) )\\n(?:(?:(?:[A-Z][a-z]+){5} )\\n)?(?:[A-Z][a-z]+) )\\n$\"\n    # Use the regex to match the text\n    if re.match(pattern, text, re.MULTILINE):\n        return True\n    else:\n        ret...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "ascii-weather",
+      "difficulty": "easy",
+      "response_preview": "Here is a Python function that generates an ASCII art representation of the weather based on the input data:\n\n```Python\ndef generate_weather_ascii(temperature, conditions, humidity):\n    weather_ascii = \"\"\n\n    if conditions == \"sunny\":\n        weather_ascii += \"\"\"\n        /_/\\\n       ( o.o )\n        > ^ <\n        Sunny day!\n        \"\"\"\n    elif conditions == \"cloudy\":\n        weather_ascii += \"\"\"\n        /_/\\\n       ( ^ - ^ )\n        >___<\n        Cloudy day!\n        \"\"\"\n    elif conditions == ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "data-sonnet",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python class that generates a Shakespearean sonnet based on a dataset:\n```\nimport numpy as np\nimport statistics\n\nclass ShakespeareanSonnet:\n    def __init__(self, dataset):\n        self.dataset = dataset\n        self.mean = np.mean(dataset)\n        self.median = statistics.median(dataset)\n        self.stddev = np.std(dataset)\n        self.outliers = [x for x in dataset if abs(x - self.mean) > 2 * self.stddev]\n\n    def generate_sonnet(self):\n        sonnet = []\n        sonnet.append(sel...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    }
+  ],
+  "overall_score": 0.54
+}
