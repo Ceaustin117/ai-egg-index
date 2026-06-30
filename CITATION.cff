@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use the AI Egg Index or its data, please cite it as below."
+title: "AI Egg Index"
+abstract: >-
+  An open-source benchmark measuring free-tier large language models on
+  practical, everyday tasks (practical knowledge, instruction following,
+  grade-school math, and creative+technical coding), updated weekly.
+type: software
+authors:
+  - family-names: Austin
+    given-names: Chris
+    email: ceaustin117@gmail.com
+url: "https://github.com/Ceaustin117/ai-egg-index"
+repository-code: "https://github.com/Ceaustin117/ai-egg-index"
+license: MIT
+keywords:
+  - llm
+  - benchmark
+  - evaluation
+  - leaderboard
+  - free-tier
+  - large-language-models

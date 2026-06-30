@@ -1,0 +1,26 @@
+name: "Feature request / new benchmark"
+description: Propose a new task, benchmark, or improvement.
+title: "[Feature] <short summary>"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: What everyday-user question would this help answer?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: For a new benchmark, sketch the task and how it'd be scored.
+    validations:
+      required: false
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This fits the project's scope (free-tier models, practical/everyday tasks, reproducible).
+          required: true

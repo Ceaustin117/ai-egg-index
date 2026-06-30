@@ -1,0 +1,35 @@
+name: "Add a model / provider"
+description: Suggest a free-tier model (or provider) to add to the index.
+title: "[Model] <provider>/<model-id>"
+labels: ["new model", "help wanted"]
+body:
+  - type: input
+    id: provider
+    attributes:
+      label: Provider
+      placeholder: e.g. groq, google, cohere, huggingface
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model ID
+      description: The exact model identifier the provider's API expects.
+      placeholder: e.g. llama-3.3-70b-versatile
+    validations:
+      required: true
+  - type: checkboxes
+    id: free
+    attributes:
+      label: Free-tier confirmation
+      description: The index only tracks models usable without paying.
+      options:
+        - label: This model is callable on a genuinely free tier (no credit balance required).
+          required: true
+  - type: textarea
+    id: access
+    attributes:
+      label: Access notes
+      description: How do you get a free API key? Any rate/quota limits worth noting?
+    validations:
+      required: false
