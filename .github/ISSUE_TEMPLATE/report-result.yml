@@ -1,0 +1,44 @@
+name: "Report a wrong / non-reproducible result"
+description: A score looks wrong, or you can't reproduce a published result.
+title: "[Result] <model> on <benchmark>"
+labels: ["bug", "results"]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Model (provider/model-id)
+    validations:
+      required: true
+  - type: dropdown
+    id: benchmark
+    attributes:
+      label: Benchmark
+      options:
+        - practical_knowledge
+        - creative_technical
+        - ifeval
+        - gsm8k
+    validations:
+      required: true
+  - type: input
+    id: methodology_version
+    attributes:
+      label: Methodology version / run date
+      description: From the results JSON (or the leaderboard's "last updated").
+      placeholder: e.g. methodology v1, run 2026-06-29
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command you ran
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: Expected vs. actual
+      description: What score did you expect, and what did you get? Paste any error output.
+    validations:
+      required: true

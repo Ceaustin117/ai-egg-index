@@ -154,4 +154,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to:
 
 ## License
 
-MIT
+- **Code** — [MIT](./LICENSE).
+- **Data** (benchmark prompts/rubrics in `benchmarks/`, plus scores and aggregated
+  outputs in `results/` and `output/`) — [CC BY 4.0](./DATA_LICENSE.md). Please attribute
+  the AI Egg Index (see [`CITATION.cff`](./CITATION.cff)).
+
+Note: some result files contain verbatim model-generated text, which belongs to the
+respective providers under their terms — see [DATA_LICENSE.md](./DATA_LICENSE.md).
+
+## Citation
+
+If you use the index or its data, cite it via the "Cite this repository" button on
+GitHub, or see [`CITATION.cff`](./CITATION.cff).
