@@ -15,6 +15,7 @@ from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from providers import call_llm, provider_api_key, ProviderError  # noqa: E402
+from provenance import provenance  # noqa: E402
 
 
 class PracticalKnowledgeEvaluator:
@@ -100,6 +101,7 @@ Respond in JSON format:
             "categories": {},
             "overall_score": 0.0
         }
+        results.update(provenance(limit=limit, judge_model=self.judge_model))
 
         all_scores = []
 
