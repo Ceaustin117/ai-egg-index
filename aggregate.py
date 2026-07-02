@@ -73,8 +73,13 @@ class BenchmarkAggregator:
                         "provider": self._infer_provider(model),
                         "tier": "free",
                         "date": date_dir.name,
+                        "methodology_version": data.get("methodology_version"),
+                        "git_commit": data.get("git_commit"),
                         "benchmarks": {}
                     }
+                # Backfill provenance if the first file for this model lacked it.
+                if models[model].get("methodology_version") is None:
+                    models[model]["methodology_version"] = data.get("methodology_version")
 
                 # Determine benchmark type from filename or content
                 if "practical-knowledge" in result_file.name:
@@ -205,6 +210,8 @@ class BenchmarkAggregator:
 
                 # Add score entry for this date
                 score_entry = {"date": date_dir.name}
+                if model_data.get("methodology_version") is not None:
+                    score_entry["methodology_version"] = model_data["methodology_version"]
                 for bench_name, bench_data in model_data.get("benchmarks", {}).items():
                     score_entry[bench_name] = bench_data.get("score", 0)
 

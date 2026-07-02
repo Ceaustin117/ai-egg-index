@@ -22,6 +22,9 @@ import sys
 import tempfile
 from datetime import datetime
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from provenance import provenance  # noqa: E402
 from typing import Optional
 
 # HumanEval is intentionally omitted: grading it means executing model-generated code
@@ -134,6 +137,7 @@ def run_benchmark(name: str, provider: str, model: str, limit: int, results_dir:
         BENCHMARKS[name]["extra_field"]: round(score, 3),
         "timestamp": datetime.now().isoformat(),
     }
+    output.update(provenance(limit=limit))
 
     sanitized = model.replace("/", "-").replace(":", "-")
     output_path = results_dir / f"{name}-{provider}-{sanitized}.json"
