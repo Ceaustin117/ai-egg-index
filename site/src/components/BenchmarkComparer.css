@@ -1,0 +1,382 @@
+.benchmark-comparer {
+  width: 100%;
+}
+
+.benchmark-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.filter-group select {
+  padding: 0.5rem 1rem;
+  background: rgba(26, 35, 50, 0.9);
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.filter-group select:hover,
+.filter-group select:focus {
+  border-color: #06b6d4;
+  outline: none;
+}
+
+.benchmark-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  background: rgba(26, 35, 50, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.benchmark-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.benchmark-table th,
+.benchmark-table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.benchmark-table th {
+  background: rgba(10, 25, 41, 0.8);
+  color: #e2e8f0;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.benchmark-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.benchmark-table th.sortable:hover {
+  background: rgba(6, 182, 212, 0.2);
+}
+
+.benchmark-header {
+  min-width: 120px;
+}
+
+.benchmark-name {
+  display: block;
+  font-size: 0.85rem;
+}
+
+.benchmark-category {
+  display: block;
+  font-size: 0.7rem;
+  color: #718096;
+  font-weight: 400;
+  margin-top: 0.25rem;
+}
+
+.overall-header {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.3), rgba(13, 148, 136, 0.3)) !important;
+}
+
+.benchmark-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.benchmark-table tbody tr:hover {
+  background: rgba(6, 182, 212, 0.1);
+}
+
+.model-name {
+  text-align: left;
+  font-weight: 600;
+  color: #ffffff;
+  min-width: 180px;
+}
+
+.model-text {
+  display: block;
+}
+
+.model-meta {
+  display: block;
+  font-size: 0.75rem;
+  color: #718096;
+  font-weight: 400;
+  margin-top: 0.25rem;
+}
+
+.provider-cell {
+  min-width: 100px;
+}
+
+.provider-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.provider-groq {
+  background: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.provider-together {
+  background: rgba(167, 139, 250, 0.2);
+  color: #a78bfa;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+.provider-google {
+  background: rgba(52, 168, 83, 0.2);
+  color: #34a853;
+  border: 1px solid rgba(52, 168, 83, 0.3);
+}
+
+.provider-cohere {
+  background: rgba(236, 72, 153, 0.2);
+  color: #ec4899;
+  border: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+.provider-huggingface {
+  background: rgba(255, 213, 0, 0.2);
+  color: #ffd500;
+  border: 1px solid rgba(255, 213, 0, 0.3);
+}
+
+.score-cell {
+  position: relative;
+}
+
+.score-cell.highlighted {
+  background: rgba(6, 182, 212, 0.15) !important;
+}
+
+.score-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.score-value {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.overall-cell {
+  background: rgba(26, 35, 50, 0.4);
+}
+
+.overall-value {
+  font-size: 1.1rem;
+}
+
+.score-excellent .score-value {
+  color: #10b981;
+}
+
+.score-good .score-value {
+  color: #06b6d4;
+}
+
+.score-fair .score-value {
+  color: #fbbf24;
+}
+
+.score-poor .score-value {
+  color: #ef4444;
+}
+
+/* Benchmark attempted but the provider's free tier was unavailable this run */
+.score-unavailable .score-value,
+.score-na {
+  color: #64748b;
+  font-style: italic;
+}
+
+.score-cell.score-unavailable {
+  cursor: help;
+}
+
+/* Whole model row that produced no scores this run */
+.row-unavailable {
+  opacity: 0.55;
+}
+
+.unavailable-badge {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #94a3b8;
+  background: rgba(100, 116, 139, 0.18);
+}
+
+.trend-icon {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.trend-up {
+  color: #10b981;
+}
+
+.trend-down {
+  color: #ef4444;
+}
+
+.trend-neutral {
+  color: #718096;
+}
+
+.sparkline {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.benchmark-tooltip {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(26, 35, 50, 0.95);
+  border: 1px solid rgba(6, 182, 212, 0.5);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  max-width: 300px;
+  text-align: center;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.benchmark-tooltip strong {
+  display: block;
+  color: #06b6d4;
+  margin-bottom: 0.5rem;
+}
+
+.benchmark-tooltip p {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.benchmark-legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #a0aec0;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.legend-color.score-excellent {
+  background: #10b981;
+}
+
+.legend-color.score-good {
+  background: #06b6d4;
+}
+
+.legend-color.score-fair {
+  background: #fbbf24;
+}
+
+.legend-color.score-poor {
+  background: #ef4444;
+}
+
+@media (max-width: 1024px) {
+  .benchmark-table {
+    font-size: 0.85rem;
+  }
+
+  .benchmark-table th,
+  .benchmark-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .benchmark-header {
+    min-width: 100px;
+  }
+
+  .model-name {
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .benchmark-controls {
+    justify-content: center;
+  }
+
+  .benchmark-table {
+    font-size: 0.8rem;
+  }
+
+  .benchmark-name {
+    font-size: 0.75rem;
+  }
+
+  .benchmark-category {
+    display: none;
+  }
+
+  .score-value {
+    font-size: 0.9rem;
+  }
+
+  .sparkline {
+    display: none;
+  }
+
+  .benchmark-legend {
+    gap: 1rem;
+  }
+
+  .legend-item {
+    font-size: 0.8rem;
+  }
+}

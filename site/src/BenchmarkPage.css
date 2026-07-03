@@ -1,0 +1,538 @@
+.benchmark-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding: 2rem;
+}
+
+.benchmark-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--accent-cyan);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--accent-teal);
+}
+
+.benchmark-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.benchmark-header h1 {
+  font-size: 3rem;
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-teal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 1rem 0;
+}
+
+.benchmark-tagline {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.benchmark-why-name {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  max-width: 500px;
+  margin: 1rem auto 0;
+  font-style: italic;
+}
+
+.benchmark-intro {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-left: 4px solid var(--accent-cyan);
+}
+
+.intro-content h2 {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro-content p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.intro-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Landscape / Comparison Section */
+.benchmark-landscape {
+  margin-bottom: 3rem;
+}
+
+.benchmark-landscape h2 {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.landscape-intro {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.comparison-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.comparison-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-table th {
+  color: var(--text-primary);
+  font-weight: 600;
+  background: var(--bg-secondary);
+}
+
+.comparison-table td {
+  color: var(--text-secondary);
+}
+
+.comparison-table a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+}
+
+.comparison-table a:hover {
+  text-decoration: underline;
+}
+
+.comparison-table .cell-yes {
+  color: #10b981;
+}
+
+.comparison-table .cell-no {
+  color: #888;
+}
+
+.comparison-table .cell-partial {
+  color: #fbbf24;
+}
+
+.comparison-table .highlight-row {
+  background: rgba(6, 182, 212, 0.1);
+}
+
+.comparison-table .highlight-row td {
+  color: var(--text-primary);
+}
+
+.differentiators {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.diff-card {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.diff-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.diff-card h4 {
+  color: var(--accent-cyan);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.diff-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.benchmark-categories {
+  margin-bottom: 3rem;
+}
+
+.benchmark-categories h2 {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.category-card {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+.category-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.category-card.custom .category-badge {
+  background: rgba(6, 182, 212, 0.2);
+  color: var(--accent-cyan);
+}
+
+.category-card.openbench .category-badge {
+  background: rgba(167, 139, 250, 0.2);
+  color: #a78bfa;
+}
+
+.category-card h3 {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.category-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.benchmark-results {
+  margin-bottom: 3rem;
+}
+
+.benchmark-results h2 {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.last-updated {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.sample-caveat {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+/* Banner dropdown nav (Rankings / About / Details / History) */
+.benchmark-nav {
+  position: relative;
+  display: inline-block;
+  margin-top: 1.25rem;
+}
+
+.benchmark-nav-toggle {
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid var(--accent-cyan, #06b6d4);
+  color: var(--accent-cyan, #06b6d4);
+  padding: 0.5rem 1.1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.benchmark-nav-toggle:hover {
+  background: rgba(6, 182, 212, 0.2);
+}
+
+.nav-caret {
+  font-size: 0.8rem;
+  margin-left: 0.35rem;
+}
+
+.benchmark-nav-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem;
+  background: var(--card-bg, #0f2942);
+  border: 1px solid rgba(6, 182, 212, 0.35);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 20;
+  min-width: 9rem;
+}
+
+.benchmark-nav-menu li button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--text-primary, #e2e8f0);
+  padding: 0.5rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.benchmark-nav-menu li button:hover {
+  background: rgba(6, 182, 212, 0.15);
+}
+
+.benchmark-nav-menu li button.active {
+  color: var(--accent-cyan, #06b6d4);
+  font-weight: 700;
+}
+
+.benchmark-history .history-intro {
+  color: var(--text-muted, #94a3b8);
+  margin-bottom: 1.5rem;
+}
+
+.loading-state,
+.error-state {
+  text-align: center;
+  padding: 3rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(6, 182, 212, 0.3);
+  border-top-color: var(--accent-cyan);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-state p,
+.error-state p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.error-hint {
+  font-size: 0.9rem;
+  color: var(--text-muted) !important;
+  margin-top: 0.5rem !important;
+}
+
+.benchmark-methodology {
+  margin-bottom: 3rem;
+}
+
+.benchmark-methodology h2 {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.methodology-card {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.methodology-card h3 {
+  color: var(--accent-cyan);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.methodology-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.github-repo-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--accent-cyan);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.github-repo-link:hover {
+  color: var(--accent-teal);
+}
+
+.benchmark-providers {
+  margin-bottom: 3rem;
+}
+
+.benchmark-providers h2 {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.provider-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.provider-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.provider-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.provider-name.groq {
+  color: #fbbf24;
+}
+
+.provider-name.together {
+  color: #a78bfa;
+}
+
+.provider-name.google {
+  color: #34a853;
+}
+
+.provider-name.cohere {
+  color: #ec4899;
+}
+
+.provider-name.huggingface {
+  color: #ffd500;
+}
+
+.provider-limit {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .benchmark-page {
+    padding: 1rem;
+  }
+
+  .benchmark-header h1 {
+    font-size: 2rem;
+  }
+
+  .benchmark-tagline {
+    font-size: 1.1rem;
+  }
+
+  .benchmark-intro {
+    padding: 1.5rem;
+  }
+
+  .intro-content p {
+    font-size: 1rem;
+  }
+
+  .category-grid,
+  .methodology-grid,
+  .differentiators {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-table {
+    font-size: 0.85rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .benchmark-landscape h2,
+  .benchmark-categories h2,
+  .benchmark-results h2,
+  .benchmark-methodology h2,
+  .benchmark-providers h2 {
+    font-size: 1.5rem;
+  }
+}
