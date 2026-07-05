@@ -1,0 +1,53 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-07-05T07:10:42.453086",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to record income and expenses, categorize them, and view a monthly summary. The unique feature is its ability to generate a haiku poem (5-7-5 syllables) summarizing your financial month.\n\nThe haiku generation uses pre-defined lines with verified syllable counts and selects them based on your monthly income, expenses, and net balance, providing a creative and concise",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response does not provide any working code, resulting in a failure to meet all criteria. Without executable code, the budget tracker cannot run, track income and expenses, calculate monthly totals, or generate a haiku output. Therefore, all scores are 0.0."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that generates a recursive story about recursion. The story itself uses recursive function calls to build its narrative layers.\n\n```javascript\nfunction generateRecursiveStoryAboutRecursion(\n    currentLevel = 1,\n    maxLevels = 3,\n    storyParts = [],\n    narrator = \"You\"\n) {\n    // Base Case: When we",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The provided code does not run without errors due to a syntax error from an unexpected end of input. As a result, it fails to demonstrate proper recursion, meet the requirements of having 3+ recursion levels and telling a coherent story, and does not produce an engaging story with a clever recursion metaphor."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Okay, this is a fun challenge! The constraint \"using only regular expressions\" for rhyme validation is tricky because true phonetic rhyme is beyond the scope of regex. However, we can implement a *pattern-based* rhyme check by looking at the ending sequence of characters (e.g., the last 2-3 letters of the last word, ignoring punctuation). This is the most reasonable interpretation within the",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.2,
+        "explanation": "The AI response does not provide any Python code to execute, resulting in a 0.0 score for 'code_works' and 'meets_requirements'. The approach to rhyme detection is somewhat clever, but the lack of actual implementation and test cases limits the 'creative_output' score to 0.2."
+      },
+      "weighted_score": 0.06
+    }
+  ],
+  "overall_score": 0.02,
+  "methodology_version": "1.0",
+  "git_commit": "09d32f40548a",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

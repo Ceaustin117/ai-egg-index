@@ -1,0 +1,53 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-07-05T07:15:35.655840",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "ERROR: HfHubHTTPError: 402 Client Error: Payment Required for url: https://router.huggingface.co/together/v1/chat/completions (Request ID: Root=1-6a4a0498-18bcc72128338f3c1b650ce8;6ea0b735-5282-4cba-bcdb-7dfa88bc8e62)\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response did not provide any working code, and instead returned an error message due to depleted credits. As a result, the code does not run without errors, does not meet the requirements, and does not produce a haiku output."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "ERROR: HfHubHTTPError: 402 Client Error: Payment Required for url: https://router.huggingface.co/together/v1/chat/completions (Request ID: Root=1-6a4a0499-7cd0b9d9489cf74272467334;5941ea4b-e6ac-4823-aa3c-387f70ed3811)\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response does not provide any code or story, and instead returns an error message due to depleted credits. As a result, the response fails to meet all criteria, including code execution, requirements, and creative output."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "ERROR: HfHubHTTPError: 402 Client Error: Payment Required for url: https://router.huggingface.co/together/v1/chat/completions (Request ID: Root=1-6a4a0499-11c7993f29e929203da77472;414aa36d-203e-47aa-9667-7eb34d082345)\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response did not provide any code or attempt to solve the problem, instead returning an error message due to depleted credits. Therefore, all criteria are scored as 0.0, as no functional code was provided, the requirements were not met, and there was no creative output."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.0,
+  "methodology_version": "1.0",
+  "git_commit": "09d32f40548a",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

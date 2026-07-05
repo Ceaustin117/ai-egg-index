@@ -1,27 +1,26 @@
 {
-  "last_updated": "2026-06-29",
+  "last_updated": "2026-07-05",
   "models": [
     {
       "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
       "provider": "huggingface",
       "tier": "free",
-      "date": "2026-06-29",
+      "date": "2026-07-05",
+      "methodology_version": "1.0",
+      "git_commit": "09d32f40548a",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.513,
-          "details": {
-            "budget-haiku": 0.58,
-            "recursive-story": 0.58,
-            "regex-poetry": 0.38
-          }
+          "score": null,
+          "status": "error",
+          "error": "Credit/billing limit exceeded"
         },
         "practical_knowledge": {
-          "score": 0.5,
+          "score": 0.495,
           "details": {
-            "taxes": 0.5,
-            "regulations": 0.5,
-            "practical_finance": 0.5,
-            "consumer_rights": 0.5
+            "taxes": 0.567,
+            "regulations": 0.7,
+            "practical_finance": 0.483,
+            "consumer_rights": 0.2
           }
         }
       }
@@ -30,23 +29,25 @@
       "model": "groq/llama-3.1-8b-instant",
       "provider": "groq",
       "tier": "free",
-      "date": "2026-06-29",
+      "date": "2026-07-05",
+      "methodology_version": "1.0",
+      "git_commit": "09d32f40548a",
       "benchmarks": {
         "practical_knowledge": {
-          "score": 0.47,
+          "score": 0.615,
           "details": {
             "taxes": 0.4,
-            "regulations": 0.5,
-            "practical_finance": 0.5,
-            "consumer_rights": 0.5
+            "regulations": 0.8,
+            "practical_finance": 0.6,
+            "consumer_rights": 0.775
           }
         },
         "creative_technical": {
-          "score": 0.513,
+          "score": 0.473,
           "details": {
-            "budget-haiku": 0.38,
-            "recursive-story": 0.58,
-            "regex-poetry": 0.58
+            "budget-haiku": 0.42,
+            "recursive-story": 0.94,
+            "regex-poetry": 0.06
           }
         },
         "gsm8k": {
@@ -64,14 +65,16 @@
       "model": "cohere/command-r-08-2024",
       "provider": "cohere",
       "tier": "free",
-      "date": "2026-06-29",
+      "date": "2026-07-05",
+      "methodology_version": "1.0",
+      "git_commit": "09d32f40548a",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.69,
+          "score": 0.7,
           "details": {
-            "budget-haiku": 0.58,
-            "recursive-story": 0.91,
-            "regex-poetry": 0.58
+            "budget-haiku": 0.88,
+            "recursive-story": 0.94,
+            "regex-poetry": 0.28
           }
         },
         "ifeval": {
@@ -84,12 +87,12 @@
           "accuracy": 1.0
         },
         "practical_knowledge": {
-          "score": 0.5,
+          "score": 0.665,
           "details": {
-            "taxes": 0.5,
-            "regulations": 0.5,
-            "practical_finance": 0.5,
-            "consumer_rights": 0.5
+            "taxes": 0.683,
+            "regulations": 0.625,
+            "practical_finance": 0.6,
+            "consumer_rights": 0.775
           }
         }
       }
@@ -98,17 +101,26 @@
       "model": "google/gemini-2.5-flash",
       "provider": "google",
       "tier": "free",
-      "date": "2026-06-29",
+      "date": "2026-07-05",
+      "methodology_version": "1.0",
+      "git_commit": "09d32f40548a",
       "benchmarks": {
         "creative_technical": {
-          "score": null,
-          "status": "error",
-          "error": "Free-tier quota/rate limit exceeded"
+          "score": 0.02,
+          "details": {
+            "budget-haiku": 0.0,
+            "recursive-story": 0.0,
+            "regex-poetry": 0.06
+          }
         },
         "practical_knowledge": {
-          "score": null,
-          "status": "error",
-          "error": "Free-tier quota/rate limit exceeded"
+          "score": 0.535,
+          "details": {
+            "taxes": 0.433,
+            "regulations": 0.5,
+            "practical_finance": 0.85,
+            "consumer_rights": 0.25
+          }
         }
       }
     }

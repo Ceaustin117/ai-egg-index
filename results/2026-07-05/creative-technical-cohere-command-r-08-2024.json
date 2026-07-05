@@ -1,0 +1,53 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-07-05T07:12:29.119843",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a simple Python budget tracker program that meets your requirements:\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n    ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 1.0,
+        "creative_output": 0.6,
+        "explanation": "The code works perfectly without any errors, meets all the requirements of tracking income and expenses with categories, calculating monthly totals, and outputting a haiku summary. However, the haiku output, while following the 5-7-5 syllable structure, could be more creatively and meaningfully reflective of the budget data. The addition of 'yeah!' and the appended phrases ('Oops, overspent!', 'Balanced, no stress.', 'Savings, a treat!') detract from the traditional haiku style and do not fully capture the essence of the budget summary in a poetic manner."
+      },
+      "weighted_score": 0.88
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction generateRecursiveStory(depth = 0) {\n  if (depth > 3) {\n    return \"The story has reached its conclusion. The narrator takes a deep breath and steps back, satisfied with the tale they've woven.\";\n  }\n\n  let story = \"\";\n  story += `Once upon a time, a curious narrator began to tell a story. It was a tale of infinite possibilities, and so the narrator decided to explore the depths of recursion.\\n\\n`;\n\n  story += `At level ${depth + 1}, the narrator encountered a mysterious ch...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 1.0,
+        "creative_output": 0.8,
+        "explanation": "The code runs without error and demonstrates proper recursion, meeting the 'code_works' and 'meets_requirements' criteria. The story is coherent and has at least 3 levels of recursion. The recursion metaphor is clever, but the story could be more engaging and less repetitive to achieve a perfect 'creative_output' score."
+      },
+      "weighted_score": 0.94
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme pattern:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Check the rhyme scheme pattern\n    pattern = r'^(.*?)(\\w+)\\s(\\w+)\\s(\\w+)\\s(\\w+)(.*?)\\2\\s\\3\\s\\4\\s\\5$'\n    match = re.match(pattern, text)\n  ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.4,
+        "meets_requirements": 0.2,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors but the regular expression pattern does not correctly validate the AABBA rhyme scheme. The pattern is overly complex and does not account for the actual rhyming words in the limerick. The test cases are basic and do not demonstrate a thorough understanding of the requirements. The approach to rhyme detection is not clever and the test limericks, although valid, are not particularly amusing or creative."
+      },
+      "weighted_score": 0.28
+    }
+  ],
+  "overall_score": 0.7,
+  "methodology_version": "1.0",
+  "git_commit": "09d32f40548a",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
