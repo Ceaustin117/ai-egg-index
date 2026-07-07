@@ -1,0 +1,5 @@
+# The AI Egg Index is open — allow all crawlers, including AI answer engines.
+User-agent: *
+Allow: /
+
+Sitemap: https://ceaustin117.github.io/ai-egg-index/sitemap.xml
