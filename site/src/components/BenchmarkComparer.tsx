@@ -241,12 +241,20 @@ const BenchmarkComparer: React.FC<BenchmarkComparerProps> = ({ data, historicalD
                     const bench = model.benchmarks[key];
                     const score = bench?.score;
                     const errored = isBenchError(bench);
+                    const notRun = !bench;
+                    const isOpenBench = BENCHMARK_INFO[key].category === 'OpenBench';
                     const trend = getTrend(model.model, key);
                     return (
                       <td
                         key={key}
                         className={`score-cell ${errored ? 'score-unavailable' : (score ? getScoreClass(score) : '')} ${selectedBenchmark === key ? 'highlighted' : ''}`}
-                        title={errored ? `Unavailable this run: ${bench?.error ?? 'provider error'}` : undefined}
+                        title={
+                          errored
+                            ? `Unavailable this run: ${bench?.error ?? 'provider error'}`
+                            : notRun && isOpenBench
+                              ? 'OpenBench benchmarks (IFEval, GSM8K) run on Groq & Cohere only — Google and HuggingFace can’t run them on the free tier.'
+                              : undefined
+                        }
                       >
                         <div className="score-content">
                           {errored ? (
@@ -271,6 +279,13 @@ const BenchmarkComparer: React.FC<BenchmarkComparerProps> = ({ data, historicalD
           </tbody>
         </table>
       </div>
+
+      <p className="table-footnote">
+        <strong>—</strong> OpenBench benchmarks (IFEval, GSM8K) run on Groq &amp; Cohere only;
+        Google and HuggingFace can’t run them on the free tier, so those cells are blank.{' '}
+        <strong>N/A</strong> means a benchmark was attempted but errored that run (usually a
+        free-tier rate limit), not that it was skipped.
+      </p>
 
       {selectedBenchmark && (
         <div className="benchmark-tooltip">
