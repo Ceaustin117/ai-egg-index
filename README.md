@@ -5,7 +5,25 @@ Benchmarking free-tier LLMs on tasks regular people actually care about.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
-**Live leaderboard:** [chrisaustin.dev/benchmarks](https://chrisaustin.dev/benchmarks)
+**🥚 Live leaderboard:** https://ceaustin117.github.io/ai-egg-index/
+
+## Current results
+
+<!-- RESULTS:START -->
+
+_Updated 2026-07-05 · small-sample, directional · `—` = not run for that provider, `N/A` = errored that run._
+
+| Model | Provider | Practical | IFEval | GSM8K | Creative | Overall |
+|---|---|---|---|---|---|---|
+| llama-3.1-8b-instant | groq | 62% | 100% | 67% | 47% | **69%** |
+| command-r-08-2024 | cohere | 66% | 33% | 100% | 70% | **67%** |
+| Meta-Llama-3-8B-Instruct | huggingface | 50% | — | — | N/A | **50%** |
+| gemini-2.5-flash | google | 54% | — | — | 2% | **28%** |
+
+<!-- RESULTS:END -->
+
+> Small-sample, directional scores — don't over-read gaps of a few points, and note the
+> cross-model "overall" averages different benchmark sets. See [LIMITATIONS.md](LIMITATIONS.md).
 
 ---
 
@@ -18,6 +36,11 @@ Can free AI help with your taxes? Can it handle a complex reasoning task that so
 **We only test what you can actually use without paying** — including rate limits and context constraints.
 
 The full benchmark suite runs automatically **once a week** (every Sunday at 06:00 UTC via GitHub Actions), and the leaderboard is updated with each run.
+
+**Neutral by construction:** every model is tested with identical prompts and scoring, by a
+public automated harness that commits its results to this repo. **No pay-to-list, no sponsored
+placement, no private pre-testing.** See the [methodology](EVAL_METHODS.md),
+[limitations](LIMITATIONS.md), and [contamination policy](CONTAMINATION.md).
 
 ---
 
@@ -149,6 +172,20 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to:
 - Add a new free-tier provider
 - Add a creative+technical task
 - Run benchmarks locally
+
+New here? Check the [good first issues](https://github.com/Ceaustin117/ai-egg-index/contribute).
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+Contributions of every kind are welcome and credited via the
+[all-contributors](https://allcontributors.org/) bot.
 
 ---
 
