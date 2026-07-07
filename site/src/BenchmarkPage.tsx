@@ -21,7 +21,6 @@ const BenchmarkPage: React.FC = () => {
   const [runHealth, setRunHealth] = useState<RunHealth | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   // The active view is driven by the `?view=` query param so it can be deep-linked
   // (e.g. from the header dropdown). Falls back to 'rankings' when absent/invalid.
@@ -79,34 +78,19 @@ const BenchmarkPage: React.FC = () => {
               Benchmarking free tier LLMs on tasks regular people actually care about
             </p>
 
-            <nav className="benchmark-nav">
-              <button
-                type="button"
-                className="benchmark-nav-toggle"
-                aria-haspopup="true"
-                aria-expanded={menuOpen}
-                onClick={() => setMenuOpen((o) => !o)}
-              >
-                {VIEW_LABELS[view]} <span className="nav-caret">▾</span>
-              </button>
-              {menuOpen && (
-                <ul className="benchmark-nav-menu" role="menu">
-                  {(Object.keys(VIEW_LABELS) as View[]).map((v) => (
-                    <li key={v} role="none">
-                      <button
-                        role="menuitem"
-                        className={v === view ? 'active' : ''}
-                        onClick={() => {
-                          setView(v);
-                          setMenuOpen(false);
-                        }}
-                      >
-                        {VIEW_LABELS[v]}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              )}
+            <nav className="benchmark-tabs" role="tablist">
+              {(Object.keys(VIEW_LABELS) as View[]).map((v) => (
+                <button
+                  key={v}
+                  type="button"
+                  role="tab"
+                  aria-selected={v === view}
+                  className={`benchmark-tab ${v === view ? 'active' : ''}`}
+                  onClick={() => setView(v)}
+                >
+                  {VIEW_LABELS[v]}
+                </button>
+              ))}
             </nav>
           </header>
 
