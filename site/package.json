@@ -7,7 +7,7 @@
     "predev": "node scripts/copy-data.mjs",
     "dev": "vite",
     "prebuild": "node scripts/copy-data.mjs",
-    "build": "vite build",
+    "build": "vite build && node scripts/inject-static.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
