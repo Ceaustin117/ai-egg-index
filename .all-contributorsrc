@@ -1,0 +1,20 @@
+{
+  "projectName": "ai-egg-index",
+  "projectOwner": "Ceaustin117",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": ["README.md"],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "Ceaustin117",
+      "name": "Chris Austin",
+      "avatar_url": "https://github.com/Ceaustin117.png",
+      "profile": "https://chrisaustin.dev",
+      "contributions": ["code", "doc", "design", "maintenance"]
+    }
+  ]
+}
