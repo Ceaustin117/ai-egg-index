@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Project GitHub Pages site is served from https://ceaustin117.github.io/ai-egg-index/,
-// so the base path must match the repo name.
+// GitHub Pages serves from https://ceaustin117.github.io/ai-egg-index/ (base must match
+// the repo name). A Hugging Face static Space serves from root, so build it with
+// SITE_BASE=/ (see docs/HUGGINGFACE.md).
 export default defineConfig({
   plugins: [react()],
-  base: '/ai-egg-index/',
+  base: process.env.SITE_BASE || '/ai-egg-index/',
 });
