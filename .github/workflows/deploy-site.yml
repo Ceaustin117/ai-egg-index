@@ -3,6 +3,11 @@ name: Deploy site
 # Rebuild the project's GitHub Pages leaderboard whenever the site code changes or a new
 # weekly benchmark run commits fresh data to output/.
 on:
+  # The weekly "Run benchmarks" job commits results via GITHUB_TOKEN, which does NOT
+  # trigger `on: push` — so chain off its completion to actually refresh the site weekly.
+  workflow_run:
+    workflows: ["Run benchmarks"]
+    types: [completed]
   push:
     branches: [main]
     paths:

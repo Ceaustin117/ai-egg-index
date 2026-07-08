@@ -1,0 +1,58 @@
+name: Deploy HF Space
+
+# Keep the Hugging Face Space in sync with the site + latest results.
+# Runs after each weekly benchmark ("Run benchmarks") completes (workflow_run fires even
+# though that job commits via GITHUB_TOKEN, which would NOT trigger `on: push`), and on
+# site/output changes to main. Requires an HF_TOKEN repo secret (write-scoped).
+on:
+  workflow_run:
+    workflows: ["Run benchmarks"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "output/**"
+      - ".github/workflows/deploy-hf-space.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: hf-space
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install
+        working-directory: site
+        run: npm ci
+      - name: Build for HF (served from root)
+        working-directory: site
+        run: SITE_BASE=/ npm run build
+      - name: Push to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          if [ -z "$HF_TOKEN" ]; then
+            echo "::warning::HF_TOKEN secret not set — skipping Space deploy."
+            exit 0
+          fi
+          rm -rf hf-space
+          git clone "https://ceaustin117:$HF_TOKEN@huggingface.co/spaces/ceaustin117/ai-egg-index" hf-space
+          rm -rf hf-space/assets hf-space/data
+          cp -r site/dist/* hf-space/
+          cp site/hf-space-README.md hf-space/README.md
+          cd hf-space
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add -A
+          git diff --staged --quiet && { echo "No changes."; exit 0; }
+          git commit -m "Sync leaderboard $(date -u +%Y-%m-%d)"
+          git push
