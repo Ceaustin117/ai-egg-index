@@ -96,12 +96,30 @@ Space using an `HF_TOKEN` repo secret. Ask and I'll write that workflow.
 
 ---
 
-## C. List it in OpenEvals "Find a leaderboard"
+## C. Getting into OpenEvals "Find a leaderboard" (the real mechanism)
 
-This is where people now look for the retired Open LLM Leaderboard's replacement.
-Go to https://huggingface.co/spaces/OpenEvals/find-a-leaderboard and follow its
-submission instructions (usually a PR/form adding your Space). Describe the niche:
-**free-tier models, everyday tasks, weekly.**
+`find-a-leaderboard` does **not** take a form or a Space submission. It indexes
+**registered benchmark _datasets_** (`benchmark:official`). To become one
+(per https://huggingface.co/docs/hub/eval-results):
+
+1. Add an **`eval.yaml`** to the dataset repo root with `name`, `description`,
+   `evaluation_framework` (one value from HF's maintained enum — e.g. `inspect-ai`,
+   `math-arena`, `lighteval`), and `tasks[]`. Validated at push time.
+2. Submit per-model scores as **`.eval_results/*.yaml` PRs into each model's repo**
+   (referencing `dataset.id` + `task_id`).
+3. **Ask the HF team to add it to the allow-list** (beta — this step is manual).
+
+⚠️ **Blocker for us:** the AI Egg Index uses a custom LLM-as-judge pipeline, which is
+**not** one of HF's enumerated `evaluation_framework` values, and our dataset is
+results-JSON (not an HF questions-dataset with `field_spec`/`solvers`/`scores`). So
+official registration would require either adding a new framework to HF's enum
+(a reviewed PR to huggingface.js) or restructuring the benchmark to fit `inspect-ai`.
+
+**Recommendation:** treat official registration as a later project. For now the Space
+is the HF presence (discoverable via HF search + the `leaderboard`/`benchmark` tags). If
+you want to pursue official listing, the sanctioned first move is to **contact the HF
+team** (the allow-list step says "get in touch") and ask how a custom-framework
+benchmark can be represented.
 
 ---
 
