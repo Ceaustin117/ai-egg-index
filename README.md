@@ -11,14 +11,14 @@ Benchmarking free-tier LLMs on tasks regular people actually care about.
 
 <!-- RESULTS:START -->
 
-_Updated 2026-07-05 · small-sample, directional · `—` = not run for that provider, `N/A` = errored that run._
+_Updated 2026-07-12 · small-sample, directional · `—` = not run for that provider, `N/A` = errored that run._
 
 | Model | Provider | Practical | IFEval | GSM8K | Creative | Overall |
 |---|---|---|---|---|---|---|
-| llama-3.1-8b-instant | groq | 62% | 100% | 67% | 47% | **69%** |
-| command-r-08-2024 | cohere | 66% | 33% | 100% | 70% | **67%** |
-| Meta-Llama-3-8B-Instruct | huggingface | 50% | — | — | N/A | **50%** |
-| gemini-2.5-flash | google | 54% | — | — | 2% | **28%** |
+| llama-3.1-8b-instant | groq | 63% | 100% | 67% | 66% | **74%** |
+| Meta-Llama-3-8B-Instruct | huggingface | 66% | — | — | N/A | **66%** |
+| command-r-08-2024 | cohere | 56% | 33% | 100% | 62% | **63%** |
+| gemini-2.5-flash | google | 56% | — | — | 2% | **29%** |
 
 <!-- RESULTS:END -->
 

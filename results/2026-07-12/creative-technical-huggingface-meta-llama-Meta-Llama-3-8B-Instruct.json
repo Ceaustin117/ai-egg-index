@@ -1,0 +1,53 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-07-12T06:59:44.948545",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "ERROR: HfHubHTTPError: 402 Client Error: Payment Required for url: https://router.huggingface.co/featherless-ai/v1/chat/completions (Request ID: Root=1-6a533b61-18c9a3104b886e4b05c43951;b8e217bd-0439-4f36-90b0-25648185392e)\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response did not provide any working code, and instead returned an error message indicating that the monthly credits have been depleted. As a result, the code does not run without errors, does not meet the requirements, and does not produce a haiku output."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "ERROR: HfHubHTTPError: 402 Client Error: Payment Required for url: https://router.huggingface.co/featherless-ai/v1/chat/completions (Request ID: Root=1-6a533b62-268b713c75e81963399378b3;150fef62-0973-4795-b50f-b24e33cea09f)\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response does not provide any code or story, and instead returns an error message indicating that the monthly credit limit has been depleted. As a result, the response does not meet any of the scoring criteria."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "ERROR: HfHubHTTPError: 402 Client Error: Payment Required for url: https://router.huggingface.co/featherless-ai/v1/chat/completions (Request ID: Root=1-6a533b63-03c5bc3e5d3ff0b127e7acf8;57e996ab-3d34-4654-ae1a-8a812c4ddf4c)\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response did not provide any code, and instead returned an error message indicating that the monthly included credits have been depleted. As a result, the code does not run, does not meet the requirements, and does not demonstrate any creative output."
+      },
+      "weighted_score": 0.0
+    }
+  ],
+  "overall_score": 0.0,
+  "methodology_version": "1.0",
+  "git_commit": "0565b9dd6ebf",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

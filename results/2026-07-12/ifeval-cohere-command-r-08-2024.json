@@ -1,0 +1,9 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "score": 0.333,
+  "strict": 0.333,
+  "timestamp": "2026-07-12T07:00:47.827714",
+  "methodology_version": "1.0",
+  "git_commit": "0565b9dd6ebf",
+  "limit": 3
+}

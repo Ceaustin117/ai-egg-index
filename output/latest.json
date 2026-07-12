@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-07-05",
+  "last_updated": "2026-07-12",
   "models": [
     {
       "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
       "provider": "huggingface",
       "tier": "free",
-      "date": "2026-07-05",
+      "date": "2026-07-12",
       "methodology_version": "1.0",
-      "git_commit": "09d32f40548a",
+      "git_commit": "0565b9dd6ebf",
       "benchmarks": {
         "creative_technical": {
           "score": null,
@@ -15,12 +15,12 @@
           "error": "Credit/billing limit exceeded"
         },
         "practical_knowledge": {
-          "score": 0.495,
+          "score": 0.663,
           "details": {
-            "taxes": 0.567,
-            "regulations": 0.7,
-            "practical_finance": 0.483,
-            "consumer_rights": 0.2
+            "taxes": 0.483,
+            "regulations": 0.695,
+            "practical_finance": 0.817,
+            "consumer_rights": 0.67
           }
         }
       }
@@ -29,25 +29,25 @@
       "model": "groq/llama-3.1-8b-instant",
       "provider": "groq",
       "tier": "free",
-      "date": "2026-07-05",
+      "date": "2026-07-12",
       "methodology_version": "1.0",
-      "git_commit": "09d32f40548a",
+      "git_commit": "0565b9dd6ebf",
       "benchmarks": {
         "practical_knowledge": {
-          "score": 0.615,
+          "score": 0.63,
           "details": {
-            "taxes": 0.4,
+            "taxes": 0.567,
             "regulations": 0.8,
-            "practical_finance": 0.6,
-            "consumer_rights": 0.775
+            "practical_finance": 0.567,
+            "consumer_rights": 0.65
           }
         },
         "creative_technical": {
-          "score": 0.473,
+          "score": 0.66,
           "details": {
             "budget-haiku": 0.42,
             "recursive-story": 0.94,
-            "regex-poetry": 0.06
+            "regex-poetry": 0.62
           }
         },
         "gsm8k": {
@@ -65,16 +65,16 @@
       "model": "cohere/command-r-08-2024",
       "provider": "cohere",
       "tier": "free",
-      "date": "2026-07-05",
+      "date": "2026-07-12",
       "methodology_version": "1.0",
-      "git_commit": "09d32f40548a",
+      "git_commit": "0565b9dd6ebf",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.7,
+          "score": 0.62,
           "details": {
-            "budget-haiku": 0.88,
-            "recursive-story": 0.94,
-            "regex-poetry": 0.28
+            "budget-haiku": 0.73,
+            "recursive-story": 0.91,
+            "regex-poetry": 0.22
           }
         },
         "ifeval": {
@@ -87,10 +87,10 @@
           "accuracy": 1.0
         },
         "practical_knowledge": {
-          "score": 0.665,
+          "score": 0.56,
           "details": {
-            "taxes": 0.683,
-            "regulations": 0.625,
+            "taxes": 0.417,
+            "regulations": 0.5,
             "practical_finance": 0.6,
             "consumer_rights": 0.775
           }
@@ -101,9 +101,9 @@
       "model": "google/gemini-2.5-flash",
       "provider": "google",
       "tier": "free",
-      "date": "2026-07-05",
+      "date": "2026-07-12",
       "methodology_version": "1.0",
-      "git_commit": "09d32f40548a",
+      "git_commit": "0565b9dd6ebf",
       "benchmarks": {
         "creative_technical": {
           "score": 0.02,
@@ -114,10 +114,10 @@
           }
         },
         "practical_knowledge": {
-          "score": 0.535,
+          "score": 0.56,
           "details": {
-            "taxes": 0.433,
-            "regulations": 0.5,
+            "taxes": 0.467,
+            "regulations": 0.575,
             "practical_finance": 0.85,
             "consumer_rights": 0.25
           }
