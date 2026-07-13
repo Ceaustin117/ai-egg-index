@@ -4,6 +4,7 @@ Benchmarking free-tier LLMs on tasks regular people actually care about.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21343272.svg)](https://doi.org/10.5281/zenodo.21343272)
 
 **🥚 Live leaderboard:** https://ceaustin117.github.io/ai-egg-index/
 
