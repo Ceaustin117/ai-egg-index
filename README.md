@@ -27,8 +27,8 @@ _Updated 2026-07-12 · small-sample, directional · Overall = Practical + Creati
 
 <!-- RESULTS:END -->
 
-> Small-sample, directional scores — don't over-read gaps of a few points, and note the
-> cross-model "overall" averages different benchmark sets. See [LIMITATIONS.md](LIMITATIONS.md).
+> Small-sample, directional scores — don't over-read gaps of a few points. Overall ranks
+> on the two custom benchmarks every provider runs (see [LIMITATIONS.md](LIMITATIONS.md)).
 
 ---
 
@@ -144,7 +144,10 @@ ai-egg-index/
 - **LLM-as-judge** for custom benchmarks, with rubrics for factual accuracy, completeness, and recency awareness. The judge is a strong free-tier model (Groq `llama-3.3-70b-versatile`) — deliberately larger than the 8B models under test, since the grader is infrastructure, not a contestant. A stronger judge discriminates better on the rubric and returns reliable JSON.
 - **Code execution** for creative+technical tasks — code is extracted and run in a sandbox.
 - **Historical tracking.** Benchmarks run regularly, scores tracked over time.
-- **Overall score** is the average across all 4 benchmarks (only counting benchmarks with data).
+- **Overall score** ranks on the two custom benchmarks every provider runs (Practical +
+  Creative), so it's comparable across models. IFEval/GSM8K are shown but not folded in
+  (they run on Groq/Cohere only). A model missing either custom benchmark that week is
+  shown but left **unranked** (`—`) rather than ranked on a single score.
 
 ---
 
