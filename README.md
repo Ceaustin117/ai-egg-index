@@ -12,6 +12,12 @@ Benchmarking free-tier LLMs on tasks regular people actually care about.
 
 **🥚 Live leaderboard:** https://ceaustin117.github.io/ai-egg-index/
 
+<p align="center">
+  <a href="https://ceaustin117.github.io/ai-egg-index/">
+    <img src="docs/leaderboard.png" alt="AI Egg Index leaderboard" width="820">
+  </a>
+</p>
+
 ## Current results
 
 <!-- RESULTS:START -->
