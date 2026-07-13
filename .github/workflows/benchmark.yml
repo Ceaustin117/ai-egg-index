@@ -132,6 +132,9 @@ jobs:
       - name: Refresh README results table
         run: python scripts/update_readme_table.py
 
+      - name: Generate weekly recap
+        run: python scripts/weekly_recap.py
+
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
