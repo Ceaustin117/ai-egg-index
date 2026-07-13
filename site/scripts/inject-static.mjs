@@ -26,19 +26,30 @@ const BENCH = [
 ];
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+// Overall = the two custom benchmarks every provider runs (IFEval/GSM8K are Groq/Cohere-only).
+// null unless the model has BOTH — so it can't rank on a single benchmark.
+const OVERALL_KEYS = ['practical_knowledge', 'creative_technical'];
 const overall = (b) => {
-  const v = Object.values(b || {}).filter((x) => x && typeof x.score === 'number').map((x) => x.score);
-  return v.length ? v.reduce((a, c) => a + c, 0) / v.length : 0;
+  const v = OVERALL_KEYS.map((k) => b && b[k]).filter((x) => x && typeof x.score === 'number').map((x) => x.score);
+  return v.length === OVERALL_KEYS.length ? v.reduce((a, c) => a + c, 0) / v.length : null;
 };
 const cell = (x) => (x == null ? '—' : x.status === 'error' || x.score == null ? 'N/A' : Math.round(x.score * 100) + '%');
 
-const models = [...data.models].sort((a, b) => overall(b.benchmarks) - overall(a.benchmarks));
-const top = models[0];
+// Ranked models (both customs) first by overall desc; unranked (null) sorted last.
+const models = [...data.models].sort((a, b) => {
+  const oa = overall(a.benchmarks), ob = overall(b.benchmarks);
+  if (oa === null && ob === null) return 0;
+  if (oa === null) return 1;
+  if (ob === null) return -1;
+  return ob - oa;
+});
+const top = models.find((m) => overall(m.benchmarks) !== null) || models[0];
 const rows = models
   .map((m) => {
     const b = m.benchmarks || {};
+    const o = overall(b);
     const tds = BENCH.map(([k]) => `<td>${cell(b[k])}</td>`).join('');
-    return `<tr><td>${esc(m.model.split('/').pop())}</td><td>${esc(m.provider || '')}</td>${tds}<td><strong>${Math.round(overall(b) * 100)}%</strong></td></tr>`;
+    return `<tr><td>${esc(m.model.split('/').pop())}</td><td>${esc(m.provider || '')}</td>${tds}<td><strong>${o === null ? '—' : Math.round(o * 100) + '%'}</strong></td></tr>`;
   })
   .join('');
 

@@ -30,19 +30,33 @@ def cell(b: dict | None) -> str:
     return f"{round(b['score'] * 100)}%"
 
 
-def overall(benchmarks: dict) -> float:
+# Overall ranks on the two custom benchmarks EVERY provider runs (apples-to-apples).
+# IFEval/GSM8K are shown as columns but excluded from the ranking, because they only run
+# on Groq/Cohere — folding them in would let a model's overall average a different
+# (smaller) benchmark set and rank unfairly.
+OVERALL_KEYS = ("practical_knowledge", "creative_technical")
+
+
+def overall(benchmarks: dict):
+    """Mean of the custom benchmarks, but only if the model has ALL of them (a valid
+    score for both). Missing/errored → None (shown but unranked), so a model can't top
+    the board on a single benchmark."""
     vals = [
-        v["score"]
-        for v in benchmarks.values()
-        if isinstance(v, dict) and isinstance(v.get("score"), (int, float))
+        benchmarks[k]["score"]
+        for k in OVERALL_KEYS
+        if isinstance(benchmarks.get(k), dict)
+        and isinstance(benchmarks[k].get("score"), (int, float))
     ]
-    return sum(vals) / len(vals) if vals else 0.0
+    return sum(vals) / len(vals) if len(vals) == len(OVERALL_KEYS) else None
 
 
 def main() -> None:
     data = json.loads(LATEST.read_text(encoding="utf-8"))
+    # Ranked models (both customs) first, by overall desc; unranked (partial) last.
     models = sorted(
-        data["models"], key=lambda m: overall(m.get("benchmarks", {})), reverse=True
+        data["models"],
+        key=lambda m: (overall(m.get("benchmarks", {})) is not None, overall(m.get("benchmarks", {})) or 0),
+        reverse=True,
     )
     lines = [
         "| Model | Provider | Practical | IFEval | GSM8K | Creative | Overall |",
@@ -50,14 +64,16 @@ def main() -> None:
     ]
     for m in models:
         bs = m.get("benchmarks", {})
+        ov = overall(bs)
         row = [m["model"].split("/")[-1], m.get("provider", "")]
         row += [cell(bs.get(k)) for k, _ in BENCHES]
-        row.append(f"**{round(overall(bs) * 100)}%**")
+        row.append(f"**{round(ov * 100)}%**" if ov is not None else "—")
         lines.append("| " + " | ".join(row) + " |")
     table = "\n".join(lines)
     note = (
         f"_Updated {data.get('last_updated', '')} · small-sample, directional · "
-        "`—` = not run for that provider, `N/A` = errored that run._"
+        "Overall = Practical + Creative (the benchmarks every provider runs); a model needs "
+        "both to be ranked · `—` = not run / not ranked, `N/A` = errored that run._"
     )
     block = f"{START}\n\n{note}\n\n{table}\n\n{END}"
     text = README.read_text(encoding="utf-8")

@@ -25,25 +25,39 @@ def _mean(values) -> float | None:
     return sum(nums) / len(nums) if nums else None
 
 
+# Overall ranks on the two custom benchmarks every provider runs (Practical + Creative);
+# IFEval/GSM8K only run on Groq/Cohere, so including them would rank on unequal sets.
+OVERALL = ["practical_knowledge", "creative_technical"]
+
+
 def overall_latest(model: dict) -> float | None:
-    return _mean([b.get("score") for b in model.get("benchmarks", {}).values() if isinstance(b, dict)])
+    # Ranked only if the model has BOTH custom benchmarks (no crowning on a single score).
+    b = model.get("benchmarks", {})
+    scores = [
+        b[k].get("score")
+        for k in OVERALL
+        if isinstance(b.get(k), dict) and isinstance(b[k].get("score"), (int, float))
+    ]
+    return sum(scores) / len(scores) if len(scores) == len(OVERALL) else None
 
 
 def overall_hist(entry: dict) -> float | None:
-    return _mean([entry.get(k) for k in BENCH])
+    return _mean([entry.get(k) for k in OVERALL])
 
 
 def main() -> None:
     latest = json.loads(LATEST.read_text(encoding="utf-8"))
     date = latest.get("last_updated", "")
+    models = latest.get("models", [])
     ranked = sorted(
-        ((overall_latest(m) or 0.0, m) for m in latest.get("models", [])),
+        ((overall_latest(m), m) for m in models if overall_latest(m) is not None),
         key=lambda x: x[0],
         reverse=True,
     )
+    partial = [m for m in models if overall_latest(m) is None]
     if not ranked:
-        OUT.write_text("_No results yet._\n", encoding="utf-8")
-        print("No results yet.")
+        OUT.write_text("_No ranked results this week._\n", encoding="utf-8")
+        print("No ranked results this week.")
         return
 
     winner_score, winner = ranked[0]
@@ -73,6 +87,10 @@ def main() -> None:
     ]
     for i, (o, m) in enumerate(ranked, 1):
         lines.append(f"{i}. **{short(m['model'])}** ({m.get('provider', '')}) — {round(o * 100)}%")
+
+    if partial:
+        names = ", ".join(f"{short(m['model'])} ({m.get('provider', '')})" for m in partial)
+        lines += ["", f"_Unranked this week (missing a custom benchmark):_ {names}"]
 
     if mover:
         delta, m, prev, cur = mover
