@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="site/public/og.png" alt="AI Egg Index" width="720">
+</p>
+
 # AI Egg Index
 
 Benchmarking free-tier LLMs on tasks regular people actually care about.
