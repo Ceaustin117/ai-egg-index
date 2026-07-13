@@ -11,11 +11,14 @@ few points between models is likely noise, not a real difference. We don't yet r
 formal confidence intervals; until we do, treat close scores as ties. (Reference for
 where we're headed: Miller, *Adding Error Bars to Evals*, arXiv:2411.00640.)
 
-## The cross-model "overall" isn't perfectly apples-to-apples
+## The "overall" ranks on the two custom benchmarks
 
-The overall score averages whichever benchmarks a model actually ran. Because the
-OpenBench benchmarks (IFEval, GSM8K) only run on some providers (see below), a model's
-overall may average 4 benchmarks or 2. Compare per-benchmark columns for a fairer read.
+To keep the ranking comparable across providers, **overall = the mean of Practical
+Knowledge + Creative-Technical** — the two benchmarks *every* provider runs. IFEval and
+GSM8K are shown as columns but **not** folded into the overall (they only run on
+Groq/Cohere, so including them would rank models on unequal benchmark sets). A model
+that's missing either custom benchmark in a given week is shown but left **unranked**
+(`—`) rather than ranked on a single score.
 
 ## OpenBench benchmarks run on Groq + Cohere only
 

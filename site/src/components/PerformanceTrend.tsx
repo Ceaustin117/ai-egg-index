@@ -6,21 +6,17 @@ interface PerformanceTrendProps {
   data: HistoricalData;
 }
 
-const BENCH_KEYS: (keyof HistoricalScoreEntry)[] = [
-  'practical_knowledge',
-  'ifeval',
-  'gsm8k',
-  'creative_technical',
-];
+// Overall = the two custom benchmarks every provider runs (IFEval/GSM8K are Groq/Cohere-only).
+const OVERALL_KEYS: (keyof HistoricalScoreEntry)[] = ['practical_knowledge', 'creative_technical'];
 
 const LINE_COLORS = ['#06b6d4', '#fbbf24', '#a78bfa', '#34d399', '#f87171', '#f472b6'];
 
 const shortModel = (m: string) => m.split('/').pop() || m;
 
-/** Overall (composite) score for one historical entry: mean of the benchmarks present. */
+/** Overall score for one historical entry: mean of the custom benchmarks present. */
 function overallOf(entry: HistoricalScoreEntry): number | null {
-  const vals = BENCH_KEYS.map((k) => entry[k]).filter((v): v is number => typeof v === 'number');
-  if (!vals.length) return null;
+  const vals = OVERALL_KEYS.map((k) => entry[k]).filter((v): v is number => typeof v === 'number');
+  if (vals.length !== OVERALL_KEYS.length) return null;
   return vals.reduce((a, b) => a + b, 0) / vals.length;
 }
 

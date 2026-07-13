@@ -34,6 +34,9 @@ const BENCHMARK_INFO: Record<string, { name: string; description: string; catego
 };
 
 const BENCHMARK_KEYS = ['practical_knowledge', 'ifeval', 'gsm8k', 'creative_technical'] as const;
+// Overall ranks only on the custom benchmarks every provider runs; IFEval/GSM8K are shown
+// as columns but excluded (they're Groq/Cohere-only, so they'd rank on unequal sets).
+const OVERALL_KEYS = ['practical_knowledge', 'creative_technical'] as const;
 
 const BenchmarkComparer: React.FC<BenchmarkComparerProps> = ({ data, historicalData }) => {
   const [sortField, setSortField] = useState<SortField>('overall');
@@ -46,10 +49,14 @@ const BenchmarkComparer: React.FC<BenchmarkComparerProps> = ({ data, historicalD
     return ['all', ...uniqueProviders.sort()];
   }, [data]);
 
+  // NaN (unranked) unless the model has BOTH custom benchmarks — so it can't rank on one.
   const calculateOverall = (model: BenchmarkResult): number => {
-    const scores = BENCHMARK_KEYS.map(key => model.benchmarks[key]?.score ?? 0);
-    const validScores = scores.filter(s => s > 0);
-    return validScores.length > 0 ? validScores.reduce((a, b) => a + b, 0) / validScores.length : 0;
+    const scores = OVERALL_KEYS
+      .map(key => model.benchmarks[key]?.score)
+      .filter((s): s is number => typeof s === 'number' && s > 0);
+    return scores.length === OVERALL_KEYS.length
+      ? scores.reduce((a, b) => a + b, 0) / scores.length
+      : NaN;
   };
 
   const getScoreClass = (score: number): string => {
@@ -109,8 +116,10 @@ const BenchmarkComparer: React.FC<BenchmarkComparerProps> = ({ data, historicalD
         aVal = a[sortField].toLowerCase();
         bVal = b[sortField].toLowerCase();
       } else if (sortField === 'overall') {
-        aVal = calculateOverall(a);
-        bVal = calculateOverall(b);
+        // Unranked (NaN) models sort last.
+        const ao = calculateOverall(a), bo = calculateOverall(b);
+        aVal = Number.isNaN(ao) ? -Infinity : ao;
+        bVal = Number.isNaN(bo) ? -Infinity : bo;
       } else {
         aVal = a.benchmarks[sortField]?.score ?? 0;
         bVal = b.benchmarks[sortField]?.score ?? 0;
@@ -214,7 +223,11 @@ const BenchmarkComparer: React.FC<BenchmarkComparerProps> = ({ data, historicalD
                   {renderSortIndicator(key as SortField)}
                 </th>
               ))}
-              <th onClick={() => handleSort('overall')} className="sortable overall-header">
+              <th
+                onClick={() => handleSort('overall')}
+                className="sortable overall-header"
+                title="Overall = Practical + Creative, the benchmarks every provider runs. IFEval/GSM8K are shown but not included (they run on Groq/Cohere only)."
+              >
                 Overall{renderSortIndicator('overall')}
               </th>
             </tr>
@@ -270,8 +283,13 @@ const BenchmarkComparer: React.FC<BenchmarkComparerProps> = ({ data, historicalD
                       </td>
                     );
                   })}
-                  <td className={`score-cell overall-cell ${unavailable ? 'score-unavailable' : getScoreClass(overall)}`}>
-                    <span className="score-value overall-value">{unavailable ? 'N/A' : formatScore(overall)}</span>
+                  <td
+                    className={`score-cell overall-cell ${unavailable || Number.isNaN(overall) ? 'score-unavailable' : getScoreClass(overall)}`}
+                    title={Number.isNaN(overall) && !unavailable ? 'Unranked: missing a custom benchmark (Practical or Creative) this run.' : undefined}
+                  >
+                    <span className="score-value overall-value">
+                      {unavailable ? 'N/A' : Number.isNaN(overall) ? '—' : formatScore(overall)}
+                    </span>
                   </td>
                 </tr>
               );
