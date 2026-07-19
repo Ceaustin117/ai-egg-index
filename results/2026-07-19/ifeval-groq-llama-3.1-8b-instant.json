@@ -1,0 +1,9 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "score": 1.0,
+  "strict": 1.0,
+  "timestamp": "2026-07-19T06:59:59.313737",
+  "methodology_version": "1.0",
+  "git_commit": "3b527a27f415",
+  "limit": 3
+}

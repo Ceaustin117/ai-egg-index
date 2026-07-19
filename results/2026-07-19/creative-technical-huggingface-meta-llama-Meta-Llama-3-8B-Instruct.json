@@ -1,0 +1,53 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-07-19T06:59:07.844544",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a Python budget tracker that meets your requirements:\n\n```Python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n\n    def add_income(self, amount):\n        self.income += amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def get_monthly_totals(self):\n        return self.income, sum(self.expen...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.6,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without errors due to an EOFError, which means it fails the 'code_works' criterion. It partially meets the requirements by tracking income and expenses with categories and calculating monthly totals, but the haiku output is not in the traditional 5-7-5 format. The haiku generation is also not meaningful as it simply includes the income and expense amounts in the haiku, rather than using them to create a poetic and insightful summary."
+      },
+      "weighted_score": 0.18
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a JavaScript function that generates a short story about recursion, told using recursive function calls:\n\n```javascript\nfunction tellStory() {\n  if (Math.random() < 0.5) {\n    return \"Once upon a time, in a land far, far away, there was a brave knight named Sir Reginald.\";\n  } else {\n    return \"Once upon a time, in a dark and mysterious forest, there was a wise old wizard named Zorvath.\";\n  }\n}\n\nfunction tellTaleOfTheKnight() {\n  if (Math.random() < 0.5) {\n    return \"Sir Reginald was o...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.6,
+        "explanation": "The code runs without errors and demonstrates proper recursion. It meets the requirements of having at least 3 levels of recursion and tells a coherent story. However, the story itself is somewhat simplistic and the recursion metaphor could be more cleverly integrated. The use of random sentences and paragraphs adds some variability to the story, but it also makes the narrative feel a bit disjointed. Overall, the code is well-structured and effective, but the creative output could be improved with more attention to storytelling and thematic resonance."
+      },
+      "weighted_score": 0.82
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n```\nimport re\n\ndef is_valid_limerick(text):\n    # Define the regex pattern for a valid limerick\n    pattern = r\"^(\\w+\\s\\w+)+\\s(\\w+\\s\\w+)+\\s(\\w+\\s\\w+)+\\s(\\w+\\s\\w+)+\\s(\\w+\\s\\w+)$\"\n    # Check if the text matches the pattern\n    if re.match(pattern, text):\n        # Extract the lines of the limerick\n        lines = re.split(r\"\\s+\", text)\n        # Check if the rhyme scheme is AABBA\n        i...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.4,
+        "meets_requirements": 0.2,
+        "creative_output": 0.1,
+        "explanation": "The code runs without errors but the regex pattern does not correctly validate the AABBA rhyme scheme of a limerick. The test cases are also not well-designed, as they do not cover various scenarios of valid and invalid limericks. The approach to rhyme detection is simplistic and does not account for the complexities of natural language. The test limericks are not amusing and do not demonstrate a good understanding of the limerick form."
+      },
+      "weighted_score": 0.25
+    }
+  ],
+  "overall_score": 0.417,
+  "methodology_version": "1.0",
+  "git_commit": "3b527a27f415",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
