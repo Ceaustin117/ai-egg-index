@@ -1,0 +1,53 @@
+{
+  "model": "groq/llama-3.1-8b-instant",
+  "timestamp": "2026-07-26T06:56:05.917333",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "**Budget Tracker in Python**\n================================\n\nBelow is a simple implementation of a budget tracker in Python. This program allows users to add income and expenses with categories, calculates monthly totals, and outputs a monthly summary as a haiku poem.\n\n```python\nimport datetime\n\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        \"\"\"Add income with a category.\"\"\"\n        if catego...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.6,
+        "creative_output": 0.2,
+        "explanation": "The code does not run without errors due to a missing main function implementation. It meets some requirements like tracking income and expenses with categories, and calculating monthly totals. However, the haiku output is not meaningful and does not reflect the budget data in a 5-7-5 syllable format. The haiku lines are also not properly formatted as a traditional haiku poem."
+      },
+      "weighted_score": 0.24
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "**Recursive Story Generation Function**\n\n```javascript\n/**\n * Generates a short story about recursion, where the story itself is told using recursive function calls.\n * \n * @param {number} depth - The maximum recursion depth (default is 3).\n * @returns {string} The generated short story.\n */\nfunction recursiveStory(depth = 3) {\n    // Base case: if the depth is 0, return a simple sentence.\n    if (depth === 0) {\n        return \"And so, the story came to an end.\";\n    }\n\n    // Recursive case: ca...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 1.0,
+        "creative_output": 0.8,
+        "explanation": "The code works perfectly, demonstrating proper recursion and meeting the requirements of having at least 3 levels of recursion. The story is coherent and engaging, with a clever use of recursion to create a nested narrative structure. However, the creative output score is not perfect because the story itself is somewhat simplistic and lacks a strong plot or character development. Nevertheless, the use of recursion to tell the story is clever and effective."
+      },
+      "weighted_score": 0.94
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "**Limerick Validator using Regular Expressions**\n=====================================================\n\nBelow is a Python program that uses regular expressions to validate whether a given text is a valid limerick. The regex pattern checks for the AABBA rhyme scheme pattern.\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    \"\"\"\n    Validate whether a given text is a valid limerick using regular expressions.\n\n    Args:\n        text (str): The text to be validated.\n\n    Returns:\n        bool: ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.4,
+        "meets_requirements": 0.2,
+        "creative_output": 0.2,
+        "explanation": "The code runs without error but the regex pattern does not correctly validate the AABBA rhyme scheme. The test cases are provided but the expected results do not match the actual results. The approach to rhyme detection is not clever and the test limericks, although amusing, do not demonstrate a clear understanding of the AABBA rhyme scheme. The code only checks for a specific pattern of words and lines, but does not actually verify the rhyming scheme."
+      },
+      "weighted_score": 0.28
+    }
+  ],
+  "overall_score": 0.487,
+  "methodology_version": "1.0",
+  "git_commit": "a18ba429a792",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

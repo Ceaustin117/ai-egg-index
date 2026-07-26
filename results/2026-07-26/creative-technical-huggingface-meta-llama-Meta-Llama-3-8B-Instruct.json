@@ -1,0 +1,53 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-07-26T07:03:38.783960",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a simple Python program that meets your requirements:\n\n```Python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n\n    def add_income(self, amount):\n        self.income += amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def calculate_monthly_totals(self):\n        monthly_income = self.income\n...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.6,
+        "creative_output": 0.0,
+        "explanation": "The code does not run without errors due to an EOFError, which means it fails the 'code_works' criterion. It partially meets the requirements by tracking income and expenses with categories and calculating monthly totals, but the haiku output is not in the traditional 5-7-5 format and does not meaningfully reflect the budget data in a poetic way. The 'creative_output' score is 0.0 because the generated haiku does not adhere to the 5-7-5 syllable structure and lacks a meaningful reflection of the budget data."
+      },
+      "weighted_score": 0.18
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a JavaScript function that generates a short story about recursion, told using recursive function calls:\n```\nfunction tellStory() {\n  if (Math.random() < 0.5) {\n    return \"Once upon a time, in a land far, far away, there was a brave knight named Sir Reginald.\";\n  } else {\n    return \"In a dark and mysterious forest, a young adventurer named Sophia stumbled upon a ancient tome bound in black leather.\";\n  }\n}\n\nfunction continueStory(story) {\n  if (story === undefined) {\n    story = tellSt...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.8,
+        "creative_output": 0.7,
+        "explanation": "The code runs without error and demonstrates proper recursion. It meets the requirements of having at least 3 levels of recursion and tells a coherent story. However, the story could be more engaging and the recursion metaphor could be more clever. The code is well-structured, but the story's randomness may lead to inconsistent narratives. The score for 'meets_requirements' is 0.8 because while the code has 3 levels of recursion, the story's coherence can be affected by the random choices. The score for 'creative_output' is 0.7 because the story is somewhat engaging, but the recursion metaphor is not particularly original or surprising."
+      },
+      "weighted_score": 0.85
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here is a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n\n```python\nimport re\n\ndef is_limerick(text):\n    # Define the pattern for a limerick\n    pattern = r\"^((?:\\w+\\s+){5,8}\\n?)((?:\\w+\\s+){5,8}\\n?)((?:\\w+\\s+){5,8}\\n?)((?:\\w+\\s+){5,8}\\n?)((?:\\w+\\s+){5,8})$\"\n    pattern += r\"(?:(?=\\2\\2$)|(?=\\3\\3$)|(?=\\4\\4$)|(?=\\5\\5$))\"\n\n    # Check if the text matches the pattern\n    if re.match(pattern, text, re.MULTILINE):\n        return True\n    else:\n      ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.8,
+        "meets_requirements": 0.6,
+        "creative_output": 0.4,
+        "explanation": "The code runs without errors and the regex pattern is syntactically valid, but it does not accurately validate the AABBA rhyme scheme. The test cases are basic and do not cover all possible scenarios. The approach to rhyme detection is not clever and relies on a complex regex pattern that is hard to understand. The test limericks are not particularly amusing."
+      },
+      "weighted_score": 0.62
+    }
+  ],
+  "overall_score": 0.55,
+  "methodology_version": "1.0",
+  "git_commit": "a18ba429a792",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

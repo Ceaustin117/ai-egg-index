@@ -1,0 +1,53 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-07-26T07:00:50.471051",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a Python script with a self-contained function that solves the problem and passes corresponding tests:\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self....",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.7,
+        "creative_output": 0.4,
+        "explanation": "The code runs without errors and performs basic budget tracking, so 'code_works' scores 1.0. It meets most requirements but the haiku output does not strictly follow the 5-7-5 syllable structure and does not meaningfully reflect the budget data in a variable way, hence 'meets_requirements' scores 0.7. The haiku itself, while poetic, does not dynamically reflect the budget totals and does not adhere to the traditional 5-7-5 syllable count, resulting in a 'creative_output' score of 0.4."
+      },
+      "weighted_score": 0.73
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction generateRecursiveStory(depth) {\n  if (depth === 0) {\n    return \"The story ends here, with a satisfying conclusion. The hero has conquered the recursive challenge and emerged victorious.\";\n  } else {\n    return \"As the story unfolds, a new twist is revealed. The hero, faced with a choice, decides to delve deeper into the recursive realm. \" +\n           \"They encounter a mysterious guide who offers a path forward. \" +\n           \"With a sense of curiosity and determination,...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 1.0,
+        "creative_output": 0.7,
+        "explanation": "The code runs without errors and demonstrates proper recursion, meeting the 'code_works' criterion. The story has 3+ levels of recursion and tells a coherent narrative, satisfying the 'meets_requirements' criterion. However, the story's creativity and engagement could be improved, as the recursive calls result in repetitive text. The recursion metaphor is somewhat clever, but the narrative structure is relatively simple and lacks surprises, leading to a 'creative_output' score of 0.7."
+      },
+      "weighted_score": 0.91
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if there are exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Define the regex pattern for the AABBA rhyme scheme\n    pattern = r'^[A-Z]\\s.*[A-Z]\\s.*\\n[A-Z]\\s.*[A-Z]\\s.*\\n[A-Z]\\s.*[A-Z]\\s.*\\n[A-Z]\\s.*[A-Z]\\s.*$'\n...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.4,
+        "meets_requirements": 0.2,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors but the regex pattern does not correctly validate the AABBA rhyme scheme. The pattern checks if each line starts with a capital letter and contains some text, but it does not ensure that the last words of the lines follow the AABBA rhyme scheme. The test cases are provided but the function returns incorrect results for them. The approach to rhyme detection is not clever and the test limericks, although amusing, do not demonstrate the correct functionality of the program."
+      },
+      "weighted_score": 0.28
+    }
+  ],
+  "overall_score": 0.64,
+  "methodology_version": "1.0",
+  "git_commit": "a18ba429a792",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
