@@ -22,14 +22,14 @@ Benchmarking free-tier LLMs on tasks regular people actually care about.
 
 <!-- RESULTS:START -->
 
-_Updated 2026-07-26 · small-sample, directional · Overall = Practical + Creative (the benchmarks every provider runs); a model needs both to be ranked · `—` = not run / not ranked, `N/A` = errored that run._
+_Updated 2026-08-02 · small-sample, directional · Overall = Practical + Creative (the benchmarks every provider runs); a model needs both to be ranked · `—` = not run / not ranked, `N/A` = errored that run._
 
 | Model | Provider | Practical | IFEval | GSM8K | Creative | Overall |
 |---|---|---|---|---|---|---|
-| command-r-08-2024 | cohere | 64% | 33% | 100% | 64% | **64%** |
-| llama-3.1-8b-instant | groq | 51% | 100% | — | 49% | **50%** |
-| Meta-Llama-3-8B-Instruct | huggingface | 38% | — | — | 55% | **46%** |
-| gemini-2.5-flash | google | 54% | — | — | 0% | **27%** |
+| llama-3.1-8b-instant | groq | 56% | — | — | 66% | **61%** |
+| command-r-08-2024 | cohere | 56% | — | — | 65% | **60%** |
+| gemini-2.5-flash | google | 56% | — | — | 2% | **29%** |
+| Meta-Llama-3-8B-Instruct | huggingface | 55% | — | — | N/A | — |
 
 <!-- RESULTS:END -->
 

@@ -1,0 +1,53 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-08-02T06:55:26.987709",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker helps you manage your income and expenses, categorize them, and provides a unique monthly summary in the form of a haiku poem.\n\n**How to Use:**\n\n1.  **Run the script.**\n2.  **Add Income/Expense:** Choose option `1` or `2`. You'll be prompted for the date (YYYY-MM-DD), category",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The AI response does not include any working code, resulting in a failure to meet all criteria. Without executable code, the budget tracker cannot run, track income and expenses, calculate monthly totals, or generate a haiku output."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "This JavaScript function generates a story about recursion, where the narrative structure itself mirrors the concept of recursion. Each level of the story involves a character telling another character a story, and within that story, yet another character tells a story, and so on, until a base case is reached.\n\n```javascript\nfunction generateRecursiveStory(level = 1, maxLevels = 3, currentTeller = \"El",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.0,
+        "explanation": "The provided code does not run without errors due to a syntax error, which immediately disqualifies it from scoring in 'code_works'. Since the code does not execute properly, it cannot demonstrate the required 3+ levels of recursion or tell a coherent story, resulting in a score of 0.0 for 'meets_requirements'. Lastly, without a functioning narrative, the 'creative_output' also scores 0.0."
+      },
+      "weighted_score": 0.0
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "This is a fascinating challenge! Using *only* regular expressions to validate a limerick's rhyme scheme (AABBA) means we have to interpret \"rhyme\" as \"the exact same word\" for the last word of the line. Regular expressions cannot understand phonetic sounds or syllable counts, which are crucial for a true limerick.\n\nTherefore, this program will validate:\n1",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.0,
+        "meets_requirements": 0.0,
+        "creative_output": 0.2,
+        "explanation": "The AI response acknowledges the limitations of using regular expressions for rhyme detection, which shows some understanding of the challenge. However, it fails to provide any code, resulting in a score of 0.0 for 'code_works' and 'meets_requirements'. The 'creative_output' score is low due to the lack of actual creative output, but the acknowledgment of the challenge's complexity is a minor redeeming factor."
+      },
+      "weighted_score": 0.06
+    }
+  ],
+  "overall_score": 0.02,
+  "methodology_version": "1.0",
+  "git_commit": "5a23dc393612",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

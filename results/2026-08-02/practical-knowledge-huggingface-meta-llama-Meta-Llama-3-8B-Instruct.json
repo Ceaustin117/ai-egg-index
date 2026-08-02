@@ -1,0 +1,141 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-08-02T06:58:01.682507",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "I'm happy to help! However, I must correct you that there are no official changes to US federal income tax brackets for 2026 yet. The US tax code is updated annually through the Tax Cuts and Jobs Act (TCJA) and the Bipartisan Budget Act (BBA), which typically take effect on January 1st of each year.\n\nAs of now, the 2022 federal income tax brackets are as follows:\n\n* Single filers:\n\t+ 10% on taxable income between $0 and $10,275\n\t+ 12% on taxable income between $10,276 and $41,775\n\t+ 22% on taxab...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.0,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response provides accurate information about the 2022 federal income tax brackets, but it does not address the main changes to US federal income tax brackets for 2026 as requested. The response acknowledges that there are no official changes for 2026 yet, demonstrating good recency awareness. However, it fails to cover the expected topics of bracket adjustments, inflation indexing, and standard deduction changes for 2026, resulting in low completeness score. The factual accuracy score is 0.5 because the information provided is correct but outdated and not relevant to the question asked."
+          },
+          "weighted_score": 0.45
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "I'm happy to help! However, I need to correct you that the standard deduction amount for a single filer in 2026 is not yet available. The IRS typically announces the standard deduction amounts for the upcoming tax year in the fall of the previous year.\n\nFor the 2022 tax year, the standard deduction amounts are:\n\n* Single filers: $12,950\n* Married filing jointly: $25,900\n* Head of household: $19,400\n\nPlease note that these amounts may change for the 2026 tax year, and I'll make sure to provide th...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response is factually accurate for the 2022 tax year but does not provide the correct information for the 2026 tax year, as it is not yet available. It covers some expected topics, such as the standard deduction amount for single filers and married filing jointly, but does not provide a direct answer for the 2026 tax year. However, it demonstrates good recency awareness by acknowledging that the information for 2026 is not yet available and providing a disclaimer."
+          },
+          "weighted_score": 0.6
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "As of 2023, the tax credits for electric vehicle (EV) purchases in the United States are as follows:\n\n1. Federal Tax Credit: The federal government offers a tax credit of up to $7,500 for the purchase of a qualifying electric vehicle. The credit amount is based on the vehicle's battery size and is phased out as the manufacturer reaches certain sales thresholds.\n2. State Tax Credits: Many states offer additional tax credits for EV purchases. These credits can range from $500 to $5,000 and are oft...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.0,
+            "explanation": "The response provides some accurate information about electric vehicle tax credits, but it is outdated as it references 2023 instead of 2026. It also lacks information on eligibility requirements and income limits. The response does not acknowledge the current year or knowledge cutoff, presenting outdated information without a clear disclaimer."
+          },
+          "weighted_score": 0.4
+        }
+      ],
+      "average_score": 0.483
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "As of January 2022, the current federal minimum wage in the United States is $7.25 per hour. This rate has been in effect since July 2009, when it was increased from $6.55 per hour.\n\nThere have been several attempts to increase the federal minimum wage in recent years, but none have been successful. In 2019, the House of Representatives passed the Raise the Wage Act, which would have increased the federal minimum wage to $15 per hour by 2024. However, the bill did not pass the Senate.\n\nIn 2020, ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "The response provides some accurate information about the current federal minimum wage and state variations. However, it lacks information about proposed changes and tipped employees, which are expected topics. The response also mentions the year 2022, but does not acknowledge the current year or knowledge cutoff, which may lead to outdated information. Additionally, the response does not provide information from the verification source DOL.gov, which may affect its factual accuracy."
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "The current federal overtime pay rules for salaried employees are governed by the Fair Labor Standards Act (FLSA). As of January 1, 2020, the FLSA requires that salaried employees who are exempt from overtime pay must meet certain tests, including:\n\n1. The Executive Exemption: To be exempt from overtime pay, an executive must:\n\t* Be paid a salary of at least $684 per week (or $35,568 per year);\n\t* Have a primary duty of managing the enterprise or a customarily recognized department or subdivisio...",
+          "scores": {
+            "factual_accuracy": 1.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response accurately provides the current federal overtime pay rules for salaried employees, including the salary threshold and exemptions. The information is verifiable on DOL.gov and is current as of January 1, 2020. However, the response does not explicitly mention 'time-and-a-half' pay, which is an expected topic. The response acknowledges the current year and knowledge cutoff, demonstrating recency awareness."
+          },
+          "weighted_score": 0.85
+        }
+      ],
+      "average_score": 0.675
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "The 2026 contribution limits for 401(k) accounts have not been officially announced by the IRS yet, as the 2026 tax year has not yet begun. However, we can look at the historical trend and the current inflation rate to make an educated estimate.\n\nFor the 2022 tax year, the IRS announced the following contribution limits:\n\n* Elective deferrals (employee contributions): $20,500\n* Catch-up contributions (for those 50 and older): $6,500\n* Total contributions (employer and employee): $57,000\n\nBased o...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response acknowledges that the 2026 contribution limits have not been officially announced and provides historical data from 2022. It also estimates the 2026 limits based on trends, but these are not verified facts. The response covers some expected topics like employee contribution limits and catch-up contributions but does not provide definitive information for 2026. It correctly states the current knowledge cutoff and the need for official IRS announcement, demonstrating good recency awareness."
+          },
+          "weighted_score": 0.6
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "According to the IRS, the 2026 contribution limits for Traditional and Roth IRA accounts are:\n\n* Traditional IRA: $6,500 (catch-up contribution limit for those 50 and older: $7,500)\n* Roth IRA: $6,500 (catch-up contribution limit for those 50 and older: $7,500)\n\nPlease note that these limits are subject to change, and it's always a good idea to check with the IRS or a financial advisor for the most up-to-date information.",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response provides the correct contribution limits for Traditional and Roth IRA accounts but misses the topic of income limits for Roth IRA accounts. It also correctly notes that the limits are subject to change and advises checking with the IRS for the most up-to-date information, demonstrating good recency awareness. However, without verifying the information against the IRS.gov source, the factual accuracy cannot be confirmed as entirely correct, hence the 0.5 score."
+          },
+          "weighted_score": 0.6
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "According to the IRS, the 2026 Health Savings Account (HSA) contribution limits are:\n\n* For individuals with self-only coverage: $3,650\n* For individuals with family coverage: $7,300\n\nThese limits apply to contributions made to HSAs for the 2026 tax year. Note that these limits are subject to change, so it's always a good idea to check the IRS website or consult with a tax professional for the most up-to-date information.",
+          "scores": {
+            "factual_accuracy": 1.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response provides accurate information about the 2026 HSA contribution limits for individuals and families, and it acknowledges the importance of checking the IRS website for the most up-to-date information, demonstrating good recency awareness. However, it misses the topics of catch-up contributions and HDHP requirements, resulting in a lower completeness score."
+          },
+          "weighted_score": 0.85
+        }
+      ],
+      "average_score": 0.683
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "You are entitled to one free credit report from each of the three major credit reporting agencies (Equifax, Experian, and TransUnion) every 12 months from the website AnnualCreditReport.com. This is a federal law, known as the Fair Credit Reporting Act (FCRA), which requires the credit reporting agencies to provide you with a free credit report once a year.\n\nTo get your free credit report, follow these steps:\n\n1. Go to AnnualCreditReport.com.\n2. Fill out the required information, including your ...",
+          "scores": {
+            "factual_accuracy": 1.0,
+            "completeness": 0.5,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response provides accurate information about obtaining a free credit report from AnnualCreditReport.com and the three major credit reporting agencies. However, it does not mention the weekly access to credit reports, which is a recent development. Additionally, it does not explicitly state the current year or knowledge cutoff, presenting the information as general knowledge without a timeframe. The dispute process is mentioned, but not thoroughly covered."
+          },
+          "weighted_score": 0.65
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "ERROR: HfHubHTTPError: 402 Client Error: Payment Required for url: https://router.huggingface.co/featherless-ai/v1/chat/completions (Request ID: Root=1-6a6eeaa3-2058ce9f381737976f13b338;9acc0a23-e693-4229-941b-c6b3e5b74ee4)\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+          "scores": {
+            "factual_accuracy": 0.0,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The AI response does not provide any information related to the Magnuson-Moss Warranty Act, implied warranty, written warranty requirements, or FTC enforcement. Instead, it displays an error message indicating that the monthly included credits have been depleted. Therefore, the response lacks factual accuracy, completeness, and recency awareness."
+          },
+          "weighted_score": 0.0
+        }
+      ],
+      "average_score": 0.325
+    }
+  },
+  "overall_score": 0.55,
+  "methodology_version": "1.0",
+  "git_commit": "5a23dc393612",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

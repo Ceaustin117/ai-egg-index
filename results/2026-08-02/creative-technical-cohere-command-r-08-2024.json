@@ -1,0 +1,53 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-08-02T06:57:27.283239",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a Python script named `budget_tracker.py` that implements the budget tracker with the specified features:\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            s...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.7,
+        "creative_output": 0.4,
+        "explanation": "The code works perfectly without any errors, hence 'code_works' is 1.0. It meets most of the requirements, including tracking income and expenses with categories and calculating monthly totals. However, the haiku output does not meaningfully reflect the budget data, it's a static haiku, hence 'meets_requirements' is 0.7. The haiku is valid in terms of syllable count but does not creatively reflect the budget data, hence 'creative_output' is 0.4."
+      },
+      "weighted_score": 0.73
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction recursiveStory(depth) {\n  if (depth <= 0) {\n    return \"The story ends here, a tale within a tale, a recursive journey complete.\";\n  } else {\n    return `Once upon a time, a storyteller began a tale. It was a story about ${recursiveStory(depth - 1)}.`;\n  }\n}\n\nconsole.log(recursiveStory(3));\n```\n\nThe output of the above code will be:\n\n```\nOnce upon a time, a storyteller began a tale. It was a story about Once upon a time, a storyteller began a tale. It was a story about The...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 1.0,
+        "creative_output": 0.8,
+        "explanation": "The code runs without errors and demonstrates proper recursion, meeting the technical requirements. The story has 3+ levels of recursion and tells a coherent narrative, fulfilling the requirements. The creative output is engaging, but the recursion metaphor, while clever, is somewhat straightforward and lacks a deeper, more complex narrative or unexpected twist, preventing it from receiving a perfect score."
+      },
+      "weighted_score": 0.94
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme pattern:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Check the rhyme scheme pattern\n    pattern = r'([a-zA-Z]+)\\1([a-zA-Z]+)\\2([a-zA-Z]+)\\1'\n    match = re.match(pattern, lines[0] + lines[1] +...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.4,
+        "meets_requirements": 0.2,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors, but the regex pattern does not correctly validate the AABBA rhyme scheme. The test cases are also not amusing and do not cover various scenarios. The approach to rhyme detection is not clever and does not account for the actual rhyming words in the limerick. The code only checks if the last words of each line have the same ending, which is not sufficient to validate a limerick."
+      },
+      "weighted_score": 0.28
+    }
+  ],
+  "overall_score": 0.65,
+  "methodology_version": "1.0",
+  "git_commit": "5a23dc393612",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
