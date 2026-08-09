@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02",
+  "last_updated": "2026-08-09",
   "models": {
     "together/mistral-7b-instruct": {
       "provider": "together",
@@ -146,6 +146,12 @@
           "methodology_version": "1.0",
           "creative_technical": 0.66,
           "practical_knowledge": 0.557
+        },
+        {
+          "date": "2026-08-09",
+          "methodology_version": "1.0",
+          "creative_technical": 0.647,
+          "practical_knowledge": 0.635
         }
       ],
       "rolling": [
@@ -265,6 +271,11 @@
           "date": "2026-08-02",
           "creative_technical": 0.539,
           "practical_knowledge": 0.555
+        },
+        {
+          "date": "2026-08-09",
+          "creative_technical": 0.598,
+          "practical_knowledge": 0.566
         }
       ]
     },
@@ -452,6 +463,12 @@
           "methodology_version": "1.0",
           "creative_technical": 0.65,
           "practical_knowledge": 0.56
+        },
+        {
+          "date": "2026-08-09",
+          "methodology_version": "1.0",
+          "creative_technical": 0.64,
+          "practical_knowledge": 0.565
         }
       ],
       "rolling": [
@@ -556,6 +573,11 @@
           "date": "2026-08-02",
           "creative_technical": 0.64,
           "practical_knowledge": 0.58
+        },
+        {
+          "date": "2026-08-09",
+          "creative_technical": 0.643,
+          "practical_knowledge": 0.59
         }
       ]
     },
@@ -689,6 +711,12 @@
           "methodology_version": "1.0",
           "creative_technical": null,
           "practical_knowledge": 0.55
+        },
+        {
+          "date": "2026-08-09",
+          "methodology_version": "1.0",
+          "creative_technical": null,
+          "practical_knowledge": 0.699
         }
       ],
       "rolling": [
@@ -781,6 +809,11 @@
           "date": "2026-08-02",
           "creative_technical": 0.484,
           "practical_knowledge": 0.421
+        },
+        {
+          "date": "2026-08-09",
+          "creative_technical": 0.55,
+          "practical_knowledge": 0.543
         }
       ]
     },
@@ -867,6 +900,12 @@
           "methodology_version": "1.0",
           "practical_knowledge": 0.56,
           "creative_technical": 0.02
+        },
+        {
+          "date": "2026-08-09",
+          "methodology_version": "1.0",
+          "practical_knowledge": 0.62,
+          "creative_technical": 0.02
         }
       ],
       "rolling": [
@@ -943,6 +982,11 @@
         {
           "date": "2026-08-02",
           "practical_knowledge": 0.563,
+          "creative_technical": 0.013
+        },
+        {
+          "date": "2026-08-09",
+          "practical_knowledge": 0.572,
           "creative_technical": 0.013
         }
       ]

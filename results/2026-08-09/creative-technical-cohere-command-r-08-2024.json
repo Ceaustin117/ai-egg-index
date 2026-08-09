@@ -1,0 +1,53 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-08-09T06:20:21.542147",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a simple Python budget tracker that fulfills your requirements:\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        e...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.7,
+        "creative_output": 0.4,
+        "explanation": "The code works perfectly without errors and performs basic budget tracking, hence 'code_works' is 1.0. It meets most requirements but the haiku output does not meaningfully reflect the budget data (e.g., expenses are not considered), and the haiku structure is not strictly 5-7-5, hence 'meets_requirements' is 0.7. The haiku is somewhat creative but does not accurately represent the budget data, hence 'creative_output' is 0.4."
+      },
+      "weighted_score": 0.73
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that generates a short story about recursion using recursive function calls:\n\n```javascript\nfunction generateStory(depth) {\n  if (depth <= 0) {\n    return \"The story ends here, a tale within itself, a recursive enigma.\";\n  } else {\n    return \"Once upon a time, a curious narrator began a story. \" +\n      \"Within this story, another narrator appeared, continuing the tale. \" +\n      \"As the story deepened, a third narrator joined, \" +\n      generateStory(depth - 1) +\n ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 1.0,
+        "creative_output": 0.7,
+        "explanation": "The code runs without errors and demonstrates proper recursion, meeting the 'code_works' and 'meets_requirements' criteria. The story has at least 3 levels of recursion and tells a coherent narrative. However, the story's creativity and engagement could be improved, as the recursive calls result in repetitive text. The recursion metaphor is clever, but the narrative itself is somewhat simplistic and lacks a compelling plot or characters."
+      },
+      "weighted_score": 0.91
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Define the regex pattern for the AABBA rhyme scheme\n    pattern = r'^(.+?)(?:\\1)(?:\\1)$'\n    \n    # Check each line against the pattern\n    for i i...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.4,
+        "meets_requirements": 0.2,
+        "creative_output": 0.2,
+        "explanation": "The code runs without errors, but the regex pattern does not correctly implement the AABBA rhyme scheme. The pattern only checks if a line matches itself, not the actual rhyme scheme. The test cases are basic and do not cover various scenarios. The approach to rhyme detection is not clever and the test limericks, although classic, are not particularly amusing in this context."
+      },
+      "weighted_score": 0.28
+    }
+  ],
+  "overall_score": 0.64,
+  "methodology_version": "1.0",
+  "git_commit": "f780dce3e491",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

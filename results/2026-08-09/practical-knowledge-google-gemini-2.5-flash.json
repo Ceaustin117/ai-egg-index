@@ -1,0 +1,141 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-08-09T06:16:54.358598",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "As of today, **there are no officially enacted changes to US federal income tax brackets specifically for 2026.**\n\nHowever, the most significant \"change\" anticipated for 20",
+          "scores": {
+            "factual_accuracy": 1.0,
+            "completeness": 0.0,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response is factually accurate as it states there are no officially enacted changes to US federal income tax brackets for 2026. It also shows recency awareness by stating 'as of today.' However, it lacks completeness as it does not cover the expected topics of bracket adjustments, inflation indexing, and standard deduction changes, even if only to state that no changes have been enacted or announced for 2026."
+          },
+          "weighted_score": 0.7
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "The standard deduction amounts for 2026 have **not yet been released** by the IRS.\n\nThe IRS typically releases the standard deduction amounts for a given tax year in the **fall of the preceding year**. This means the official 2026 standard deduction figures will likely be announced in **late 2025**.\n\n**However, I can give you the most recent confirmed figures and an estimate:**\n\n*   **For 2024 (current tax year):** The standard deduction for a single filer is **$14,600**.\n*   **For 2025:** These...",
+          "scores": {
+            "factual_accuracy": 1.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response is factually accurate as it correctly states that the standard deduction amounts for 2026 have not been released and provides the most recent confirmed figures for 2024. It also demonstrates recency awareness by acknowledging the current knowledge cutoff. However, it only partially covers the expected topics, missing a comparison with married filing jointly and not providing a clear estimate for 2026 based on verifiable sources like IRS.gov."
+          },
+          "weighted_score": 0.85
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "The federal Clean Vehicle Credit (often referred to as the EV tax credit) is **scheduled to be available in 2026** under the Inflation Reduction Act (IRA). However, the eligibility requirements",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.0,
+            "recency_awareness": 1.0,
+            "explanation": "The response mentions the federal Clean Vehicle Credit and its scheduled availability in 2026, showing some factual accuracy and recency awareness. However, it lacks completeness as it does not cover the expected topics of eligibility requirements, credit amount, and income limits. The factual accuracy score is not 1.0 because the response does not provide verifiable information from the IRS.gov source."
+          },
+          "weighted_score": 0.45
+        }
+      ],
+      "average_score": 0.667
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "The current federal minimum wage in the United States is **$7.25 per hour**.\n\nRegarding recent changes:\n\n*   **No, there have not been any recent changes to the federal minimum wage.** It has remained at $7.25 per hour since **July 24, 2009**.\n\nWhile the federal minimum wage hasn't changed in over a decade, it's important to note:\n\n*   **Many states and localities have minimum wages higher than the federal rate.** In these cases, employees are entitled to the higher state or local minimum wage.\n...",
+          "scores": {
+            "factual_accuracy": 1.0,
+            "completeness": 1.0,
+            "recency_awareness": 0.5,
+            "explanation": "The AI response accurately states the current federal minimum wage as $7.25 per hour, notes the lack of recent changes, and covers the expected topics including state variations, proposed changes, and the minimum wage for tipped employees. However, it does not explicitly acknowledge the current year or a specific knowledge cutoff, which prevents it from scoring perfectly on recency awareness."
+          },
+          "weighted_score": 0.9
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "The federal overtime pay rules for salaried employees are governed by the **Fair Labor Standards Act (FLSA)**. The FLSA generally requires employers to pay employees at least 1.5 times",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The response mentions the Fair Labor Standards Act (FLSA) and the requirement to pay 1.5 times the regular rate for overtime, which is partially correct. However, it lacks information on the salary threshold and the distinction between exempt and non-exempt employees, which are crucial for understanding the current federal overtime pay rules. Additionally, the response does not acknowledge the current year or knowledge cutoff, and it does not provide a clear indication of the current rules as per the DOL.gov verification source."
+          },
+          "weighted_score": 0.25
+        }
+      ],
+      "average_score": 0.575
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "The 2026 contribution limits for 401(k) accounts have **not yet been announced**.\n\nThe IRS typically releases the new contribution limits for the upcoming year in **late October or early November of the preceding year**. Therefore, the 2026 limits will likely be announced in **late 2025**.\n\n**What we know for now (2024 limits, to give you an idea):**\n\n*   **Employee Elective Deferral Limit (under age 50):** $23,000\n*   **Catch-Up Contribution Limit (age 50 and over):** $7,500 (for a total of $30...",
+          "scores": {
+            "factual_accuracy": 1.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response is factually accurate as it provides correct information about the 2024 limits and the process of IRS announcements. It also shows good recency awareness by stating that the 2026 limits have not been announced yet and providing the timeframe for when they are typically released. However, it lacks completeness as it does not cover the topic of employer match explicitly, although it mentions total contribution limits which imply employer contributions."
+          },
+          "weighted_score": 0.85
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "The contribution limits for Traditional and Roth IRA accounts for **2026 have not yet been announced.**\n\nThe IRS typically announces the contribution limits for the upcoming year in the **fall of the preceding year**. Therefore, the 2026 limits will likely be released in **late 2025**.\n\nFor reference, the **2024 contribution limits** are:\n\n*   **Under age 50:** $7,000\n*   **Age 50 and over (catch-up contribution):** An additional $1,000, for a total of $8,000\n\nIt's expected that the 2026 limits ...",
+          "scores": {
+            "factual_accuracy": 1.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response is factually accurate as it correctly states that the 2026 contribution limits have not been announced and provides the correct information for the 2024 limits. It also demonstrates good recency awareness by acknowledging the current knowledge cutoff and the typical timeframe for the IRS to announce new limits. However, the response lacks completeness as it does not cover the topic of income limits for Roth IRA accounts."
+          },
+          "weighted_score": 0.85
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "The IRS typically announces the HSA contribution limits for the upcoming year in **late October or early November** of the preceding year.\n\nTherefore, the **2026 HSA contribution limits have not yet been released** by the IRS. We will likely see them announced in **late 2025**.\n\nFor your reference, here are the **current (2024) and upcoming (2025) HSA contribution limits**, which can give you an idea of the expected range for 2026:\n\n---\n\n### 2025 HSA Contribution Limits (Announced November 2024)...",
+          "scores": {
+            "factual_accuracy": 1.0,
+            "completeness": 0.5,
+            "recency_awareness": 1.0,
+            "explanation": "The AI response is factually accurate as it provides correct information about the HSA contribution limits for 2024 and 2025, and it correctly states that the 2026 limits have not been released yet. It also demonstrates good recency awareness by acknowledging the current knowledge cutoff and providing information on where to find the 2026 limits when they are released. However, the response falls short in completeness as it does not provide a direct answer to the question about the 2026 HSA contribution limits, although it covers the topics of individual and family limits, catch-up contributions, and HDHP requirements for the available years."
+          },
+          "weighted_score": 0.85
+        }
+      ],
+      "average_score": 0.85
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "You are entitled to a free credit report from each of the three major credit bureaus (Experian, Equifax, and TransUnion) under specific circumstances.\n\nHere's how to get",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The response mentions the three major credit bureaus, which is factually correct, but it does not provide information on how to get a free credit report, such as through AnnualCreditReport.com, or the frequency of access, such as weekly. It also lacks information on the dispute process and does not acknowledge the current year or knowledge cutoff. Therefore, it scores low on completeness and recency awareness."
+          },
+          "weighted_score": 0.25
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act (MMWA) is a federal law that governs written warranties on consumer products. It doesn't *require* manufacturers to provide a written warranty, but if they do",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.0,
+            "recency_awareness": 0.0,
+            "explanation": "The response provides some basic information about the Magnuson-Moss Warranty Act, such as its relation to written warranties on consumer products, which is factually accurate to a degree. However, it lacks completeness as it does not cover the expected topics of implied warranty, written warranty requirements, and FTC enforcement thoroughly. Additionally, the response does not demonstrate recency awareness, as it does not mention the current year or acknowledge a knowledge cutoff, and it does not provide information from the specified verification source, FTC.gov."
+          },
+          "weighted_score": 0.25
+        }
+      ],
+      "average_score": 0.25
+    }
+  },
+  "overall_score": 0.62,
+  "methodology_version": "1.0",
+  "git_commit": "f780dce3e491",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
