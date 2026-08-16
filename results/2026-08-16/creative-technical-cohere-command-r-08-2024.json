@@ -1,0 +1,53 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-08-16T06:35:53.791511",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a simple Python budget tracker program that fulfills your requirements:\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 0.7,
+        "creative_output": 0.4,
+        "explanation": "The code works perfectly without any errors, hence 'code_works' is 1.0. It meets most of the requirements, including tracking income and expenses with categories and calculating monthly totals. However, the haiku output does not meaningfully reflect the budget data, as it is a static string and does not take into account the actual income and expenses. Therefore, 'meets_requirements' is 0.7. The haiku output is a valid 5-7-5 haiku, but it does not creatively reflect the budget data, hence 'creative_output' is 0.4."
+      },
+      "weighted_score": 0.73
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that generates a recursive short story:\n\n```javascript\nfunction recursiveStory(depth) {\n  if (depth <= 0) {\n    return \"The story ends here, a tale within a tale, a recursive dream.\";\n  } else {\n    return \"Once upon a time, there was a storyteller who loved recursion. \" +\n           \"They began a tale, and within it, another story emerged. \" +\n           \"As the depth increased, the storyteller's voice echoed, \" +\n           \"creating a magical narrative. \" +\n      ...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 1.0,
+        "meets_requirements": 1.0,
+        "creative_output": 0.6,
+        "explanation": "The code runs without errors and demonstrates proper recursion, meeting the 'code_works' and 'meets_requirements' criteria. The story has 3+ levels of recursion and tells a coherent narrative. However, the creative output score is 0.6 because while the recursion metaphor is clever, the story itself is somewhat repetitive and lacks a strong engaging element. The narrative doesn't evolve significantly with each recursive call, making it feel a bit shallow."
+      },
+      "weighted_score": 0.88
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme pattern:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n\n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n\n    # Define the regex pattern for the AABBA rhyme scheme\n    pattern = r'^[A-Z]\\s.*[A-Z]\\s.*\\n[A-Z]\\s.*[A-Z]\\s.*\\n[A-Z]\\s.*[B-Z]\\s.*\\n[A-Z]\\s.*[B-Z]\\s.*...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.4,
+        "meets_requirements": 0.2,
+        "creative_output": 0.6,
+        "explanation": "The code runs without errors, but the regex pattern is overly simplistic and does not accurately validate the AABBA rhyme scheme. The test cases are amusing, but the approach to rhyme detection is not clever. The code does not meet the requirements of validating the rhyme scheme, as it only checks for the presence of uppercase letters and does not consider the actual rhyming words."
+      },
+      "weighted_score": 0.4
+    }
+  ],
+  "overall_score": 0.67,
+  "methodology_version": "1.0",
+  "git_commit": "d81f8b014de9",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

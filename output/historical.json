@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-09",
+  "last_updated": "2026-08-16",
   "models": {
     "together/mistral-7b-instruct": {
       "provider": "together",
@@ -33,125 +33,131 @@
         },
         {
           "date": "2026-05-25",
-          "creative_technical": 0.413,
-          "practical_knowledge": 0.555
+          "practical_knowledge": 0.555,
+          "creative_technical": 0.413
         },
         {
           "date": "2026-05-27",
-          "creative_technical": 0.237,
-          "practical_knowledge": 0.314
+          "practical_knowledge": 0.314,
+          "creative_technical": 0.237
         },
         {
           "date": "2026-05-28",
-          "creative_technical": 0.393,
-          "practical_knowledge": 0.369
+          "practical_knowledge": 0.369,
+          "creative_technical": 0.393
         },
         {
           "date": "2026-05-31",
-          "creative_technical": 0.624,
-          "practical_knowledge": 0.421
+          "practical_knowledge": 0.421,
+          "creative_technical": 0.624
         },
         {
           "date": "2026-06-05",
-          "creative_technical": 0.736,
-          "practical_knowledge": 0.427
+          "practical_knowledge": 0.427,
+          "creative_technical": 0.736
         },
         {
           "date": "2026-06-07",
-          "creative_technical": 0.38,
-          "practical_knowledge": 0.484
+          "practical_knowledge": 0.484,
+          "creative_technical": 0.38
         },
         {
           "date": "2026-06-14",
-          "creative_technical": 0.5,
-          "practical_knowledge": 0.397
+          "practical_knowledge": 0.397,
+          "creative_technical": 0.5
         },
         {
           "date": "2026-06-17",
-          "creative_technical": 0.47,
-          "practical_knowledge": 0.525
+          "practical_knowledge": 0.525,
+          "creative_technical": 0.47
         },
         {
           "date": "2026-06-18",
-          "creative_technical": 0.312,
           "practical_knowledge": 0.477,
           "gsm8k": 0.8,
-          "ifeval": 1.0
+          "ifeval": 1.0,
+          "creative_technical": 0.312
         },
         {
           "date": "2026-06-21",
-          "creative_technical": 0.572,
           "practical_knowledge": 0.38,
-          "gsm8k": 0.6
+          "gsm8k": 0.6,
+          "creative_technical": 0.572
         },
         {
           "date": "2026-06-22",
-          "creative_technical": 0.48,
           "practical_knowledge": 0.511,
-          "gsm8k": 0.667
+          "gsm8k": 0.667,
+          "creative_technical": 0.48
         },
         {
           "date": "2026-06-25",
-          "creative_technical": 0.428,
           "practical_knowledge": 0.413,
-          "gsm8k": 0.6
+          "gsm8k": 0.6,
+          "creative_technical": 0.428
         },
         {
           "date": "2026-06-28",
-          "creative_technical": 0.548,
           "practical_knowledge": 0.495,
           "gsm8k": 0.667,
-          "ifeval": 0.667
+          "ifeval": 0.667,
+          "creative_technical": 0.548
         },
         {
           "date": "2026-06-29",
-          "creative_technical": 0.513,
           "practical_knowledge": 0.47,
           "gsm8k": 0.667,
-          "ifeval": 1.0
+          "ifeval": 1.0,
+          "creative_technical": 0.513
         },
         {
           "date": "2026-07-05",
           "methodology_version": "1.0",
-          "creative_technical": 0.473,
           "practical_knowledge": 0.615,
           "gsm8k": 0.667,
-          "ifeval": 1.0
+          "ifeval": 1.0,
+          "creative_technical": 0.473
         },
         {
           "date": "2026-07-12",
           "methodology_version": "1.0",
-          "creative_technical": 0.66,
           "practical_knowledge": 0.63,
           "gsm8k": 0.667,
-          "ifeval": 1.0
+          "ifeval": 1.0,
+          "creative_technical": 0.66
         },
         {
           "date": "2026-07-19",
           "methodology_version": "1.0",
-          "creative_technical": 0.47,
           "practical_knowledge": 0.6,
           "gsm8k": 0.667,
-          "ifeval": 1.0
+          "ifeval": 1.0,
+          "creative_technical": 0.47
         },
         {
           "date": "2026-07-26",
           "methodology_version": "1.0",
-          "creative_technical": 0.487,
           "practical_knowledge": 0.507,
-          "ifeval": 1.0
+          "ifeval": 1.0,
+          "creative_technical": 0.487
         },
         {
           "date": "2026-08-02",
           "methodology_version": "1.0",
-          "creative_technical": 0.66,
-          "practical_knowledge": 0.557
+          "practical_knowledge": 0.557,
+          "creative_technical": 0.66
         },
         {
           "date": "2026-08-09",
           "methodology_version": "1.0",
-          "creative_technical": 0.647,
-          "practical_knowledge": 0.635
+          "practical_knowledge": 0.635,
+          "creative_technical": 0.647
+        },
+        {
+          "date": "2026-08-16",
+          "methodology_version": "1.0",
+          "practical_knowledge": 0.552,
+          "creative_technical": 0.17
         }
       ],
       "rolling": [
@@ -163,119 +169,124 @@
         },
         {
           "date": "2026-05-25",
-          "creative_technical": 0.413,
-          "practical_knowledge": 0.555
+          "practical_knowledge": 0.555,
+          "creative_technical": 0.413
         },
         {
           "date": "2026-05-27",
-          "creative_technical": 0.325,
-          "practical_knowledge": 0.434
+          "practical_knowledge": 0.434,
+          "creative_technical": 0.325
         },
         {
           "date": "2026-05-28",
-          "creative_technical": 0.348,
-          "practical_knowledge": 0.413
+          "practical_knowledge": 0.413,
+          "creative_technical": 0.348
         },
         {
           "date": "2026-05-31",
-          "creative_technical": 0.418,
-          "practical_knowledge": 0.368
+          "practical_knowledge": 0.368,
+          "creative_technical": 0.418
         },
         {
           "date": "2026-06-05",
-          "creative_technical": 0.584,
-          "practical_knowledge": 0.406
+          "practical_knowledge": 0.406,
+          "creative_technical": 0.584
         },
         {
           "date": "2026-06-07",
-          "creative_technical": 0.58,
-          "practical_knowledge": 0.444
+          "practical_knowledge": 0.444,
+          "creative_technical": 0.58
         },
         {
           "date": "2026-06-14",
-          "creative_technical": 0.539,
-          "practical_knowledge": 0.436
+          "practical_knowledge": 0.436,
+          "creative_technical": 0.539
         },
         {
           "date": "2026-06-17",
-          "creative_technical": 0.45,
-          "practical_knowledge": 0.469
+          "practical_knowledge": 0.469,
+          "creative_technical": 0.45
         },
         {
           "date": "2026-06-18",
-          "creative_technical": 0.427,
           "practical_knowledge": 0.466,
           "gsm8k": 0.8,
-          "ifeval": 1.0
+          "ifeval": 1.0,
+          "creative_technical": 0.427
         },
         {
           "date": "2026-06-21",
-          "creative_technical": 0.451,
           "practical_knowledge": 0.461,
-          "gsm8k": 0.7
+          "gsm8k": 0.7,
+          "creative_technical": 0.451
         },
         {
           "date": "2026-06-22",
-          "creative_technical": 0.455,
           "practical_knowledge": 0.456,
-          "gsm8k": 0.689
+          "gsm8k": 0.689,
+          "creative_technical": 0.455
         },
         {
           "date": "2026-06-25",
-          "creative_technical": 0.493,
           "practical_knowledge": 0.435,
-          "gsm8k": 0.622
+          "gsm8k": 0.622,
+          "creative_technical": 0.493
         },
         {
           "date": "2026-06-28",
-          "creative_technical": 0.485,
           "practical_knowledge": 0.473,
           "gsm8k": 0.645,
-          "ifeval": 0.667
+          "ifeval": 0.667,
+          "creative_technical": 0.485
         },
         {
           "date": "2026-06-29",
-          "creative_technical": 0.496,
           "practical_knowledge": 0.459,
           "gsm8k": 0.645,
-          "ifeval": 0.834
+          "ifeval": 0.834,
+          "creative_technical": 0.496
         },
         {
           "date": "2026-07-05",
-          "creative_technical": 0.511,
           "practical_knowledge": 0.527,
           "gsm8k": 0.667,
-          "ifeval": 0.889
+          "ifeval": 0.889,
+          "creative_technical": 0.511
         },
         {
           "date": "2026-07-12",
-          "creative_technical": 0.549,
           "practical_knowledge": 0.572,
           "gsm8k": 0.667,
-          "ifeval": 1.0
+          "ifeval": 1.0,
+          "creative_technical": 0.549
         },
         {
           "date": "2026-07-19",
-          "creative_technical": 0.534,
           "practical_knowledge": 0.615,
           "gsm8k": 0.667,
-          "ifeval": 1.0
+          "ifeval": 1.0,
+          "creative_technical": 0.534
         },
         {
           "date": "2026-07-26",
-          "creative_technical": 0.539,
           "practical_knowledge": 0.579,
-          "ifeval": 1.0
+          "ifeval": 1.0,
+          "creative_technical": 0.539
         },
         {
           "date": "2026-08-02",
-          "creative_technical": 0.539,
-          "practical_knowledge": 0.555
+          "practical_knowledge": 0.555,
+          "creative_technical": 0.539
         },
         {
           "date": "2026-08-09",
-          "creative_technical": 0.598,
-          "practical_knowledge": 0.566
+          "practical_knowledge": 0.566,
+          "creative_technical": 0.598
+        },
+        {
+          "date": "2026-08-16",
+          "practical_knowledge": 0.581,
+          "creative_technical": 0.492
         }
       ]
     },
@@ -318,298 +329,6 @@
       "rolling": [
         {
           "date": "2026-02-04"
-        }
-      ]
-    },
-    "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free": {
-      "provider": "together",
-      "tier": "free",
-      "scores": [
-        {
-          "date": "2026-05-27",
-          "practical_knowledge": null,
-          "creative_technical": null
-        },
-        {
-          "date": "2026-05-28",
-          "practical_knowledge": null,
-          "creative_technical": null
-        },
-        {
-          "date": "2026-05-31",
-          "practical_knowledge": null,
-          "creative_technical": null
-        }
-      ],
-      "rolling": [
-        {
-          "date": "2026-05-27"
-        },
-        {
-          "date": "2026-05-28"
-        },
-        {
-          "date": "2026-05-31"
-        }
-      ]
-    },
-    "cohere/command-r-08-2024": {
-      "provider": "cohere",
-      "tier": "free",
-      "scores": [
-        {
-          "date": "2026-05-27",
-          "creative_technical": 0.51,
-          "practical_knowledge": 0.459
-        },
-        {
-          "date": "2026-05-28",
-          "creative_technical": 0.577,
-          "practical_knowledge": 0.536
-        },
-        {
-          "date": "2026-05-31",
-          "creative_technical": 0.276,
-          "practical_knowledge": 0.411
-        },
-        {
-          "date": "2026-06-05",
-          "creative_technical": 0.578,
-          "practical_knowledge": 0.516
-        },
-        {
-          "date": "2026-06-07",
-          "creative_technical": 0.428,
-          "practical_knowledge": 0.534
-        },
-        {
-          "date": "2026-06-14",
-          "creative_technical": 0.452,
-          "practical_knowledge": 0.562
-        },
-        {
-          "date": "2026-06-17",
-          "creative_technical": 0.765,
-          "practical_knowledge": 0.59
-        },
-        {
-          "date": "2026-06-18",
-          "creative_technical": 0.452,
-          "practical_knowledge": 0.5
-        },
-        {
-          "date": "2026-06-21",
-          "creative_technical": 0.396,
-          "practical_knowledge": 0.471
-        },
-        {
-          "date": "2026-06-22",
-          "creative_technical": 0.537,
-          "practical_knowledge": 0.5
-        },
-        {
-          "date": "2026-06-25",
-          "creative_technical": 0.484,
-          "practical_knowledge": 0.55
-        },
-        {
-          "date": "2026-06-28",
-          "gsm8k": 1.0,
-          "creative_technical": 0.65,
-          "practical_knowledge": 0.593,
-          "ifeval": 0.333
-        },
-        {
-          "date": "2026-06-29",
-          "gsm8k": 1.0,
-          "creative_technical": 0.69,
-          "practical_knowledge": 0.5,
-          "ifeval": 0.333
-        },
-        {
-          "date": "2026-07-05",
-          "methodology_version": "1.0",
-          "gsm8k": 1.0,
-          "creative_technical": 0.7,
-          "practical_knowledge": 0.665,
-          "ifeval": 0.333
-        },
-        {
-          "date": "2026-07-12",
-          "methodology_version": "1.0",
-          "gsm8k": 1.0,
-          "creative_technical": 0.62,
-          "practical_knowledge": 0.56,
-          "ifeval": 0.333
-        },
-        {
-          "date": "2026-07-19",
-          "methodology_version": "1.0",
-          "gsm8k": 1.0,
-          "creative_technical": 0.63,
-          "practical_knowledge": 0.535,
-          "ifeval": 0.333
-        },
-        {
-          "date": "2026-07-26",
-          "methodology_version": "1.0",
-          "gsm8k": 1.0,
-          "creative_technical": 0.64,
-          "practical_knowledge": 0.645,
-          "ifeval": 0.333
-        },
-        {
-          "date": "2026-08-02",
-          "methodology_version": "1.0",
-          "creative_technical": 0.65,
-          "practical_knowledge": 0.56
-        },
-        {
-          "date": "2026-08-09",
-          "methodology_version": "1.0",
-          "creative_technical": 0.64,
-          "practical_knowledge": 0.565
-        }
-      ],
-      "rolling": [
-        {
-          "date": "2026-05-27",
-          "creative_technical": 0.51,
-          "practical_knowledge": 0.459
-        },
-        {
-          "date": "2026-05-28",
-          "creative_technical": 0.543,
-          "practical_knowledge": 0.498
-        },
-        {
-          "date": "2026-05-31",
-          "creative_technical": 0.454,
-          "practical_knowledge": 0.469
-        },
-        {
-          "date": "2026-06-05",
-          "creative_technical": 0.477,
-          "practical_knowledge": 0.488
-        },
-        {
-          "date": "2026-06-07",
-          "creative_technical": 0.427,
-          "practical_knowledge": 0.487
-        },
-        {
-          "date": "2026-06-14",
-          "creative_technical": 0.486,
-          "practical_knowledge": 0.537
-        },
-        {
-          "date": "2026-06-17",
-          "creative_technical": 0.548,
-          "practical_knowledge": 0.562
-        },
-        {
-          "date": "2026-06-18",
-          "creative_technical": 0.556,
-          "practical_knowledge": 0.551
-        },
-        {
-          "date": "2026-06-21",
-          "creative_technical": 0.538,
-          "practical_knowledge": 0.52
-        },
-        {
-          "date": "2026-06-22",
-          "creative_technical": 0.462,
-          "practical_knowledge": 0.49
-        },
-        {
-          "date": "2026-06-25",
-          "creative_technical": 0.472,
-          "practical_knowledge": 0.507
-        },
-        {
-          "date": "2026-06-28",
-          "gsm8k": 1.0,
-          "creative_technical": 0.557,
-          "practical_knowledge": 0.548,
-          "ifeval": 0.333
-        },
-        {
-          "date": "2026-06-29",
-          "gsm8k": 1.0,
-          "creative_technical": 0.608,
-          "practical_knowledge": 0.548,
-          "ifeval": 0.333
-        },
-        {
-          "date": "2026-07-05",
-          "gsm8k": 1.0,
-          "creative_technical": 0.68,
-          "practical_knowledge": 0.586,
-          "ifeval": 0.333
-        },
-        {
-          "date": "2026-07-12",
-          "gsm8k": 1.0,
-          "creative_technical": 0.67,
-          "practical_knowledge": 0.575,
-          "ifeval": 0.333
-        },
-        {
-          "date": "2026-07-19",
-          "gsm8k": 1.0,
-          "creative_technical": 0.65,
-          "practical_knowledge": 0.587,
-          "ifeval": 0.333
-        },
-        {
-          "date": "2026-07-26",
-          "gsm8k": 1.0,
-          "creative_technical": 0.63,
-          "practical_knowledge": 0.58,
-          "ifeval": 0.333
-        },
-        {
-          "date": "2026-08-02",
-          "creative_technical": 0.64,
-          "practical_knowledge": 0.58
-        },
-        {
-          "date": "2026-08-09",
-          "creative_technical": 0.643,
-          "practical_knowledge": 0.59
-        }
-      ]
-    },
-    "google/gemini-2.0-flash": {
-      "provider": "google",
-      "tier": "free",
-      "scores": [
-        {
-          "date": "2026-05-27",
-          "practical_knowledge": null,
-          "creative_technical": null
-        },
-        {
-          "date": "2026-05-28",
-          "practical_knowledge": null,
-          "creative_technical": null
-        },
-        {
-          "date": "2026-05-31",
-          "practical_knowledge": null,
-          "creative_technical": null
-        }
-      ],
-      "rolling": [
-        {
-          "date": "2026-05-27"
-        },
-        {
-          "date": "2026-05-28"
-        },
-        {
-          "date": "2026-05-31"
         }
       ]
     },
@@ -717,6 +436,12 @@
           "methodology_version": "1.0",
           "creative_technical": null,
           "practical_knowledge": 0.699
+        },
+        {
+          "date": "2026-08-16",
+          "methodology_version": "1.0",
+          "creative_technical": 0.48,
+          "practical_knowledge": 0.589
         }
       ],
       "rolling": [
@@ -814,6 +539,314 @@
           "date": "2026-08-09",
           "creative_technical": 0.55,
           "practical_knowledge": 0.543
+        },
+        {
+          "date": "2026-08-16",
+          "creative_technical": 0.48,
+          "practical_knowledge": 0.613
+        }
+      ]
+    },
+    "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free": {
+      "provider": "together",
+      "tier": "free",
+      "scores": [
+        {
+          "date": "2026-05-27",
+          "practical_knowledge": null,
+          "creative_technical": null
+        },
+        {
+          "date": "2026-05-28",
+          "practical_knowledge": null,
+          "creative_technical": null
+        },
+        {
+          "date": "2026-05-31",
+          "practical_knowledge": null,
+          "creative_technical": null
+        }
+      ],
+      "rolling": [
+        {
+          "date": "2026-05-27"
+        },
+        {
+          "date": "2026-05-28"
+        },
+        {
+          "date": "2026-05-31"
+        }
+      ]
+    },
+    "cohere/command-r-08-2024": {
+      "provider": "cohere",
+      "tier": "free",
+      "scores": [
+        {
+          "date": "2026-05-27",
+          "practical_knowledge": 0.459,
+          "creative_technical": 0.51
+        },
+        {
+          "date": "2026-05-28",
+          "practical_knowledge": 0.536,
+          "creative_technical": 0.577
+        },
+        {
+          "date": "2026-05-31",
+          "practical_knowledge": 0.411,
+          "creative_technical": 0.276
+        },
+        {
+          "date": "2026-06-05",
+          "practical_knowledge": 0.516,
+          "creative_technical": 0.578
+        },
+        {
+          "date": "2026-06-07",
+          "practical_knowledge": 0.534,
+          "creative_technical": 0.428
+        },
+        {
+          "date": "2026-06-14",
+          "practical_knowledge": 0.562,
+          "creative_technical": 0.452
+        },
+        {
+          "date": "2026-06-17",
+          "practical_knowledge": 0.59,
+          "creative_technical": 0.765
+        },
+        {
+          "date": "2026-06-18",
+          "practical_knowledge": 0.5,
+          "creative_technical": 0.452
+        },
+        {
+          "date": "2026-06-21",
+          "practical_knowledge": 0.471,
+          "creative_technical": 0.396
+        },
+        {
+          "date": "2026-06-22",
+          "practical_knowledge": 0.5,
+          "creative_technical": 0.537
+        },
+        {
+          "date": "2026-06-25",
+          "practical_knowledge": 0.55,
+          "creative_technical": 0.484
+        },
+        {
+          "date": "2026-06-28",
+          "practical_knowledge": 0.593,
+          "creative_technical": 0.65,
+          "gsm8k": 1.0,
+          "ifeval": 0.333
+        },
+        {
+          "date": "2026-06-29",
+          "practical_knowledge": 0.5,
+          "creative_technical": 0.69,
+          "gsm8k": 1.0,
+          "ifeval": 0.333
+        },
+        {
+          "date": "2026-07-05",
+          "methodology_version": "1.0",
+          "practical_knowledge": 0.665,
+          "creative_technical": 0.7,
+          "gsm8k": 1.0,
+          "ifeval": 0.333
+        },
+        {
+          "date": "2026-07-12",
+          "methodology_version": "1.0",
+          "practical_knowledge": 0.56,
+          "creative_technical": 0.62,
+          "gsm8k": 1.0,
+          "ifeval": 0.333
+        },
+        {
+          "date": "2026-07-19",
+          "methodology_version": "1.0",
+          "practical_knowledge": 0.535,
+          "creative_technical": 0.63,
+          "gsm8k": 1.0,
+          "ifeval": 0.333
+        },
+        {
+          "date": "2026-07-26",
+          "methodology_version": "1.0",
+          "practical_knowledge": 0.645,
+          "creative_technical": 0.64,
+          "gsm8k": 1.0,
+          "ifeval": 0.333
+        },
+        {
+          "date": "2026-08-02",
+          "methodology_version": "1.0",
+          "practical_knowledge": 0.56,
+          "creative_technical": 0.65
+        },
+        {
+          "date": "2026-08-09",
+          "methodology_version": "1.0",
+          "practical_knowledge": 0.565,
+          "creative_technical": 0.64
+        },
+        {
+          "date": "2026-08-16",
+          "methodology_version": "1.0",
+          "practical_knowledge": 0.66,
+          "creative_technical": 0.67
+        }
+      ],
+      "rolling": [
+        {
+          "date": "2026-05-27",
+          "practical_knowledge": 0.459,
+          "creative_technical": 0.51
+        },
+        {
+          "date": "2026-05-28",
+          "practical_knowledge": 0.498,
+          "creative_technical": 0.543
+        },
+        {
+          "date": "2026-05-31",
+          "practical_knowledge": 0.469,
+          "creative_technical": 0.454
+        },
+        {
+          "date": "2026-06-05",
+          "practical_knowledge": 0.488,
+          "creative_technical": 0.477
+        },
+        {
+          "date": "2026-06-07",
+          "practical_knowledge": 0.487,
+          "creative_technical": 0.427
+        },
+        {
+          "date": "2026-06-14",
+          "practical_knowledge": 0.537,
+          "creative_technical": 0.486
+        },
+        {
+          "date": "2026-06-17",
+          "practical_knowledge": 0.562,
+          "creative_technical": 0.548
+        },
+        {
+          "date": "2026-06-18",
+          "practical_knowledge": 0.551,
+          "creative_technical": 0.556
+        },
+        {
+          "date": "2026-06-21",
+          "practical_knowledge": 0.52,
+          "creative_technical": 0.538
+        },
+        {
+          "date": "2026-06-22",
+          "practical_knowledge": 0.49,
+          "creative_technical": 0.462
+        },
+        {
+          "date": "2026-06-25",
+          "practical_knowledge": 0.507,
+          "creative_technical": 0.472
+        },
+        {
+          "date": "2026-06-28",
+          "practical_knowledge": 0.548,
+          "creative_technical": 0.557,
+          "gsm8k": 1.0,
+          "ifeval": 0.333
+        },
+        {
+          "date": "2026-06-29",
+          "practical_knowledge": 0.548,
+          "creative_technical": 0.608,
+          "gsm8k": 1.0,
+          "ifeval": 0.333
+        },
+        {
+          "date": "2026-07-05",
+          "practical_knowledge": 0.586,
+          "creative_technical": 0.68,
+          "gsm8k": 1.0,
+          "ifeval": 0.333
+        },
+        {
+          "date": "2026-07-12",
+          "practical_knowledge": 0.575,
+          "creative_technical": 0.67,
+          "gsm8k": 1.0,
+          "ifeval": 0.333
+        },
+        {
+          "date": "2026-07-19",
+          "practical_knowledge": 0.587,
+          "creative_technical": 0.65,
+          "gsm8k": 1.0,
+          "ifeval": 0.333
+        },
+        {
+          "date": "2026-07-26",
+          "practical_knowledge": 0.58,
+          "creative_technical": 0.63,
+          "gsm8k": 1.0,
+          "ifeval": 0.333
+        },
+        {
+          "date": "2026-08-02",
+          "practical_knowledge": 0.58,
+          "creative_technical": 0.64
+        },
+        {
+          "date": "2026-08-09",
+          "practical_knowledge": 0.59,
+          "creative_technical": 0.643
+        },
+        {
+          "date": "2026-08-16",
+          "practical_knowledge": 0.595,
+          "creative_technical": 0.653
+        }
+      ]
+    },
+    "google/gemini-2.0-flash": {
+      "provider": "google",
+      "tier": "free",
+      "scores": [
+        {
+          "date": "2026-05-27",
+          "practical_knowledge": null,
+          "creative_technical": null
+        },
+        {
+          "date": "2026-05-28",
+          "practical_knowledge": null,
+          "creative_technical": null
+        },
+        {
+          "date": "2026-05-31",
+          "practical_knowledge": null,
+          "creative_technical": null
+        }
+      ],
+      "rolling": [
+        {
+          "date": "2026-05-27"
+        },
+        {
+          "date": "2026-05-28"
+        },
+        {
+          "date": "2026-05-31"
         }
       ]
     },
@@ -823,171 +856,182 @@
       "scores": [
         {
           "date": "2026-06-05",
-          "practical_knowledge": 0.325,
-          "creative_technical": 0.03
+          "creative_technical": 0.03,
+          "practical_knowledge": 0.325
         },
         {
           "date": "2026-06-07",
-          "practical_knowledge": 0.225,
-          "creative_technical": 0.0
+          "creative_technical": 0.0,
+          "practical_knowledge": 0.225
         },
         {
           "date": "2026-06-14",
-          "practical_knowledge": 0.23,
-          "creative_technical": 0.112
+          "creative_technical": 0.112,
+          "practical_knowledge": 0.23
         },
         {
           "date": "2026-06-17",
-          "practical_knowledge": 0.305,
-          "creative_technical": 0.0
+          "creative_technical": 0.0,
+          "practical_knowledge": 0.305
         },
         {
           "date": "2026-06-18",
-          "practical_knowledge": null,
-          "creative_technical": null
+          "creative_technical": null,
+          "practical_knowledge": null
         },
         {
           "date": "2026-06-21",
-          "practical_knowledge": 0.344,
-          "creative_technical": 0.03
+          "creative_technical": 0.03,
+          "practical_knowledge": 0.344
         },
         {
           "date": "2026-06-22",
-          "practical_knowledge": 0.395,
-          "creative_technical": 0.307
+          "creative_technical": 0.307,
+          "practical_knowledge": 0.395
         },
         {
           "date": "2026-06-25",
-          "practical_knowledge": 0.419,
-          "creative_technical": 0.0
+          "creative_technical": 0.0,
+          "practical_knowledge": 0.419
         },
         {
           "date": "2026-06-28",
-          "practical_knowledge": null,
-          "creative_technical": null
+          "creative_technical": null,
+          "practical_knowledge": null
         },
         {
           "date": "2026-06-29",
-          "practical_knowledge": null,
-          "creative_technical": null
+          "creative_technical": null,
+          "practical_knowledge": null
         },
         {
           "date": "2026-07-05",
           "methodology_version": "1.0",
-          "practical_knowledge": 0.535,
-          "creative_technical": 0.02
+          "creative_technical": 0.02,
+          "practical_knowledge": 0.535
         },
         {
           "date": "2026-07-12",
           "methodology_version": "1.0",
-          "practical_knowledge": 0.56,
-          "creative_technical": 0.02
+          "creative_technical": 0.02,
+          "practical_knowledge": 0.56
         },
         {
           "date": "2026-07-19",
           "methodology_version": "1.0",
-          "practical_knowledge": 0.595,
-          "creative_technical": 0.02
+          "creative_technical": 0.02,
+          "practical_knowledge": 0.595
         },
         {
           "date": "2026-07-26",
           "methodology_version": "1.0",
-          "practical_knowledge": 0.535,
-          "creative_technical": 0.0
+          "creative_technical": 0.0,
+          "practical_knowledge": 0.535
         },
         {
           "date": "2026-08-02",
           "methodology_version": "1.0",
-          "practical_knowledge": 0.56,
-          "creative_technical": 0.02
+          "creative_technical": 0.02,
+          "practical_knowledge": 0.56
         },
         {
           "date": "2026-08-09",
           "methodology_version": "1.0",
-          "practical_knowledge": 0.62,
-          "creative_technical": 0.02
+          "creative_technical": 0.02,
+          "practical_knowledge": 0.62
+        },
+        {
+          "date": "2026-08-16",
+          "methodology_version": "1.0",
+          "creative_technical": 0.0,
+          "practical_knowledge": 0.575
         }
       ],
       "rolling": [
         {
           "date": "2026-06-05",
-          "practical_knowledge": 0.325,
-          "creative_technical": 0.03
+          "creative_technical": 0.03,
+          "practical_knowledge": 0.325
         },
         {
           "date": "2026-06-07",
-          "practical_knowledge": 0.275,
-          "creative_technical": 0.015
+          "creative_technical": 0.015,
+          "practical_knowledge": 0.275
         },
         {
           "date": "2026-06-14",
-          "practical_knowledge": 0.26,
-          "creative_technical": 0.047
+          "creative_technical": 0.047,
+          "practical_knowledge": 0.26
         },
         {
           "date": "2026-06-17",
-          "practical_knowledge": 0.253,
-          "creative_technical": 0.037
+          "creative_technical": 0.037,
+          "practical_knowledge": 0.253
         },
         {
           "date": "2026-06-18",
-          "practical_knowledge": 0.268,
-          "creative_technical": 0.056
+          "creative_technical": 0.056,
+          "practical_knowledge": 0.268
         },
         {
           "date": "2026-06-21",
-          "practical_knowledge": 0.325,
-          "creative_technical": 0.015
+          "creative_technical": 0.015,
+          "practical_knowledge": 0.325
         },
         {
           "date": "2026-06-22",
-          "practical_knowledge": 0.369,
-          "creative_technical": 0.168
+          "creative_technical": 0.168,
+          "practical_knowledge": 0.369
         },
         {
           "date": "2026-06-25",
-          "practical_knowledge": 0.386,
-          "creative_technical": 0.112
+          "creative_technical": 0.112,
+          "practical_knowledge": 0.386
         },
         {
           "date": "2026-06-28",
-          "practical_knowledge": 0.407,
-          "creative_technical": 0.153
+          "creative_technical": 0.153,
+          "practical_knowledge": 0.407
         },
         {
           "date": "2026-06-29",
-          "practical_knowledge": 0.419,
-          "creative_technical": 0.0
+          "creative_technical": 0.0,
+          "practical_knowledge": 0.419
         },
         {
           "date": "2026-07-05",
-          "practical_knowledge": 0.535,
-          "creative_technical": 0.02
+          "creative_technical": 0.02,
+          "practical_knowledge": 0.535
         },
         {
           "date": "2026-07-12",
-          "practical_knowledge": 0.548,
-          "creative_technical": 0.02
+          "creative_technical": 0.02,
+          "practical_knowledge": 0.548
         },
         {
           "date": "2026-07-19",
-          "practical_knowledge": 0.563,
-          "creative_technical": 0.02
+          "creative_technical": 0.02,
+          "practical_knowledge": 0.563
         },
         {
           "date": "2026-07-26",
-          "practical_knowledge": 0.563,
-          "creative_technical": 0.013
+          "creative_technical": 0.013,
+          "practical_knowledge": 0.563
         },
         {
           "date": "2026-08-02",
-          "practical_knowledge": 0.563,
-          "creative_technical": 0.013
+          "creative_technical": 0.013,
+          "practical_knowledge": 0.563
         },
         {
           "date": "2026-08-09",
-          "practical_knowledge": 0.572,
-          "creative_technical": 0.013
+          "creative_technical": 0.013,
+          "practical_knowledge": 0.572
+        },
+        {
+          "date": "2026-08-16",
+          "creative_technical": 0.013,
+          "practical_knowledge": 0.585
         }
       ]
     }
