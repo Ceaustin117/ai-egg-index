@@ -1,0 +1,141 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-08-23T06:35:34.406227",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a8a94b6-0faaacbd401912502591ee8c;abe15e57-285e-4a85-ad2e-0171d9d4bd90)\n\nBad request:\n{'message': 'This model is busy, please try again later.', 'type': 'server_error', 'code': 'completion_error'}",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "I'm happy to help! However, I need to correct you that the standard deduction amount for a single filer in 2026 is not yet available. The standard deduction amounts for the 2026 tax year have not been announced by the Internal Revenue Service (IRS) or the U.S. Congress.\n\nThe standard deduction amounts for the 2022 tax year, which is the most recent tax year, are as follows:\n\n* Single filers: $12,950\n* Married filing jointly: $25,900\n* Head of household: $19,400\n\nPlease note that these amounts ma...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "As of 2026, the tax credits for electric vehicle (EV) purchases in the United States are as follows:\n\n**Federal Tax Credit:**\n\n* The federal government offers a tax credit of up to $7,500 for the purchase of a new, qualified electric vehicle (EV). The credit amount is based on the vehicle's battery size and is phased out as the manufacturer reaches certain sales thresholds.\n* For 2026, the federal tax credit is available for the purchase of a new EV with a battery size of at least 14 kWh, and th...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "As of January 2022, the current federal minimum wage in the United States is $7.25 per hour. This has been the federal minimum wage since July 2009.\n\nHowever, there have been recent efforts to increase the federal minimum wage. In 2021, the House of Representatives passed the Raise the Wage Act, which would have gradually increased the federal minimum wage to $15 per hour by 2025. However, the bill did not pass the Senate.\n\nSome states and cities have taken action to increase their minimum wages...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "As of January 1, 2020, the federal overtime pay rules for salaried employees are as follows:\n\n1. **Exempt vs. Non-Exempt**: The Fair Labor Standards Act (FLSA) divides employees into two categories: exempt and non-exempt. Exempt employees are not entitled to overtime pay, while non-exempt employees are entitled to overtime pay.\n2. **Salaried Employees**: Salaried employees are typically considered exempt from overtime pay, but there are some exceptions.\n3. **Duties Test**: To be considered exemp...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "The 2026 contribution limits for 401(k) accounts have not been officially announced by the Internal Revenue Service (IRS) yet, as the 2026 tax year has not yet begun. However, the IRS typically announces the contribution limits for the upcoming year in October or November of the previous year.\n\nFor 2022, the contribution limits for 401(k) accounts are:\n\n* The annual contribution limit is $19,500\n* The catch-up contribution limit for individuals 50 and older is $6,500\n\nIt's important to note that...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "According to the IRS, the 2026 contribution limits for Traditional and Roth IRA accounts are:\n\n* Traditional IRA: $6,500 (catch-up contribution limit for those 50 and older: $7,500)\n* Roth IRA: $6,500 (catch-up contribution limit for those 50 and older: $7,500)\n\nPlease note that these limits are subject to change, and it's always a good idea to check with the IRS or a financial advisor for the most up-to-date information.",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "According to the IRS, the 2026 Health Savings Account (HSA) contribution limits are:\n\n* For individuals with self-only coverage: $3,550\n* For families with family coverage: $7,100\n\nThese limits apply to contributions made to HSAs for the 2026 calendar year. Note that these limits are subject to change, so it's always a good idea to check the IRS website or consult with a tax professional for the most up-to-date information.",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "You are entitled to one free credit report from each of the three major credit reporting agencies (Equifax, Experian, and TransUnion) once every 12 months. This is mandated by federal law, known as the Fair Credit Reporting Act (FCRA). You can request your free credit reports from AnnualCreditReport.com, which is the official website authorized by the FCRA.\n\nHere's how to get your free credit report:\n\n1. Visit AnnualCreditReport.com.\n2. Fill out the required information, including your name, add...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act is a federal law that regulates warranties on consumer products. It provides protections for consumers when a product breaks or fails to perform as expected. Here are your rights under the Magnuson-Moss Warranty Act:\n\n1. **Written Warranty**: The manufacturer must provide a written warranty that is clear and concise. The warranty must specify the duration of the warranty, the products or services covered, and the obligations of both the manufacturer and the consume...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    }
+  },
+  "overall_score": 0.5,
+  "methodology_version": "1.0",
+  "git_commit": "5b2dc7ddba31",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

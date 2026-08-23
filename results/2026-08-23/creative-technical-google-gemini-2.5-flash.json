@@ -1,0 +1,53 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-08-23T06:33:07.948747",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to record income and expenses, categorize them, and then provides a unique monthly summary in the form of a haiku poem (5-7-5 syllables) based on your net balance.\n\n```python\nimport datetime\n\nclass Transaction:\n    \"\"\"Represents a single financial transaction (income or expense).\"\"\"\n    def __init__(self, date_str, type",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Okay, here's a JavaScript function that generates a story about recursion, where the story itself is structured using recursive function calls. It will have at least 3 levels of recursion.\n\n```javascript\n/**\n * Generates a segment of a recursive story, where each segment tells\n * a story that contains another story, demonstrating recursion.\n *\n * @param {number} level The",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Okay, this is a fun and challenging request!\n\nThe core difficulty with \"validating a limerick using *only* regular expressions\" is that **regular expressions cannot genuinely understand or check for rhyming words based on sound.** They can only check for *identical character patterns*.\n\nTherefore, for the purpose of this exercise, we will interpret \"AABBA rhyme scheme pattern\" as:\n1",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    }
+  ],
+  "overall_score": 0.38,
+  "methodology_version": "1.0",
+  "git_commit": "5b2dc7ddba31",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
