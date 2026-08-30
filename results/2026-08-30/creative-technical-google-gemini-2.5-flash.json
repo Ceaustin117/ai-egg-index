@@ -1,0 +1,53 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-08-30T11:06:43.865257",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to record income and expenses with categories, calculates monthly totals, and presents a creative summary of your financial health for any given month in the form of a haiku poem (5-7-5 syllables).\n\nThe haiku generation is based on predefined templates that reflect different financial scenarios (e.g., surplus, deficit, balanced).\n\n```python\nimport datetime",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that generates a short story about recursion, where the story itself is constructed using recursive function calls. The story will have at least 3 levels of recursion, clearly demonstrating the concept.\n\n```javascript\nfunction tellRecursiveStory(level = 0, maxDepth = 3) {\n    let storySegment = \"\";\n    const indent = \"  \".repeat(level); // For visual clarity of depth\n\n    // --- Base Case for the Story's Narrative ---\n    // This is where the story stops descending a...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Creating a Python program to validate a limerick *solely* using regular expressions, especially for the rhyme scheme, presents a significant challenge due to the inherent limitations of regex. Regular expressions operate on character patterns, not phonetic sounds.\n\nTherefore, for the AABBA rhyme scheme, we will interpret \"rhyme\" as matching the *exact last word* of the lines. This is the most robust",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    }
+  ],
+  "overall_score": 0.447,
+  "methodology_version": "1.0",
+  "git_commit": "727b34f3c501",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

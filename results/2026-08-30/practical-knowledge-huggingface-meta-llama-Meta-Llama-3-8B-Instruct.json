@@ -1,0 +1,141 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-08-30T11:13:45.767931",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a94106a-0e89b33803a844dd4fad2bb4;ca8d175b-89bd-46ea-a593-1a53e05fb1bd)\n\nBad request:\n{'message': 'This model is busy, please try again later.', 'type': 'server_error', 'code': 'completion_error'}",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a94107a-59db5831535e702212355699;b47fb2f8-f7f1-49ff-b8b4-fc35ab3ceabc)\n\nBad request:\n{'message': 'This model is busy, please try again later.', 'type': 'server_error', 'code': 'completion_error'}",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "ERROR: HfHubHTTPError: 504 Server Error: Gateway Time-out for url: https://router.huggingface.co/featherless-ai/v1/chat/completions (Amz CF ID: o0BZbmOfMKpSWmVB3uhYbofR4gGTwdE_j9-3e3W7F7CAEH68UwUwKw==)",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a941102-2e58cbe21d5c6c971a625f26;c6ac2abb-f093-4f2c-87ab-3208aa45a47c)\n\nBad request:\n{'message': 'This model is busy, please try again later.', 'type': 'server_error', 'code': 'completion_error'}",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a941114-637cf91e5b6f2c414d489e52;3ba695a8-306c-4638-915d-7abec441bd55)\n\nBad request:\n{'message': 'This model is busy, please try again later.', 'type': 'server_error', 'code': 'completion_error'}",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "ERROR: HfHubHTTPError: 504 Server Error: Gateway Time-out for url: https://router.huggingface.co/featherless-ai/v1/chat/completions (Amz CF ID: uvbe1Ssc5JxcQe3rdbNmqQ2Pj0befvbF1YYYyj-YZJDUOMmLaFAojQ==)",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a94119d-4a2b9e01482103ea01aaf519;99447578-2908-427a-a077-51c11ecc878a)\n\nBad request:\n{'message': 'This model is busy, please try again later.', 'type': 'server_error', 'code': 'completion_error'}",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a9411ad-21e96bc46edd8e256cff0480;f537ec14-c5a2-4578-98e9-a722c1b02074)\n\nBad request:\n{'message': 'This model is busy, please try again later.', 'type': 'server_error', 'code': 'completion_error'}",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a9411bc-51b3ee16468dcd57786f07eb;aa3976b8-ae41-4de7-bc03-b9ca75ab49d5)\n\nBad request:\n{'message': 'This model is busy, please try again later.', 'type': 'server_error', 'code': 'completion_error'}",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "ERROR: BadRequestError: (Request ID: Root=1-6a9411ce-07cf21151d48b18223faf271;652b0abd-a21c-4a3f-b627-03bdf5f9b45f)\n\nBad request:\n{'message': 'This model is busy, please try again later.', 'type': 'server_error', 'code': 'completion_error'}",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    }
+  },
+  "overall_score": 0.5,
+  "methodology_version": "1.0",
+  "git_commit": "727b34f3c501",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

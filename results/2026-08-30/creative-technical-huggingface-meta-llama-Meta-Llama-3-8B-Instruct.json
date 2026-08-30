@@ -1,0 +1,53 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-08-30T11:19:57.848191",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "ERROR: BadRequestError: (Request ID: Root=1-6a9411de-150f3daf13387297161f033b;d91d7da3-2888-45c4-b789-8f4f499f4333)\n\nBad request:\n{'message': 'This model is busy, please try again later.', 'type': 'server_error', 'code': 'completion_error'}",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "ERROR: BadRequestError: (Request ID: Root=1-6a9411ed-32ffd6356d483cf378dcd6fd;e5a658af-3de2-40be-9ac6-74aaa712c108)\n\nBad request:\n{'message': 'This model is busy, please try again later.', 'type': 'server_error', 'code': 'completion_error'}",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Define the pattern for a limerick\n    pattern = r'^(\\w+\\s\\w+)?\\n?(\\w+\\s\\w+)?\\n?\\1\\n?\\2\\n?(\\w+\\s\\w+)?\\n?(\\w+\\s\\w+)?$'\n    # Check if the text matches the pattern\n    return bool(re.match(pattern, text, re.MULTILINE))\n\n# Test cases\ntest_cases = [\n    (\"There once was a man from Nantucket\\nWho kept all his cash in a bucket\\nBut his daug...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    }
+  ],
+  "overall_score": 0.447,
+  "methodology_version": "1.0",
+  "git_commit": "727b34f3c501",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
