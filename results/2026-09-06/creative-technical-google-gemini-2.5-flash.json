@@ -1,0 +1,53 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-09-06T10:08:49.017965",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to record income and expenses, categorize them, and then provides a monthly financial summary presented as a haiku poem. The data is saved to a JSON file for persistence.\n\n```python\nimport json\nimport datetime\nimport os\nimport random\n\n# --- Configuration ---\nDATA_FILE = 'transactions.json'\n\n# --- Haiku Lines (5-7-",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that generates a recursive story about recursion, using recursive function calls to build the narrative.\n\nThe story has 3 levels of recursion (plus the base case, making 4 distinct parts of the narrative flow).\n\n```javascript\nfunction generateRecursiveStory(level = 0, maxLevels = 3) {\n    // Indentation for better readability in the console output",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "This is a fun and challenging problem because checking rhyme *phonetically* is impossible with regular expressions alone. Regular expressions can only match patterns of characters.\n\nTherefore, for this exercise, we will define \"rhyme\" as having the **exact same last word** (case-insensitive) for the AABBA pattern. This is a common simplification when using regex for limerick validation.\n\nWe will",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    }
+  ],
+  "overall_score": 0.447,
+  "methodology_version": "1.0",
+  "git_commit": "c0c4812fd858",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
