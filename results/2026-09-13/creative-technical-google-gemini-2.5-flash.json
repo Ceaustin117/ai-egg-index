@@ -1,0 +1,53 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-09-13T10:59:16.947297",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker helps you manage your finances by tracking income and expenses. It saves your data to a JSON file for persistence. The unique feature is its ability to summarize your monthly financial performance as a haiku poem (5-7-5 syllables).\n\n**Features:**\n1.  **Track Income and Expenses:** Record transactions with date, type (income/expense), category, and amount.\n2.",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Okay, here's a JavaScript function that generates a short story about recursion, where the story itself is structured using recursive function calls. It will have at least 3 levels of recursion.**\n\nThe story will follow a pattern: A character tells a story, and within that story, another character tells *another* story, and so on, until a base case is reached. Then, the narrative \"",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "This is an interesting challenge! Using *only* regular expressions to validate a limerick is quite restrictive, especially for aspects like rhyme and meter.\n\nHere's how we'll approach it with regex:\n\n1.  **Line Count:** We'll ensure there are exactly 5 lines.\n2.  **Rhyme Scheme (AABBA):** This is the trickiest part",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    }
+  ],
+  "overall_score": 0.38,
+  "methodology_version": "1.0",
+  "git_commit": "d9934418240f",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

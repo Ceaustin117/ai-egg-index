@@ -1,0 +1,141 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-09-13T10:59:58.797879",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "The US federal income tax brackets and rates can change annually, so it's important to refer to the most recent tax laws and guidelines. As of my last update in January 2024, I have information on the projected tax brackets for 2026, which may be subject to change. Here are the main changes anticipated for the US federal income tax brackets in 2026:\n\n- The tax brackets and rates are adjusted annually for inflation, and the specific numbers can vary. For 2026, the brackets are expected to be slig...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "I cannot provide you with the standard deduction amount for a single filer in 2026 as the tax rates and deductions are subject to change and are typically announced by the relevant tax authorities closer to the tax year. \n\nIt's best to refer to official government sources or consult a tax professional for the most accurate and up-to-date information regarding tax deductions and rates for a specific year.",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "As of my knowledge cutoff in January 2023, the information available regarding tax credits for electric vehicle purchases in 2026 is limited. However, I can provide you with an overview of the tax credits available as of my knowledge cutoff, and the general trends and policies that may influence future incentives. \n\nThe United States federal government offers tax credits for the purchase of new electric vehicles (EVs) and plug-in hybrid electric vehicles (PHEVs). These tax credits are designed t...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "The current federal minimum wage in the United States is $7.25 per hour, which has been in effect since July 24, 2009. This rate applies to most workers covered by the Fair Labor Standards Act (FLSA).\n\nWhile the federal minimum wage has remained unchanged for over a decade, many states and localities have implemented their own minimum wage laws, often setting higher rates than the federal level. These state and local minimum wages can vary significantly, with some states regularly adjusting thei...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "The Fair Labor Standards Act (FLSA) sets the federal overtime pay rules for salaried employees, as well as for hourly workers. According to the FLSA, salaried employees who are considered \"nonexempt\" are entitled to overtime pay if they work more than 40 hours in a workweek. \n\nNonexempt salaried employees must be paid at least one and one-half times their regular rate of pay for all hours worked over 40 in a workweek. The regular rate of pay for a salaried employee is calculated by dividing the ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "The contribution limits for 401k accounts can vary and are subject to change each year. As of my last update in January 2024, the projected contribution limits for 2026 are as follows:\n\n- The standard contribution limit for employees is expected to increase to $22,500. This limit represents the maximum amount an employee can contribute to their 401k account annually.\n\n- For those aged 50 and above, there is often an additional \"catch-up\" contribution allowed. The projected catch-up contribution ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "The contribution limits for Traditional and Roth Individual Retirement Accounts (IRAs) for the year 2026 are not yet determined as they are typically announced by the Internal Revenue Service (IRS) in the fall of the preceding year. The IRS adjusts these limits based on cost-of-living increases, so the specific amounts for 2026 will depend on economic factors leading up to that year.\n\nFor reference, the contribution limits for 2023 are as follows:\n\n- Traditional IRA: $6,000 for individuals under...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "The contribution limits for Health Savings Accounts (HSAs) are adjusted annually and are subject to change based on various factors. As of my last update in January 2024, the projected contribution limits for 2026 are as follows:\n\n- For individuals with individual high-deductible health plans, the projected contribution limit is $3,850.\n- For individuals who are covered under a family high-deductible health plan, the projected contribution limit is $7,650.\n\nIt's important to note that these are ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "You are entitled to a free credit report annually from each of the three major credit bureaus: Equifax, Experian, and TransUnion. This is made possible by the Fair Credit Reporting Act (FCRA), which gives consumers the right to access their credit information without cost. \n\nTo obtain your free credit report, you can visit AnnualCreditReport.com, which is the official site to request your free annual credit report. This site is authorized by the FCRA and is a secure way to access your credit inf...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act is a federal law in the United States that aims to protect consumers by ensuring that warranties on consumer products are clear and easily understood. Here are some of your rights under this act when a product breaks:\n\n1. **Warranty Information:** Manufacturers and sellers must provide clear and detailed written warranties for consumer products. These warranties should specify what is covered, the duration of coverage, and any exclusions or limitations. As a consum...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    }
+  },
+  "overall_score": 0.5,
+  "methodology_version": "1.0",
+  "git_commit": "d9934418240f",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

@@ -1,0 +1,53 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-09-13T11:05:29.751137",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a Python program that meets your requirements:\n\n```Python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = 0\n        self.expenses = {}\n\n    def add_income(self, amount):\n        self.income += amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        else:\n            self.expenses[category] = amount\n\n    def get_monthly_totals(self):\n        return self.income, sum(self.expenses.val...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here is a JavaScript function that generates a short story about recursion, told using recursive function calls:\n\n```javascript\nfunction tellStory() {\n  if (Math.random() < 0.5) {\n    return \"Once upon a time, there was a brave knight named Sir Reginald.\";\n  } else {\n    return \"In a far-off land, there lived a wise old wizard named Zorvath.\";\n  }\n}\n\nfunction continueStory(story) {\n  if (story.includes(\"knight\")) {\n    if (Math.random() < 0.5) {\n      return story + \" He rode his trusty steed, G...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick:\n\n```Python\nimport re\n\ndef is_limerick(text):\n    # Regular expression pattern to match the AABBA rhyme scheme\n    pattern = r'^(\\w+\\s\\w+)?\\n?(\\w+\\s\\w+)?\\n?(\\w+\\s\\w+)?\\n?(\\w+\\s\\w+)?$'\n    return bool(re.match(pattern, text, re.MULTILINE))\n\n# Test cases\nprint(is_limerick(\"There once was a man from Peru,\\nWho ate a kangaroo.\\nHe said with a grin,\\nIt tasted like tin,\\nBut then he turned blue ...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    }
+  ],
+  "overall_score": 0.447,
+  "methodology_version": "1.0",
+  "git_commit": "d9934418240f",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

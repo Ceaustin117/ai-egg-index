@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-09-06",
+  "last_updated": "2026-09-13",
   "models": [
     {
       "model": "google/gemini-2.5-flash",
       "provider": "google",
       "tier": "free",
-      "date": "2026-09-06",
+      "date": "2026-09-13",
       "methodology_version": "1.0",
-      "git_commit": "c0c4812fd858",
+      "git_commit": "d9934418240f",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.447,
+          "score": 0.38,
           "details": {
-            "budget-haiku": 0.58,
+            "budget-haiku": 0.38,
             "recursive-story": 0.38,
             "regex-poetry": 0.38
           }
@@ -32,14 +32,17 @@
       "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
       "provider": "huggingface",
       "tier": "free",
-      "date": "2026-09-06",
+      "date": "2026-09-13",
       "methodology_version": "1.0",
-      "git_commit": "c0c4812fd858",
+      "git_commit": "d9934418240f",
       "benchmarks": {
         "creative_technical": {
-          "score": null,
-          "status": "error",
-          "error": "Credit/billing limit exceeded"
+          "score": 0.447,
+          "details": {
+            "budget-haiku": 0.38,
+            "recursive-story": 0.58,
+            "regex-poetry": 0.38
+          }
         },
         "practical_knowledge": {
           "score": 0.5,
@@ -56,9 +59,9 @@
       "model": "cohere/command-r-08-2024",
       "provider": "cohere",
       "tier": "free",
-      "date": "2026-09-06",
+      "date": "2026-09-13",
       "methodology_version": "1.0",
-      "git_commit": "c0c4812fd858",
+      "git_commit": "d9934418240f",
       "benchmarks": {
         "practical_knowledge": {
           "score": 0.5,
@@ -83,9 +86,9 @@
       "model": "groq/llama-3.1-8b-instant",
       "provider": "groq",
       "tier": "free",
-      "date": "2026-09-06",
+      "date": "2026-09-13",
       "methodology_version": "1.0",
-      "git_commit": "c0c4812fd858",
+      "git_commit": "d9934418240f",
       "benchmarks": {
         "practical_knowledge": {
           "score": null,

@@ -1,0 +1,141 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-09-13T10:57:56.953022",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "As of my last update, the **official US federal income tax brackets for 2026 have not yet been released by the IRS.**\n\nHere's what you need to know about",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "The standard deduction amount for a single filer in 2026 is **not yet available**.\n\nThe IRS typically releases the standard deduction amounts for the upcoming tax year in the **fall** of the current year. So, the 2026 figures will likely be announced in **late 2025**.\n\nFor reference, the standard deduction for a single filer in **2024** is $14,600. The 2026 amount will likely be higher due to inflation adjustments.",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "The federal Clean Vehicle Credit (Section 30D) for new electric vehicles is currently scheduled to be in effect through **December 31, 2032**. Therefore,",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "The current federal minimum wage is **$7.25 per hour**.\n\n**No, there have not been any recent changes to the federal minimum wage.** It was last increased on **July 24, 2009**.\n\nIt's important to note:\n\n*   **State and Local Minimum Wages:** Many states, cities, and counties have their own minimum wage laws, and these are often significantly higher than the federal rate. If a state or local minimum wage is higher than the federal rate, employers are generally required to pay the higher amount.\n*...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "The federal overtime pay rules for salaried employees are governed by the Fair Labor Standards Act (FLSA).** The FLSA generally requires employers to pay employees 1.5 times their regular rate of pay",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "The 2026 401k contribution limits have **not yet been announced** by the IRS.\n\nThe IRS typically releases these figures in **late October or early November of the preceding year**. Therefore, the 2026 limits will likely be announced in **late 2025**.\n\nFor now, the best reference we have are the **2024 limits**:\n\n*   **Employee Elective Deferral Limit:** $23,000\n*   **Catch-Up Contribution (for those age 50 and over):** $7,500 (total of $30,500 for those 50+)\n\nIt's reasonable to expect a slight i...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "The contribution limits for Traditional and Roth IRA accounts for **2026 have not been announced yet.**\n\nThe IRS typically releases the contribution limits for the upcoming year in the **fall of the preceding year**. This means the 2026 limits will likely be announced in **late 2025**.\n\n**For reference, here are the 2024 contribution limits:**\n\n*   **Under age 50:** \\$7,000\n*   **Age 50 and over (catch-up contribution):** \\$8,000\n\nThese limits are indexed for inflation, so it's likely they will ...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "The 2026 HSA contribution limits have **not yet been announced**.\n\nThe IRS typically releases the HSA contribution limits for the upcoming year in **late October or early November** of the preceding year. This means the 2026 limits will likely be announced in **late October or early November of 2025**.\n\n**For context, here are the current (2024) HSA contribution limits:**\n\n*   **Self-Only Coverage:** $4,150\n*   **Family Coverage:** $8,300\n*   **Catch-Up Contribution (age 55 and over):** An addit...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "You are entitled to a free credit report from each of the three major credit bureaus (Equifax, Experian, and TransUnion) **every 12 months**.\n\nThis means you can get a total of **three free credit reports per year** \u2013 one from Equifax, one from Exper",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act (MMWA) is a federal law that governs written warranties on consumer products. It doesn't *require* manufacturers to provide a written warranty, but",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    }
+  },
+  "overall_score": 0.5,
+  "methodology_version": "1.0",
+  "git_commit": "d9934418240f",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
