@@ -1,0 +1,53 @@
+{
+  "model": "cohere/command-r-08-2024",
+  "timestamp": "2026-09-20T10:34:31.636481",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a simple Python budget tracker that fulfills your requirements:\n\n```python\nclass BudgetTracker:\n    def __init__(self):\n        self.income = {}\n        self.expenses = {}\n\n    def add_income(self, category, amount):\n        if category in self.income:\n            self.income[category] += amount\n        else:\n            self.income[category] = amount\n\n    def add_expense(self, category, amount):\n        if category in self.expenses:\n            self.expenses[category] += amount\n        e...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "```javascript\nfunction generateRecursiveStory(depth) {\n  if (depth <= 0) {\n    return \"The story ends here, with a satisfying conclusion.\";\n  } else {\n    const storyPart = `Once upon a time, there was a curious storyteller who loved recursion. They began a tale, and as they spoke, the story unfolded layer by layer. In this ${depth}st layer, the storyteller introduced a new character, a wise old wizard. The wizard, with a twinkle in their eye, said, \"Recursion is a magical concept, and I shall g...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Here's a Python program that uses regular expressions to validate whether a given text is a valid limerick with the AABBA rhyme scheme pattern:\n\n```python\nimport re\n\ndef is_valid_limerick(text):\n    # Split the text into lines\n    lines = text.split('\\n')\n    \n    # Check if the text has exactly 5 lines\n    if len(lines) != 5:\n        return False\n    \n    # Check the rhyme scheme pattern\n    rhyme_pattern = re.compile(r'^([A-Z])([A-Z])([A-Z])\\2\\1$', re.IGNORECASE)\n    rhyme_scheme = [line[0] fo...",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    }
+  ],
+  "overall_score": 0.58,
+  "methodology_version": "1.0",
+  "git_commit": "55d8ab360e8f",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
