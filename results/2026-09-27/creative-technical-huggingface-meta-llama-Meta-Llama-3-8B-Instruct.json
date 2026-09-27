@@ -1,0 +1,53 @@
+{
+  "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+  "timestamp": "2026-09-27T11:19:55.229020",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "ERROR: HfHubHTTPError: 402 Client Error: Payment Required for url: https://router.huggingface.co/featherless-ai/v1/chat/completions (Request ID: Root=1-6ab8fbdb-4254ae23141a660f0b4bad06;5853726f-32ae-43cd-9c08-130aa4879daa)\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "ERROR: HfHubHTTPError: 402 Client Error: Payment Required for url: https://router.huggingface.co/featherless-ai/v1/chat/completions (Request ID: Root=1-6ab8fbdc-1865f75825e489292402dc12;d5eb10c7-adff-4d31-97d6-110a662069e5)\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "ERROR: HfHubHTTPError: 402 Client Error: Payment Required for url: https://router.huggingface.co/featherless-ai/v1/chat/completions (Request ID: Root=1-6ab8fbdc-75ee7578391bb9847a2c6794;cb7516ba-df4e-4f79-b14e-e003a20fc6f6)\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    }
+  ],
+  "overall_score": 0.38,
+  "methodology_version": "1.0",
+  "git_commit": "8103346e1d58",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

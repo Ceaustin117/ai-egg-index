@@ -1,0 +1,53 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-09-27T11:16:16.115936",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to add income and expense transactions, categorize them, and view a monthly summary. The unique feature is its monthly summary output, which is presented as a haiku poem (5-7-5 syllables) reflecting the financial status of that month.\n\n```python\nimport datetime\n\n# Global list to store transactions\n# Each transaction is a dictionary:\n# {'type': '",
+      "code_extracted": true,
+      "code_runs": true,
+      "scores": {
+        "code_works": 0.7,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.58
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that generates a short story about recursion, where the story itself is constructed using recursive calls. It demonstrates at least 3 levels of recursion.\n\n```javascript\n/**\n * Generates a short story about recursion, where the story's structure\n * mirrors the recursive calls.\n *\n * @param {number} currentLevel The current depth of the recursion (starts at maxLevel).\n * @param {number} maxLevel The maximum desired depth of the story's recursion.\n *",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "This is a fun and challenging problem because regular expressions are not designed for phonetic rhyming or poetic meter. However, we can use them to enforce a *structural* rhyme scheme based on the *last word* of each line and the exact number of lines.\n\n**Important Caveats for a Regex-Only Solution:**\n\n1.  **Rhyme is based on the last word's spelling",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    }
+  ],
+  "overall_score": 0.447,
+  "methodology_version": "1.0",
+  "git_commit": "8103346e1d58",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
