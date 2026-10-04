@@ -1,14 +1,15 @@
 ## 🥚 This Week's Egg Winner: command-r-08-2024 (54%)
 
-_Free-tier LLMs on everyday tasks — week of 2026-09-27._
+_Free-tier LLMs on everyday tasks — week of 2026-10-04._
 
 **Rankings (overall):**
 1. **command-r-08-2024** (cohere) — 54%
-2. **gemini-2.5-flash** (google) — 47%
+2. **Meta-Llama-3-8B-Instruct** (huggingface) — 44%
+3. **gemini-2.5-flash** (google) — 44%
 
-_Unranked this week (missing a custom benchmark):_ llama-3.1-8b-instant (groq), Meta-Llama-3-8B-Instruct (huggingface)
+_Unranked this week (missing a custom benchmark):_ llama-3.1-8b-instant (groq)
 
-**Biggest mover:** command-r-08-2024 ▲ 54% → 54% (+0 pts)
+**Biggest mover:** Meta-Llama-3-8B-Instruct ▼ 47% → 44% (-3 pts)
 
 _Small-sample, directional — don't over-read a few points._
 

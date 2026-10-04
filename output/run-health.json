@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27",
+  "last_updated": "2026-10-04",
   "runs": [
     {
       "date": "2026-01-15",
@@ -928,6 +928,38 @@
       "summary": {
         "ok": 5,
         "error": 3,
+        "total": 8
+      }
+    },
+    {
+      "date": "2026-10-04",
+      "models": [
+        "cohere/command-r-08-2024",
+        "google/gemini-2.5-flash",
+        "groq/llama-3.1-8b-instant",
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
+      ],
+      "cells": {
+        "groq/llama-3.1-8b-instant": {
+          "practical_knowledge": "error",
+          "creative_technical": "error"
+        },
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "creative_technical": "ok",
+          "practical_knowledge": "ok"
+        }
+      },
+      "summary": {
+        "ok": 6,
+        "error": 2,
         "total": 8
       }
     }

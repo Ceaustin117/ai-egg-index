@@ -1,0 +1,53 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-10-04T11:42:43.527623",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to record income and expenses, categorize them, and then provides a monthly summary, creatively presented as a haiku poem.\n\n```python\nimport datetime\n\n# Global list to store transactions\ntransactions = []\n\ndef add_transaction(date_str, type_str, category_str, amount_float):\n    \"\"\"\n    Adds a new transaction to the",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that generates a short story about recursion, where the story itself is constructed using recursive function calls. It demonstrates at least 3 levels of recursion in its narrative structure.\n\n```javascript\n/**\n * Generates a short story about recursion, told through recursive function calls.\n * The story unfolds by delving deeper into a problem and then unwinding with the solution.\n *\n * @param {number} level The current depth of recursion for the story.\n *          ...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "This is a fascinating challenge! The core difficulty is that \"rhyme\" is a phonetic concept, and regular expressions operate on characters. Therefore, a regex-only solution for rhyme *must* make a significant simplification: it can only check if the *ending character sequences* are identical.\n\nFor this program, we will define \"rhyme\" (for regex purposes) as:\n*   The last",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    }
+  ],
+  "overall_score": 0.38,
+  "methodology_version": "1.0",
+  "git_commit": "6013adedc4d9",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
