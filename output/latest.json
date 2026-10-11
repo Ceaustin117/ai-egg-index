@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-10-04",
+  "last_updated": "2026-10-11",
   "models": [
     {
       "model": "groq/llama-3.1-8b-instant",
       "provider": "groq",
       "tier": "free",
-      "date": "2026-10-04",
+      "date": "2026-10-11",
       "methodology_version": "1.0",
-      "git_commit": "6013adedc4d9",
+      "git_commit": "04a70597b4bc",
       "benchmarks": {
         "practical_knowledge": {
           "score": null,
@@ -25,26 +25,19 @@
       "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
       "provider": "huggingface",
       "tier": "free",
-      "date": "2026-10-04",
+      "date": "2026-10-11",
       "methodology_version": "1.0",
-      "git_commit": "6013adedc4d9",
+      "git_commit": "04a70597b4bc",
       "benchmarks": {
         "practical_knowledge": {
-          "score": 0.5,
-          "details": {
-            "taxes": 0.5,
-            "regulations": 0.5,
-            "practical_finance": 0.5,
-            "consumer_rights": 0.5
-          }
+          "score": null,
+          "status": "error",
+          "error": "Credit/billing limit exceeded"
         },
         "creative_technical": {
-          "score": 0.38,
-          "details": {
-            "budget-haiku": 0.38,
-            "recursive-story": 0.38,
-            "regex-poetry": 0.38
-          }
+          "score": null,
+          "status": "error",
+          "error": "Credit/billing limit exceeded"
         }
       }
     },
@@ -52,9 +45,9 @@
       "model": "google/gemini-2.5-flash",
       "provider": "google",
       "tier": "free",
-      "date": "2026-10-04",
+      "date": "2026-10-11",
       "methodology_version": "1.0",
-      "git_commit": "6013adedc4d9",
+      "git_commit": "04a70597b4bc",
       "benchmarks": {
         "practical_knowledge": {
           "score": 0.5,
@@ -79,9 +72,9 @@
       "model": "cohere/command-r-08-2024",
       "provider": "cohere",
       "tier": "free",
-      "date": "2026-10-04",
+      "date": "2026-10-11",
       "methodology_version": "1.0",
-      "git_commit": "6013adedc4d9",
+      "git_commit": "04a70597b4bc",
       "benchmarks": {
         "creative_technical": {
           "score": 0.58,
