@@ -1,0 +1,53 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-10-18T10:16:03.178661",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to record income and expenses, categorize them, and view a monthly summary. The unique feature is its ability to present the monthly financial overview as a haiku poem (5-7-5 syllables), adapting the poem's sentiment to your financial performance for the month.\n\nThe data is stored in a `transactions.json` file for persistence.\n\n```python\n",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that generates a recursive story about recursion itself. The story unfolds as the function calls itself, and then resolves as the calls return.\n\n```javascript\n/**\n * Generates a short story about recursion, told through recursive function calls.\n * The story deepens with each recursive call and resolves as the calls return.\n *\n * @param {number}",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Okay, this is a fun challenge! The core constraint \"using only regular expressions\" for the AABBA rhyme scheme means we cannot check for *phonetic* rhyme. Instead, the regex will have to check if the *exact same word* (or a very similar ending pattern) is used for the 'A' lines and the 'B' lines. This is a significant limitation for actual limer",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    }
+  ],
+  "overall_score": 0.38,
+  "methodology_version": "1.0",
+  "git_commit": "f1bb643bcc5f",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

@@ -22,7 +22,7 @@ Benchmarking free-tier LLMs on tasks regular people actually care about.
 
 <!-- RESULTS:START -->
 
-_Updated 2026-10-11 · small-sample, directional · Overall = Practical + Creative (the benchmarks every provider runs); a model needs both to be ranked · `—` = not run / not ranked, `N/A` = errored that run._
+_Updated 2026-10-18 · small-sample, directional · Overall = Practical + Creative (the benchmarks every provider runs); a model needs both to be ranked · `—` = not run / not ranked, `N/A` = errored that run._
 
 | Model | Provider | Practical | IFEval | GSM8K | Creative | Overall |
 |---|---|---|---|---|---|---|
