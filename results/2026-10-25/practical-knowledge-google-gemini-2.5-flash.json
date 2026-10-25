@@ -1,0 +1,141 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-10-25T10:33:46.203416",
+  "categories": {
+    "taxes": {
+      "questions": [
+        {
+          "question_id": "tax-brackets-2026",
+          "response": "As of mid-2024, the official US federal income tax brackets for **2026 have not been released by the IRS.**\n\nHere's why, and what the \"main",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-deductions-2026",
+          "response": "The standard deduction amount for a single filer in 2026 is **not yet available**.\n\nThe IRS typically releases the standard deduction amounts for a given tax year in the **fall of the preceding year**. This is because the amounts are adjusted annually for inflation.\n\nTherefore, the 2026 standard deduction amounts will likely be announced by the IRS in **late 2025**.\n\nFor reference, the standard deduction for a single filer in **2024** is **$14,600**. You can expect the 2026 amount to be slightly...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "tax-credits-2026",
+          "response": "The good news is that the primary federal tax credits for electric vehicles (EVs) are **scheduled to be available in 2026**, as they are authorized under the Inflation Reduction Act (IRA",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "regulations": {
+      "questions": [
+        {
+          "question_id": "min-wage-federal",
+          "response": "The current federal minimum wage in the United States is **$7.25 per hour**.\n\n**No, there have not been any recent changes** to the federal minimum wage. It",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "overtime-rules",
+          "response": "Federal overtime pay rules for salaried employees are governed by the **Fair Labor Standards Act (FLSA)**. The key takeaway is that being paid a salary *does not automatically mean* an employee is",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "practical_finance": {
+      "questions": [
+        {
+          "question_id": "401k-limits-2026",
+          "response": "The 2026 contribution limits for 401(k) accounts have **not yet been announced** by the IRS.\n\nThe IRS typically releases the contribution limits for the upcoming year in **late October or early November** of the preceding year. Therefore:\n\n*   The **2025** limits will be announced in late 2024.\n*   The **2026** limits will be announced in late 2025.\n\n**What we know now (2024 limits) can give you an idea of the potential range:**\n\nFor **2024**, the limits are:\n\n*   **Employee contributions:** **$...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "ira-limits-2026",
+          "response": "The 2026 contribution limits for Traditional and Roth IRA accounts have **not yet been announced** by the IRS.\n\nThe IRS typically releases the contribution limits for the upcoming year in **late fall** of the preceding year. Therefore, the 2026 limits will likely be announced in **late 2025**.\n\nThese limits are adjusted annually for inflation.\n\n**For reference, here are the 2024 contribution limits (which are the most recent available):**\n\n*   **Regular Contribution Limit:** $7,000\n*   **Catch-u...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "hsa-limits-2026",
+          "response": "The 2026 HSA contribution limits have **not yet been announced** by the IRS.\n\nThe IRS typically releases the HSA contribution limits for the upcoming year in **late October or early November** of the preceding year. Therefore, the 2026 limits will likely be announced in **late 2025**.\n\n**For planning purposes, here are the 2024 HSA contribution limits (which will likely be slightly lower than the 2026 limits due to inflation adjustments):**\n\n*   **Self-Only Coverage:** \\$4,150\n*   **Family Cover...",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    },
+    "consumer_rights": {
+      "questions": [
+        {
+          "question_id": "credit-report-rights",
+          "response": "You are entitled to a free credit report from each of the three major credit bureaus (Experian, Equifax, and TransUnion) under federal law.\n\nHere's how to get them",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        },
+        {
+          "question_id": "warranty-rights",
+          "response": "The Magnuson-Moss Warranty Act (MMWA) is a federal law that governs written warranties on consumer products. It doesn't *require* manufacturers or sellers to provide written warranties,",
+          "scores": {
+            "factual_accuracy": 0.5,
+            "completeness": 0.5,
+            "recency_awareness": 0.5,
+            "explanation": "Could not parse judge response"
+          },
+          "weighted_score": 0.5
+        }
+      ],
+      "average_score": 0.5
+    }
+  },
+  "overall_score": 0.5,
+  "methodology_version": "1.0",
+  "git_commit": "1cfcd4d8fe1a",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

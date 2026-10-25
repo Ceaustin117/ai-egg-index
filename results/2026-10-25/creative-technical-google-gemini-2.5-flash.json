@@ -1,0 +1,53 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-10-25T10:35:12.640103",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to record income and expenses, categorize them, and view a monthly summary. The unique feature is its ability to generate a haiku poem (5-7-5 syllables) that summarizes your financial standing for the month.\n\n**Features:**\n1.  **Track Income and Expenses:** Record transactions with date, type (income/expense), category, amount, and an optional",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "Here's a JavaScript function that generates a recursive story about recursion, using recursive function calls to build the narrative.\n\n```javascript\nfunction generateRecursiveStory() {\n    const storyParts = []; // Array to accumulate story segments\n    const maxRecursionDepth = 3; // We want at least 3 levels (0, 1, 2)\n\n    // Define story",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "This is a fun challenge! Using *only* regular expressions to validate a limerick's rhyme scheme means we have to interpret \"rhyme\" as \"identical last word (case-insensitively, ignoring trailing punctuation)\". True phonetic rhyme is beyond the scope of regular expressions alone.\n\nThe regex will need to:\n1.  Ensure there are exactly 5 lines.\n2",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    }
+  ],
+  "overall_score": 0.38,
+  "methodology_version": "1.0",
+  "git_commit": "1cfcd4d8fe1a",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}

@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-10-18",
+  "last_updated": "2026-10-25",
   "models": [
     {
       "model": "groq/llama-3.1-8b-instant",
       "provider": "groq",
       "tier": "free",
-      "date": "2026-10-18",
+      "date": "2026-10-25",
       "methodology_version": "1.0",
-      "git_commit": "f1bb643bcc5f",
+      "git_commit": "1cfcd4d8fe1a",
       "benchmarks": {
         "practical_knowledge": {
           "score": null,
@@ -25,9 +25,9 @@
       "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
       "provider": "huggingface",
       "tier": "free",
-      "date": "2026-10-18",
+      "date": "2026-10-25",
       "methodology_version": "1.0",
-      "git_commit": "f1bb643bcc5f",
+      "git_commit": "1cfcd4d8fe1a",
       "benchmarks": {
         "practical_knowledge": {
           "score": null,
@@ -45,9 +45,9 @@
       "model": "google/gemini-2.5-flash",
       "provider": "google",
       "tier": "free",
-      "date": "2026-10-18",
+      "date": "2026-10-25",
       "methodology_version": "1.0",
-      "git_commit": "f1bb643bcc5f",
+      "git_commit": "1cfcd4d8fe1a",
       "benchmarks": {
         "practical_knowledge": {
           "score": 0.5,
@@ -72,16 +72,16 @@
       "model": "cohere/command-r-08-2024",
       "provider": "cohere",
       "tier": "free",
-      "date": "2026-10-18",
+      "date": "2026-10-25",
       "methodology_version": "1.0",
-      "git_commit": "f1bb643bcc5f",
+      "git_commit": "1cfcd4d8fe1a",
       "benchmarks": {
         "creative_technical": {
-          "score": 0.58,
+          "score": 0.513,
           "details": {
             "budget-haiku": 0.58,
             "recursive-story": 0.58,
-            "regex-poetry": 0.58
+            "regex-poetry": 0.38
           }
         },
         "practical_knowledge": {
