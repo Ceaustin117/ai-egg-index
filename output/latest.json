@@ -1,53 +1,13 @@
 {
-  "last_updated": "2026-10-25",
+  "last_updated": "2026-11-01",
   "models": [
-    {
-      "model": "groq/llama-3.1-8b-instant",
-      "provider": "groq",
-      "tier": "free",
-      "date": "2026-10-25",
-      "methodology_version": "1.0",
-      "git_commit": "1cfcd4d8fe1a",
-      "benchmarks": {
-        "practical_knowledge": {
-          "score": null,
-          "status": "error",
-          "error": "Model unavailable / not found"
-        },
-        "creative_technical": {
-          "score": null,
-          "status": "error",
-          "error": "Model unavailable / not found"
-        }
-      }
-    },
-    {
-      "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
-      "provider": "huggingface",
-      "tier": "free",
-      "date": "2026-10-25",
-      "methodology_version": "1.0",
-      "git_commit": "1cfcd4d8fe1a",
-      "benchmarks": {
-        "practical_knowledge": {
-          "score": null,
-          "status": "error",
-          "error": "Credit/billing limit exceeded"
-        },
-        "creative_technical": {
-          "score": null,
-          "status": "error",
-          "error": "Credit/billing limit exceeded"
-        }
-      }
-    },
     {
       "model": "google/gemini-2.5-flash",
       "provider": "google",
       "tier": "free",
-      "date": "2026-10-25",
+      "date": "2026-11-01",
       "methodology_version": "1.0",
-      "git_commit": "1cfcd4d8fe1a",
+      "git_commit": "6a60cb3ae597",
       "benchmarks": {
         "practical_knowledge": {
           "score": 0.5,
@@ -69,21 +29,53 @@
       }
     },
     {
+      "model": "groq/llama-3.1-8b-instant",
+      "provider": "groq",
+      "tier": "free",
+      "date": "2026-11-01",
+      "methodology_version": "1.0",
+      "git_commit": "6a60cb3ae597",
+      "benchmarks": {
+        "practical_knowledge": {
+          "score": null,
+          "status": "error",
+          "error": "Model unavailable / not found"
+        },
+        "creative_technical": {
+          "score": null,
+          "status": "error",
+          "error": "Model unavailable / not found"
+        }
+      }
+    },
+    {
+      "model": "huggingface/meta-llama/Meta-Llama-3-8B-Instruct",
+      "provider": "huggingface",
+      "tier": "free",
+      "date": "2026-11-01",
+      "methodology_version": "1.0",
+      "git_commit": "6a60cb3ae597",
+      "benchmarks": {
+        "creative_technical": {
+          "score": null,
+          "status": "error",
+          "error": "Credit/billing limit exceeded"
+        },
+        "practical_knowledge": {
+          "score": null,
+          "status": "error",
+          "error": "Credit/billing limit exceeded"
+        }
+      }
+    },
+    {
       "model": "cohere/command-r-08-2024",
       "provider": "cohere",
       "tier": "free",
-      "date": "2026-10-25",
+      "date": "2026-11-01",
       "methodology_version": "1.0",
-      "git_commit": "1cfcd4d8fe1a",
+      "git_commit": "6a60cb3ae597",
       "benchmarks": {
-        "creative_technical": {
-          "score": 0.513,
-          "details": {
-            "budget-haiku": 0.58,
-            "recursive-story": 0.58,
-            "regex-poetry": 0.38
-          }
-        },
         "practical_knowledge": {
           "score": 0.5,
           "details": {
@@ -91,6 +83,14 @@
             "regulations": 0.5,
             "practical_finance": 0.5,
             "consumer_rights": 0.5
+          }
+        },
+        "creative_technical": {
+          "score": 0.58,
+          "details": {
+            "budget-haiku": 0.58,
+            "recursive-story": 0.58,
+            "regex-poetry": 0.58
           }
         }
       }

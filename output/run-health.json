@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25",
+  "last_updated": "2026-11-01",
   "runs": [
     {
       "date": "2026-01-15",
@@ -8,8 +8,8 @@
         "together/mistral-7b-instruct"
       ],
       "cells": {
-        "together/mistral-7b-instruct": {},
-        "groq/llama-3.1-8b-instant": {}
+        "groq/llama-3.1-8b-instant": {},
+        "together/mistral-7b-instruct": {}
       },
       "summary": {
         "ok": 0,
@@ -27,10 +27,10 @@
         "together/mistral-7b-instruct"
       ],
       "cells": {
-        "huggingface/mistral-7b-instruct": {},
-        "google/gemini-1.5-flash": {},
-        "together/mistral-7b-instruct": {},
         "groq/llama-3.1-8b-instant": {},
+        "together/mistral-7b-instruct": {},
+        "google/gemini-1.5-flash": {},
+        "huggingface/mistral-7b-instruct": {},
         "cohere/command-light": {}
       },
       "summary": {
@@ -66,25 +66,25 @@
         "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
       ],
       "cells": {
-        "groq/llama-3.1-8b-instant": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+        "google/gemini-2.0-flash": {
+          "creative_technical": "error",
+          "practical_knowledge": "error"
         },
         "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
-        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
+        "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
-        "google/gemini-2.0-flash": {
-          "creative_technical": "error",
-          "practical_knowledge": "error"
-        },
-        "cohere/command-r-08-2024": {
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -103,25 +103,25 @@
         "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
       ],
       "cells": {
-        "groq/llama-3.1-8b-instant": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+        "google/gemini-2.0-flash": {
+          "creative_technical": "error",
+          "practical_knowledge": "error"
         },
         "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
-        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
+        "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
-        "google/gemini-2.0-flash": {
-          "creative_technical": "error",
-          "practical_knowledge": "error"
-        },
-        "cohere/command-r-08-2024": {
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -140,25 +140,25 @@
         "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
       ],
       "cells": {
-        "groq/llama-3.1-8b-instant": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+        "google/gemini-2.0-flash": {
+          "creative_technical": "error",
+          "practical_knowledge": "error"
         },
         "together/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
-        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
+        "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
-        "google/gemini-2.0-flash": {
-          "creative_technical": "error",
-          "practical_knowledge": "error"
-        },
-        "cohere/command-r-08-2024": {
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -176,21 +176,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "cohere/command-r-08-2024": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -208,21 +208,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "cohere/command-r-08-2024": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -240,21 +240,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "cohere/command-r-08-2024": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -272,21 +272,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "cohere/command-r-08-2024": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -304,23 +304,23 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
-        "groq/llama-3.1-8b-instant": {
-          "gsm8k": "ok",
-          "practical_knowledge": "ok",
-          "ifeval": "ok",
-          "creative_technical": "ok"
-        },
-        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
         "google/gemini-2.5-flash": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
-        "cohere/command-r-08-2024": {
+        "groq/llama-3.1-8b-instant": {
+          "gsm8k": "ok",
+          "ifeval": "ok",
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -338,22 +338,22 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "gsm8k": "ok",
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "cohere/command-r-08-2024": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -371,22 +371,22 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "gsm8k": "ok",
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "cohere/command-r-08-2024": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -404,22 +404,22 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "gsm8k": "ok",
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "cohere/command-r-08-2024": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -437,25 +437,25 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
-        "groq/llama-3.1-8b-instant": {
-          "gsm8k": "ok",
-          "practical_knowledge": "ok",
-          "ifeval": "ok",
-          "creative_technical": "ok"
-        },
-        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "error",
+          "creative_technical": "error"
         },
         "cohere/command-r-08-2024": {
           "ifeval": "ok",
           "gsm8k": "ok",
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
+        "groq/llama-3.1-8b-instant": {
+          "gsm8k": "ok",
+          "ifeval": "ok",
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "error",
-          "creative_technical": "error"
         }
       },
       "summary": {
@@ -473,25 +473,25 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
-        "groq/llama-3.1-8b-instant": {
-          "gsm8k": "ok",
-          "practical_knowledge": "ok",
-          "ifeval": "ok",
-          "creative_technical": "ok"
-        },
-        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "error",
+          "creative_technical": "error"
         },
         "cohere/command-r-08-2024": {
           "ifeval": "ok",
           "gsm8k": "ok",
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
+        "groq/llama-3.1-8b-instant": {
+          "gsm8k": "ok",
+          "ifeval": "ok",
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "error",
-          "creative_technical": "error"
         }
       },
       "summary": {
@@ -509,25 +509,25 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
-        "groq/llama-3.1-8b-instant": {
-          "gsm8k": "ok",
+        "google/gemini-2.5-flash": {
           "practical_knowledge": "ok",
-          "ifeval": "ok",
           "creative_technical": "ok"
-        },
-        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "error"
         },
         "cohere/command-r-08-2024": {
           "ifeval": "ok",
           "gsm8k": "ok",
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
-        },
-        "google/gemini-2.5-flash": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
+        },
+        "groq/llama-3.1-8b-instant": {
+          "gsm8k": "ok",
+          "ifeval": "ok",
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
+          "creative_technical": "error",
+          "practical_knowledge": "ok"
         }
       },
       "summary": {
@@ -545,25 +545,25 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
-        "groq/llama-3.1-8b-instant": {
-          "gsm8k": "ok",
+        "google/gemini-2.5-flash": {
           "practical_knowledge": "ok",
-          "ifeval": "ok",
           "creative_technical": "ok"
-        },
-        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "error"
         },
         "cohere/command-r-08-2024": {
           "ifeval": "ok",
           "gsm8k": "ok",
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
-        },
-        "google/gemini-2.5-flash": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
+        },
+        "groq/llama-3.1-8b-instant": {
+          "gsm8k": "ok",
+          "ifeval": "ok",
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
+          "creative_technical": "error",
+          "practical_knowledge": "ok"
         }
       },
       "summary": {
@@ -581,25 +581,25 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
-        "groq/llama-3.1-8b-instant": {
-          "gsm8k": "ok",
-          "practical_knowledge": "ok",
-          "ifeval": "ok",
-          "creative_technical": "ok"
-        },
-        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
+        "google/gemini-2.5-flash": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
         "cohere/command-r-08-2024": {
           "ifeval": "ok",
           "gsm8k": "ok",
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
-        },
-        "google/gemini-2.5-flash": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
+        },
+        "groq/llama-3.1-8b-instant": {
+          "gsm8k": "ok",
+          "ifeval": "ok",
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
+          "creative_technical": "ok",
+          "practical_knowledge": "ok"
         }
       },
       "summary": {
@@ -617,24 +617,24 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
-        "groq/llama-3.1-8b-instant": {
-          "practical_knowledge": "ok",
-          "ifeval": "ok",
-          "creative_technical": "ok"
-        },
-        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
+        "google/gemini-2.5-flash": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
         "cohere/command-r-08-2024": {
           "ifeval": "ok",
           "gsm8k": "ok",
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
-        },
-        "google/gemini-2.5-flash": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
+        },
+        "groq/llama-3.1-8b-instant": {
+          "ifeval": "ok",
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
+          "creative_technical": "ok",
+          "practical_knowledge": "ok"
         }
       },
       "summary": {
@@ -652,21 +652,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "error"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+          "creative_technical": "error",
+          "practical_knowledge": "ok"
         },
         "cohere/command-r-08-2024": {
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -684,21 +684,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "error"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+          "creative_technical": "error",
+          "practical_knowledge": "ok"
         },
         "cohere/command-r-08-2024": {
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -716,21 +716,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "cohere/command-r-08-2024": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -748,21 +748,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "cohere/command-r-08-2024": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -780,21 +780,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "error",
-          "creative_technical": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+          "creative_technical": "ok",
+          "practical_knowledge": "error"
         },
         "cohere/command-r-08-2024": {
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -812,21 +812,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "error"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+          "creative_technical": "error",
+          "practical_knowledge": "ok"
         },
         "cohere/command-r-08-2024": {
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -844,21 +844,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "cohere/command-r-08-2024": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -876,21 +876,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "error"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+          "creative_technical": "error",
+          "practical_knowledge": "ok"
         },
         "cohere/command-r-08-2024": {
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -908,21 +908,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "error"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+          "creative_technical": "error",
+          "practical_knowledge": "ok"
         },
         "cohere/command-r-08-2024": {
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -940,21 +940,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
-        },
-        "cohere/command-r-08-2024": {
           "creative_technical": "ok",
           "practical_knowledge": "ok"
+        },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -972,21 +972,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "error",
-          "creative_technical": "error"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+          "creative_technical": "error",
+          "practical_knowledge": "error"
         },
         "cohere/command-r-08-2024": {
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -1004,21 +1004,21 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "error",
-          "creative_technical": "error"
-        },
-        "google/gemini-2.5-flash": {
-          "practical_knowledge": "ok",
-          "creative_technical": "ok"
+          "creative_technical": "error",
+          "practical_knowledge": "error"
         },
         "cohere/command-r-08-2024": {
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {
@@ -1036,21 +1036,53 @@
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
       ],
       "cells": {
+        "google/gemini-2.5-flash": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        },
         "groq/llama-3.1-8b-instant": {
           "practical_knowledge": "error",
           "creative_technical": "error"
         },
         "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
-          "practical_knowledge": "error",
-          "creative_technical": "error"
+          "creative_technical": "error",
+          "practical_knowledge": "error"
         },
+        "cohere/command-r-08-2024": {
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
+        }
+      },
+      "summary": {
+        "ok": 4,
+        "error": 4,
+        "total": 8
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "models": [
+        "cohere/command-r-08-2024",
+        "google/gemini-2.5-flash",
+        "groq/llama-3.1-8b-instant",
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct"
+      ],
+      "cells": {
         "google/gemini-2.5-flash": {
           "practical_knowledge": "ok",
           "creative_technical": "ok"
         },
+        "groq/llama-3.1-8b-instant": {
+          "practical_knowledge": "error",
+          "creative_technical": "error"
+        },
+        "huggingface/meta-llama/Meta-Llama-3-8B-Instruct": {
+          "creative_technical": "error",
+          "practical_knowledge": "error"
+        },
         "cohere/command-r-08-2024": {
-          "creative_technical": "ok",
-          "practical_knowledge": "ok"
+          "practical_knowledge": "ok",
+          "creative_technical": "ok"
         }
       },
       "summary": {

@@ -1,0 +1,53 @@
+{
+  "model": "google/gemini-2.5-flash",
+  "timestamp": "2026-11-01T12:33:03.219934",
+  "challenges": [
+    {
+      "prompt_id": "budget-haiku",
+      "difficulty": "intermediate",
+      "response_preview": "This Python budget tracker allows you to record income and expenses, categorize them, and then view a monthly summary. The unique feature is its ability to generate a haiku poem (5-7-5 syllables) that summarizes your financial standing for the month.\n\n**Features:**\n1.  **Add Income/Expense:** Record transactions with date, amount, and category.\n2.  ",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "recursive-story",
+      "difficulty": "intermediate",
+      "response_preview": "This JavaScript function generates a story about recursion, where the story's structure itself mirrors the concept of recursion. Each \"level\" of the story delves deeper into the mystery, and then \"unwinds\" to reveal the full picture.\n\n```javascript\nfunction recursiveStory(level = 0) {\n    let storyPart = \"\";\n\n    // Base Case: The deepest level of the story, where the core truth is found.\n    if (level === 3) {\n        storyPart += \"And within that focused hum, Elara finally perceived the single...",
+      "code_extracted": true,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    },
+    {
+      "prompt_id": "regex-poetry",
+      "difficulty": "hard",
+      "response_preview": "Okay, this is a fascinating challenge! The core difficulty is that **regular expressions cannot inherently understand or check for phonetic rhyming**. They can only match patterns of characters.\n\nTherefore, to fulfill the \"using only regular expressions\" constraint for an AABBA rhyme scheme, we have to interpret \"rhyme pattern\" in the strictest possible way: **the last word of the rhyming lines must be *",
+      "code_extracted": false,
+      "code_runs": false,
+      "scores": {
+        "code_works": 0.2,
+        "meets_requirements": 0.5,
+        "creative_output": 0.5,
+        "explanation": "Could not parse judge response"
+      },
+      "weighted_score": 0.38
+    }
+  ],
+  "overall_score": 0.38,
+  "methodology_version": "1.0",
+  "git_commit": "6a60cb3ae597",
+  "limit": 3,
+  "judge_model": "llama-3.3-70b-versatile"
+}
